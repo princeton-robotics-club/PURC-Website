@@ -10,6 +10,10 @@ function App() {
         <Navbar />
           <Routes>
             <Route path='/' exact />
+            <Route path='/projects' exact />
+            <Route path='/supporters' exact />
+            <Route path='/about' exact />
+            <Route path='/join' exact />
           </Routes>
       </Router>
     </>

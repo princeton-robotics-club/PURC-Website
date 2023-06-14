@@ -34,6 +34,15 @@
   font-family: "Century Gothic"
 }
 
+.btn--medium--colored {
+  margin-right: 20px;
+  padding: 8px 20px;
+  font-size: 20px;
+  font-family: "Century Gothic";
+  background-color: orangered;
+  color:#2f2f2f;
+}
+
 .btn--large {
   padding: 12px 26px;
   font-size: 20px;
