@@ -3,15 +3,61 @@ import { Link, useLocation } from 'react-router-dom'
 import { Button } from './Button';
 import './Navbar.css'
 
+function NavbarItem(props) {
+
+  const {
+    label,
+    link,
+    pathString = link,
+    dropdown_options = [],
+    dropdown_links = [],
+    force_style = null,
+    close_mobile
+  } = props;
+
+  const [drop, setDrop] = useState(false);  
+  const showDrop = () => setDrop(window.innerWidth > 960);
+  const hideDrop = () => setDrop(false);
+
+  const [underline, setUnderline]  = useState(false);
+  const location = useLocation();
+
+  useEffect (() => {
+    setUnderline(location.pathname.indexOf(pathString) === 0);
+  }, [location.pathname, pathString, underline]);
+
+  window.addEventListener('resize', hideDrop);
+  
+  return (
+    <li className='nav-item' onMouseLeave={hideDrop}>
+      <Link to={link}
+            onMouseEnter={showDrop}  
+            className={force_style ? force_style : (underline ? 'nav-links-here' : 'nav-links')} 
+            onClick={close_mobile}
+      >
+        {label}
+      </Link>
+      {drop && 
+        dropdown_options.map((option, idx) => {
+          return (
+            <div className='dropdown-rectangle'> 
+              <Link to={dropdown_links[idx]} className='dropdown-link'>
+                <div> {option} </div>
+              </Link>
+            </div>
+          );
+        })
+      }
+    </li>
+  );
+}
+
 function Navbar() {
   
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
-  const [projPath,  setProjPath] = useState(false);
-  const [suppPath,  setSuppPath] = useState(false);
-  const [aboutPath, setAboutPath] = useState(false);
-  const [joinPath,  setJoinPath] = useState(false);
+  const [joinPath,  setJoinPath]  = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -25,10 +71,7 @@ function Navbar() {
   const location = useLocation();
 
   useEffect(() => {
-    setProjPath(location.pathname === '/projects');
-    setSuppPath(location.pathname === '/supporters');
-    setAboutPath(location.pathname === '/about');
-    setJoinPath(location.pathname === '/join');
+    setJoinPath(location.pathname.indexOf('/join') === 0);
   }, [location.pathname]);
 
   window.addEventListener('resize', showButton);
@@ -48,33 +91,52 @@ function Navbar() {
             </div>
           </Link>
 
-          <div className='menu-icon' onClick={() => {handleClick();}}>
+          <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
 
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <Link to='/projects' className={projPath ? 'nav-links-here' : 'nav-links'} onClick={() => {closeMobileMenu();}}>
-                Projects
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/supporters' className={suppPath ? 'nav-links-here' : 'nav-links'} onClick={() => {closeMobileMenu();}}>
-                Supporters
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/about' className={aboutPath ? 'nav-links-here' : 'nav-links'} onClick={() => {closeMobileMenu();}}>
-                About
-              </Link>
-            </li>
+            
+            <NavbarItem 
+              label = {'Projects'}
+              link  = {'/projects'}
+              pathString = {'/projects'}
+              dropdown_options = {['P1', 'P2']}
+              dropdown_links = {['/projects/p1', '/projects/p2']}
+              close_mobile = {closeMobileMenu}
+            />
+
+            <NavbarItem 
+              label = {'Supporters'}
+              link  = {'/supporters'}
+              pathString = {'/supporters'}
+              dropdown_options = {['S1', 'S2']}
+              dropdown_links = {['/supporters/s1', '/supporters/s2']}
+              close_mobile = {closeMobileMenu}
+            />
+
+            <NavbarItem 
+              label = {'About'}
+              link  = {'/about'}
+              pathString = {'/about'}
+              dropdown_options = {['A1', 'A2']}
+              dropdown_links = {['/about/a1', '/about/a2']}
+              close_mobile = {closeMobileMenu}
+            />
+
             <li>
-              <Link to='/join' className='nav-links-mobile' onClick={() => {closeMobileMenu();}}>
+              <Link to='/join' 
+                    className={joinPath ? 'nav-links-mobile-red' : 'nav-links-mobile'} 
+                    onClick={() => {closeMobileMenu();}}>
                 JOIN
               </Link>
             </li>
           </ul>
-          {button && <Button buttonSize={joinPath ? 'btn--medium--colored' : 'btn--medium'} buttonStyle='btn--outline'>JOIN</Button>}
+          {button && 
+            <Button buttonStyle='btn--outline' 
+                    buttonSize={joinPath ? 'btn--medium--colored' : 'btn--medium'}>
+              JOIN
+            </Button>}
         </div>
       </nav>
     </>

@@ -71,15 +71,14 @@
   align-items: center;
   text-decoration: none;
   padding: 0rem 1rem;
-  height: 100%;
+  height: 80px;
   font-family: 'Century Gothic';
   transition: all 0.2s ease-out;
 }
 
 .nav-links:hover {
-  border-bottom: 6px solid orange;
-  transition: all 0.4s ease-out;
-  transform: translateY(-5px);
+  box-shadow: inset 0 -5px 0 orange;
+  transition: all 0.2s ease-out;
 }
 
 .nav-links-here {
@@ -94,11 +93,44 @@
   box-shadow: inset 0 -5px 0 0 orangered;
 }
 
+.dropdown-rectangle {
+  width: 100%;
+  line-height: 60px;
+  height: 60px;
+  background: orange;
+  align-items: center;
+  float: top;
+  margin: 0;
+  padding: 0;
+  box-shadow: inset 1px 0 orangered, inset -1px 0 orangered;
+}
+
+.dropdown-rectangle:hover {
+  cursor: pointer;
+  background: orangered;
+  transition: all 0.2s ease-out;
+  color: gray;
+}
+
+.dropdown-link {
+  color: black;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  font-family: 'Century Gothic';
+  font-size: 1rem;
+}
+
 .fa-bars {
   color: #fff;
 }
 
 .nav-links-mobile {
+  display: none;
+}
+
+.nav-links-mobile-red {
   display: none;
 }
 
@@ -149,7 +181,15 @@
   .nav-links:hover {
     background-color: #fff;
     color: #242424;
-    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .nav-links-here {
+    padding: 0rem;
+    margin:0;
+    width: 100%;
+    display: table;
+    box-shadow: inset 2px 2px orangered, inset -2px -2px orangered;
   }
 
   .navbar-logo-image {
@@ -182,12 +222,6 @@
     font-size: 2rem;
   }
 
-  .nav-links:hover {
-    border-bottom: 6px solid white;
-    transition: all 0.5s ease-out;
-    transform: translateY(-5px);
-  }
-
   .nav-links-mobile {
     display: block;
     text-align: center;
@@ -205,8 +239,25 @@
   }
 
   .nav-links-mobile:hover {
-    background: orange;
+    background-color: orange;
     color: #242424;
     transition: 1s;
+    box-shadow: none;
+  }
+
+  .nav-links-mobile-red {
+    display: block;
+    text-align: center;
+    margin: 3% auto;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 14px 20px;
+    border: 1px solid orangered;
+    transition: all 0.3s ease-out;
+    font-family: 'Century Gothic'
   }
 }
