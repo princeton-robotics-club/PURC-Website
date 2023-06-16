@@ -29,7 +29,7 @@ function NavbarItem(props) {
   window.addEventListener('resize', hideDrop);
   
   return (
-    <li className='nav-item' onMouseLeave={hideDrop}>
+    <li className='nav-item' key={label} onMouseLeave={hideDrop}>
       <Link to={link}
             onMouseEnter={showDrop}  
             className={force_style ? force_style : (underline ? 'nav-links-here' : 'nav-links')} 
@@ -40,7 +40,7 @@ function NavbarItem(props) {
       {drop && 
         dropdown_options.map((option, idx) => {
           return (
-            <div className='dropdown-rectangle'> 
+            <div className='dropdown-rectangle' key={option}> 
               <Link to={dropdown_links[idx]} className='dropdown-link'>
                 <div> {option} </div>
               </Link>
@@ -102,7 +102,7 @@ function Navbar() {
               link  = {'/projects'}
               pathString = {'/projects'}
               dropdown_options = {['P1', 'P2']}
-              dropdown_links = {['/projects/p1', '/projects/p2']}
+              dropdown_links = {['/projects#p1', '/projects#p2']}
               close_mobile = {closeMobileMenu}
             />
 
@@ -111,7 +111,7 @@ function Navbar() {
               link  = {'/supporters'}
               pathString = {'/supporters'}
               dropdown_options = {['S1', 'S2']}
-              dropdown_links = {['/supporters/s1', '/supporters/s2']}
+              dropdown_links = {['/supporters#s1', '/supporters#s2']}
               close_mobile = {closeMobileMenu}
             />
 
@@ -120,7 +120,7 @@ function Navbar() {
               link  = {'/about'}
               pathString = {'/about'}
               dropdown_options = {['A1', 'A2']}
-              dropdown_links = {['/about/a1', '/about/a2']}
+              dropdown_links = {['/about#a1', '/about#a2']}
               close_mobile = {closeMobileMenu}
             />
 

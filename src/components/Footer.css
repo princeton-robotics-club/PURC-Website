@@ -1,0 +1,121 @@
+.footer-container {
+  background: linear-gradient(to bottom, #222 0%, #000 100%);
+  position: absolute;
+  margin: 0;
+  padding-bottom: 10px;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo-princeton {
+  filter: brightness(80%);
+  background-image: url(../images/princeton_logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 20px;
+  width: 160px;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float:left;
+}
+
+.footer-logo-princeton:hover {
+  filter: brightness(70%) sepia(1) hue-rotate(-30deg) saturate(300%);
+  transition: 0.2s all ease-out;
+}
+
+.footer-logo-odus {
+  filter: grayscale(1);
+  background-image: url(../images/odus_logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 20px;
+  width: 90px;
+  height: 60px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float:left;
+}
+
+.footer-logo-odus:hover {
+  filter: brightness(70%) sepia(1) hue-rotate(-30deg) saturate(300%);
+  transition: 0.2s all ease-out;
+}
+
+.footer-text {
+  white-space: nowrap;
+  line-height: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  font-weight: bold;
+  font-family: 'Century Gothic';
+  transition: color 1s ease-out;
+  color: #aaa;
+  float: right;
+}
+
+/* Social Icons */
+.social-icon-link {
+  color: #fff;
+  font-size: 24px;
+}
+
+.social-icon-link:hover {
+  color: orange;
+  font-size: 24px;
+}
+
+.social-media {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.social-media-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto 0 auto;
+}
+
+.social-icons {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 135px;
+}
+
+.social-logo {
+  color: #fff;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 820px) {
+  
+  .social-media-wrap {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
