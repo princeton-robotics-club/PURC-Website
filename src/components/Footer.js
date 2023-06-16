@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
+import { Tooltip } from 'react-tooltip';
 
 function Footer() {
   return (
@@ -8,13 +9,22 @@ function Footer() {
       <section className='social-media'>
         <div className='social-media-wrap'>
 
-          <Link to='https://princeton.edu'>
-            <div className='footer-logo-princeton'/>
+          <Link to='https://princeton.edu'
+                data-tooltip-id='princeton-tooltip' 
+                data-tooltip-content='Princeton University&#39;s website'>
+            <div className='footer-logo-princeton' />
           </Link>
+          <Tooltip id='princeton-tooltip'
+                   offset={20}
+                   className='footer-tooltip' />
 
-          <Link to='https://odus.princeton.edu'>
+          <Link to='https://odus.princeton.edu'
+                data-tooltip-id='odus-tooltip' 
+                data-tooltip-content='Office of the Dean of Undergraduate Students'>
             <div className='footer-logo-odus'/>
           </Link>
+          <Tooltip id='odus-tooltip'
+                   className='footer-tooltip' />
 
           <div className='footer-text'>
             © 2023 The Trustees of Princeton University
@@ -27,26 +37,40 @@ function Footer() {
               to='mailto:robot@princeton.edu'
               target='_blank'
               aria-label='Email'
-            > 
+              data-tooltip-id='email-tooltip' 
+              data-tooltip-content='Email us!'>
               <i className="fa fa-envelope" />
             </Link>
+            <Tooltip id='email-tooltip'
+                     offset={20}
+                     className='footer-tooltip' />
 
             <Link
               className='social-icon-link instagram'
               to='https://www.instagram.com/princetonrobotics/'
               target='_blank'
               aria-label='Instagram'
-            >
+              data-tooltip-id='insta-tooltip' 
+              data-tooltip-content='Follow us on Instagram!'>
               <i className='fab fa-instagram' />
             </Link>
+            <Tooltip id='insta-tooltip'
+                     offset={20}
+                     className='footer-tooltip' />
+
             <Link
               className='social-icon-link twitter'
               to='https://www.linkedin.com/company/princeton-robotics-club'
               target='_blank'
               aria-label='LinkedIn'
-            >
+              data-tooltip-id='linkedin-tooltip' 
+              data-tooltip-content='Follow us on LinkedIn!'>
               <i className='fab fa-linkedin' />
             </Link>
+            <Tooltip id='linkedin-tooltip'
+                     offset={20}
+                     className='footer-tooltip' />
+
           </div>
         </div>
       </section>

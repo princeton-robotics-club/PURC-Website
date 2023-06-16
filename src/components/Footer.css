@@ -11,6 +11,15 @@
   align-items: center;
 }
 
+.social-media-wrap .footer-tooltip {
+  color: black;
+  padding: 10px;
+  background-color: orange;
+  font-family: 'Century Gothic';
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
 .footer-logo-princeton {
   filter: brightness(80%);
   background-image: url(../images/princeton_logo.png);
