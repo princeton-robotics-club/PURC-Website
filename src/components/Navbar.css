@@ -23,30 +23,44 @@
   background-repeat: no-repeat;
   background-size: contain;
   margin-left: 20px;
+  margin-right: 20px;
   width: 60px;
   height: 60px;
   padding: 0;
   float:left;
+  transition: 0.1s all ease
+}
+
+.navbar-logo-image:hover {
+  background-image: url(../images/logo2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 19px;
+  margin-right: 18px;
+  width: 63px;
+  height: 63px;
+  padding: 0;
+  float:left;
+  transition: 0.1s all ease
 }
 
 .navbar-logo-text {
   white-space: nowrap;
   line-height: 28px;
-  margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
   font-size: 1.25rem;
   display: flex;
   font-weight: bold;
   font-family: 'Century Gothic';
-  transition: color 1s ease-out;
+  transition: color 0.4s ease-out;
   color: orange;
   float: right;
 }
 
 .navbar-logo-text:hover {
   color: orangered;
-  transition: color 1s ease-out;
+  transition: color 0.4s ease-out;
 }
 
 .nav-menu {
@@ -203,7 +217,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(80px, 20%);
+    transform: translate(100px, 20%);
   }
 
   .menu-icon {

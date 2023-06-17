@@ -1,0 +1,57 @@
+.body-bg {
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 200px);
+}
+
+.home-bg-img {
+  background-image: url('../../images/home_tessellation.png');
+  background-size: 200px;
+  filter: brightness(28%);
+  /* General attributes */
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  height: 100%;
+  z-index: -1;
+}
+
+.supp-bg-img {
+  background-image: url('../../images/support_tessellation.png');
+  background-size: 400px;
+  filter: brightness(26%);
+  /* General attributes */
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  height: 100%;
+  z-index: -1;
+}
+
+.article-centered {
+  background-color: #222;
+  width: calc(100vw - 300px);
+  min-height: calc(100vh - 200px);
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+@media screen and (max-width: 960px) {
+
+  .home-bg-img {
+    max-height: calc(100vh - 200px);
+  }
+
+  .supp-bg-img {
+    max-height: calc(100vh - 200px);
+  }
+
+  .article-centered {
+    width: calc(100vw - 50px);
+  }
+}
