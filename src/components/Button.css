@@ -14,7 +14,8 @@
   background-color: var(--primary);
   color: #242424;
   border: 1px solid var(--primary);
-  font-family: "Century Gothic"
+  font-family: 'Just Sans';
+  letter-spacing: 1px;
 }
 
 .btn--outline {
@@ -23,30 +24,33 @@
   padding: 8px 20px;
   border: 1px solid var(--primary);
   transition: all 0.3s ease-out;
-  font-size: 1px;
-  font-family: "Century Gothic"
+  font-size: 1.3rem;
+  font-family: 'Just Sans';
+  letter-spacing: 1px;
 }
 
 .btn--medium {
   margin-right: 20px;
   padding: 8px 20px;
-  font-size: 20px;
-  font-family: "Century Gothic"
+  font-size: 1.3rem;
+  font-family: 'Just Sans';
+  letter-spacing: 1px;
 }
 
 .btn--medium--colored {
   margin-right: 20px;
   padding: 8px 20px;
-  font-size: 20px;
-  font-family: "Century Gothic";
+  font-size: 1.3rem;
+  font-family: 'Just Sans';
+  letter-spacing: 1px;
   background-color: orangered;
   color:#2f2f2f;
 }
 
 .btn--large {
   padding: 12px 26px;
-  font-size: 20px;
-  font-family: "Century Gothic"
+  font-size: 1.3rem;
+  font-family: 'Just Sans';
 }
 
 .btn--medium:hover, .btn--large:hover {

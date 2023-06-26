@@ -21,7 +21,7 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <Routes>
+        <Routes className="content">
           <Route path='/' exact Component={Home} />
           <Route path='/projects' exact Component={Projects} />
           <Route path='/supporters' exact Component={Supporters} />

@@ -1,0 +1,86 @@
+.body-bg {
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 200px);
+}
+
+.title-blob {
+  background-color: rgba(85, 85, 85, 0.8);
+  text-align: center;
+  line-height: 80px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  height: 80px;
+  color: white;
+  font-family: 'Just Sans';
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  width: 100%;
+  display: block;
+}
+
+.home-bg-img {
+  background-image: url('../../images/home_tessellation.png');
+  background-size: 100px;
+  filter: brightness(26%);
+  /* General attributes */
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  height: 100%;
+  z-index: -1;
+}
+
+.article-centered {
+  background-color: transparent;
+  width: calc(100vw - 300px);
+  min-height: calc(100vh - 200px);
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.orange-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: orange;
+}
+
+.light-orange-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgba(255, 150, 100);
+}
+
+.red-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(255, 100, 100);
+}
+
+.orange-link:hover {
+  color: orangered;
+}
+
+.light-orange-link:hover {
+  color: red;
+}
+
+.red-link:hover {
+  color: rgb(255, 100, 200);
+}
+
+@media screen and (max-width: 960px) {
+
+  .home-bg-img {
+    max-height: calc(100vh - 200px);
+  }
+
+  .article-centered {
+    width: calc(100vw - 50px);
+  }
+}

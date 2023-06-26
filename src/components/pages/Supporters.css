@@ -1,0 +1,183 @@
+.supp-bg-img {
+  background-image: url('../../images/support_tessellation.png');
+  background-size: 300px;
+  filter: brightness(23%);
+  /* General attributes */
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  height: 100%;
+  z-index: -1;
+}
+
+.supp-intro-blob {
+  background-color: rgba(80, 60, 48, 0.8);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 25px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  text-underline-offset: 6px;
+  color: white;
+  font-family: 'Just Sans';
+  font-size: 1.2rem;
+  width: calc(100% - 60px);
+  display: block;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.supp-info-blob {
+  background-color: rgba(48, 48, 48, 0.7);
+  height: fit-content;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  text-underline-offset: 6px;
+  width: calc(100%);
+  display: block;
+  overflow: auto;
+}
+
+.img-e-quad {
+  border-radius: 10px;
+  height: 490px;
+  width: 45%;
+  display: block;
+  padding: 0;
+  background-position: center;
+  background-image: url('../../images/supporters/e_quad.jpg');
+  background-repeat: no-repeat;
+  background-size: fill;
+  color: yellow;
+  float: right;
+  transition: all 0.1s ease;
+}
+
+.supp-logo-seas {
+  border-radius: 10px;
+  height: 120px;
+  width: 100%;
+  background-color: rgba(255, 143, 0, 0.7);
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-image: url('../../images/supporters/princeton_seas.png');
+  background-repeat: no-repeat;
+  background-size: 280px;
+  color: yellow;
+  float: left;
+  transition: all 0.1s ease;
+}
+
+.supp-logo-seas:hover {
+  background-size: 290px;
+  transition: all 0.1s ease;
+}
+
+.supp-logo-keller {
+  border-radius: 10px;
+  height: 120px;
+  width: 100%;
+  background-color: rgba(255, 150, 100, 0.7);
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-image: url('../../images/supporters/keller_center.png');
+  background-repeat: no-repeat;
+  background-size: 240px;
+  color: yellow;
+  float: left;
+  transition: all 0.1s ease;
+}
+
+.supp-logo-keller:hover {
+  background-size: 250px;
+  transition: all 0.1s ease;
+}
+
+.supp-logo-cst {
+  border-radius: 10px;
+  height: 120px;
+  width: 100%;
+  background-color: rgba(255, 100, 100, 0.7);
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-image: url('../../images/supporters/cst.png');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  color: yellow;
+  float: left;
+  transition: all 0.1s ease;
+}
+
+.supp-logo-cst:hover {
+  background-size: 210px;
+  transition: all 0.1s ease;
+}
+
+.supp-info-text {
+  height: flex;
+  width: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  font-family: 'Just Sans';
+  font-size: 1.2rem;
+  line-height: 25px;
+  float: left;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.supp-info-text-e-quad {
+  height: flex;
+  width: calc(55% - 60px);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  font-family: 'Just Sans';
+  font-size: 1.2rem;
+  line-height: 25px;
+  float: left;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.dedent {
+  margin-left: -20px;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 1180px) {
+
+  .img-e-quad {
+    height: auto;
+  }
+
+  .supp-info-text-e-quad {
+    width: auto;
+  }
+
+}
+
+@media screen and (max-width: 960px) {
+
+  .supp-bg-img {
+    max-height: calc(100vh - 200px);
+  }
+
+  .dedent {
+    line-height: 25px;
+  }
+}

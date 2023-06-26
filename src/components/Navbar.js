@@ -110,17 +110,17 @@ function Navbar() {
               label = {'Supporters'}
               link  = {'/supporters'}
               pathString = {'/supporters'}
-              dropdown_options = {['S1', 'S2']}
-              dropdown_links = {['/supporters#s1', '/supporters#s2']}
+              dropdown_options = {[]}
+              dropdown_links = {[]}
               close_mobile = {closeMobileMenu}
             />
 
             <NavbarItem 
-              label = {'About'}
+              label = {'About Us'}
               link  = {'/about'}
               pathString = {'/about'}
-              dropdown_options = {['A1', 'A2']}
-              dropdown_links = {['/about#a1', '/about#a2']}
+              dropdown_options = {['Leaders', 'Members']}
+              dropdown_links = {['/about#leaders', '/about#members']}
               close_mobile = {closeMobileMenu}
             />
 

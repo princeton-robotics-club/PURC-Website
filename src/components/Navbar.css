@@ -1,10 +1,9 @@
 .navbar {
   background: linear-gradient(to right, #666 0%, #000 100%);
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -15,7 +14,7 @@
   max-width: 100%;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  height: 100px;
 }
 
 .navbar-logo-image {
@@ -24,8 +23,8 @@
   background-size: contain;
   margin-left: 20px;
   margin-right: 20px;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   padding: 0;
   float:left;
   transition: 0.1s all ease
@@ -37,8 +36,8 @@
   background-size: contain;
   margin-left: 19px;
   margin-right: 18px;
-  width: 63px;
-  height: 63px;
+  width: 73px;
+  height: 73px;
   padding: 0;
   float:left;
   transition: 0.1s all ease
@@ -46,13 +45,14 @@
 
 .navbar-logo-text {
   white-space: nowrap;
-  line-height: 28px;
+  line-height: 35px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   display: flex;
   font-weight: bold;
   font-family: 'Century Gothic';
+  letter-spacing: 1px;
   transition: color 0.4s ease-out;
   color: orange;
   float: right;
@@ -75,8 +75,9 @@
 }
 
 .nav-item {
-  line-height: 80px;
-  height: 80px;
+  line-height: 100px;
+  height: 100px;
+  font-size: 1.3rem;
 }
 
 .nav-links {
@@ -85,8 +86,9 @@
   align-items: center;
   text-decoration: none;
   padding: 0rem 1rem;
-  height: 80px;
-  font-family: 'Century Gothic';
+  height: 100px;
+  font-family: 'Just Sans';
+  letter-spacing: 1px;
   transition: all 0.2s ease-out;
 }
 
@@ -102,7 +104,8 @@
   text-decoration: none;
   padding: 0rem 1rem;
   height: 100%;
-  font-family: 'Century Gothic';
+  font-family: 'Just Sans';
+  letter-spacing: 1px;
   transition: all 0.2s ease-out;
   box-shadow: inset 0 -5px 0 0 orangered;
 }
@@ -132,8 +135,9 @@
   text-decoration: none;
   height: 100%;
   width: 100%;
-  font-family: 'Century Gothic';
-  font-size: 1rem;
+  font-family: 'Just Sans';
+  letter-spacing: 1px;
+  font-size: 1.1rem;
 }
 
 .fa-bars {
@@ -166,7 +170,7 @@
     position: absolute;
     margin:0;
     padding:0;
-    top: 80px;
+    top: 100px;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -175,7 +179,7 @@
   .nav-menu.active {
     background: #242222;
     position: absolute;
-    top: 80px;
+    top: 100px;
     padding-top: 30px;
     left: 0;
     opacity: 1;
@@ -228,7 +232,8 @@
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    font-family: 'Century Gothic';
+    font-family: 'Just Sans';
+    letter-spacing: 1px;
   }
 
   .fa-times {
@@ -249,7 +254,7 @@
     padding: 14px 20px;
     border: 1px solid #fff;
     transition: all 0.3s ease-out;
-    font-family: 'Century Gothic'
+    font-family: 'Just Sans'
   }
 
   .nav-links-mobile:hover {
@@ -272,6 +277,6 @@
     padding: 14px 20px;
     border: 1px solid orangered;
     transition: all 0.3s ease-out;
-    font-family: 'Century Gothic'
+    font-family: 'Just Sans'
   }
 }
