@@ -29,10 +29,8 @@ function Supporters() {
         <div className='supp-info-blob'> 
           <Link className='supp-logo-seas' 
                 to='https://engineering.princeton.edu/'
-                target='_blank'/>
-          
+                title='Princeton SEAS'/>
           <div>
-            <div className='img-e-quad'/> 
             <div className='supp-info-text-e-quad'> 
               Princeton's School of Engineering and Applied Science consists of six
               departments:
@@ -105,6 +103,7 @@ function Supporters() {
 
             </div>
           </div>
+          <div className='img-e-quad'/> 
         </div>
 
         <div className='supp-info-blob'> 

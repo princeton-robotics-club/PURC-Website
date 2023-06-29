@@ -1,0 +1,384 @@
+/* Navbar (Navigation Bar) rectangle */
+.navbar {
+
+  /* Height of navbar */
+  height: 100px;
+
+  /* Navbar always stays on top of screen, even when scrolling */
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Dark mode style */
+.navbar-dark {
+
+  /* Gradient from gray to black */
+  background: linear-gradient(to right, #666 0%, #000 100%);
+}
+
+/* Light mode style */
+.navbar-light {
+
+  /* Gradient from white to black */
+  background: linear-gradient(to right, #666 0%, #bbb 100%);
+}
+
+/* Navbar flexbox container */
+.navbar-container {
+
+  /* Nice flexbox spacing */
+  display: flex;
+
+  /* Horizontal centering */
+  justify-content: center;
+
+  /* Vertical centering */
+  align-items: center;
+
+  /* Necessary for even height for all components */
+  height: 100%;
+}
+
+/* PURC Logo - the robotic tiger */
+.navbar-logo-dark, .navbar-logo-light {
+
+  /* Prevent tessellation */
+  background-repeat: no-repeat;
+
+  /* Largest size that completely fits in container */
+  background-size: contain;
+
+  /* Margins */
+  margin-left: 20px;
+  margin-right: 20px;
+
+  /* Dimensions */
+  width: 70px;
+  height: 70px;
+}
+
+/* PURC Logo (Normal) */
+.navbar-logo-dark {
+
+  /* Source */
+  background-image: url(../../images/logo_dark.png);
+
+  /* Transition on un-hover */
+  transition: all 0.5s ease;
+}
+
+/* PURC Logo 2 (Eyes light up) */
+.navbar-logo-light {
+
+  /* Source */
+  background-image: url(../../images/logo_light.png);
+
+  /* Transition on hover */
+  transition: all 0.5s ease;
+}
+
+/* Logo Text (Princeton University Robotics Club) */
+.navbar-logo-text {
+  
+  /* Prevent extra line breaks when resizing */
+  white-space: nowrap;
+
+  /* Text font, spacing, and effects */
+  font-family: 'Century Gothic';
+  color: orange;
+  line-height: 35px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+  /* Remove the underlining from the link */
+  text-decoration: none;
+
+  /* Transition */
+  transition: color 0.4s ease-out;
+}
+
+/* Change color on hover */
+.navbar-logo-text:hover {color: orangered;}
+
+/* Navigation menu */
+.nav-menu {
+
+  /* Side-by-side options */
+  display: grid;
+
+  /* Declare grid columns */
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+
+  /* Remove default bullet points */
+  list-style: none;
+
+  /* Width (Up to 60% of screen width) */
+  width: 60vw;
+
+  /* Align all subtext to center */
+  text-align: center;
+
+  /* Push options to the right side */
+  justify-content: end;
+
+  /* Margin between options and Join button */
+  margin-right: 32px;
+}
+
+/* Items on the navbar */
+.nav-item {
+  
+  /* Vertically center text */
+  line-height: 100px;
+  height: 100px;
+
+  /* Font styling */
+  font-size: 1.3rem;
+}
+
+/* White for dark-mode, black for light-mode */
+.white-text { color: #fff; }
+.black-text { color: #000; }
+
+/* Navbar main link */
+.nav-links, .nav-links-here {
+
+  /* Font styling */
+  text-decoration: none;
+  font-family: 'Just Sans';
+  letter-spacing: 1px;
+
+  /* Sizing */
+  display: flex;
+  padding: 0rem 1rem;
+  height: 100px;
+  transition: all 0.5s ease-out;
+
+  /* Prevent extra line breaks when resizing */
+  white-space: nowrap;
+}
+
+/* Temporary orange box shadow on hover */
+.nav-links:hover {
+  box-shadow: inset 0 -5px 0 orange;
+  transition: all 0.5s ease-out;
+}
+
+/* Orange-red box shadow on target page */
+.nav-links-here {
+  box-shadow: inset 0 -5px 0 0 orangered;
+}
+
+/* Dropdown rectangle */
+.dropdown-rectangle {
+
+  /* Sizing */
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+
+  /* Formatting */
+  background: orange;
+  align-items: center;
+
+  /* Margin and padding */
+  box-shadow: inset 1px 0 orangered, inset -1px 0 orangered;
+
+  /* Transition */
+  transition: all 0.5s ease-out;
+}
+
+/* Dropdown rectangle - cursor to pointer on hover and shade box */
+.dropdown-rectangle:hover {
+  cursor: pointer;
+  background: orangered;
+  transition: all 0.5s ease-out;
+}
+
+/* Dropdown link */
+.dropdown-link {
+
+  /* Font style */
+  color: black;
+  text-decoration: none;
+  font-family: 'Just Sans';
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+
+  /* Sizing */
+  height: 100%;
+  width: 100%;
+}
+
+/* Menu icon (normally not visible, shown in mobile mode) */
+.menu-icon {
+  display: none;
+}
+
+/* Hide mobile-specific objects */
+.nav-links-mobile, .nav-links-mobile-red {
+  display: none;
+}
+
+/* Change the navigation bar style for mobile devices */
+@media screen and (max-width: 960px) {
+
+  /* Navigation menu for mobile */
+  .nav-menu {
+
+    /* Flexbox formatting */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    /* Style */
+    background: #242222;
+
+    /* Sizing and position */
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 130px;
+    left: -100%;
+
+    /* No margins or padding */
+    margin:0;
+    padding:0;
+    
+    /* Transition */
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+
+    /* Sizing and position */
+    position: absolute;
+    top: 100px;
+    padding-top: 30px;
+    left: 0;
+
+    /* Positioning relative to other elements */
+    z-index: 1;
+  }
+
+  /* Navigation menu items, relatively sized */
+  .nav-item {
+    height: 10vh;
+    line-height: 10vh;
+  }
+
+  /* Navigation menu links, relatively sized */
+  .nav-links, .nav-links-here {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 10vh;
+    display: table;
+  }
+
+  /* On hover, change color */
+  .nav-links:hover {
+
+    /* Coloring */
+    background-color: #fff;
+    color: #242424;
+
+    /* Hide the box shadow normally shown in desktop */
+    box-shadow: none;
+  }
+
+  /* Applies a red border to navigation links when on that page */
+  .nav-links-here {
+    box-shadow: inset 2px 2px orangered, inset -2px -2px orangered;
+  }
+
+  /* Fixed logo image location */
+  .navbar-logo-dark, .navbar-logo-light {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(3px, 8px);
+  }
+  
+  /* Fixed logo text location */
+  .navbar-logo-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(100px, 20%);
+  }
+
+  /* Menu icon info */
+  .menu-icon {
+
+    /* Arbitrary, positioning is kind of guess-and-check */
+    line-height: 45px;
+
+    /* Sizing and position */
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+
+    /* Font and styling */
+    color: white;
+    cursor: pointer;
+    font-family: 'Just Sans';
+    letter-spacing: 1px;
+  }
+
+  /* The bars icon in the mobile menu */
+  .fa-bars {
+    font-size: 1.8rem;
+  }
+
+  /* The X ("times") icon in the mobile menu */
+  .fa-times {
+    font-size: 2.2rem;
+  }
+
+  /* Design of the navigation menu links */
+  .nav-links-mobile, .nav-links-mobile-red {
+
+    /* Sizing and position */
+    display: block;
+    margin: 3% auto;
+    width: 80%;
+    padding: 14px 20px;
+
+    /* Formatting */
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    font-family: 'Just Sans';
+
+    /* Transition */
+    transition: all 0.3s ease-out;
+  }
+
+  /* Color change on hover */
+  .nav-links-mobile:hover {
+
+    /* Transition from transparent to filled */
+    background-color: orange;
+    color: #242424;
+    transition: 1s;
+
+    /* Removes typical box shadow */
+    box-shadow: none;
+  }
+
+  /* Border on page link when already visiting it */
+  .nav-links-mobile-red {
+    border: 1px solid orangered;
+  }
+}

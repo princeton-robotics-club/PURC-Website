@@ -48,7 +48,6 @@
   border-radius: 10px;
   height: 490px;
   width: 45%;
-  display: block;
   padding: 0;
   background-position: center;
   background-image: url('../../images/supporters/e_quad.jpg');
@@ -72,6 +71,7 @@
   background-size: 280px;
   color: yellow;
   float: left;
+  clear: both;
   transition: all 0.1s ease;
 }
 
@@ -139,7 +139,6 @@
 }
 
 .supp-info-text-e-quad {
-  height: flex;
   width: calc(55% - 60px);
   padding-top: 20px;
   padding-bottom: 20px;
