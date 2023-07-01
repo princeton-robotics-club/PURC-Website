@@ -24,7 +24,7 @@ function Navbar(props) {
 
   useEffect(() => {
       showButton();
-    }, []);
+  }, []);
 
   const location = useLocation();
 

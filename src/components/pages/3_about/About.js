@@ -1,13 +1,18 @@
 import React from 'react';
-import '../../App.css';
+import '../Generic.css';
 
-function About() {
+function About(props) {
+
+  const {
+    darkMode
+  } = props;
+
   return (
     <>
       <div className='body-bg'>
         <div className='about-bg-img'/>
         <div className='article-centered'>
-          <div className='title-blob'> ABOUT US </div>
+          <div className={'title-blob' + (darkMode ? ' title-blob-dark' : ' title-blob-light')}> ABOUT US </div>
         </div>
       </div>
     </>

@@ -11,11 +11,11 @@ import Footer from './components/footer/Footer';
 import './App.css';
 
 // Pages
-import Home from './components/pages/Home';
-import Projects from './components/pages/Projects';
-import Supporters from './components/pages/Supporters';
-import About from './components/pages/About';
-import Join from './components/pages/Join';
+import Home from './components/pages/0_home/Home';
+import Projects from './components/pages/1_projects/Projects';
+import Supporters from './components/pages/2_supporters/Supporters';
+import About from './components/pages/3_about/About';
+import Join from './components/pages/4_join/Join';
 
 function App() {
 
@@ -35,11 +35,11 @@ function App() {
           toggleDarkMode={toggleDarkMode}
         />
         <Routes className="content">
-          <Route path='/' exact element={<Home/>} />
-          <Route path='/projects' exact element={<Projects/>} />
+          <Route path='/'                 exact element={<Home darkMode={darkMode}/>} />
+          <Route path='/projects'     exact element={<Projects darkMode={darkMode}/>} />
           <Route path='/supporters' exact element={<Supporters darkMode={darkMode}/>} />
-          <Route path='/about' exact element={<About/>} />
-          <Route path='/join' exact element={<Join/>} />
+          <Route path='/about'           exact element={<About darkMode={darkMode}/>} />
+          <Route path='/join'             exact element={<Join darkMode={darkMode}/>} />
         </Routes>
         <Footer
           darkMode={darkMode}

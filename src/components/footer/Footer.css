@@ -56,7 +56,7 @@
 
 /* Footer logo for Princeton (links to the Princeton website) */
 .footer-logo-princeton {
-  background-image: url(../../images/princeton_logo.png);
+  background-image: url(../../images/footer/princeton_logo.png);
   background-repeat: no-repeat;
   background-size: contain;
   margin-left: 20px;
@@ -89,7 +89,7 @@
 
 /* Footer logo for ODUS (Links to the ODUS website) */
 .footer-logo-odus {
-  background-image: url(../../images/odus_logo.png);
+  background-image: url(../../images/footer/odus_logo.png);
   background-repeat: no-repeat;
   background-size: contain;
   margin-left: 20px;

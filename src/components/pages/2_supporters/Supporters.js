@@ -1,6 +1,5 @@
 import React from 'react';
-import '../../App.css';
-import './Generic.css';
+import '../Generic.css';
 import './Supporters.css'
 import { Link } from 'react-router-dom';
 
@@ -42,21 +41,21 @@ function Supporters(props) {
                   <Link className={'link'+(darkMode ? ' link-orange' : ' link-coral')} 
                         to='https://www.cs.princeton.edu/'>
                     Computer Science
-                  </Link>
+                  </Link> (supporter!)
                 </li>
                 
                 <li>
                   <Link className={'link'+(darkMode ? ' link-orange' : ' link-coral')} 
                         to='https://ece.princeton.edu/'>
                     Electrical & Computer Eng.
-                  </Link>
+                  </Link> (supporter!)
                 </li>
 
                 <li className='small-text'>
                   <Link className={'link'+(darkMode ? ' link-orange' : ' link-coral')} 
                         to='https://mae.princeton.edu/'>
                     Mechanical & Aerospace Eng.
-                  </Link>
+                  </Link> (supporter!)
                 </li>
 
                 <li className='small-text'>
@@ -109,13 +108,13 @@ function Supporters(props) {
         </div>
 
         <div className={'supp-info-blob half left'+(darkMode?' supp-info-blob-dark':' supp-info-blob-light')}> 
-          <Link className='supp-logo-keller' 
+          <Link className={'supp-logo-keller'+(darkMode?' supp-logo-keller-dark':' supp-logo-keller-light')}
                 to='https://kellercenter.princeton.edu'/>
           <div className='supp-info-text'> 
             The Keller Center offers opportunities that bridge engineering, 
             entrepreneurship, and the liberal arts to equip students to solve critical 
             societal challenges. As part of their mission, they host an 
-            open-access <Link className={'link'+(darkMode ? ' link-dark-orange' : ' link-coral')} 
+            open-access <Link className={'link'+(darkMode ? ' link-dark-orange' : ' link-dark-orange')} 
                               to='https://kellercenter.princeton.edu/keller-center-makerspace'>
             Keller Center Makerspace</Link> in the Engineering Quad, with laser cutters, printers, scanners, 
             wood-working tools, and more.
@@ -123,10 +122,10 @@ function Supporters(props) {
         </div>
 
         <div className={'supp-info-blob half right'+(darkMode?' supp-info-blob-dark':' supp-info-blob-light')}> 
-          <Link className='supp-logo-cst' 
+          <Link className={'supp-logo-cst'+(darkMode?' supp-logo-cst-dark':' supp-logo-cst-light')} 
                 to='https://cst.princeton.edu'/>
           <div className='supp-info-text'> 
-            The Council for Science and Technology runs <Link className={'link'+(darkMode ? ' link-red' : ' link-coral')} 
+            The Council for Science and Technology runs <Link className={'link'+(darkMode ? ' link-red' : ' link-red')} 
                         to='https://cst.princeton.edu/studiolab'>StudioLab</Link>, a 
             technology-based makerspace in the basement of Fine Hall, equipped with 
             a variety of tools including 3D printers, soldering irons, drills, CNC 
