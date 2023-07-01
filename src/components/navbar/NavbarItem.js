@@ -26,18 +26,14 @@ function NavbarItem(props) {
     setUnderline(location.pathname.indexOf(pathString) === 0);
   }, [location.pathname, pathString, underline]);
 
-  const [colorStyle, setColorStyle] = useState('black-text');
-  useEffect(() => {
-    setColorStyle(darkMode ? 'white-text' : 'black-text');
-  }, [darkMode]);
-
   window.addEventListener('resize', hideDrop);
   
   return (
     <li className='nav-item' key={label} onMouseLeave={hideDrop}>
       <Link to={link}
           onMouseEnter={showDrop}  
-          className={(forceStyle ? forceStyle : (underline ? 'nav-links-here ' : 'nav-links ') + colorStyle)} 
+          className={(forceStyle ? forceStyle : (underline ? 'nav-links-here' : 'nav-links') 
+                      + (darkMode ? ' nav-links-dark' : ' nav-links-light'))} 
           onClick={closeMobile}
       > {label} </Link>
       {drop && 

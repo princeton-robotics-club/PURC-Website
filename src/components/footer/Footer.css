@@ -1,4 +1,4 @@
-/* Footer */
+/* Main footer container */
 .footer-container {
   position: flex;
   margin: 0;
@@ -13,39 +13,49 @@
   align-items: center;
 }
 
-.white-text { color: #fff; }
-.gray-text  { color: #222; }
-
-.light-text { color: #aaa; }
-.dark-text  { color: #222; }
-
-.dark-mode-footer {
-  background: linear-gradient(to bottom, #222 0%, #111 100%);
+.footer-container-dark {
+  background: linear-gradient(to bottom, #222 0%, #050505 100%);
 }
 
-.light-mode-footer {
-  background: linear-gradient(to bottom, #ddd 0%, #888 100%);
+.footer-container-light {
+  background: #bbb;
+  margin-top: 25px;
 }
 
-.light-png {
-  filter: grayscale(1) brightness(80%);
+/* ------------------------------------------------------------------------- */
+
+/* Container to hold social media icons */
+.social-media-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
 }
 
-.dark-png {
-  filter: brightness(25%);
+.social-media-wrap-dark {
+  margin: 40px auto 0 auto;
 }
+
+.social-media-wrap-light {
+  margin: 15px auto 0 auto;
+}
+
+/* ------------------------------------------------------------------------- */
 
 /* Tooltip, orange speech bubble upon hovering */
-.social-media-wrap .footer-tooltip {
+.footer-tooltip {
   color: black;
   padding: 10px;
-  background-color: orange;
+  background-color: coral;
   font-family: 'Just Sans';
   font-size: 1rem;
 }
 
-.footer-logo-princeton {
+/* ------------------------------------------------------------------------- */
 
+/* Footer logo for Princeton (links to the Princeton website) */
+.footer-logo-princeton {
   background-image: url(../../images/princeton_logo.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -57,11 +67,27 @@
   float:left;
 }
 
-.footer-logo-princeton:hover {
-  filter: brightness(70%) sepia(1) hue-rotate(-30deg) saturate(300%);
+.footer-logo-princeton-dark {
+  filter: grayscale(1) brightness(80%);
+}
+
+.footer-logo-princeton-light {
+  filter: brightness(20%);
+}
+
+.footer-logo-princeton-dark:hover {
+  filter: brightness(50%) sepia(1) hue-rotate(-36deg) saturate(300%);
   transition: 0.2s all ease-out;
 }
 
+.footer-logo-princeton-light:hover {
+  filter: brightness(30%) sepia(1) hue-rotate(-10deg) saturate(700%);
+  transition: 0.2s all ease-out;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* Footer logo for ODUS (Links to the ODUS website) */
 .footer-logo-odus {
   background-image: url(../../images/odus_logo.png);
   background-repeat: no-repeat;
@@ -79,6 +105,16 @@
   transition: 0.2s all ease-out;
 }
 
+.footer-logo-odus-dark {
+  filter: grayscale(1);
+}
+
+.footer-logo-odus-light {
+  filter: brightness(25%);
+}
+
+/* ------------------------------------------------------------------------- */
+
 .footer-text {
   white-space: nowrap;
   line-height: 30px;
@@ -94,21 +130,23 @@
   float: right;
 }
 
+.footer-text-dark { 
+  color: #aaa; 
+}
+
+.footer-text-light { 
+  color: #222; 
+}
+
+/* ------------------------------------------------------------------------- */
+
 /* Container to hold social media info */
 .social-media {
   max-width: 1000px;
   width: 100%;
 }
 
-/* Container to hold social media icons */
-.social-media-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  max-width: 1000px;
-  margin: 40px auto 0 auto;
-}
+/* ------------------------------------------------------------------------- */
 
 /* Social media icons */
 .social-icons {
@@ -120,16 +158,31 @@
   width: 135px;
 }
 
+/* ------------------------------------------------------------------------- */
+
 /* Social media icon links */
 .social-icon-link {
   font-size: 1.5rem;
 }
 
-/* Icons change color upon hover */
-.social-icon-link:hover {
-  color: orange;
-  font-size: 1.5rem;
+.social-icon-link-dark {
+  color: #fff;
 }
+
+.social-icon-link-light  {
+  color: #222;
+}
+
+.social-icon-link-dark:hover {
+  color: coral;
+}
+
+.social-icon-link-light:hover {
+  color: coral;
+  filter: brightness(80%);
+}
+
+/* ------------------------------------------------------------------------- */
 
 /* Mobile mode: change from sideways to stacked */
 @media screen and (max-width: 960px) {

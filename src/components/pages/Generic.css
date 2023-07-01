@@ -5,21 +5,31 @@
 }
 
 .title-blob {
-  background-color: rgba(85, 85, 85, 0.8);
   text-align: center;
-  line-height: 80px;
+  line-height: 100px;
   margin-top: 40px;
   margin-bottom: 30px;
   border-radius: 10px;
-  height: 80px;
-  color: white;
+  height: 100px;
   font-family: 'Just Sans';
-  font-size: 2rem;
   font-weight: bold;
+  font-size: 3rem;
   letter-spacing: 2px;
-  width: 100%;
   display: block;
 }
+
+.title-blob-dark {
+  background-color: rgba(80, 80, 80, 0.8);
+  color: white;
+  transition: 0.5s;
+}
+
+.title-blob-light {
+  background-color: rgba(149, 140, 140, 0.2);
+  color: black;
+  transition: 0.5s;
+}
+
 
 .home-bg-img {
   background-image: url('../../images/home_tessellation.png');
@@ -44,25 +54,30 @@
   display: block;
 }
 
-.orange-link {
+.link {
   text-decoration: none;
   font-weight: bold;
+}
+
+.link-orange {
   color: orange;
 }
 
-.light-orange-link {
-  text-decoration: none;
-  font-weight: bold;
+.link-coral {
+  color: coral;
+}
+
+.link-dark-orange {
   color: rgba(255, 150, 100);
 }
 
-.red-link {
+.link-red {
   text-decoration: none;
   font-weight: bold;
   color: rgb(255, 100, 100);
 }
 
-.orange-link:hover {
+.link-orange:hover, .link-coral:hover {
   color: orangered;
 }
 

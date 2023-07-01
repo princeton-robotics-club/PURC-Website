@@ -29,7 +29,7 @@ export const Button = ({
     <Ripples>
       <Link to='/join' className='btn-mobile'>
         <button
-          className={`${colorStyle} ${checkButtonStyle} ${checkButtonSize}`}
+          className={`btn ${colorStyle} ${checkButtonStyle} ${checkButtonSize}`}
           onClick={onClick}
           type={type}
         >

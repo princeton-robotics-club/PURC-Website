@@ -1,4 +1,4 @@
-/* Navbar (Navigation Bar) rectangle */
+/* Main navigation bar */
 .navbar {
 
   /* Height of navbar */
@@ -14,15 +14,17 @@
 .navbar-dark {
 
   /* Gradient from gray to black */
-  background: linear-gradient(to right, #666 0%, #000 100%);
+  background: linear-gradient(to right, #555 0%, #000 100%);
 }
 
 /* Light mode style */
 .navbar-light {
 
   /* Gradient from white to black */
-  background: linear-gradient(to right, #666 0%, #bbb 100%);
+  background: linear-gradient(to right, #555 0%, #bbb 100%);
 }
+
+/* ------------------------------------------------------------------------- */
 
 /* Navbar flexbox container */
 .navbar-container {
@@ -40,8 +42,10 @@
   height: 100%;
 }
 
+/* ------------------------------------------------------------------------- */
+
 /* PURC Logo - the robotic tiger */
-.navbar-logo-dark, .navbar-logo-light {
+.navbar-logo {
 
   /* Prevent tessellation */
   background-repeat: no-repeat;
@@ -78,6 +82,16 @@
   transition: all 0.5s ease;
 }
 
+.navbar-container .navbar-tooltip {
+  color: black;
+  padding: 10px;
+  background-color: coral;
+  font-family: 'Just Sans';
+  font-size: 1rem;
+}
+
+/* ------------------------------------------------------------------------- */
+
 /* Logo Text (Princeton University Robotics Club) */
 .navbar-logo-text {
   
@@ -86,7 +100,6 @@
 
   /* Text font, spacing, and effects */
   font-family: 'Century Gothic';
-  color: orange;
   line-height: 35px;
   font-size: 1.5rem;
   font-weight: bold;
@@ -100,7 +113,19 @@
 }
 
 /* Change color on hover */
-.navbar-logo-text:hover {color: orangered;}
+.navbar-logo-text:hover {
+  color: orangered;
+}
+
+.navbar-logo-text-dark {
+  color: orange;
+}
+
+.navbar-logo-text-light {
+  color: orange;
+}
+
+/* ------------------------------------------------------------------------- */
 
 /* Navigation menu */
 .nav-menu {
@@ -128,6 +153,8 @@
   margin-right: 32px;
 }
 
+/* ------------------------------------------------------------------------- */
+
 /* Items on the navbar */
 .nav-item {
   
@@ -139,9 +166,7 @@
   font-size: 1.3rem;
 }
 
-/* White for dark-mode, black for light-mode */
-.white-text { color: #fff; }
-.black-text { color: #000; }
+/* ------------------------------------------------------------------------- */
 
 /* Navbar main link */
 .nav-links, .nav-links-here {
@@ -172,6 +197,12 @@
   box-shadow: inset 0 -5px 0 0 orangered;
 }
 
+/* White for dark-mode, black for light-mode */
+.nav-links-dark  { color: #fff; }
+.nav-links-light { color: #000; }
+
+/* ------------------------------------------------------------------------- */
+
 /* Dropdown rectangle */
 .dropdown-rectangle {
 
@@ -198,6 +229,8 @@
   transition: all 0.5s ease-out;
 }
 
+/* ------------------------------------------------------------------------- */
+
 /* Dropdown link */
 .dropdown-link {
 
@@ -213,6 +246,8 @@
   width: 100%;
 }
 
+/* ------------------------------------------------------------------------- */
+
 /* Menu icon (normally not visible, shown in mobile mode) */
 .menu-icon {
   display: none;
@@ -222,6 +257,8 @@
 .nav-links-mobile, .nav-links-mobile-red {
   display: none;
 }
+
+/* ------------------------------------------------------------------------- */
 
 /* Change the navigation bar style for mobile devices */
 @media screen and (max-width: 960px) {
@@ -297,7 +334,7 @@
   }
 
   /* Fixed logo image location */
-  .navbar-logo-dark, .navbar-logo-light {
+  .navbar-logo {
     position: absolute;
     top: 0;
     left: 0;

@@ -1,7 +1,5 @@
-/* Button (dark mode) */
-.btn--dark {
-  --primary: #fff;
-  color: #fff;
+/* Button */
+.btn {
   padding: 8px 20px;
   border-radius: 2px;
   outline: none;
@@ -10,16 +8,14 @@
   font-family: 'Just Sans';
 }
 
-/* Button (light mode) */
+.btn--dark {
+  --primary: #fff;
+  color: #fff;
+}
+
 .btn--light {
   --primary: #000;
   color: #000;
-  padding: 8px 20px;
-  border-radius: 2px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  font-family: 'Just Sans';
 }
 
 /* Filled */
@@ -42,27 +38,29 @@
 
 /* Medium */
 .btn--medium, .btn--medium--colored {
-  margin-right: 20px;
+  margin-right: 40px;
   padding: 8px 20px;
   font-size: 1.3rem;
   letter-spacing: 1px;
+  transition: all 0.5s ease;
 }
 
 /* Large */
 .btn--large, .btn--large--colored {
   padding: 12px 26px;
   font-size: 1.3rem;
+  transition: all 0.5s ease;
 }
 
 /* Orange-red, for when we are on this page */
-.btn--medium--colored, .btn--medium--colored {
+.btn--medium--colored, .btn--large--colored {
   background-color: orangered;
   color:#2f2f2f;
+  transition: all 0.5s ease;
 }
 
 /* Orange on hover */
 .btn--medium:hover, .btn--large:hover {
   background-color: orange;
   color:#2f2f2f;
-  transition: all 0.3 ease-out;
 }

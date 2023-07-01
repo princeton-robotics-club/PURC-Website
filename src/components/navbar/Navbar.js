@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '../button/Button';
 import NavbarItem from './NavbarItem';
+import { Tooltip } from 'react-tooltip';
 import './Navbar.css';
 
 function Navbar(props) {
@@ -39,11 +40,15 @@ function Navbar(props) {
         <div className='navbar-container'>
 
           <Link onClick={() => {closeMobileMenu(); toggleDarkMode();}}>
-            <div className={darkMode ? 'navbar-logo-dark' : 'navbar-logo-light'}/>
+            <div className={'navbar-logo' + (darkMode ? ' navbar-logo-dark' : ' navbar-logo-light')}
+                 data-tooltip-id='logo-tooltip' 
+                 data-tooltip-content='Click me to toggle dark mode!'/>
           </Link>
+          <Tooltip id='logo-tooltip'
+                   className='navbar-tooltip' />
 
           <Link to='/' onClick={closeMobileMenu}
-                className='navbar-logo-text'>
+                className={'navbar-logo-text' + (darkMode ? ' navbar-logo-text-dark' : ' navbar-logo-text-light')}>
             Princeton University <br/> Robotics Club
           </Link>
 

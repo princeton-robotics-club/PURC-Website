@@ -37,7 +37,7 @@ function App() {
         <Routes className="content">
           <Route path='/' exact element={<Home/>} />
           <Route path='/projects' exact element={<Projects/>} />
-          <Route path='/supporters' exact element={<Supporters/>} />
+          <Route path='/supporters' exact element={<Supporters darkMode={darkMode}/>} />
           <Route path='/about' exact element={<About/>} />
           <Route path='/join' exact element={<Join/>} />
         </Routes>
