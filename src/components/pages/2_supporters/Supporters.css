@@ -1,7 +1,6 @@
 .supp-bg-img {
   background-image: url('../../../images/supporters/_bg_support.png');
   background-size: 300px;
-  /* General attributes */
   position: fixed;
   left: 0;
   right: 0;
@@ -17,85 +16,12 @@
 }
 
 .supp-bg-img-light {
-  opacity: 0.3;
-  filter: brightness(125%);
+  opacity: 0.1;
+  filter: brightness(100%);
   transition: 0.5s;
 }
 
 /* ------------------------------------------------------------------------- */
-
-.supp-intro-blob {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
-  line-height: 25px;
-  margin-top: 0px;
-  margin-bottom: 30px;
-  border: 2px solid;
-  border-radius: 10px;
-  text-underline-offset: 6px;
-  font-family: 'Just Sans';
-  font-size: 1.2rem;
-  width: calc(100% - 60px);
-  display: block;
-  text-align: justify;
-  hyphens: auto;
-}
-
-.supp-intro-blob-dark {
-  border-color: rgba(80, 80, 80, 0.7);
-  background-color: rgba(48, 48, 48, 0.7);
-  color: white;
-}
-
-.supp-intro-blob-light {
-  border-color: rgba(140, 140, 140, 0.2);
-  background-color: rgba(235, 235, 235, 0.5);
-  color: black;
-}
-
-.supp-info-blob {
-  height: fit-content;
-  margin-top: 0px;
-  margin-bottom: 30px;
-  border: 2px solid;
-  border-radius: 10px;
-  text-underline-offset: 6px;
-  display: block;
-  overflow: auto;
-  float: left;
-}
-
-.full {
-  width: calc(100%);
-}
-
-.half {
-  width: calc(48%);
-}
-
-.left {
-  width: calc(46%);
-  float: left;
-}
-
-.right {
-  width: calc(51%);
-  float: right;
-}
-
-.supp-info-blob-dark {
-  border-color: rgba(140, 140, 140, 0.2);
-  background-color: rgba(48, 48, 48, 0.7);
-  color: white;
-}
-
-.supp-info-blob-light {
-  border-color: rgba(140, 140, 140, 0.2);
-  background-color: rgba(235, 235, 235, 0.5);
-  color: black;
-}
 
 .img-e-quad {
   border-radius: 0px 0px 10px 0px;
@@ -110,6 +36,8 @@
   float: right;
   transition: all 0.1s ease;
 }
+
+/* ------------------------------------------------------------------------- */
 
 .supp-logo-seas {
   border-radius: 8px 8px 0px 0px;
@@ -140,6 +68,8 @@
   filter: invert(1);
 }
 
+/* ------------------------------------------------------------------------- */
+
 .supp-logo-keller {
   border-radius: 8px 8px 0px 0px;
   height: 100px;
@@ -168,6 +98,8 @@
   background-color: rgba(0, 105, 155, 0.3);
   filter: invert(1);
 }
+
+/* ------------------------------------------------------------------------- */
 
 .supp-logo-cst {
   border-radius: 8px 8px 0px 0px;
@@ -198,6 +130,18 @@
   filter: invert(1);
 }
 
+/* ------------------------------------------------------------------------- */
+
+.text-box-keller {
+  width: calc(49% - 40px);
+  float: left;
+}
+
+.text-box-cst {
+  width: calc(51%);
+  float: right;
+}
+
 .supp-info-text {
   height: flex;
   width: auto;
@@ -205,34 +149,22 @@
   padding-bottom: 20px;
   padding-left: 30px;
   padding-right: 30px;
-  font-family: 'Just Sans';
-  font-size: 1.2rem;
-  line-height: 25px;
   float: left;
-  text-align: justify;
-  hyphens: auto;
 }
 
 .supp-info-text-e-quad {
   width: calc(55% - 60px);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-family: 'Just Sans';
-  font-size: 1.2rem;
-  line-height: 25px;
-  float: left;
-  text-align: justify;
-  hyphens: auto;
 }
 
-.dedent {
-  margin-left: -20px;
-  line-height: 30px;
+/* ------------------------------------------------------------------------- */
+
+.mobile-break {
+  display: none;
 }
 
-@media screen and (max-width: 1180px) {
+/* ------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1250px) {
 
   .img-e-quad {
     height: auto;
@@ -244,25 +176,32 @@
 
 }
 
+/* ------------------------------------------------------------------------- */
+
 @media screen and (max-width: 960px) {
 
   .supp-bg-img {
     max-height: calc(100vh - 200px);
   }
-
-  .half {
+  
+  .text-box-keller {
     width: calc(100%);
   }
   
-  .left {
-    width: calc(100%);
-  }
-  
-  .right {
+  .text-box-cst {
     width: calc(100%);
   }
 
   .dedent {
     line-height: 25px;
+  }
+}
+
+/* ------------------------------------------------------------------------- */
+
+@media screen and (max-width: 532px) {
+
+  .mobile-break {
+    display: inline-block;
   }
 }

@@ -14,7 +14,7 @@ function Supporters(props) {
       <div className={'supp-bg-img' + (darkMode ? ' supp-bg-img-dark' : ' supp-bg-img-light')}/>
       <section className='article-centered'>
         <div className={'title-blob' + (darkMode ? ' title-blob-dark' : ' title-blob-light')}> SUPPORTERS </div>
-        <div className={'supp-intro-blob' + (darkMode ? ' supp-intro-blob-dark' : ' supp-intro-blob-light')}> 
+        <div className={'text-box text-box-padded' + (darkMode ? ' text-box-dark' : ' text-box-light')}> 
           None of our projects would be possible without the funding, technical 
           advice, tools, and resources of our supporters.
           <br/>
@@ -27,13 +27,13 @@ function Supporters(props) {
           team as a donor or advisee. We appreciate your help!
         </div>
 
-        <div className={'supp-info-blob full'+(darkMode?' supp-info-blob-dark':' supp-info-blob-light')}> 
+        <div className={'text-box full-width'+(darkMode?' text-box-dark':' text-box-light')}> 
           <Link className={'supp-logo-seas'+(darkMode?' supp-logo-seas-dark':' supp-logo-seas-light')}
                 to='https://engineering.princeton.edu/'
                 title='Princeton SEAS'/>
           <div>
-            <div className='supp-info-text-e-quad'> 
-              Princeton's School of Engineering and Applied Science consists of six
+            <div className='supp-info-text supp-info-text-e-quad'> 
+              The School of Engineering and Applied Science at Princeton consists of six
               departments:
               <ul className='dedent'>
                 
@@ -41,38 +41,38 @@ function Supporters(props) {
                   <Link className={'link'+(darkMode ? ' link-orange' : ' link-coral')} 
                         to='https://www.cs.princeton.edu/'>
                     Computer Science
-                  </Link> (supporter!)
+                  </Link> <br className='mobile-break'/>(current supporter!)
                 </li>
                 
                 <li>
                   <Link className={'link'+(darkMode ? ' link-orange' : ' link-coral')} 
                         to='https://ece.princeton.edu/'>
                     Electrical & Computer Eng.
-                  </Link> (supporter!)
+                  </Link> <br className='mobile-break'/>(current supporter!)
                 </li>
 
-                <li className='small-text'>
+                <li>
                   <Link className={'link'+(darkMode ? ' link-orange' : ' link-coral')} 
                         to='https://mae.princeton.edu/'>
                     Mechanical & Aerospace Eng.
-                  </Link> (supporter!)
+                  </Link> <br className='mobile-break'/>(current supporter!)
                 </li>
 
-                <li className='small-text'>
-                  <Link className={'link'+(darkMode ? ' link-orange' : ' link-coral')} o
+                <li>
+                  <Link className={'link'+(darkMode ? ' link-orange' : ' link-coral')}
                         to='https://orfe.princeton.edu/'>
                     Ops. Research & Financial Eng.
                   </Link>
                 </li>
 
-                <li className='small-text'>
+                <li>
                   <Link className={'link'+(darkMode ? ' link-orange' : ' link-coral')} 
                         to='https://cee.princeton.edu/'>
                     Civil & Environmental Eng.
                   </Link>
                 </li>
 
-                <li className='small-text'>
+                <li>
                   <Link className={'link'+(darkMode ? ' link-orange' : ' link-coral')} 
                         to='https://cbe.princeton.edu/'>
                     Chemical & Biological Eng.
@@ -81,24 +81,24 @@ function Supporters(props) {
 
               </ul>
 
-              Our students also make use of several engineering resources offered
+              Our members also make use of several engineering resources offered
               by SEAS, including:
 
               <ul className='dedent'>
                 <li>
                   <Link className={'link'+(darkMode ? ' link-orange' : ' link-coral')}
                         to='https://ece.princeton.edu/academics/undergraduate/student-projects'>
-                    ECE "Car Lab"</Link> (in the E-Quad basement)
+                    ECE "Car Lab"</Link> <br className='mobile-break'/>(in the E-Quad basement)
                 </li>
                 <li>
                   <Link className={'link'+(darkMode ? ' link-orange' : ' link-coral')} 
                         to='https://mae.princeton.edu/about-mae/spotlight/duo-behind-maes-machine-shop'>
-                    MAE Machine Shop</Link> (in the E-Quad basement)
+                    MAE Machine Shop</Link> <br className='mobile-break'/>(in the E-Quad basement)
                 </li>
                 <li>
                   <Link className={'link'+(darkMode ? ' link-orange' : ' link-coral')} 
                         to='https://www.jacobswyper.com/projects/princeton-university-seas-robotics-laboratory'>
-                    Robotics Lab</Link> (in the E-Quad F-Wing)
+                    Robotics Lab</Link> <br className='mobile-break'/>(in the E-Quad F-Wing)
                 </li>
               </ul>
 
@@ -107,7 +107,7 @@ function Supporters(props) {
           <div className='img-e-quad'/> 
         </div>
 
-        <div className={'supp-info-blob half left'+(darkMode?' supp-info-blob-dark':' supp-info-blob-light')}> 
+        <div className={'text-box text-box-keller'+(darkMode?' text-box-dark':' text-box-light')}> 
           <Link className={'supp-logo-keller'+(darkMode?' supp-logo-keller-dark':' supp-logo-keller-light')}
                 to='https://kellercenter.princeton.edu'/>
           <div className='supp-info-text'> 
@@ -121,7 +121,7 @@ function Supporters(props) {
           </div>
         </div>
 
-        <div className={'supp-info-blob half right'+(darkMode?' supp-info-blob-dark':' supp-info-blob-light')}> 
+        <div className={'text-box half text-box-cst'+(darkMode?' text-box-dark':' text-box-light')}> 
           <Link className={'supp-logo-cst'+(darkMode?' supp-logo-cst-dark':' supp-logo-cst-light')} 
                 to='https://cst.princeton.edu'/>
           <div className='supp-info-text'> 

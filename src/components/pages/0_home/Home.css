@@ -1,0 +1,13 @@
+.home-bg-img {
+  background-image: url('../../images/home_tessellation.png');
+  background-size: 100px;
+  filter: brightness(26%);
+  /* General attributes */
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  height: 100%;
+  z-index: -1;
+}

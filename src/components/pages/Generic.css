@@ -1,8 +1,10 @@
 .body-bg {
   display: flex;
   justify-content: center;
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 230px);
 }
+
+/* ------------------------------------------------------------------------- */
 
 .title-blob {
   text-align: center;
@@ -30,34 +32,77 @@
   transition: 0.5s;
 }
 
+/* ------------------------------------------------------------------------- */
 
-.home-bg-img {
-  background-image: url('../../images/home_tessellation.png');
-  background-size: 100px;
-  filter: brightness(26%);
-  /* General attributes */
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: 1;
+.text-box {
+  height: -moz-max-content;
+  height: fit-content;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  border: 2px solid;
+  border-radius: 10px;
+  font-family: 'Just Sans';
+  font-size: 1.2rem;
+  line-height: 25px;
   display: block;
-  height: 100%;
-  z-index: -1;
+  overflow: auto;
+  float: left;
+  text-align: justify;
+  hyphens: auto;
 }
+
+.text-box-dark {
+  border-color: rgba(140, 140, 140, 0.2);
+  background-color: rgba(48, 48, 48, 0.7);
+  color: white;
+}
+
+.text-box-light {
+  border-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(235, 235, 235, 0.5);
+  color: black;
+}
+
+.text-box-padded {
+  width: calc(100% - 60px);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* ------------------------------------------------------------------------- */
+
+.full-width {
+  width: 100%;
+}
+
+/* ------------------------------------------------------------------------- */
+
+.dedent {
+  margin-left: -20px;
+  line-height: 30px;
+}
+
+/* ------------------------------------------------------------------------- */
 
 .article-centered {
   background-color: transparent;
   width: calc(100vw - 300px);
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 230px);
   margin: 0;
   padding: 0;
   display: block;
 }
 
+/* ------------------------------------------------------------------------- */
+
 .link {
   text-decoration: none;
   font-weight: bold;
 }
+
+/* ------------------------------------------------------------------------- */
 
 .link-orange {
   color: orange;
@@ -67,9 +112,21 @@
   color: coral;
 }
 
+.link-orange:hover, .link-coral:hover {
+  color: orangered;
+}
+
+/* ------------------------------------------------------------------------- */
+
 .link-dark-orange {
   color: rgba(255, 150, 100);
 }
+
+.link-dark-orange:hover {
+  color: red;
+}
+
+/* ------------------------------------------------------------------------- */
 
 .link-red {
   text-decoration: none;
@@ -77,17 +134,11 @@
   color: rgb(255, 100, 100);
 }
 
-.link-orange:hover, .link-coral:hover {
-  color: orangered;
-}
-
-.light-orange-link:hover {
-  color: red;
-}
-
 .red-link:hover {
   color: rgb(255, 100, 200);
 }
+
+/* ------------------------------------------------------------------------- */
 
 @media screen and (max-width: 960px) {
 

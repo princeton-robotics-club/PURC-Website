@@ -18,18 +18,18 @@ function Footer(props) {
                 data-tooltip-id='princeton-tooltip' 
                 data-tooltip-content='Princeton University&#39;s website'>
             <div className={'footer-logo-princeton' + (darkMode ? ' footer-logo-princeton-dark' : ' footer-logo-princeton-light')} />
-            <Tooltip id='princeton-tooltip'
+          </Link>
+          <Tooltip id='princeton-tooltip'
                    offset={20}
                    className='footer-tooltip' />
-          </Link>
 
           <Link to='https://odus.princeton.edu'
                 data-tooltip-id='odus-tooltip' 
                 data-tooltip-content='Office of the Dean of Undergraduate Students'>
             <div className={'footer-logo-odus' + (darkMode ? ' footer-logo-odus-dark' : ' footer-logo-odus-light')}/>
-            <Tooltip id='odus-tooltip'
-                   className='footer-tooltip' />
           </Link>
+          <Tooltip id='odus-tooltip'
+                   className='footer-tooltip' />
 
           <div className={'footer-text' + (darkMode ? ' footer-text-dark' : ' footer-text-light')}>
             © 2023 The Trustees of Princeton University

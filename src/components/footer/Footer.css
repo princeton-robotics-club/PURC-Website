@@ -1,4 +1,3 @@
-/* Main footer container */
 .footer-container {
   position: flex;
   margin: 0;
@@ -24,7 +23,6 @@
 
 /* ------------------------------------------------------------------------- */
 
-/* Container to hold social media icons */
 .social-media-wrap {
   display: flex;
   justify-content: space-between;
@@ -41,10 +39,7 @@
   margin: 15px auto 0 auto;
 }
 
-/* ------------------------------------------------------------------------- */
-
-/* Tooltip, orange speech bubble upon hovering */
-.footer-tooltip {
+.social-media-wrap .footer-tooltip {
   color: black;
   padding: 10px;
   background-color: coral;
@@ -54,7 +49,6 @@
 
 /* ------------------------------------------------------------------------- */
 
-/* Footer logo for Princeton (links to the Princeton website) */
 .footer-logo-princeton {
   background-image: url(../../images/footer/princeton_logo.png);
   background-repeat: no-repeat;
@@ -87,7 +81,6 @@
 
 /* ------------------------------------------------------------------------- */
 
-/* Footer logo for ODUS (Links to the ODUS website) */
 .footer-logo-odus {
   background-image: url(../../images/footer/odus_logo.png);
   background-repeat: no-repeat;
@@ -140,7 +133,6 @@
 
 /* ------------------------------------------------------------------------- */
 
-/* Container to hold social media info */
 .social-media {
   max-width: 1000px;
   width: 100%;
@@ -148,7 +140,6 @@
 
 /* ------------------------------------------------------------------------- */
 
-/* Social media icons */
 .social-icons {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -160,7 +151,6 @@
 
 /* ------------------------------------------------------------------------- */
 
-/* Social media icon links */
 .social-icon-link {
   font-size: 1.5rem;
 }
@@ -184,7 +174,6 @@
 
 /* ------------------------------------------------------------------------- */
 
-/* Mobile mode: change from sideways to stacked */
 @media screen and (max-width: 960px) {
   
   /* Stack containers in footer */
