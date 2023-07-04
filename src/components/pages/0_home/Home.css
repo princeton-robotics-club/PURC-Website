@@ -1,5 +1,5 @@
 .home-bg-img {
-  background-image: url('../../images/home_tessellation.png');
+  background-image: url('../../../images/home_tessellation.png');
   background-size: 100px;
   filter: brightness(26%);
   /* General attributes */

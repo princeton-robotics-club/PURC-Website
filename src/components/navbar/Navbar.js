@@ -30,6 +30,7 @@ function Navbar(props) {
 
   useEffect(() => {
     setJoinPath(location.pathname.indexOf('/join') === 0);
+    window.scrollTo({top: 0, behavior: 'smooth'});
   }, [location.pathname]);
 
   window.addEventListener('resize', showButton);
@@ -82,8 +83,8 @@ function Navbar(props) {
               label = {'About Us'}
               link  = {'/about'}
               pathString = {'/about'}
-              dropdownOptions = {['Leaders', 'Faculty']}
-              dropdownLinks = {['/about#leaders', '/about#members']}
+              dropdownOptions = {['Leaders', 'Members', 'Faculty']}
+              dropdownLinks = {['/about#leaders', '/about#members', '/about#faculty']}
               closeMobile = {closeMobileMenu}
               darkMode = {darkMode}
             />

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Generic.css';
+import './Join.css';
 
 function Join(props) {
 
@@ -11,7 +12,7 @@ function Join(props) {
   return (
     <>
       <div className='body-bg'>
-        <div className='about-bg-img'/>
+        <div className='join-bg-img'/>
         <div className='article-centered'>
           <div className={'title-blob' + (darkMode ? ' title-blob-dark' : ' title-blob-light')}>JOIN</div>
         </div>

@@ -1,0 +1,42 @@
+.about-bg-img {
+  background-image: url('../../../images/about/_bg_about.png');
+  background-size: 400px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  height: 100%;
+  z-index: -1;
+}
+
+.about-bg-img-dark {
+  opacity: 0.06;
+  filter: contrast(0);
+  transition: 0.5s;
+}
+
+.about-bg-img-light {
+  opacity: 0.04;
+  filter: brightness(0);
+  transition: 0.5s;
+}
+
+/* ------------------------------------------------------------------------- */
+
+.centered-heading {
+  padding-top: 0px;
+  padding-bottom: 30px;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #888;
+}
+
+/* ------------------------------------------------------------------------- */
+
+.centered-container {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}

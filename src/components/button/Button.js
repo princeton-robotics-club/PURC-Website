@@ -26,16 +26,18 @@ export const Button = ({
   }, [darkMode]);
 
   return (
-    <Ripples>
-      <Link to='/join' className='btn-mobile'>
-        <button
-          className={`btn ${colorStyle} ${checkButtonStyle} ${checkButtonSize}`}
-          onClick={onClick}
-          type={type}
-        >
-          {children}
-        </button>
-      </Link>
-    </Ripples>
+    <div className='gap-right'>
+      <Ripples>
+        <Link to='/join' className='btn-mobile'>
+          <button
+            className={`btn ${colorStyle} ${checkButtonStyle} ${checkButtonSize}`}
+            onClick={onClick}
+            type={type}
+          >
+            {children}
+          </button>
+        </Link>
+      </Ripples> 
+    </div>
   )
 };

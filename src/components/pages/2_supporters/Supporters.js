@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Generic.css';
 import './Supporters.css'
+import Card from '../../card/Card';
 import { Link } from 'react-router-dom';
 
 function Supporters(props) {
@@ -14,8 +15,11 @@ function Supporters(props) {
       <div className={'supp-bg-img' + (darkMode ? ' supp-bg-img-dark' : ' supp-bg-img-light')}/>
       <section className='article-centered'>
         <div className={'title-blob' + (darkMode ? ' title-blob-dark' : ' title-blob-light')}> SUPPORTERS </div>
-        <div className={'text-box text-box-padded' + (darkMode ? ' text-box-dark' : ' text-box-light')}> 
-          None of our projects would be possible without the funding, technical 
+        <Card className={'text-box text-box-padded' + (darkMode ? ' text-box-dark' : ' text-box-light')}> 
+          Several 3-D printed designs cannot stand during the printing process without proper support structures.
+          <br/>
+          <br/>
+          Likewise, none of our projects would be possible without the funding, technical 
           advice, tools, and resources of our supporters.
           <br/>
           <br/>
@@ -25,9 +29,9 @@ function Supporters(props) {
           If your organization is interested in supporting us as well, please 
           consider <Link to='join#support-us' className={'link'+(darkMode ? ' link-orange' : ' link-coral')}>joining</Link> our 
           team as a donor or advisee. We appreciate your help!
-        </div>
+        </Card>
 
-        <div className={'text-box full-width'+(darkMode?' text-box-dark':' text-box-light')}> 
+        <Card className={'text-box full-width'+(darkMode?' text-box-dark':' text-box-light')}> 
           <Link className={'supp-logo-seas'+(darkMode?' supp-logo-seas-dark':' supp-logo-seas-light')}
                 to='https://engineering.princeton.edu/'
                 title='Princeton SEAS'/>
@@ -105,9 +109,9 @@ function Supporters(props) {
             </div>
           </div>
           <div className='img-e-quad'/> 
-        </div>
+        </Card>
 
-        <div className={'text-box text-box-keller'+(darkMode?' text-box-dark':' text-box-light')}> 
+        <Card className={'text-box text-box-keller'+(darkMode?' text-box-dark':' text-box-light')}> 
           <Link className={'supp-logo-keller'+(darkMode?' supp-logo-keller-dark':' supp-logo-keller-light')}
                 to='https://kellercenter.princeton.edu'/>
           <div className='supp-info-text'> 
@@ -119,9 +123,9 @@ function Supporters(props) {
             Keller Center Makerspace</Link> in the Engineering Quad, with laser cutters, printers, scanners, 
             wood-working tools, and more.
           </div>
-        </div>
+        </Card>
 
-        <div className={'text-box half text-box-cst'+(darkMode?' text-box-dark':' text-box-light')}> 
+        <Card className={'text-box half text-box-cst'+(darkMode?' text-box-dark':' text-box-light')}> 
           <Link className={'supp-logo-cst'+(darkMode?' supp-logo-cst-dark':' supp-logo-cst-light')} 
                 to='https://cst.princeton.edu'/>
           <div className='supp-info-text'> 
@@ -133,7 +137,7 @@ function Supporters(props) {
             machines, and more. We hold weekly meetings in the StudioLab with 
             permission from the CST and StudioLab's supervisors.
           </div>
-        </div>
+        </Card>
 
       </section>
     </div>

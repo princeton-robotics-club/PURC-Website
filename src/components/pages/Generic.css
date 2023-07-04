@@ -59,7 +59,7 @@
 
 .text-box-light {
   border-color: rgba(0, 0, 0, 0.2);
-  background-color: rgba(235, 235, 235, 0.5);
+  background-color: rgba(235, 235, 235, 0.6);
   color: black;
 }
 
@@ -67,6 +67,13 @@
   width: calc(100% - 60px);
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.text-box-padded-not-below {
+  width: calc(100% - 60px);
+  padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
 }

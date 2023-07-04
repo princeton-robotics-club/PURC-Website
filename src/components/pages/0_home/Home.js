@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Generic.css';
+import './Home.css';
 
 // <div className='home-bg-img'/>
 

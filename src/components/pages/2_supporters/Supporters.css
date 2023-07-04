@@ -16,7 +16,7 @@
 }
 
 .supp-bg-img-light {
-  opacity: 0.1;
+  opacity: 0.15;
   filter: brightness(100%);
   transition: 0.5s;
 }
