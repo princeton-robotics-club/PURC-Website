@@ -228,6 +228,7 @@
   }
 
   .navbar-logo-text {
+    font-size: 1.3rem;
     position: absolute;
     top: 0;
     left: 0;

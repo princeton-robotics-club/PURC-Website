@@ -1,5 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { useLocation } from "react-router";
+import { Link } from "react-router-dom";
+import './Card.css';
 
 function scrollTo(ref) {
   if (!ref.current) return;
@@ -9,6 +11,7 @@ function scrollTo(ref) {
 function Card(props) {
 
   const {
+    darkMode,
     className,
     pathString
   } = props;
@@ -25,7 +28,11 @@ function Card(props) {
   }, [location.pathname, location.hash, pathString, here]);
   
   return (
-    <div className={className} style={{borderColor:here?'orangered':null}} ref={ref}>
+    <div className={'card ' + className} style={{borderColor:here?'orangered':null}} ref={ref}>
+      {pathString && <Link to={here ? `${location.pathname}` : `${pathString}`} 
+            className={'jump' + (darkMode ? ' jump-dark' : ' jump-light')}> 
+        {here ? '^' : '#'} 
+      </Link>}
       {props.children}
     </div>
   );

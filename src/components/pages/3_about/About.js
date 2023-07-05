@@ -16,7 +16,7 @@ function About(props) {
       <div className={'about-bg-img' + (darkMode ? ' about-bg-img-dark' : ' about-bg-img-light')}/>
         <div className='article-centered'>
           <div className={'title-blob' + (darkMode ? ' title-blob-dark' : ' title-blob-light')}> ABOUT US </div>
-          <Card pathString = '/about#leaders'
+          <Card darkMode = {darkMode} pathString = '/about#leaders'
                 className={'text-box text-box-padded-not-below' + (darkMode ? ' text-box-dark' : ' text-box-light')}> 
             <div className='centered-heading'> 
               CLUB LEADERS
@@ -70,14 +70,14 @@ function About(props) {
             </div> 
           </Card>
 
-          <Card pathString = '/about#members'
+          <Card darkMode = {darkMode} pathString = '/about#members'
                 className={'text-box text-box-padded' + (darkMode ? ' text-box-dark' : ' text-box-light')}> 
             <div className='centered-heading'> 
               TEAM MEMBERS
             </div>
           </Card>
 
-          <Card pathString = '/about#faculty'
+          <Card darkMode = {darkMode} pathString = '/about#faculty'
                 className={'text-box text-box-padded-not-below' + (darkMode ? ' text-box-dark' : ' text-box-light')}> 
             <div className='centered-heading'> 
               FACULTY ADVISERS

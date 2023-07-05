@@ -15,7 +15,8 @@ function Supporters(props) {
       <div className={'supp-bg-img' + (darkMode ? ' supp-bg-img-dark' : ' supp-bg-img-light')}/>
       <section className='article-centered'>
         <div className={'title-blob' + (darkMode ? ' title-blob-dark' : ' title-blob-light')}> SUPPORTERS </div>
-        <Card className={'text-box text-box-padded' + (darkMode ? ' text-box-dark' : ' text-box-light')}> 
+        <Card darkMode = {darkMode}
+              className={'text-box text-box-padded' + (darkMode ? ' text-box-dark' : ' text-box-light')}> 
           Several 3-D printed designs cannot stand during the printing process without proper support structures.
           <br/>
           <br/>
@@ -31,7 +32,8 @@ function Supporters(props) {
           team as a donor or advisee. We appreciate your help!
         </Card>
 
-        <Card className={'text-box full-width'+(darkMode?' text-box-dark':' text-box-light')}> 
+        <Card darkMode = {darkMode}
+              className={'text-box full-width'+(darkMode?' text-box-dark':' text-box-light')}> 
           <Link className={'supp-logo-seas'+(darkMode?' supp-logo-seas-dark':' supp-logo-seas-light')}
                 to='https://engineering.princeton.edu/'
                 title='Princeton SEAS'/>
@@ -111,7 +113,8 @@ function Supporters(props) {
           <div className='img-e-quad'/> 
         </Card>
 
-        <Card className={'text-box text-box-keller'+(darkMode?' text-box-dark':' text-box-light')}> 
+        <Card darkMode = {darkMode}
+              className={'text-box text-box-keller'+(darkMode?' text-box-dark':' text-box-light')}> 
           <Link className={'supp-logo-keller'+(darkMode?' supp-logo-keller-dark':' supp-logo-keller-light')}
                 to='https://kellercenter.princeton.edu'/>
           <div className='supp-info-text'> 
@@ -125,7 +128,8 @@ function Supporters(props) {
           </div>
         </Card>
 
-        <Card className={'text-box half text-box-cst'+(darkMode?' text-box-dark':' text-box-light')}> 
+        <Card darkMode = {darkMode}
+              className={'text-box half text-box-cst'+(darkMode?' text-box-dark':' text-box-light')}> 
           <Link className={'supp-logo-cst'+(darkMode?' supp-logo-cst-dark':' supp-logo-cst-light')} 
                 to='https://cst.princeton.edu'/>
           <div className='supp-info-text'> 
