@@ -57,11 +57,18 @@
   white-space: nowrap;
   font-family: 'Century Gothic';
   line-height: 35px;
-  font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 1px;
   text-decoration: none;
   transition: color 0.4s ease-out;
+}
+
+.navbar-logo-text-top {
+  font-size: 1.0rem;
+}
+
+.navbar-logo-text-bottom {
+  font-size: 1.55rem;
 }
 
 .navbar-logo-text:hover {

@@ -48,9 +48,14 @@ function Navbar(props) {
           <Tooltip id='logo-tooltip'
                    className='navbar-tooltip' />
 
-          <Link to='/' onClick={closeMobileMenu}
+          <Link to='/' onClick={closeMobileMenu} 
                 className={'navbar-logo-text' + (darkMode ? ' navbar-logo-text-dark' : ' navbar-logo-text-light')}>
-            Princeton University <br/> Robotics Club
+              <div className={'navbar-logo-text-top'}>
+                PRINCETON UNIVERSITY
+              </div>
+              <div className={'navbar-logo-text-bottom'}>
+                ROBOTICS CLUB
+              </div>
           </Link>
 
           <div className='menu-icon' onClick={handleClick}>
