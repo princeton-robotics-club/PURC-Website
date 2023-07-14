@@ -64,11 +64,17 @@
 }
 
 .navbar-logo-text-top {
-  font-size: 1.0rem;
+  font-size: 1.2rem;
+  margin: 0;
+  padding-bottom: 10px;
+  line-height: 100%;
 }
 
 .navbar-logo-text-bottom {
   font-size: 1.55rem;
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
 }
 
 .navbar-logo-text:hover {
@@ -237,9 +243,9 @@
   .navbar-logo-text {
     font-size: 1.3rem;
     position: absolute;
-    top: 0;
+    top: 50px;
     left: 0;
-    transform: translate(90px, 20%);
+    transform: translate(90px, -50%);
   }
 
   .menu-icon {
@@ -261,6 +267,7 @@
 
   .fa-times {
     font-size: 2.2rem;
+    transform: translate(0px, 2px);
   }
 
   .nav-links-mobile, .nav-links-mobile-red {
