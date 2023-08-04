@@ -1,0 +1,229 @@
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.h-spacer {
+  height: calc(((100vw - 300px) / 3) * 1.0);
+  width: calc(((100vw - 300px) / 3) * 0.25);
+}
+
+.v-spacer {
+  height: calc(((100vw - 300px) / 3) * 0.25);
+  width: 100%;
+}
+
+/* ------------------------------------------------------------------------- */
+
+.page-title {
+  font-family: 'Century Gothic';
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  display: block;
+}
+
+.first-row {
+  order: 1;
+}
+
+.second-row {
+  order: 2;
+}
+
+.third-row {
+  order: 3;
+}
+
+/* Ratio of logo width to height is 0.833:1 */
+/* Assumes article-centered wrapping */
+.team-button {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: calc(((100vw - 300px) / 3) * 0.833);
+  height: calc(((100vw - 300px) / 3) * 1.0);
+}
+
+/* This button selected, so maximize this button */
+.team-button-selected {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: calc(((100vw - 300px) / 2.5) * 0.833);
+  height: calc(((100vw - 300px) / 2.5) * 1.0);
+}
+
+/* Another button selected, so minimize this button */
+.team-button-unselected {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: calc(((100vw - 300px) / 3.5) * 0.833);
+  height: calc(((100vw - 300px) / 3.5) * 1.0);
+}
+
+.team-button-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.droid-logo {
+  background-image: url(../../../images/projects/Droid\ COLOR.png);
+}
+
+.droid-logo:hover {
+  filter: drop-shadow(0px 0px 2vw rgb(255, 94, 0));
+}
+
+.pacbot-logo {
+  background-image: url(../../../images/projects/Pacbot\ COLOR.png);
+}
+
+.pacbot-logo:hover {
+  filter: drop-shadow(0px 0px 2vw rgb(255, 213, 0));
+}
+
+.drone-logo {
+  background-image: url(../../../images/projects/Drone\ COLOR.png);
+}
+
+.drone-logo:hover {
+  filter: drop-shadow(0px 0px 2vw rgb(0, 157, 255));
+}
+
+/* ------------------------------------------------------------------------- */
+
+.droid-blurb {
+  height: -moz-max-content;
+  height: fit-content;
+  margin-top: 0px;
+  border: 2px solid;
+  border-radius: 10px;
+  font-family: 'Just Sans';
+  font-size: 1.2rem;
+  line-height: 150%;
+  display: block;
+  overflow: auto;
+  float: left;
+  text-align: justify;
+  hyphens: auto;
+  border-color: rgb(255, 94, 0);
+  background-color: black;
+  box-shadow: 0px -5px 20px rgb(255, 94, 0);
+  color: white;
+  width: calc(100% - 60px);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.pacbot-blurb {
+  height: -moz-max-content;
+  height: fit-content;
+  margin-top: 0px;
+  border: 2px solid;
+  border-radius: 10px;
+  font-family: 'Just Sans';
+  font-size: 1.2rem;
+  line-height: 150%;
+  display: block;
+  overflow: auto;
+  float: left;
+  text-align: justify;
+  hyphens: auto;
+  border-color: rgb(255, 230, 0);
+  background-color: black;
+  box-shadow: 0px -5px 20px rgb(255, 230, 0);
+  color: white;
+  width: calc(100% - 60px);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.drone-blurb {
+  height: -moz-max-content;
+  height: fit-content;
+  margin-top: 0px;
+  border: 2px solid;
+  border-radius: 10px;
+  font-family: 'Just Sans';
+  font-size: 1.2rem;
+  line-height: 150%;
+  display: block;
+  overflow: auto;
+  float: left;
+  text-align: justify;
+  hyphens: auto;
+  border-color: rgb(0, 183, 255);
+  background-color: black;
+  box-shadow: 0px -5px 20px rgb(0, 183, 255);
+  color: white;
+  width: calc(100% - 60px);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* ------------------------------------------------------------------------- */
+
+@media screen and (max-width: 960px) {
+  .h-spacer {
+    height: 0;
+    width: 0;
+  }
+
+  .v-spacer {
+    height: 0;
+    width: 0;
+  }
+
+  .first-row {
+    order: 0;
+  }
+
+  .second-row {
+    order: 0;
+  }
+
+  .third-row {
+    order: 0;
+  }
+  
+  /* Enlarge team buttons */
+  /* Assumes article-centered wrapping */
+  .team-button {
+    width: calc((100vw - 50px) * 0.833);
+    height: calc((100vw - 50px) * 1.0);
+    margin-bottom: 10vw;
+  }
+
+/* This button selected, so maximize this button */
+.team-button-selected {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: calc((100vw - 50px) * 0.833);
+  height: calc((100vw - 50px) * 1.0);
+  margin-bottom: 10vw;
+}
+
+/* Another button selected, so minimize this button */
+.team-button-unselected {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: calc((100vw - 50px) * 0.833);
+  height: calc((100vw - 50px) * 1.0);
+  margin-bottom: 10vw;
+}
+
+  /* Stack team buttons */
+  .team-button-wrap {
+    flex-direction: column;
+  }
+}
