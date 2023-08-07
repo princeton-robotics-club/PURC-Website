@@ -1,3 +1,7 @@
+/* ------------------------------------------------------------------------- */
+/*                                 SPACERS                                   */
+/* ------------------------------------------------------------------------- */
+
 .break {
   flex-basis: 100%;
   height: 0;
@@ -5,25 +9,30 @@
 
 .h-spacer {
   height: calc(((100vw - 300px) / 3) * 1.0);
-  width: calc(((100vw - 300px) / 3) * 0.25);
+  width: calc(((100vw - 300px) / 3) * 0.3);
 }
 
 .v-spacer {
-  height: calc(((100vw - 300px) / 3) * 0.25);
+  height: calc(((100vw - 300px) / 3) * 0.3);
   width: 100%;
 }
 
+.m-spacer {
+  height: 0;
+  width: 0;
+}
+
+/* ------------------------------------------------------------------------- */
+/*                                 GENERAL                                   */
 /* ------------------------------------------------------------------------- */
 
 .page-title {
   font-family: 'Century Gothic';
   color: white;
   text-align: center;
-  line-height: 100px;
-  font-weight: bold;
   font-size: 3rem;
-  letter-spacing: 2px;
   display: block;
+  filter: drop-shadow(5px 5px 5px rgb(0,0,0, 0.5));
 }
 
 .first-row {
@@ -38,139 +47,153 @@
   order: 3;
 }
 
-/* Ratio of logo width to height is 0.833:1 */
-/* Assumes article-centered wrapping */
-.team-button {
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: calc(((100vw - 300px) / 3) * 0.833);
-  height: calc(((100vw - 300px) / 3) * 1.0);
-}
-
-/* This button selected, so maximize this button */
-.team-button-selected {
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: calc(((100vw - 300px) / 2.5) * 0.833);
-  height: calc(((100vw - 300px) / 2.5) * 1.0);
-}
-
-/* Another button selected, so minimize this button */
-.team-button-unselected {
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: calc(((100vw - 300px) / 3.5) * 0.833);
-  height: calc(((100vw - 300px) / 3.5) * 1.0);
-}
-
-.team-button-wrap {
+.team-wrap {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
 }
 
-.droid-logo {
-  background-image: url(../../../images/projects/Droid\ COLOR.png);
+/* Ratio of logo width to height is 0.833:1 */
+/* Assumes article-centered wrapping */
+.team-logo {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: calc(((100vw - 300px) / 3) * 0.8);
+  height: calc(((100vw - 300px) / 3) * 0.8);
 }
 
-.droid-logo:hover {
-  filter: drop-shadow(0px 0px 2vw rgb(255, 94, 0));
+/* This button selected, so maximize this button */
+.team-logo-selected {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: calc(((100vw - 300px) / 2.5) * 0.8);
+  height: calc(((100vw - 300px) / 2.5) * 0.8);
 }
 
-.pacbot-logo {
-  background-image: url(../../../images/projects/Pacbot\ COLOR.png);
+/* Another button selected, so minimize this button */
+.team-logo-unselected {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: calc(((100vw - 300px) / 3.5) * 0.8);
+  height: calc(((100vw - 300px) / 3.5) * 0.8);
 }
 
-.pacbot-logo:hover {
-  filter: drop-shadow(0px 0px 2vw rgb(255, 213, 0));
+.team-text {
+  font-family: 'Century Gothic';
+  font-size: calc(((100vw - 300px) / 3) * 0.8 / 6);
 }
 
-.drone-logo {
-  background-image: url(../../../images/projects/Drone\ COLOR.png);
+.team-text-selected {
+  font-family: 'Century Gothic';
+  font-size: calc(((100vw - 300px) / 2.5) * 0.8 / 6);
 }
 
-.drone-logo:hover {
-  filter: drop-shadow(0px 0px 2vw rgb(0, 157, 255));
+.team-text-unselected {
+  font-family: 'Century Gothic';
+  font-size: calc(((100vw - 300px) / 3.5) * 0.8 / 6);
+}
+
+.team-blurb {
+  height: -moz-max-content;
+  height: fit-content;
+  margin-top: 0px;
+  border: 0.3vw solid;
+  border-radius: 0px 30px 30px 30px;
+  font-family: 'Century Gothic';
+  font-size: 1.2rem;
+  line-height: 150%;
+  display: block;
+  overflow: auto;
+  float: left;
+  text-align: justify;
+  hyphens: auto;
+  background-color: black;
+  color: white;
+  width: calc(100% - 60px);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* ------------------------------------------------------------------------- */
+/*                            TEAM-SPECIFIC                                  */
+/* ------------------------------------------------------------------------- */
+
+:root {
+  --droid-rgb: rgb(227, 77, 0);
+  --pacbot-rgb: rgb(255, 183, 0);
+  --drone-rgb: rgb(0, 126, 255);
 }
 
 /* ------------------------------------------------------------------------- */
 
+.droid-logo {
+  background-image: url(../../../images/projects/droid-logo.svg);
+  filter: drop-shadow(5px 5px 5px rgb(0,0,0, 0.5));
+}
+
+.droid-text {
+  color: var(--droid-rgb);
+  filter: drop-shadow(5px 5px 5px rgb(0,0,0, 0.5));
+}
+
+.droid-glow:hover {
+  filter: drop-shadow(0px 0px 2vw var(--droid-rgb));
+  transition: filter 0.5s;
+}
+
 .droid-blurb {
-  height: -moz-max-content;
-  height: fit-content;
-  margin-top: 0px;
-  border: 2px solid;
-  border-radius: 10px;
-  font-family: 'Just Sans';
-  font-size: 1.2rem;
-  line-height: 150%;
-  display: block;
-  overflow: auto;
-  float: left;
-  text-align: justify;
-  hyphens: auto;
-  border-color: rgb(255, 94, 0);
-  background-color: black;
-  box-shadow: 0px -5px 20px rgb(255, 94, 0);
-  color: white;
-  width: calc(100% - 60px);
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
+  border-color: var(--droid-rgb);
+  box-shadow: 0px -10px 20px 0px var(--droid-rgb);
+}
+
+/* ------------------------------------------------------------------------- */
+
+.pacbot-logo {
+  background-image: url(../../../images/projects/pacbot-logo.svg);
+  filter: drop-shadow(5px 5px 5px rgb(0,0,0, 0.5));
+}
+
+.pacbot-text{
+  color: var(--pacbot-rgb);
+  filter: drop-shadow(5px 5px 5px rgb(0,0,0, 0.5));
+}
+
+.pacbot-glow:hover {
+  filter: drop-shadow(0px 0px 2vw var(--pacbot-rgb));
+  transition: filter 0.5s;
 }
 
 .pacbot-blurb {
-  height: -moz-max-content;
-  height: fit-content;
-  margin-top: 0px;
-  border: 2px solid;
-  border-radius: 10px;
-  font-family: 'Just Sans';
-  font-size: 1.2rem;
-  line-height: 150%;
-  display: block;
-  overflow: auto;
-  float: left;
-  text-align: justify;
-  hyphens: auto;
-  border-color: rgb(255, 230, 0);
-  background-color: black;
-  box-shadow: 0px -5px 20px rgb(255, 230, 0);
-  color: white;
-  width: calc(100% - 60px);
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
+  border-color: var(--pacbot-rgb);
+  box-shadow: 0px -5px 20px var(--pacbot-rgb);
+}
+
+/* ------------------------------------------------------------------------- */
+
+.drone-logo {
+  background-image: url(../../../images/projects/drone-logo.svg);
+  filter: drop-shadow(5px 5px 5px rgb(0,0,0, 0.5));
+}
+
+.drone-text{
+  color: var(--drone-rgb);
+  filter: drop-shadow(5px 5px 5px rgb(0,0,0, 0.5));
+}
+
+.drone-glow:hover {
+  filter: drop-shadow(0px 0px 2vw var(--drone-rgb));
+  transition: filter 0.5s;
 }
 
 .drone-blurb {
-  height: -moz-max-content;
-  height: fit-content;
-  margin-top: 0px;
-  border: 2px solid;
-  border-radius: 10px;
-  font-family: 'Just Sans';
-  font-size: 1.2rem;
-  line-height: 150%;
-  display: block;
-  overflow: auto;
-  float: left;
-  text-align: justify;
-  hyphens: auto;
-  border-color: rgb(0, 183, 255);
-  background-color: black;
-  box-shadow: 0px -5px 20px rgb(0, 183, 255);
-  color: white;
-  width: calc(100% - 60px);
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
+  border-color: var(--drone-rgb);
+  box-shadow: 0px -5px 20px var(--drone-rgb);
 }
 
+/* ------------------------------------------------------------------------- */
+/*                                  MOBILE                                   */
 /* ------------------------------------------------------------------------- */
 
 @media screen and (max-width: 960px) {
@@ -184,6 +207,11 @@
     width: 0;
   }
 
+  .m-spacer {
+    height: calc(((100vw - 50px) / 3) * 0.8);
+    width: 100%;
+  }
+
   .first-row {
     order: 0;
   }
@@ -195,35 +223,51 @@
   .third-row {
     order: 0;
   }
-  
-  /* Enlarge team buttons */
-  /* Assumes article-centered wrapping */
-  .team-button {
-    width: calc((100vw - 50px) * 0.833);
-    height: calc((100vw - 50px) * 1.0);
-    margin-bottom: 10vw;
-  }
-
-/* This button selected, so maximize this button */
-.team-button-selected {
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: calc((100vw - 50px) * 0.833);
-  height: calc((100vw - 50px) * 1.0);
-  margin-bottom: 10vw;
-}
-
-/* Another button selected, so minimize this button */
-.team-button-unselected {
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: calc((100vw - 50px) * 0.833);
-  height: calc((100vw - 50px) * 1.0);
-  margin-bottom: 10vw;
-}
 
   /* Stack team buttons */
-  .team-button-wrap {
+  .team-wrap {
     flex-direction: column;
+    align-items: center;
   }
+  
+  /* Ratio of logo width to height is 0.833:1 */
+  /* Assumes article-centered wrapping */
+  .team-logo {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(((100vw - 50px) / 3) * 1.6);
+    height: calc(((100vw - 50px) / 3) * 1.6);
+  }
+
+  /* This button selected, so maximize this button */
+  .team-logo-selected {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(((100vw - 50px) / 2.5) * 1.6);
+    height: calc(((100vw - 50px) / 2.5) * 1.6);
+  }
+
+  /* Another button selected, so minimize this button */
+  .team-logo-unselected {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: calc(((100vw - 50px) / 3.5) * 1.6);
+    height: calc(((100vw - 50px) / 3.5) * 1.6);
+  }
+
+  .team-text {
+    font-family: 'Century Gothic';
+    font-size: calc(((100vw - 50px) / 3) * 1.6 / 6);
+  }
+
+  .team-text-selected {
+    font-family: 'Century Gothic';
+    font-size: calc(((100vw - 50px) / 2.5) * 1.6 / 6);
+  }
+
+  .team-text-unselected {
+    font-family: 'Century Gothic';
+    font-size: calc(((100vw - 50px) / 3.5) * 1.6 / 6);
+  }
+
 }

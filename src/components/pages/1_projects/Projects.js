@@ -9,9 +9,9 @@ function Projects(props) {
   } = props;
 
   const [selectedTeam, setSelectedTeam] = useState('');
-  const [buttonOffset, setButtonOffset] = useState(0);
 
-  const BUTTON_CLASSES = ['team-button', 'team-button-selected', 'team-button-unselected'];
+  const LOGO_CLASSES = ['team-logo', 'team-logo-selected', 'team-logo-unselected'];
+  const TEXT_CLASSES = ['team-text', 'team-text-selected', 'team-text-unselected'];
   const HEADER_OFFSET = 200;
 
   function toggleBlurb(teamName){
@@ -20,10 +20,10 @@ function Projects(props) {
       setSelectedTeam('')
     }
     else {
-      if (selectedTeam === '') {
-        window.scrollTo({top: document.getElementById(teamName + '_button').getBoundingClientRect().bottom + window.scrollY - HEADER_OFFSET, behavior: 'smooth'})
+      if (selectedTeam != '' && document.getElementById(selectedTeam + '-text').getBoundingClientRect().top < document.getElementById(teamName + '-text').getBoundingClientRect().top){
+        window.scrollTo({top: -document.getElementById(selectedTeam + '-blurb').getBoundingClientRect().height + document.getElementById(teamName + '-text').getBoundingClientRect().top + window.scrollY - HEADER_OFFSET, behavior: 'smooth'})
       } else {
-        window.scrollTo({top: document.getElementById(selectedTeam + '_button').getBoundingClientRect().bottom - document.getElementById(selectedTeam + '_blurb').getBoundingClientRect().height + window.scrollY - HEADER_OFFSET, behavior: 'smooth'})
+        window.scrollTo({top: document.getElementById(teamName + '-text').getBoundingClientRect().top + window.scrollY - HEADER_OFFSET, behavior: 'smooth'})
       }
       setSelectedTeam(teamName)
     }
@@ -36,67 +36,102 @@ function Projects(props) {
         <section className='article-centered'>
 
           <div className='first-row v-spacer'></div>
+          <div className='m-spacer'></div>
+
           <div className={'page-title'}> EXPLORE OUR PROJECTS </div>
+
           <div className='first-row v-spacer'></div>
+          <div className='m-spacer'></div>
 
-          <div className = 'team-button-wrap'>
+          <div className = 'team-wrap'>
 
-            <div id='droid_button' onClick={() => toggleBlurb('droid')}
-              className = {selectedTeam === 'droid' ? 'first-row droid-logo ' + BUTTON_CLASSES[1] : 
-                (selectedTeam === '' ? 'first-row droid-logo ' + BUTTON_CLASSES[0] : 'first-row droid-logo ' + BUTTON_CLASSES[2])}
-              style = {{transition: '0.5s'}}>
+            <div className='first-row droid-glow' onClick={() => toggleBlurb('droid')}>
+              <div className = {selectedTeam === 'droid' ? 'droid-logo ' + LOGO_CLASSES[1] : 
+                  (selectedTeam === '' ? 'droid-logo ' + LOGO_CLASSES[0] : 'droid-logo ' + LOGO_CLASSES[2])}
+                  style = {{transition: '0.5s'}}>
+              </div>
+              <div id='droid-text' className = {selectedTeam === 'droid' ? 'droid-text ' + TEXT_CLASSES[1] : 
+                  (selectedTeam === '' ? 'droid-text ' + TEXT_CLASSES[0] : 'droid-text ' + TEXT_CLASSES[2])}
+                  style = {{transition: '0.5s'}}>
+                  DROID
+              </div>
             </div>
-            <div id='droid_blurb' className='second-row droid-blurb' style={{display: selectedTeam === 'droid' ? 'block' : 'none'}}>
-            With the help of the Alumni Fund, the droid team was successfully able to buy parts to bring a life-size, fully functioning BB-8 droid to life. From motors to motor driver to soundboards, to washers and steel shot adhesive, the purchases for our parts helped provide our members with lots of hands-on mechanical and electrical engineering experience through the lens of our BB-8 project, which we are hoping to use for social outreach purposes such as visits to children hospitals and sci-fi conventions.
-            </div>
-
-            <div className='first-row h-spacer'></div>
-
-            <div id='pacbot_button' onClick={() => toggleBlurb('pacbot')}
-              className = {selectedTeam === 'pacbot' ? 'first-row pacbot-logo ' + BUTTON_CLASSES[1] : 
-                (selectedTeam === '' ? 'first-row pacbot-logo ' + BUTTON_CLASSES[0] : 'first-row pacbot-logo ' + BUTTON_CLASSES[2])}
-              style = {{transition: '0.5s'}}>
-            </div>
-            <div id='pacbot_blurb' className='second-row pacbot-blurb' style={{display: selectedTeam === 'pacbot' ? 'block' : 'none'}}>
-            After a year of preparation, our PacBot team and their PacBot, “PacBob,” will be traveling to Harvard in late April to compete in the annual PacBot competition against schools from all around the country. (The PacBot competition involves building a robot which autonomously plays a physical version of Pacman)
+            <div id='droid-blurb' className='second-row team-blurb droid-blurb' style={{display: selectedTeam === 'droid' ? 'block' : 'none'}}>
+              With the help of the Alumni Fund, the droid team was successfully able to buy parts to bring a life-size, fully functioning BB-8 droid to life. From motors to motor driver to soundboards, to washers and steel shot adhesive, the purchases for our parts helped provide our members with lots of hands-on mechanical and electrical engineering experience through the lens of our BB-8 project, which we are hoping to use for social outreach purposes such as visits to children hospitals and sci-fi conventions.
             </div>
 
             <div className='first-row h-spacer'></div>
+            <div className='m-spacer'></div>
 
-            <div id='drone_button' onClick={() => toggleBlurb('drone')}
-              className = {selectedTeam === 'drone' ? 'first-row drone-logo ' + BUTTON_CLASSES[1] : 
-                (selectedTeam === '' ? 'first-row drone-logo ' + BUTTON_CLASSES[0] : 'first-row drone-logo ' + BUTTON_CLASSES[2])}
-              style = {{transition: '0.5s'}}>
+            <div className='first-row pacbot-glow' onClick={() => toggleBlurb('pacbot')}>
+              <div className = {selectedTeam === 'pacbot' ? 'pacbot-logo ' + LOGO_CLASSES[1] : 
+                  (selectedTeam === '' ? 'pacbot-logo ' + LOGO_CLASSES[0] : 'pacbot-logo ' + LOGO_CLASSES[2])}
+                  style = {{transition: '0.5s'}}>
+              </div>
+              <div id='pacbot-text' className = {selectedTeam === 'pacbot' ? 'pacbot-text ' + TEXT_CLASSES[1] : 
+                  (selectedTeam === '' ? 'pacbot-text ' + TEXT_CLASSES[0] : 'pacbot-text ' + TEXT_CLASSES[2])}
+                  style = {{transition: '0.5s'}}>
+                  PACBOT
+              </div>
             </div>
-            <div id='drone_blurb' className='second-row drone-blurb' style={{display: selectedTeam === 'drone' ? 'block' : 'none'}}>
-            With the support of the Alumni Fund, the Drone Team was able to kickstart our autonomous quadcopter project. The project entailed developing a modular autonomous drone system capable of computer-vision-based ‘gesture control,’ which allows the user to control the quadcopter through hand ‘gestures.’ These gestures are recognized by the camera - using computer vision - and interpreted as a command. We were able to successfully integrate our systems and have a working version of the quadcopter!
+            <div id='pacbot-blurb' className='second-row team-blurb pacbot-blurb' style={{display: selectedTeam === 'pacbot' ? 'block' : 'none'}}>
+              After a year of preparation, our PacBot team and their PacBot, “PacBob,” will be traveling to Harvard in late April to compete in the annual PacBot competition against schools from all around the country. (The PacBot competition involves building a robot which autonomously plays a physical version of Pacman)
+            </div>
+
+            <div className='first-row h-spacer'></div>
+            <div className='m-spacer'></div>
+
+            <div className='first-row drone-glow' onClick={() => toggleBlurb('drone')}>
+              <div className = {selectedTeam === 'drone' ? 'drone-logo ' + LOGO_CLASSES[1] : 
+                  (selectedTeam === '' ? 'drone-logo ' + LOGO_CLASSES[0] : 'drone-logo ' + LOGO_CLASSES[2])}
+                  style = {{transition: '0.5s'}}>
+              </div>
+              <div id='drone-text' className = {selectedTeam === 'drone' ? 'drone-text ' + TEXT_CLASSES[1] : 
+                  (selectedTeam === '' ? 'drone-text ' + TEXT_CLASSES[0] : 'drone-text ' + TEXT_CLASSES[2])}
+                  style = {{transition: '0.5s'}}>
+                  DRONE
+              </div>
+            </div>
+            <div id='drone-blurb' className='second-row team-blurb drone-blurb' style={{display: selectedTeam === 'drone' ? 'block' : 'none'}}>
+              With the support of the Alumni Fund, the Drone Team was able to kickstart our autonomous quadcopter project. The project entailed developing a modular autonomous drone system capable of computer-vision-based ‘gesture control,’ which allows the user to control the quadcopter through hand ‘gestures.’ These gestures are recognized by the camera - using computer vision - and interpreted as a command. We were able to successfully integrate our systems and have a working version of the quadcopter!
             </div>
 
             <div className='first-row break'></div>
             <div className='second-row v-spacer'></div>
+            <div className='m-spacer'></div>
 
-            <div onClick={() => toggleBlurb('pacbot1')}
-              className = {selectedTeam === 'pacbot1' ? 'second-row pacbot-logo ' + BUTTON_CLASSES[1] : 
-                (selectedTeam === '' ? 'second-row pacbot-logo ' + BUTTON_CLASSES[0] : 'second-row pacbot-logo ' + BUTTON_CLASSES[2])}
-              style = {{transition: '0.5s'}}>
+            <div className='second-row drone-glow' onClick={() => toggleBlurb('drone2')}>
+              <div className = {selectedTeam === 'drone2' ? 'drone-logo ' + LOGO_CLASSES[1] : 
+                  (selectedTeam === '' ? 'drone-logo ' + LOGO_CLASSES[0] : 'drone-logo ' + LOGO_CLASSES[2])}
+                  style = {{transition: '0.5s'}}>
+              </div>
+              <div id='drone2-text' className = {selectedTeam === 'drone2' ? 'drone-text ' + TEXT_CLASSES[1] : 
+                  (selectedTeam === '' ? 'drone-text ' + TEXT_CLASSES[0] : 'drone-text ' + TEXT_CLASSES[2])}
+                  style = {{transition: '0.5s'}}>
+                  DRONE
+              </div>
             </div>
-            <div className='third-row pacbot-blurb' style={{display: selectedTeam === 'pacbot1' ? 'block' : 'none'}}>
-              Hey it's pacbot
+            <div id='drone2-blurb' className='third-row team-blurb drone-blurb' style={{display: selectedTeam === 'drone2' ? 'block' : 'none'}}>
+              With the support of the Alumni Fund, the Drone Team was able to kickstart our autonomous quadcopter project. The project entailed developing a modular autonomous drone system capable of computer-vision-based ‘gesture control,’ which allows the user to control the quadcopter through hand ‘gestures.’ These gestures are recognized by the camera - using computer vision - and interpreted as a command. We were able to successfully integrate our systems and have a working version of the quadcopter!
             </div>
 
             <div className='second-row h-spacer'></div>
+            <div className='m-spacer'></div>
 
-            <div onClick={() => toggleBlurb('pacbot2')}
-              className = {selectedTeam === 'pacbot2' ? 'second-row pacbot-logo ' + BUTTON_CLASSES[1] : 
-                (selectedTeam === '' ? 'second-row pacbot-logo ' + BUTTON_CLASSES[0] : 'second-row pacbot-logo ' + BUTTON_CLASSES[2])}
-              style = {{transition: '0.5s'}}>
+            <div className='second-row drone-glow' onClick={() => toggleBlurb('drone3')}>
+              <div className = {selectedTeam === 'drone3' ? 'drone-logo ' + LOGO_CLASSES[1] : 
+                  (selectedTeam === '' ? 'drone-logo ' + LOGO_CLASSES[0] : 'drone-logo ' + LOGO_CLASSES[2])}
+                  style = {{transition: '0.5s'}}>
+              </div>
+              <div id='drone3-text' className = {selectedTeam === 'drone3' ? 'drone-text ' + TEXT_CLASSES[1] : 
+                  (selectedTeam === '' ? 'drone-text ' + TEXT_CLASSES[0] : 'drone-text ' + TEXT_CLASSES[2])}
+                  style = {{transition: '0.5s'}}>
+                  DRONE
+              </div>
             </div>
-            <div className='third-row pacbot-blurb' style={{display: selectedTeam === 'pacbot2' ? 'block' : 'none'}}>
-              Hey it's pacbot
+            <div id='drone3-blurb' className='third-row team-blurb drone-blurb' style={{display: selectedTeam === 'drone3' ? 'block' : 'none'}}>
+              With the support of the Alumni Fund, the Drone Team was able to kickstart our autonomous quadcopter project. The project entailed developing a modular autonomous drone system capable of computer-vision-based ‘gesture control,’ which allows the user to control the quadcopter through hand ‘gestures.’ These gestures are recognized by the camera - using computer vision - and interpreted as a command. We were able to successfully integrate our systems and have a working version of the quadcopter!
             </div>
-
-            <div className='second-row break'></div>
-            <div className='third-row v-spacer'></div>
 
           </div>
 
