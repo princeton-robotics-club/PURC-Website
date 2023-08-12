@@ -154,8 +154,11 @@ function Projects(props) {
                   DRONE
               </div>
             </div>
-            <div id='drone-blurb' className='second-row team-blurb drone-blurb' style={{display: selectedTeam === 'drone' ? 'flex' : 'none'}}>
-              With the support of the Alumni Fund, the Drone Team was able to kickstart our autonomous quadcopter project. The project entailed developing a modular autonomous drone system capable of computer-vision-based ‘gesture control,’ which allows the user to control the quadcopter through hand ‘gestures.’ These gestures are recognized by the camera - using computer vision - and interpreted as a command. We were able to successfully integrate our systems and have a working version of the quadcopter!
+            <div id='drone-blurb' className='second-row team-blurb drone-blurb' style={{display: selectedTeam === 'drone' ? 'flex' : 'none', backgroundColor: darkMode ? 'black' : 'white'}}>
+              
+              <div className='blurb-text' style={{color: darkMode ? 'white' : 'black'}}>
+                With the support of the Alumni Fund, the Drone Team was able to kickstart our autonomous quadcopter project. The project entailed developing a modular autonomous drone system capable of computer-vision-based ‘gesture control,’ which allows the user to control the quadcopter through hand ‘gestures.’ These gestures are recognized by the camera - using computer vision - and interpreted as a command. We were able to successfully integrate our systems and have a working version of the quadcopter!
+              </div>
             </div>
 
             <div className='first-row break'></div>
