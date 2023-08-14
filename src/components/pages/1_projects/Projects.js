@@ -37,7 +37,7 @@ function Projects(props) {
     let slideIndex = n;
     let i;
 
-    let slides = document.getElementsByClassName(teamName + '-slides');
+    let slides = document.getElementsByClassName(teamName + '-carousel');
     let dots = document.getElementsByClassName(teamName + '-dot');
 
     if (n > slides.length) {slideIndex = 1}    
@@ -91,15 +91,15 @@ function Projects(props) {
 
             <div className='divider'></div>
 
-            <div className='droid-slides team-carousel droid-1'></div>
-            <div className='droid-slides team-carousel droid-2'></div>
-            <div className='droid-slides team-carousel droid-3'></div>
+            <div className='blurb-carousel droid-carousel droid-1'></div>
+            <div className='blurb-carousel droid-carousel droid-2'></div>
+            <div className='blurb-carousel droid-carousel droid-3'></div>
 
             <div className='divider'></div>
 
-            <span class="droid-dot dot" onClick={() => showSlides('droid', 1)}></span> 
-            <span class="droid-dot dot" onClick={() => showSlides('droid', 2)}></span> 
-            <span class="droid-dot dot" onClick={() => showSlides('droid', 3)}></span> 
+            <span class="blurb-dot droid-dot" onClick={() => showSlides('droid', 1)}></span> 
+            <span class="blurb-dot droid-dot" onClick={() => showSlides('droid', 2)}></span> 
+            <span class="blurb-dot droid-dot" onClick={() => showSlides('droid', 3)}></span> 
             
             <div className='blurb-text' style={{color: darkMode ? 'white' : 'black'}}>
             With the help of the Alumni Fund, the droid team was successfully able to buy parts to bring a life-size, fully functioning BB-8 droid to life. From motors to motor driver to soundboards, to washers and steel shot adhesive, the purchases for our parts helped provide our members with lots of hands-on mechanical and electrical engineering experience through the lens of our BB-8 project, which we are hoping to use for social outreach purposes such as visits to children hospitals and sci-fi conventions.
@@ -125,15 +125,15 @@ function Projects(props) {
               
             <div className='divider'></div>
 
-            <div className='pacbot-slides team-carousel pacbot-1'></div>
-            <div className='pacbot-slides team-carousel pacbot-2'></div>
-            <div className='pacbot-slides team-carousel pacbot-3'></div>
+            <div className='blurb-carousel pacbot-carousel pacbot-1'></div>
+            <div className='blurb-carousel pacbot-carousel pacbot-2'></div>
+            <div className='blurb-carousel pacbot-carousel pacbot-3'></div>
 
             <div className='divider'></div>
 
-            <span class="pacbot-dot dot" onClick={() => showSlides('pacbot', 1)}></span> 
-            <span class="pacbot-dot dot" onClick={() => showSlides('pacbot', 2)}></span> 
-            <span class="pacbot-dot dot" onClick={() => showSlides('pacbot', 3)}></span> 
+            <span class="blurb-dot pacbot-dot" onClick={() => showSlides('pacbot', 1)}></span> 
+            <span class="blurb-dot pacbot-dot" onClick={() => showSlides('pacbot', 2)}></span> 
+            <span class="blurb-dot pacbot-dot" onClick={() => showSlides('pacbot', 3)}></span> 
               
               <div className='blurb-text' style={{color: darkMode ? 'white' : 'black'}}>
               After a year of preparation, our PacBot team and their PacBot, “PacBob,” will be traveling to Harvard in late April to compete in the annual PacBot competition against schools from all around the country. (The PacBot competition involves building a robot which autonomously plays a physical version of Pacman)
