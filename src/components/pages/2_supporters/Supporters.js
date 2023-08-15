@@ -29,7 +29,7 @@ function Supporters(props) {
           <br/>
           If your organization is interested in supporting us as well, please 
           consider <Link to='join#support-us' className={'link'+(darkMode ? ' link-orange' : ' link-coral')}>joining</Link> our 
-          team as a donor or advisee. We appreciate your help!
+          team as a donor or advisor. We appreciate your help!
         </Card>
 
         <Card darkMode = {darkMode}

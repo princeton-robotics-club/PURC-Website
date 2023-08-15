@@ -39,8 +39,8 @@
   height: fit-content;
   margin-top: 0px;
   margin-bottom: 30px;
-  border: 2px solid;
   border-radius: 10px;
+  border: 2px solid;
   font-family: 'Just Sans';
   font-size: 1.2rem;
   line-height: 150%;
@@ -64,7 +64,7 @@
 }
 
 .text-box-padded {
-  width: calc(100% - 60px);
+  width: calc(100% - 64px);
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 30px;
@@ -72,10 +72,16 @@
 }
 
 .text-box-padded-not-below {
-  width: calc(100% - 60px);
+  width: calc(100% - 64px);
   padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.text-box-padded-extra {
+  width: calc(100% - 84px);
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 /* ------------------------------------------------------------------------- */
