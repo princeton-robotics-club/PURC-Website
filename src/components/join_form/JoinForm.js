@@ -130,7 +130,7 @@ function JoinForm(props) {
     
       <div className='form-row'>
         <input className={'submit-button' + (darkMode ? ' submit-button-dark' : ' submit-button-light')}
-              type='submit' value={submitted ? 'Sent' : 'Send'} />
+              type='submit' value={submitted ? 'Sent!' : 'Send'}/>
       </div>
 
       {submitted && <iframe src={submitURL}
