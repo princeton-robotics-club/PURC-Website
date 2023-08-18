@@ -1,6 +1,8 @@
-import React, { useState, useRef } from 'react';
+import {React, useState} from 'react';
 import '../Generic.css';
 import './Projects.css';
+import TeamButton from '../../team/TeamButton';
+import TeamBlurb from '../../team/TeamBlurb';
 
 function Projects(props) {
 
@@ -9,9 +11,6 @@ function Projects(props) {
   } = props;
 
   const [selectedTeam, setSelectedTeam] = useState('');
-
-  const LOGO_CLASSES = ['team-logo-original', 'team-logo-selected', 'team-logo-unselected'];
-  const TEXT_CLASSES = ['team-text-original', 'team-text-selected', 'team-text-unselected'];
   const HEADER_OFFSET = 200;
 
   function toggleBlurb(teamName){
@@ -22,42 +21,35 @@ function Projects(props) {
     else {
       showSlides(teamName, 1)
 
-      if (selectedTeam != '' && document.getElementById(selectedTeam + '-text').getBoundingClientRect().top < document.getElementById(teamName + '-text').getBoundingClientRect().top){
+      if (selectedTeam !== '' && document.getElementById(selectedTeam + '-text').getBoundingClientRect().top < document.getElementById(teamName + '-text').getBoundingClientRect().top){
         window.scrollTo({top: -document.getElementById(selectedTeam + '-blurb').getBoundingClientRect().height + document.getElementById(teamName + '-text').getBoundingClientRect().top + window.scrollY - HEADER_OFFSET, behavior: 'smooth'})
       } else {
         window.scrollTo({top: document.getElementById(teamName + '-text').getBoundingClientRect().top + window.scrollY - HEADER_OFFSET, behavior: 'smooth'})
       }
+      
       setSelectedTeam(teamName)
     }
   }
 
-  //let slideIndex = 1;
-
   function showSlides(teamName, n) {
-    let slideIndex = n;
-    let i;
-
-    let slides = document.getElementsByClassName(teamName + '-carousel');
-    let dots = document.getElementsByClassName(teamName + '-dot');
+    let i
+    let slideIndex = n
+    let slides = document.getElementsByClassName(teamName + '-carousel')
+    let dots = document.getElementsByClassName(teamName + '-dot')
 
     if (n > slides.length) {slideIndex = 1}    
     if (n < 1) {slideIndex = slides.length}
 
     for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = 'none';  
+      slides[i].style.display = 'none'
     }
 
     for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(' ' + teamName + '-dot-active', '');
+      dots[i].className = dots[i].className.replace(' ' + teamName + '-dot-active', '')
     }
 
-    if (slides.length > 0) {
-    slides[slideIndex-1].style.display = 'block';  
-    }
-
-    if (dots.length > 0) {
-    dots[slideIndex-1].className += ' ' + teamName + '-dot-active';
-    }
+    if (slides.length > 0) {slides[slideIndex-1].style.display = 'block'}
+    if (dots.length > 0) {dots[slideIndex-1].className += ' ' + teamName + '-dot-active'}
   }
 
   return (
@@ -76,106 +68,187 @@ function Projects(props) {
 
           <div className = 'team-wrap'>
 
-            <div className='first-row droid-glow' onClick={() => toggleBlurb('droid')}>
-              <div className = {selectedTeam === 'droid' ? 'droid-logo ' + LOGO_CLASSES[1] : 
-                  (selectedTeam === '' ? 'droid-logo ' + LOGO_CLASSES[0] : 'droid-logo ' + LOGO_CLASSES[2])}
-                  style = {{transition: '0.5s'}}>
-              </div>
-              <div id='droid-text' className = {selectedTeam === 'droid' ? 'droid-text ' + TEXT_CLASSES[1] : 
-                  (selectedTeam === '' ? 'droid-text ' + TEXT_CLASSES[0] : 'droid-text ' + TEXT_CLASSES[2])}
-                  style = {{transition: '0.5s'}}>
-                  DROID
-              </div>
+            <div className = 'first-row'>
+              <TeamButton
+                  teamName = 'droid'
+                  teamTitle = 'DROID'
+                  selectedTeam = {selectedTeam}
+                  toggleBlurb = {toggleBlurb}
+              />
             </div>
+
             <div id='droid-blurb' className='second-row team-blurb droid-blurb' style={{display: selectedTeam === 'droid' ? 'flex' : 'none', backgroundColor: darkMode ? 'black' : 'white'}}>
 
-            <div className='divider'></div>
+              <div className='divider'></div>
 
-            <div className='blurb-carousel droid-carousel droid-1'></div>
-            <div className='blurb-carousel droid-carousel droid-2'></div>
-            <div className='blurb-carousel droid-carousel droid-3'></div>
+              <div className='blurb-title' style={{color: darkMode ? 'white' : 'black'}}>
+                GALLERY
+              </div>
 
-            <div className='divider'></div>
+              <div className='divider'></div>
 
-            <span class="blurb-dot droid-dot" onClick={() => showSlides('droid', 1)}></span> 
-            <span class="blurb-dot droid-dot" onClick={() => showSlides('droid', 2)}></span> 
-            <span class="blurb-dot droid-dot" onClick={() => showSlides('droid', 3)}></span> 
+              <div className='blurb-carousel droid-carousel droid-1'></div>
+              <div className='blurb-carousel droid-carousel droid-2'></div>
+              <div className='blurb-carousel droid-carousel droid-3'></div>
+
+              <div className='divider'></div>
+
+              <span class="blurb-dot droid-dot" onClick={() => showSlides('droid', 1)}></span> 
+              <span class="blurb-dot droid-dot" onClick={() => showSlides('droid', 2)}></span> 
+              <span class="blurb-dot droid-dot" onClick={() => showSlides('droid', 3)}></span>
+
+              <div className='section'></div>
+
+              <div className='blurb-title' style={{color: darkMode ? 'white' : 'black'}}>
+                ABOUT
+              </div>
+
+              <div className='divider'></div>
             
-            <div className='blurb-text' style={{color: darkMode ? 'white' : 'black'}}>
-            With the help of the Alumni Fund, the droid team was successfully able to buy parts to bring a life-size, fully functioning BB-8 droid to life. From motors to motor driver to soundboards, to washers and steel shot adhesive, the purchases for our parts helped provide our members with lots of hands-on mechanical and electrical engineering experience through the lens of our BB-8 project, which we are hoping to use for social outreach purposes such as visits to children hospitals and sci-fi conventions.
+              <div className='blurb-text' style={{color: darkMode ? 'white' : 'black'}}>
+              With the help of the Alumni Fund, the droid team was successfully able to buy parts to bring a life-size, fully functioning BB-8 droid to life. From motors to motor driver to soundboards, to washers and steel shot adhesive, the purchases for our parts helped provide our members with lots of hands-on mechanical and electrical engineering experience through the lens of our BB-8 project, which we are hoping to use for social outreach purposes such as visits to children hospitals and sci-fi conventions.
+              </div>
+
+              <div className='section'></div>
+
+              <div className='blurb-title' style={{color: darkMode ? 'white' : 'black'}}>
+                TIMELINE
+              </div>
+
+              <div className='divider'></div>
+
+              <div class="timeline">
+              <div class="container left">
+                <div class="content">
+                  <h2>2017</h2>
+                  <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                </div>
+              </div>
+              <div class="container right">
+                <div class="content">
+                  <h2>2016</h2>
+                  <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                </div>
+              </div>
+              <div class="container left">
+                <div class="content">
+                  <h2>2015</h2>
+                  <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                </div>
+              </div>
+              <div class="container right">
+                <div class="content">
+                  <h2>2012</h2>
+                  <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                </div>
+              </div>
+              <div class="container left">
+                <div class="content">
+                  <h2>2011</h2>
+                  <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                </div>
+              </div>
+              <div class="container right">
+                <div class="content">
+                  <h2>2007</h2>
+                  <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                </div>
+              </div>
             </div>
+
+
+
+              <div className='divider'></div>
               
             </div>
 
             <div className='first-row h-spacer'></div>
             <div className='m-spacer'></div>
 
-            <div className='first-row pacbot-glow' onClick={() => toggleBlurb('pacbot')}>
-              <div className = {selectedTeam === 'pacbot' ? 'pacbot-logo ' + LOGO_CLASSES[1] : 
-                  (selectedTeam === '' ? 'pacbot-logo ' + LOGO_CLASSES[0] : 'pacbot-logo ' + LOGO_CLASSES[2])}
-                  style = {{transition: '0.5s'}}>
-              </div>
-              <div id='pacbot-text' className = {selectedTeam === 'pacbot' ? 'pacbot-text ' + TEXT_CLASSES[1] : 
-                  (selectedTeam === '' ? 'pacbot-text ' + TEXT_CLASSES[0] : 'pacbot-text ' + TEXT_CLASSES[2])}
-                  style = {{transition: '0.5s'}}>
-                  PACBOT
-              </div>
+            <div className = 'first-row'>
+              <TeamButton
+                  teamName = 'pacbot'
+                  teamTitle = 'PACBOT'
+                  selectedTeam = {selectedTeam}
+                  toggleBlurb = {toggleBlurb}
+              />
             </div>
+
             <div id='pacbot-blurb' className='second-row team-blurb pacbot-blurb' style={{display: selectedTeam === 'pacbot' ? 'flex' : 'none', backgroundColor: darkMode ? 'black' : 'white'}}>
               
-            <div className='divider'></div>
+              <div className='divider'></div>
 
-            <div className='blurb-carousel pacbot-carousel pacbot-1'></div>
-            <div className='blurb-carousel pacbot-carousel pacbot-2'></div>
-            <div className='blurb-carousel pacbot-carousel pacbot-3'></div>
+              <div className='blurb-title' style={{color: darkMode ? 'white' : 'black'}}>
+                GALLERY
+              </div>
 
-            <div className='divider'></div>
+              <div className='divider'></div>
 
-            <span class="blurb-dot pacbot-dot" onClick={() => showSlides('pacbot', 1)}></span> 
-            <span class="blurb-dot pacbot-dot" onClick={() => showSlides('pacbot', 2)}></span> 
-            <span class="blurb-dot pacbot-dot" onClick={() => showSlides('pacbot', 3)}></span> 
+              <div className='blurb-carousel pacbot-carousel pacbot-1'></div>
+              <div className='blurb-carousel pacbot-carousel pacbot-2'></div>
+              <div className='blurb-carousel pacbot-carousel pacbot-3'></div>
+
+              <div className='divider'></div>
+
+              <span class="blurb-dot pacbot-dot" onClick={() => showSlides('pacbot', 1)}></span> 
+              <span class="blurb-dot pacbot-dot" onClick={() => showSlides('pacbot', 2)}></span> 
+              <span class="blurb-dot pacbot-dot" onClick={() => showSlides('pacbot', 3)}></span>
+
+              <div className='section'></div>
+
+              <div className='blurb-title' style={{color: darkMode ? 'white' : 'black'}}>
+                ABOUT
+              </div>
+
+              <div className='divider'></div>
               
               <div className='blurb-text' style={{color: darkMode ? 'white' : 'black'}}>
               After a year of preparation, our PacBot team and their PacBot, “PacBob,” will be traveling to Harvard in late April to compete in the annual PacBot competition against schools from all around the country. (The PacBot competition involves building a robot which autonomously plays a physical version of Pacman)
               </div>
+
+              <div className='divider'></div>
+            
             </div>
 
             <div className='first-row h-spacer'></div>
             <div className='m-spacer'></div>
 
-            <div className='first-row drone-glow' onClick={() => toggleBlurb('drone')}>
-              <div className = {selectedTeam === 'drone' ? 'drone-logo ' + LOGO_CLASSES[1] : 
-                  (selectedTeam === '' ? 'drone-logo ' + LOGO_CLASSES[0] : 'drone-logo ' + LOGO_CLASSES[2])}
-                  style = {{transition: '0.5s'}}>
-              </div>
-              <div id='drone-text' className = {selectedTeam === 'drone' ? 'drone-text ' + TEXT_CLASSES[1] : 
-                  (selectedTeam === '' ? 'drone-text ' + TEXT_CLASSES[0] : 'drone-text ' + TEXT_CLASSES[2])}
-                  style = {{transition: '0.5s'}}>
-                  DRONE
-              </div>
+            <div className = 'first-row'>
+              <TeamButton
+                  teamName = 'drone'
+                  teamTitle = 'DRONE'
+                  selectedTeam = {selectedTeam}
+                  toggleBlurb = {toggleBlurb}
+              />
             </div>
-            <div id='drone-blurb' className='second-row team-blurb drone-blurb' style={{display: selectedTeam === 'drone' ? 'flex' : 'none', backgroundColor: darkMode ? 'black' : 'white'}}>
-              
-              <div className='blurb-text' style={{color: darkMode ? 'white' : 'black'}}>
-                With the support of the Alumni Fund, the Drone Team was able to kickstart our autonomous quadcopter project. The project entailed developing a modular autonomous drone system capable of computer-vision-based ‘gesture control,’ which allows the user to control the quadcopter through hand ‘gestures.’ These gestures are recognized by the camera - using computer vision - and interpreted as a command. We were able to successfully integrate our systems and have a working version of the quadcopter!
-              </div>
+
+            <div className = 'second-row'>
+              <TeamBlurb
+                darkMode = {darkMode}
+                teamName = 'drone'
+                selectedTeam = {selectedTeam}
+                about = 'With the support of the Alumni Fund, the Drone Team was able to kickstart our autonomous quadcopter project. The project entailed developing a modular autonomous drone system capable of computer-vision-based ‘gesture control,’ which allows the user to control the quadcopter through hand ‘gestures.’ These gestures are recognized by the camera - using computer vision - and interpreted as a command. We were able to successfully integrate our systems and have a working version of the quadcopter!'
+                numSlides = {3}
+                showSlides = {showSlides}
+                checkpoints = {[['2023-10-10' , 'step 1'], 
+                                ['2022-11-10', 'step 2'], 
+                                ['2023-12-10', 'Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.']]}
+              />
             </div>
 
             <div className='first-row break'></div>
             <div className='second-row v-spacer'></div>
             <div className='m-spacer'></div>
 
-            <div className='second-row drone-glow' onClick={() => toggleBlurb('drone2')}>
-              <div className = {selectedTeam === 'drone2' ? 'drone-logo ' + LOGO_CLASSES[1] : 
-                  (selectedTeam === '' ? 'drone-logo ' + LOGO_CLASSES[0] : 'drone-logo ' + LOGO_CLASSES[2])}
-                  style = {{transition: '0.5s'}}>
-              </div>
-              <div id='drone2-text' className = {selectedTeam === 'drone2' ? 'drone-text ' + TEXT_CLASSES[1] : 
-                  (selectedTeam === '' ? 'drone-text ' + TEXT_CLASSES[0] : 'drone-text ' + TEXT_CLASSES[2])}
-                  style = {{transition: '0.5s'}}>
-                  DRONE
-              </div>
+            <div className = 'second-row'>
+              <TeamButton
+                  teamName = 'droid'
+                  teamTitle = 'DRONE 2'
+                  selectedTeam = {selectedTeam}
+                  toggleBlurb = {toggleBlurb}
+              />
             </div>
+
             <div id='drone2-blurb' className='third-row team-blurb drone-blurb' style={{display: selectedTeam === 'drone2' ? 'flex' : 'none'}}>
               With the support of the Alumni Fund, the Drone Team was able to kickstart our autonomous quadcopter project. The project entailed developing a modular autonomous drone system capable of computer-vision-based ‘gesture control,’ which allows the user to control the quadcopter through hand ‘gestures.’ These gestures are recognized by the camera - using computer vision - and interpreted as a command. We were able to successfully integrate our systems and have a working version of the quadcopter!
             </div>
@@ -183,17 +256,15 @@ function Projects(props) {
             <div className='second-row h-spacer'></div>
             <div className='m-spacer'></div>
 
-            <div className='second-row drone-glow' onClick={() => toggleBlurb('drone3')}>
-              <div className = {selectedTeam === 'drone3' ? 'drone-logo ' + LOGO_CLASSES[1] : 
-                  (selectedTeam === '' ? 'drone-logo ' + LOGO_CLASSES[0] : 'drone-logo ' + LOGO_CLASSES[2])}
-                  style = {{transition: '0.5s'}}>
-              </div>
-              <div id='drone3-text' className = {selectedTeam === 'drone3' ? 'drone-text ' + TEXT_CLASSES[1] : 
-                  (selectedTeam === '' ? 'drone-text ' + TEXT_CLASSES[0] : 'drone-text ' + TEXT_CLASSES[2])}
-                  style = {{transition: '0.5s'}}>
-                  DRONE
-              </div>
+            <div className = 'second-row'>
+              <TeamButton
+                  teamName = 'drone'
+                  teamTitle = 'DRONE 3'
+                  selectedTeam = {selectedTeam}
+                  toggleBlurb = {toggleBlurb}
+              />
             </div>
+
             <div id='drone3-blurb' className='third-row team-blurb drone-blurb' style={{display: selectedTeam === 'drone3' ? 'flex' : 'none'}}>
               With the support of the Alumni Fund, the Drone Team was able to kickstart our autonomous quadcopter project. The project entailed developing a modular autonomous drone system capable of computer-vision-based ‘gesture control,’ which allows the user to control the quadcopter through hand ‘gestures.’ These gestures are recognized by the camera - using computer vision - and interpreted as a command. We were able to successfully integrate our systems and have a working version of the quadcopter!
             </div>

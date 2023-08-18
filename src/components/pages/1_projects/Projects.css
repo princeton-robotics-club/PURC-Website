@@ -19,6 +19,105 @@
 }
 
 /* ------------------------------------------------------------------------- */
+/*                                 uwu                                   */
+/* ------------------------------------------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.container:nth-child(odd) {
+  left: 0;
+}
+
+/* Place the container to the right */
+.container:nth-child(even) {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.container:nth-child(odd)::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.container:nth-child(even)::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.container:nth-child(even)::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* ------------------------------------------------------------------------- */
 /*                                 SPACERS                                   */
 /* ------------------------------------------------------------------------- */
 
@@ -30,6 +129,11 @@
 .divider {
   flex-basis: 100%;
   height: calc(var(--projects-desktop-container) / var(--projects-carousel-ratio) * 0.025);
+}
+
+.section {
+  flex-basis: 100%;
+  height: calc(var(--projects-desktop-container) / var(--projects-carousel-ratio) * 0.05);
 }
 
 .h-spacer {
@@ -78,66 +182,28 @@
   flex-wrap: wrap;
 }
 
-/* Assumes article-centered wrapping */
-.team-logo-original {
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: calc(var(--projects-desktop-container) / var(--projects-original-ratio) * var(--projects-desktop-size));
-  height: calc(var(--projects-desktop-container) / var(--projects-original-ratio) * var(--projects-desktop-size));
-}
-
-/* This button selected, so maximize this button */
-.team-logo-selected {
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: calc(var(--projects-desktop-container) / var(--projects-selected-ratio) * var(--projects-desktop-size));
-  height: calc(var(--projects-desktop-container) / var(--projects-selected-ratio) * var(--projects-desktop-size));
-}
-
-/* Another button selected, so minimize this button */
-.team-logo-unselected {
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: calc(var(--projects-desktop-container) / var(--projects-unselected-ratio) * var(--projects-desktop-size));
-  height: calc(var(--projects-desktop-container) / var(--projects-unselected-ratio) * var(--projects-desktop-size));
-}
-
-.team-text-original {
-  cursor: pointer;
-  font-family: 'Century Gothic';
-  font-size: calc(var(--projects-desktop-container) / var(--projects-original-ratio) * var(--projects-desktop-size) / var(--projects-text-ratio));
-}
-
-.team-text-selected {
-  cursor: pointer;
-  font-family: 'Century Gothic';
-  font-size: calc(var(--projects-desktop-container) / var(--projects-selected-ratio) * var(--projects-desktop-size) / var(--projects-text-ratio));
-}
-
-.team-text-unselected {
-  cursor: pointer;
-  font-family: 'Century Gothic';
-  font-size: calc(var(--projects-desktop-container) / var(--projects-unselected-ratio) * var(--projects-desktop-size) / var(--projects-text-ratio));
-}
-
 .team-blurb {
   width: 100%;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
-  border-radius: 0px 30px 30px 30px;
-  border: 0.3vw solid;
+  border-radius: 30px 30px 30px 30px;
+  border: calc(var(--projects-desktop-container)/ 250) solid;
   background-color: black;
 }
 
 .blurb-text {
   font-family: 'Century Gothic';
   color: white;
-  padding: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   font-size: 20px;
+}
+
+.blurb-title {
+  font-family: 'Century Gothic';
+  color: white;
+  font-size: 30px;
 }
 
 .blurb-carousel {
@@ -148,15 +214,15 @@
   background-position: center center;
   background-color: black;
   border-style: solid none solid none;
-  border-width: 0.3vw;
+  border-width: calc(var(--projects-desktop-container) / 250);
 }
 
 .blurb-dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 0.3vw;
-  border: 0.3vw solid;
+  height: calc(var(--projects-desktop-container) / 50);
+  width: calc(var(--projects-desktop-container) / 50);
+  margin: calc(var(--projects-desktop-container) / 250) calc(var(--projects-desktop-container) / 250);
+  border: calc(var(--projects-desktop-container) / 250) solid;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -187,7 +253,7 @@
 
 .droid-blurb {
   border-color: var(--projects-droid-rgb);
-  box-shadow: 0px -10px 20px 0px var(--projects-droid-rgb);
+  box-shadow: 0px 0px 20px 0px var(--projects-droid-rgb);
 }
 
 .droid-dot {
@@ -211,7 +277,7 @@
 }
 
 .droid-3 {
-  background-image: url(../../../images/projects/droid/droid-3.png)
+  background-image: url(../../../images/projects/droid/droid-3.jpg)
 }
 
 /* ------------------------------------------------------------------------- */
@@ -237,7 +303,7 @@
 
 .pacbot-blurb {
   border-color: var(--projects-pacbot-rgb);
-  box-shadow: 0px -5px 20px var(--projects-pacbot-rgb);
+  box-shadow: 0px 0px 20px var(--projects-pacbot-rgb);
 }
 
 .pacbot-dot {
@@ -253,15 +319,15 @@
 }
 
 .pacbot-1 {
-  background-image: url(../../../images/projects/droid/droid-1.jpg)
+  background-image: url(../../../images/projects/pacbot/pacbot-1.jpg)
 }
 
 .pacbot-2 {
-  background-image: url(../../../images/projects/droid/droid-2.jpg)
+  background-image: url(../../../images/projects/pacbot/pacbot-2.jpg)
 }
 
 .pacbot-3 {
-  background-image: url(../../../images/projects/droid/droid-3.png)
+  background-image: url(../../../images/projects/pacbot/pacbot-3.jpg)
 }
 
 /* ------------------------------------------------------------------------- */
@@ -287,7 +353,31 @@
 
 .drone-blurb {
   border-color: var(--projects-drone-rgb);
-  box-shadow: 0px -5px 20px var(--projects-drone-rgb);
+  box-shadow: 0px 0px 20px var(--projects-drone-rgb);
+}
+
+.drone-dot {
+  border-color: var(--projects-drone-rgb);
+}
+
+.drone-dot-active, .drone-dot:hover {
+  background-color: var(--projects-drone-rgb);
+}
+
+.drone-carousel {
+  border-color: var(--projects-drone-rgb);
+}
+
+.drone-1 {
+  background-image: url(../../../images/projects/drone/drone-1.jpg)
+}
+
+.drone-2 {
+  background-image: url(../../../images/projects/drone/drone-2.jpg)
+}
+
+.drone-3 {
+  background-image: url(../../../images/projects/drone/drone-3.jpg)
 }
 
 /* ------------------------------------------------------------------------- */
@@ -299,7 +389,12 @@
   .divider {
     flex-basis: 100%;
     height: calc(var(--projects-mobile-container) / var(--projects-carousel-ratio) * 0.025);
-  }  
+  }
+  
+  .section {
+    flex-basis: 100%;
+    height: calc(var(--projects-mobile-container) / var(--projects-carousel-ratio) * 0.05);
+  }
   
   .h-spacer {
     height: 0;
@@ -333,50 +428,9 @@
     flex-direction: column;
     align-items: center;
   }
-  
-  /* Assumes article-centered wrapping */
-  .team-logo-original {
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: calc(var(--projects-mobile-container) / var(--projects-original-ratio) * var(--projects-mobile-size));
-    height: calc(var(--projects-mobile-container) / var(--projects-original-ratio) * var(--projects-mobile-size));
-  }
 
-  /* This button selected, so maximize this button */
-  .team-logo-selected {
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: calc(var(--projects-mobile-container) / var(--projects-selected-ratio) * var(--projects-mobile-size));
-    height: calc(var(--projects-mobile-container) / var(--projects-selected-ratio) * var(--projects-mobile-size));
-  }
-
-  /* Another button selected, so minimize this button */
-  .team-logo-unselected {
-    cursor: pointer;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: calc(var(--projects-mobile-container) / var(--projects-unselected-ratio) * var(--projects-mobile-size));
-    height: calc(var(--projects-mobile-container) / var(--projects-unselected-ratio) * var(--projects-mobile-size));
-  }
-
-  .team-text-original {
-    cursor: pointer;
-    font-family: 'Century Gothic';
-    font-size: calc(var(--projects-mobile-container) / var(--projects-original-ratio) * var(--projects-mobile-size) / var(--projects-text-ratio));
-  }
-
-  .team-text-selected {
-    cursor: pointer;
-    font-family: 'Century Gothic';
-    font-size: calc(var(--projects-mobile-container) / var(--projects-selected-ratio) * var(--projects-mobile-size) / var(--projects-text-ratio));
-  }
-
-  .team-text-unselected {
-    cursor: pointer;
-    font-family: 'Century Gothic';
-    font-size: calc(var(--projects-mobile-container) / var(--projects-unselected-ratio) * var(--projects-mobile-size) / var(--projects-text-ratio));
+  .team-blurb {
+    border-width: calc(var(--projects-mobile-container) / 150);
   }
 
   .blurb-carousel {
@@ -384,6 +438,61 @@
     width: calc(var(--projects-mobile-container) * 0.95);
     background-repeat: no-repeat;
     background-position: center center;
+    border-width: calc(var(--projects-mobile-container) / 150);
+  }
+
+  .blurb-text {
+    overflow-wrap: break-word;
+  }
+
+  .blurb-dot {
+    cursor: pointer;
+    height: calc(var(--projects-mobile-container) / 20);
+    width: calc(var(--projects-mobile-container) / 20);
+    margin: calc(var(--projects-mobile-container) / 75) calc(var(--projects-desktop-container) / 75);
+    border-width: calc(var(--projects-mobile-container) / 150);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
   }
 
 }
+
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+  
+  /* Full-width containers */
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+  /* Make sure that all arrows are pointing leftwards */
+    .container:nth-child(odd)::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+
+    .container:nth-child(even)::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+  /* Make sure all circles are at the same spot */
+    .container:nth-child(odd)::after, .container:nth-child(even)::after {
+      left: 15px;
+    }
+  
+  /* Make all right containers behave like the left ones */
+    .container:nth-child(even) {
+      left: 0%;
+    }
+  }
