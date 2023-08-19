@@ -21,22 +21,26 @@ function TeamBlurb(props) {
     let carousel = []
 
     for (i = 0; i < slides.length; i++) {
+        let content
         let url = slides[i][0]
         let orientation = slides[i][1]
-        let content
 
         if (img_ext.includes(url.split('.').pop().toLowerCase())) {
-          if (orientation === 'v') {
+          if (orientation === 'h') {
+            content = React.createElement('img', {src: url, alt: '', style: {height: 'auto', width: '100%'}})
+          } else if (orientation === 'v') {
             content = React.createElement('img', {src: url, alt: '', style: {height: '100%', width: 'auto'}})
           } else {
-            content = React.createElement('img', {src: url, alt: '', style: {height: 'auto', width: '100%'}})
+            content = React.createElement('div', {style: {textAlign: 'center', height: '100%', width: '100%', color: 'red', backgroundColor: 'gray'}}, 'ERROR: Unspecified orientation')
           }
         }
         else if (video_ext.includes(url.split('.').pop().toLowerCase())) {
-          if (orientation === 'v') {
+          if (orientation === 'h') {
+            content = React.createElement('video', {src: url, controls: true, style: {height: 'auto', width: '100%'}})
+          } else if (orientation === 'v') {
             content = React.createElement('video', {src: url, controls: true, style: {height: '100%', width: 'auto'}})
           } else {
-            content = React.createElement('video', {src: url, controls: true, style: {height: 'auto', width: '100%'}})
+            content = React.createElement('div', {style: {textAlign: 'center', height: '100%', width: '100%', color: 'red', backgroundColor: 'gray'}}, 'ERROR: Unspecified orientation')
           }
         }
         else {
@@ -125,9 +129,9 @@ function TeamBlurb(props) {
 
         <div className='divider'></div>
 
-                <div class="timeline">
-                {generateTimeline()}
-                </div>
+          <div class="timeline">
+              {generateTimeline()}
+          </div>
 
         <div className='divider'></div>
               
