@@ -83,100 +83,21 @@ function Projects(props) {
               />
             </div>
 
-            <div id='droid-blurb' className='second-row team-blurb droid-blurb' style={{display: selectedTeam === 'droid' ? 'flex' : 'none', backgroundColor: darkMode ? 'black' : 'white'}}>
-
-              <div className='divider'></div>
-
-              <div className='blurb-title' style={{color: darkMode ? 'white' : 'black'}}>
-                GALLERY
-              </div>
-
-              <div className='divider'></div>
-
-              
-              <div className='blurb-carousel droid-carousel'>
-                <img src={droid1}></img>
-              </div>
-              <div className='blurb-carousel droid-carousel'>
-                <img src={droid2}></img>
-              </div>
-              <div className='blurb-carousel droid-carousel'>
-                <img src={droid3}></img>
-              </div>
-              <div className='blurb-carousel droid-carousel'>
-                <video controls src={droid4}></video>
-              </div>
-
-              <div className='divider'></div>
-
-              <span class="blurb-dot droid-dot" onClick={() => showSlides('droid', 1)}></span> 
-              <span class="blurb-dot droid-dot" onClick={() => showSlides('droid', 2)}></span> 
-              <span class="blurb-dot droid-dot" onClick={() => showSlides('droid', 3)}></span>
-              <span class="blurb-dot droid-dot" onClick={() => showSlides('droid', 4)}></span>
-
-              <div className='section'></div>
-
-              <div className='blurb-title' style={{color: darkMode ? 'white' : 'black'}}>
-                ABOUT
-              </div>
-
-              <div className='divider'></div>
-            
-              <div className='blurb-text' style={{color: darkMode ? 'white' : 'black'}}>
-              With the help of the Alumni Fund, the droid team was successfully able to buy parts to bring a life-size, fully functioning BB-8 droid to life. From motors to motor driver to soundboards, to washers and steel shot adhesive, the purchases for our parts helped provide our members with lots of hands-on mechanical and electrical engineering experience through the lens of our BB-8 project, which we are hoping to use for social outreach purposes such as visits to children hospitals and sci-fi conventions.
-              </div>
-
-              <div className='section'></div>
-
-              <div className='blurb-title' style={{color: darkMode ? 'white' : 'black'}}>
-                TIMELINE
-              </div>
-
-              <div className='divider'></div>
-
-              <div class="timeline">
-              <div class="container left">
-                <div class="content">
-                  <h2>2017</h2>
-                  <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                </div>
-              </div>
-              <div class="container right">
-                <div class="content">
-                  <h2>2016</h2>
-                  <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                </div>
-              </div>
-              <div class="container left">
-                <div class="content">
-                  <h2>2015</h2>
-                  <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                </div>
-              </div>
-              <div class="container right">
-                <div class="content">
-                  <h2>2012</h2>
-                  <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                </div>
-              </div>
-              <div class="container left">
-                <div class="content">
-                  <h2>2011</h2>
-                  <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                </div>
-              </div>
-              <div class="container right">
-                <div class="content">
-                  <h2>2007</h2>
-                  <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                </div>
-              </div>
-            </div>
-
-
-
-              <div className='divider'></div>
-              
+            <div className = 'second-row'>
+              <TeamBlurb
+                darkMode = {darkMode}
+                teamName = 'droid'
+                selectedTeam = {selectedTeam}
+                about = 'With the help of the Alumni Fund, the droid team was successfully able to buy parts to bring a life-size, fully functioning BB-8 droid to life. From motors to motor driver to soundboards, to washers and steel shot adhesive, the purchases for our parts helped provide our members with lots of hands-on mechanical and electrical engineering experience through the lens of our BB-8 project, which we are hoping to use for social outreach purposes such as visits to children hospitals and sci-fi conventions.'
+                slides = {[[droid1, 'h'],
+                            [droid2, 'v'],
+                            [droid3, 'h'],
+                            [droid4, 'h']]}
+                showSlides = {showSlides}
+                milestones = {[['2023-10-10' , 'step 1'], 
+                                ['2022-11-10', 'step 2'], 
+                                ['2023-12-10', ' help play  help play a lit  ']]}
+              />
             </div>
 
             <div className='first-row h-spacer'></div>
@@ -191,40 +112,21 @@ function Projects(props) {
               />
             </div>
 
-            <div id='pacbot-blurb' className='second-row team-blurb pacbot-blurb' style={{display: selectedTeam === 'pacbot' ? 'flex' : 'none', backgroundColor: darkMode ? 'black' : 'white'}}>
-              
-              <div className='divider'></div>
-
-              <div className='blurb-title' style={{color: darkMode ? 'white' : 'black'}}>
-                GALLERY
-              </div>
-
-              <div className='divider'></div>
-
-              <div className='blurb-carousel pacbot-carousel pacbot-1'></div>
-              <div className='blurb-carousel pacbot-carousel pacbot-2'></div>
-              <div className='blurb-carousel pacbot-carousel pacbot-3'></div>
-
-              <div className='divider'></div>
-
-              <span class="blurb-dot pacbot-dot" onClick={() => showSlides('pacbot', 1)}></span> 
-              <span class="blurb-dot pacbot-dot" onClick={() => showSlides('pacbot', 2)}></span> 
-              <span class="blurb-dot pacbot-dot" onClick={() => showSlides('pacbot', 3)}></span>
-
-              <div className='section'></div>
-
-              <div className='blurb-title' style={{color: darkMode ? 'white' : 'black'}}>
-                ABOUT
-              </div>
-
-              <div className='divider'></div>
-              
-              <div className='blurb-text' style={{color: darkMode ? 'white' : 'black'}}>
-              After a year of preparation, our PacBot team and their PacBot, “PacBob,” will be traveling to Harvard in late April to compete in the annual PacBot competition against schools from all around the country. (The PacBot competition involves building a robot which autonomously plays a physical version of Pacman)
-              </div>
-
-              <div className='divider'></div>
-            
+            <div className = 'second-row'>
+              <TeamBlurb
+                darkMode = {darkMode}
+                teamName = 'pacbot'
+                selectedTeam = {selectedTeam}
+                about = 'After a year of preparation, our PacBot team and their PacBot, “PacBob,” will be traveling to Harvard in late April to compete in the annual PacBot competition against schools from all around the country. (The PacBot competition involves building a robot which autonomously plays a physical version of Pacman)'
+                slides = {[[droid1, 'h'],
+                            [droid2, 'v'],
+                            [droid3, 'h'],
+                            [droid4, 'h']]}
+                showSlides = {showSlides}
+                milestones = {[['2023-10-10' , 'step 1'], 
+                                ['2022-11-10', 'step 2'], 
+                                ['2023-12-10', ' help play  help play a lit  ']]}
+              />
             </div>
 
             <div className='first-row h-spacer'></div>
