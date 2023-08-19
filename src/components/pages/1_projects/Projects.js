@@ -1,8 +1,14 @@
 import {React, useState} from 'react';
 import '../Generic.css';
 import './Projects.css';
+
 import TeamButton from '../../team/TeamButton';
 import TeamBlurb from '../../team/TeamBlurb';
+
+import droid1 from '../../../images/projects/droid/droid-1.jpg'
+import droid2 from '../../../images/projects/pacbot/pacbot-3.jpg'
+import droid3 from '../../../images/projects/droid/droid-3.jpg'
+import droid4 from '../../../images/projects/droid/random.MOV'
 
 function Projects(props) {
 
@@ -61,7 +67,7 @@ function Projects(props) {
           <div className='first-row v-spacer'></div>
           <div className='m-spacer'></div>
 
-          <div className='page-title' style={{color: darkMode ? 'white' : 'black'}}> EXPLORE OUR PROJECTS </div>
+          <div className='page-title' style={{color: darkMode ? 'white' : 'black'}}> MEET OUR TEAMS </div>
 
           <div className='first-row v-spacer'></div>
           <div className='m-spacer'></div>
@@ -87,15 +93,26 @@ function Projects(props) {
 
               <div className='divider'></div>
 
-              <div className='blurb-carousel droid-carousel droid-1'></div>
-              <div className='blurb-carousel droid-carousel droid-2'></div>
-              <div className='blurb-carousel droid-carousel droid-3'></div>
+              
+              <div className='blurb-carousel droid-carousel'>
+                <img src={droid1}></img>
+              </div>
+              <div className='blurb-carousel droid-carousel'>
+                <img src={droid2}></img>
+              </div>
+              <div className='blurb-carousel droid-carousel'>
+                <img src={droid3}></img>
+              </div>
+              <div className='blurb-carousel droid-carousel'>
+                <video controls src={droid4}></video>
+              </div>
 
               <div className='divider'></div>
 
               <span class="blurb-dot droid-dot" onClick={() => showSlides('droid', 1)}></span> 
               <span class="blurb-dot droid-dot" onClick={() => showSlides('droid', 2)}></span> 
               <span class="blurb-dot droid-dot" onClick={() => showSlides('droid', 3)}></span>
+              <span class="blurb-dot droid-dot" onClick={() => showSlides('droid', 4)}></span>
 
               <div className='section'></div>
 
@@ -228,11 +245,11 @@ function Projects(props) {
                 teamName = 'drone'
                 selectedTeam = {selectedTeam}
                 about = 'With the support of the Alumni Fund, the Drone Team was able to kickstart our autonomous quadcopter project. The project entailed developing a modular autonomous drone system capable of computer-vision-based ‘gesture control,’ which allows the user to control the quadcopter through hand ‘gestures.’ These gestures are recognized by the camera - using computer vision - and interpreted as a command. We were able to successfully integrate our systems and have a working version of the quadcopter!'
-                numSlides = {3}
+                slides = {[droid1, droid2, droid3, droid4]}
                 showSlides = {showSlides}
-                checkpoints = {[['2023-10-10' , 'step 1'], 
+                milestones = {[['2023-10-10' , 'step 1'], 
                                 ['2022-11-10', 'step 2'], 
-                                ['2023-12-10', 'Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.']]}
+                                ['2023-12-10', ' help play  help play a lit  ']]}
               />
             </div>
 

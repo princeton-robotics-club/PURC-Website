@@ -21,9 +21,6 @@
 /* ------------------------------------------------------------------------- */
 /*                                 uwu                                   */
 /* ------------------------------------------------------------------------- */
-* {
-  box-sizing: border-box;
-}
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
@@ -50,6 +47,7 @@
   position: relative;
   background-color: inherit;
   width: 50%;
+  box-sizing: border-box;
 }
 
 /* The circles on the timeline */
@@ -209,12 +207,24 @@
 .blurb-carousel {
   height: calc(var(--projects-desktop-container) / var(--projects-carousel-ratio) * 0.95);
   width: calc(var(--projects-desktop-container) * 0.95);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
   background-color: black;
   border-style: solid none solid none;
   border-width: calc(var(--projects-desktop-container) / 250);
+  overflow: hidden;
+}
+
+.blurb-carousel img {
+  height: 100%;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.blurb-carousel video {
+  height: 100%;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .blurb-dot {
