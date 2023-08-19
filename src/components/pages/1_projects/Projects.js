@@ -7,7 +7,7 @@ import TeamBlurb from '../../team/TeamBlurb';
 
 import droid1 from '../../../images/projects/droid/droid-1.jpg'
 import droid2 from '../../../images/projects/pacbot/pacbot-3.jpg'
-import droid3 from '../../../images/projects/droid/droid-3.jpg'
+import droid3 from '../../../images/projects/droid/Mont_Saleve_Hike_by_Tristan_Richard_Brandes.JPG'
 import droid4 from '../../../images/projects/droid/random.MOV'
 
 function Projects(props) {
@@ -245,7 +245,10 @@ function Projects(props) {
                 teamName = 'drone'
                 selectedTeam = {selectedTeam}
                 about = 'With the support of the Alumni Fund, the Drone Team was able to kickstart our autonomous quadcopter project. The project entailed developing a modular autonomous drone system capable of computer-vision-based ‘gesture control,’ which allows the user to control the quadcopter through hand ‘gestures.’ These gestures are recognized by the camera - using computer vision - and interpreted as a command. We were able to successfully integrate our systems and have a working version of the quadcopter!'
-                slides = {[droid1, droid2, droid3, droid4]}
+                slides = {[[droid1, 'h'],
+                            [droid2, 'v'],
+                            [droid3, 'h'],
+                            [droid4, 'h']]}
                 showSlides = {showSlides}
                 milestones = {[['2023-10-10' , 'step 1'], 
                                 ['2022-11-10', 'step 2'], 

@@ -210,21 +210,17 @@
   background-color: black;
   border-style: solid none solid none;
   border-width: calc(var(--projects-desktop-container) / 250);
+  line-height: calc(var(--projects-desktop-container) / var(--projects-carousel-ratio) * 0.95);
+  text-align: center;
   overflow: hidden;
 }
 
 .blurb-carousel img {
-  height: 100%;
-  margin-left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+  vertical-align: middle;
 }
 
 .blurb-carousel video {
-  height: 100%;
-  margin-left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+  vertical-align: middle;
 }
 
 .blurb-dot {
@@ -278,18 +274,6 @@
   border-color: var(--projects-droid-rgb);
 }
 
-.droid-1 {
-  background-image: url(../../../images/projects/droid/droid-1.jpg)
-}
-
-.droid-2 {
-  background-image: url(../../../images/projects/droid/droid-2.jpg)
-}
-
-.droid-3 {
-  background-image: url(../../../images/projects/droid/droid-3.jpg)
-}
-
 /* ------------------------------------------------------------------------- */
 
 .pacbot-logo {
@@ -328,18 +312,6 @@
   border-color: var(--projects-pacbot-rgb);
 }
 
-.pacbot-1 {
-  background-image: url(../../../images/projects/pacbot/pacbot-1.jpg)
-}
-
-.pacbot-2 {
-  background-image: url(../../../images/projects/pacbot/pacbot-2.jpg)
-}
-
-.pacbot-3 {
-  background-image: url(../../../images/projects/pacbot/pacbot-3.jpg)
-}
-
 /* ------------------------------------------------------------------------- */
 
 .drone-logo {
@@ -376,18 +348,6 @@
 
 .drone-carousel {
   border-color: var(--projects-drone-rgb);
-}
-
-.drone-1 {
-  background-image: url(../../../images/projects/drone/drone-1.jpg)
-}
-
-.drone-2 {
-  background-image: url(../../../images/projects/drone/drone-2.jpg)
-}
-
-.drone-3 {
-  background-image: url(../../../images/projects/drone/drone-3.jpg)
 }
 
 /* ------------------------------------------------------------------------- */
