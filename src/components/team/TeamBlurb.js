@@ -10,7 +10,8 @@ function TeamBlurb(props) {
     about,
     slides,
     showSlides,
-    milestones
+    milestones,
+    milestoneDisplay
   } = props;
 
   const img_ext = ['jpg', 'png', 'jpeg', 'svg']
@@ -31,7 +32,8 @@ function TeamBlurb(props) {
           } else if (orientation === 'v') {
             content = React.createElement('img', {src: url, alt: '', style: {height: '100%', width: 'auto'}})
           } else {
-            content = React.createElement('div', {style: {textAlign: 'center', height: '100%', width: '100%', color: 'red', backgroundColor: 'gray'}}, 'ERROR: Unspecified orientation')
+            content = React.createElement('img', {src: url, alt: '', style: {height: 'auto', width: '100%'}})
+            //content = React.createElement('div', {style: {textAlign: 'center', height: '100%', width: '100%', color: 'red', backgroundColor: 'gray'}}, 'ERROR: Unspecified orientation')
           }
         }
         else if (video_ext.includes(url.split('.').pop().toLowerCase())) {
@@ -40,11 +42,13 @@ function TeamBlurb(props) {
           } else if (orientation === 'v') {
             content = React.createElement('video', {src: url, controls: true, style: {height: '100%', width: 'auto'}})
           } else {
-            content = React.createElement('div', {style: {textAlign: 'center', height: '100%', width: '100%', color: 'red', backgroundColor: 'gray'}}, 'ERROR: Unspecified orientation')
+            content = React.createElement('video', {src: url, controls: true, style: {height: 'auto', width: '100%'}})
+            //content = React.createElement('div', {style: {textAlign: 'center', height: '100%', width: '100%', color: 'red', backgroundColor: 'gray'}}, 'ERROR: Unspecified orientation')
           }
         }
         else {
-          content = React.createElement('div', {style: {textAlign: 'center', height: '100%', width: '100%', color: 'red', backgroundColor: 'gray'}}, 'ERROR: Unrecognized file extension')
+          content = React.createElement('img', {src: url, alt: '', style: {height: 'auto', width: '100%'}})
+          //content = React.createElement('div', {style: {textAlign: 'center', height: '100%', width: '100%', color: 'red', backgroundColor: 'gray'}}, 'ERROR: Unrecognized file extension')
         }
         
         carousel.push(React.createElement('div', {className: teamName + '-carousel blurb-carousel'}, content))
@@ -78,13 +82,25 @@ function TeamBlurb(props) {
     sorted_milestones = sorted_milestones.sort(function(a, b){return a[0] - b[0]})
 
     for (i = 0; i < sorted_milestones.length; i++) {
-        let month = sorted_milestones[i][0].toLocaleString('default', {month: 'short'})
-        let day = sorted_milestones[i][0].getDate()
-        let year = sorted_milestones[i][0].getFullYear()
-        
-        let title = React.createElement('h2', {}, month + ' ' + day + ', ' + year)
-        let text = React.createElement('p', {}, sorted_milestones[i][1])
+        let title
 
+        if (milestoneDisplay === 'd'){
+          let month = sorted_milestones[i][0].toLocaleString('default', {month: 'short'})
+          let day = sorted_milestones[i][0].getDate()
+          let year = sorted_milestones[i][0].getFullYear()
+          title = React.createElement('h2', {}, month + ' ' + day + ', ' + year)
+        } else if (milestoneDisplay === 'm') {
+          let month = sorted_milestones[i][0].toLocaleString('default', {month: 'long'})
+          let year = sorted_milestones[i][0].getFullYear()
+          title = React.createElement('h2', {}, month + ' ' + year)
+        } else {
+          let month = sorted_milestones[i][0].toLocaleString('default', {month: 'short'})
+          let day = sorted_milestones[i][0].getDate()
+          let year = sorted_milestones[i][0].getFullYear()
+          title = React.createElement('h2', {}, month + ' ' + day + ', ' + year)
+        }
+
+        let text = React.createElement('p', {}, sorted_milestones[i][1])
         let content = React.createElement('div', {class: 'timeline-content'}, title, text)
         let arrow
         let circle
@@ -115,46 +131,44 @@ function TeamBlurb(props) {
 
   return (
     <div id={teamName + '-blurb'} className={teamName + '-blurb team-blurb'} style={{display: selectedTeam === teamName ? 'flex' : 'none', backgroundColor: darkMode ? 'black' : 'white'}}>
-        <div className='divider'></div>
-
         <div className='blurb-title' style={{color: darkMode ? 'white' : 'black', display: slides.length > 0 ? 'block' : 'none'}}>
-            GALLERY
+            <h2>GALLERY</h2>
         </div>
 
-        <div className='divider'></div>
+        <div className='divider' style={{display: slides.length > 0 ? 'block' : 'none'}}></div>
 
         {generateCarousel()}
 
-        <div className='divider'></div>
+        <div className='spacer' style={{display: slides.length > 0 ? 'block' : 'none'}}></div>
 
         {generateDots()}
 
-        <div className='section'></div>
+        <div className='section' style={{display: slides.length > 0 ? 'block' : 'none'}}></div>
 
         <div className='blurb-title' style={{color: darkMode ? 'white' : 'black'}}>
-            ABOUT
+            <h2>ABOUT</h2>
         </div>
 
-        <div className='divider'></div>
+        <div className='divider' ></div>
             
         <div className='blurb-text' style={{color: darkMode ? 'white' : 'black'}}>
             {about}
         </div>
 
-        <div className='section'></div>
+        <div className='section' style={{display: milestones.length > 0 ? 'block' : 'none'}}></div>
 
-        <div className='blurb-title' style={{color: darkMode ? 'white' : 'black'}}>
-            TIMELINE
+        <div className='blurb-title' style={{color: darkMode ? 'white' : 'black', display: milestones.length > 0 ? 'block' : 'none'}}>
+            <h2>TIMELINE</h2>
         </div>
 
-        <div className='divider'></div>
+        <div className='divider' style={{display: milestones.length > 0 ? 'block' : 'none'}}></div>
 
-          <div class='timeline'>
+          <div class='timeline' style={{display: milestones.length > 0 ? 'block' : 'none'}}>
             <div class={teamName + '-timeline-ruler timeline-ruler'}></div>
               {generateTimeline()}
           </div>
 
-        <div className='divider'></div>
+        <div className='spacer' ></div>
               
     </div>
   );

@@ -93,27 +93,19 @@
 }
 
 .droid-glow:hover {
-  filter: drop-shadow(0px 0px 2vw var(--projects-droid-rgb));
+  filter: drop-shadow(0px 0px 5px var(--projects-droid-rgb));
 }
 
 .droid-blurb {
   border-color: var(--projects-droid-rgb);
-  box-shadow: 0px 0px 20px 0px var(--projects-droid-rgb);
+  box-shadow: 0px 0px 8px 0px var(--projects-droid-rgb);
 }
 
-.droid-dot {
+.droid-dot, .droid-carousel {
   border-color: var(--projects-droid-rgb);
 }
 
-.droid-dot-active, .droid-dot:hover {
-  background-color: var(--projects-droid-rgb);
-}
-
-.droid-carousel {
-  border-color: var(--projects-droid-rgb);
-}
-
-.droid-timeline-ruler {
+.droid-dot-active, .droid-dot:hover, .droid-timeline-ruler {
   background-color: var(--projects-droid-rgb);
 }
 
@@ -140,27 +132,19 @@
 }
 
 .pacbot-glow:hover {
-  filter: drop-shadow(0px 0px 2vw var(--projects-pacbot-rgb));
+  filter: drop-shadow(0px 0px 5px var(--projects-pacbot-rgb));
 }
 
 .pacbot-blurb {
   border-color: var(--projects-pacbot-rgb);
-  box-shadow: 0px 0px 20px var(--projects-pacbot-rgb);
+  box-shadow: 0px 0px 8px var(--projects-pacbot-rgb);
 }
 
-.pacbot-dot {
+.pacbot-dot, .pacbot-carousel {
   border-color: var(--projects-pacbot-rgb);
 }
 
-.pacbot-dot-active, .pacbot-dot:hover {
-  background-color: var(--projects-pacbot-rgb);
-}
-
-.pacbot-carousel {
-  border-color: var(--projects-pacbot-rgb);
-}
-
-.pacbot-timeline-ruler {
+.pacbot-dot-active, .pacbot-dot:hover, .pacbot-timeline-ruler {
   background-color: var(--projects-pacbot-rgb);
 }
 
@@ -187,27 +171,19 @@
 }
 
 .drone-glow:hover {
-  filter: drop-shadow(0px 0px 2vw var(--projects-drone-rgb));
+  filter: drop-shadow(0px 0px 5px var(--projects-drone-rgb));
 }
 
 .drone-blurb {
   border-color: var(--projects-drone-rgb);
-  box-shadow: 0px 0px 20px var(--projects-drone-rgb);
+  box-shadow: 0px 0px 8px var(--projects-drone-rgb);
 }
 
-.drone-dot {
+.drone-dot, .drone-carousel {
   border-color: var(--projects-drone-rgb);
 }
 
-.drone-dot-active, .drone-dot:hover {
-  background-color: var(--projects-drone-rgb);
-}
-
-.drone-carousel {
-  border-color: var(--projects-drone-rgb);
-}
-
-.drone-timeline-ruler {
+.drone-dot-active, .drone-dot:hover, .drone-timeline-ruler {
   background-color: var(--projects-drone-rgb);
 }
 

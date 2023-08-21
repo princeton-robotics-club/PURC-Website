@@ -7,8 +7,10 @@ import TeamBlurb from '../../team/TeamBlurb';
 
 import droid1 from '../../../images/projects/droid/droid-1.jpg'
 import droid2 from '../../../images/projects/pacbot/pacbot-3.jpg'
-import droid3 from '../../../images/projects/droid/Mont_Saleve_Hike_by_Tristan_Richard_Brandes.JPG'
-import droid4 from '../../../images/projects/droid/random.MOV'
+
+import drone1 from '../../../images/projects/drone/drone-1.jpg'
+import drone2 from '../../../images/projects/drone/drone-2.jpg'
+import drone3 from '../../../images/projects/drone/drone-3.jpg'
 
 function Projects(props) {
 
@@ -89,14 +91,9 @@ function Projects(props) {
                 teamName = 'droid'
                 selectedTeam = {selectedTeam}
                 about = 'With the help of the Alumni Fund, the droid team was successfully able to buy parts to bring a life-size, fully functioning BB-8 droid to life. From motors to motor driver to soundboards, to washers and steel shot adhesive, the purchases for our parts helped provide our members with lots of hands-on mechanical and electrical engineering experience through the lens of our BB-8 project, which we are hoping to use for social outreach purposes such as visits to children hospitals and sci-fi conventions.'
-                slides = {[[droid1, 'h'],
-                            [droid2, 'v'],
-                            [droid3, 'h'],
-                            [droid4, 'h']]}
+                slides = {[]}
                 showSlides = {showSlides}
-                milestones = {[['2023-10-10' , 'step 1'], 
-                                ['2022-11-10', 'step 2'], 
-                                ['2023-12-10', ' help play  help play a lit  ']]}
+                milestones = {[]}
               />
             </div>
 
@@ -119,9 +116,7 @@ function Projects(props) {
                 selectedTeam = {selectedTeam}
                 about = 'After a year of preparation, our PacBot team and their PacBot, “PacBob,” will be traveling to Harvard in late April to compete in the annual PacBot competition against schools from all around the country. (The PacBot competition involves building a robot which autonomously plays a physical version of Pacman)'
                 slides = {[[droid1, 'h'],
-                            [droid2, 'v'],
-                            [droid3, 'h'],
-                            [droid4, 'h']]}
+                            [droid2, 'v']]}
                 showSlides = {showSlides}
                 milestones = {[['2023-10-10' , 'step 1'], 
                                 ['2022-11-10', 'step 2'], 
@@ -147,14 +142,14 @@ function Projects(props) {
                 teamName = 'drone'
                 selectedTeam = {selectedTeam}
                 about = 'The Drone Team is focused on exploring and adapting drone technology to solve problems. Our main project involves developing a modular autonomous quadcopter platform that can be fitted with different hardware and software to be applied in different scenarios: our first application being computer vision-based gesture recognition and control. This entails having the drone ‘see’ hand gestures from a person through a camera, recognize what that gesture is, and executing a command accordingly. The team is less competitive in nature and is anchored more on research and exploration! In essence, we are motivated by our curiosities towards pushing the boundaries of what drone technology is capable of within the context of integrating robotics into our daily lives. As such, we are also open to explore different venues of autonomous drone systems - whether it be drone delivery systems, or autonomous racing drones. Please let us know if you have any crazy ideas!'
-                slides = {[[droid1, 'h'],
-                            [droid2, 'v'],
-                            [droid3, 'h'],
-                            [droid4, 'h']]}
+                slides = {[[drone1, 'h'],
+                            [drone2, 'v'],
+                            [drone3, 'h']]}
                 showSlides = {showSlides}
-                milestones = {[['2022-10-01' , 'Built base drone hardware for manual flight, and adapted sensor array to establish position-hold through optical flow and lidar sensors instead of GPS (in order for the drone to have a position estimate indoors).'], 
-                                ['2023-04-01', 'Finished writing code for basic computer vision-based gesture control, and successfully conducted preliminary vision-based flight tests (takeoff and landing through gesture recognition).'], 
-                                ['2023-10-01', 'Explore more vision-based applications such as localization, path planning, obstacle / collision avoidance. Improve on safety guarantees for gesture control (make sure it’s safer to use).']]}
+                milestones = {[['2022-09-01' , 'Built base drone hardware for manual flight, and adapted sensor array to establish position-hold through optical flow and lidar sensors instead of GPS (in order for the drone to have a position estimate indoors).'], 
+                                ['2023-02-01', 'Finished writing code for basic computer vision-based gesture control, and successfully conducted preliminary vision-based flight tests (takeoff and landing through gesture recognition).'], 
+                                ['2023-09-01', 'Explore more vision-based applications such as localization, path planning, obstacle / collision avoidance. Improve on safety guarantees for gesture control (make sure it’s safer to use).']]}
+                milestoneDisplay = 'm'
               />
             </div>
 
