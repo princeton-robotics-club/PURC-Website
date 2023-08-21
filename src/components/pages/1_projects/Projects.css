@@ -113,6 +113,15 @@
   border-color: var(--projects-droid-rgb);
 }
 
+.droid-timeline-ruler {
+  background-color: var(--projects-droid-rgb);
+}
+
+.droid-timeline-circle {
+  border-color: var(--projects-droid-rgb);
+  background-color: var(--projects-droid-rgb);
+}
+
 /* ------------------------------------------------------------------------- */
 
 .pacbot-logo {
@@ -151,6 +160,15 @@
   border-color: var(--projects-pacbot-rgb);
 }
 
+.pacbot-timeline-ruler {
+  background-color: var(--projects-pacbot-rgb);
+}
+
+.pacbot-timeline-circle {
+  border-color: var(--projects-pacbot-rgb);
+  background-color: var(--projects-pacbot-rgb);
+}
+
 /* ------------------------------------------------------------------------- */
 
 .drone-logo {
@@ -187,6 +205,15 @@
 
 .drone-carousel {
   border-color: var(--projects-drone-rgb);
+}
+
+.drone-timeline-ruler {
+  background-color: var(--projects-drone-rgb);
+}
+
+.drone-timeline-circle {
+  border-color: var(--projects-drone-rgb);
+  background-color: var(--projects-drone-rgb);
 }
 
 /* ------------------------------------------------------------------------- */

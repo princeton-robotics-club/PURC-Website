@@ -67,10 +67,9 @@ function TeamBlurb(props) {
 
   function generateTimeline() {
     let i
-    let sorted_milestones = []
+    let now = Date.now()
+    let sorted_milestones = milestones
     let timeline = []
-
-    sorted_milestones = milestones
 
     for (i = 0; i < sorted_milestones.length; i++) {
         sorted_milestones[i][0] = new Date(sorted_milestones[i][0])
@@ -86,8 +85,29 @@ function TeamBlurb(props) {
         let title = React.createElement('h2', {}, month + ' ' + day + ', ' + year)
         let text = React.createElement('p', {}, sorted_milestones[i][1])
 
-        let content = React.createElement('div', {class: 'content'}, title, text)
-        timeline.push(React.createElement('div', {class: 'container'}, content))
+        let content = React.createElement('div', {class: 'timeline-content'}, title, text)
+        let arrow
+        let circle
+
+        if (i % 2 === 0){
+          arrow = React.createElement('div', {class: 'timeline-leftarrow'})
+
+          if (now > sorted_milestones[i][0]){
+            circle =  React.createElement('div', {class: teamName + '-timeline-circle timeline-leftcircle'})
+          } else {
+            circle =  React.createElement('div', {class: teamName + '-timeline-circle timeline-leftcircle', style: {backgroundColor: darkMode ? 'black' : 'white'}})
+          }
+        } else {
+          arrow = React.createElement('div', {class: 'timeline-rightarrow'})
+
+          if (now > sorted_milestones[i][0]){
+            circle =  React.createElement('div', {class: teamName + '-timeline-circle timeline-rightcircle'})
+          } else {
+            circle =  React.createElement('div', {class: teamName + '-timeline-circle timeline-rightcircle', style: {backgroundColor: darkMode ? 'black' : 'white'}})
+          }
+        }
+
+        timeline.push(React.createElement('div', {class: 'timeline-container'}, content, arrow, circle))
     }
 
     return timeline
@@ -129,7 +149,8 @@ function TeamBlurb(props) {
 
         <div className='divider'></div>
 
-          <div class="timeline">
+          <div class='timeline'>
+            <div class={teamName + '-timeline-ruler timeline-ruler'}></div>
               {generateTimeline()}
           </div>
 
