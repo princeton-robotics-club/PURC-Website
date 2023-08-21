@@ -146,7 +146,7 @@ function Projects(props) {
                             [drone2, 'v'],
                             [drone3, 'h']]}
                 showSlides = {showSlides}
-                milestones = {[['2022-09-01' , 'Built base drone hardware for manual flight, and adapted sensor array to establish position-hold through optical flow and lidar sensors instead of GPS (in order for the drone to have a position estimate indoors).'], 
+                milestones =  {[['2022-09-01' , 'Built base drone hardware for manual flight, and adapted sensor array to establish position-hold through optical flow and lidar sensors instead of GPS (in order for the drone to have a position estimate indoors).'], 
                                 ['2023-02-01', 'Finished writing code for basic computer vision-based gesture control, and successfully conducted preliminary vision-based flight tests (takeoff and landing through gesture recognition).'], 
                                 ['2023-09-01', 'Explore more vision-based applications such as localization, path planning, obstacle / collision avoidance. Improve on safety guarantees for gesture control (make sure it’s safer to use).']]}
                 milestoneDisplay = 'm'

@@ -222,7 +222,7 @@
     }
   
     .blurb-text {
-      overflow-wrap: break-word;
+      hyphens: auto;
     }
   
   }
@@ -276,5 +276,9 @@
 
       .timeline-container:nth-child(odd) {
         left: 0%;
+      }
+
+      .timeline-content {
+        hyphens: auto;
       }
     }
