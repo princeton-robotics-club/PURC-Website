@@ -175,15 +175,23 @@ function Projects(props) {
 
             <div className = 'second-row'>
               <TeamButton
-                  teamName = 'droid'
-                  teamTitle = 'DRONE 2'
+                  teamName = 'robocup'
+                  teamTitle = 'ROBOCUP'
                   selectedTeam = {selectedTeam}
                   toggleBlurb = {toggleBlurb}
               />
             </div>
 
-            <div id='drone2-blurb' className='third-row team-blurb drone-blurb' style={{display: selectedTeam === 'drone2' ? 'flex' : 'none'}}>
-              With the support of the Alumni Fund, the Drone Team was able to kickstart our autonomous quadcopter project. The project entailed developing a modular autonomous drone system capable of computer-vision-based ‘gesture control,’ which allows the user to control the quadcopter through hand ‘gestures.’ These gestures are recognized by the camera - using computer vision - and interpreted as a command. We were able to successfully integrate our systems and have a working version of the quadcopter!
+            <div className = 'third-row'>
+              <TeamBlurb
+                darkMode = {darkMode}
+                teamName = 'robocup'
+                selectedTeam = {selectedTeam}
+                about = 'Text about RoboCup goes here.'
+                slides = {[]}
+                showSlides = {showSlides}
+                milestones = {[]}
+              />
             </div>
 
             <div className='second-row h-spacer'></div>
@@ -191,18 +199,75 @@ function Projects(props) {
 
             <div className = 'second-row'>
               <TeamButton
-                  teamName = 'drone'
-                  teamTitle = 'DRONE 3'
+                  teamName = 'golf'
+                  teamTitle = 'GOLF CART'
                   selectedTeam = {selectedTeam}
                   toggleBlurb = {toggleBlurb}
               />
             </div>
 
-            <div id='drone3-blurb' className='third-row team-blurb drone-blurb' style={{display: selectedTeam === 'drone3' ? 'flex' : 'none'}}>
-              With the support of the Alumni Fund, the Drone Team was able to kickstart our autonomous quadcopter project. The project entailed developing a modular autonomous drone system capable of computer-vision-based ‘gesture control,’ which allows the user to control the quadcopter through hand ‘gestures.’ These gestures are recognized by the camera - using computer vision - and interpreted as a command. We were able to successfully integrate our systems and have a working version of the quadcopter!
+            <div className = 'third-row'>
+              <TeamBlurb
+                darkMode = {darkMode}
+                teamName = 'golf'
+                selectedTeam = {selectedTeam}
+                about = 'Text about Autonomous Golf Cart goes here.'
+                slides = {[]}
+                showSlides = {showSlides}
+                milestones = {[]}
+              />
             </div>
 
-            <div className='second-row v-spacer'></div>
+            <div className='second-row h-spacer'></div>
+            <div className='m-spacer'></div>
+
+            <div className = 'second-row'>
+              <TeamButton
+                  teamName = 'exoskeleton'
+                  teamTitle = 'EXOSKELETON'
+                  selectedTeam = {selectedTeam}
+                  toggleBlurb = {toggleBlurb}
+              />
+            </div>
+
+            <div className = 'third-row'>
+              <TeamBlurb
+                darkMode = {darkMode}
+                teamName = 'exoskeleton'
+                selectedTeam = {selectedTeam}
+                about = 'Text about Exoskeleton goes here.'
+                slides = {[]}
+                showSlides = {showSlides}
+                milestones = {[]}
+              />
+            </div>
+
+            <div className='second-row break'></div>
+            <div className='third-row v-spacer'></div>
+            <div className='m-spacer'></div>
+
+            <div className = 'third-row'>
+              <TeamButton
+                  teamName = 'rover'
+                  teamTitle = 'ROVER'
+                  selectedTeam = {selectedTeam}
+                  toggleBlurb = {toggleBlurb}
+              />
+            </div>
+
+            <div className = 'fourth-row'>
+              <TeamBlurb
+                darkMode = {darkMode}
+                teamName = 'rover'
+                selectedTeam = {selectedTeam}
+                about = 'Text about Rover goes here.'
+                slides = {[]}
+                showSlides = {showSlides}
+                milestones = {[]}
+              />
+            </div>
+
+            <div className='fourth-row v-spacer'></div>
             <div className='m-spacer'></div>
 
           </div>
