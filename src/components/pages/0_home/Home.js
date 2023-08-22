@@ -13,9 +13,9 @@ function Home(props) {
 
   return (
     <div className='body-bg'>
-      <div className='article-centered'>
+      <section className='article-centered'>
         <div className={'title-blob' + (darkMode ? ' title-blob-dark' : ' title-blob-light')}> HOME </div>
-      </div>
+      </section>
     </div>
   );
 }
