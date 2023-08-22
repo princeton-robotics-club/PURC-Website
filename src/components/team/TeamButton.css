@@ -33,18 +33,24 @@
     cursor: pointer;
     font-family: 'Century Gothic';
     font-size: calc(var(--projects-desktop-container) / var(--projects-original-ratio) * var(--projects-desktop-size) / var(--projects-text-ratio));
+    width: calc(var(--projects-desktop-container) / var(--projects-original-ratio) * var(--projects-desktop-size));
+    overflow: hidden;
 }
   
 .team-text-selected {
     cursor: pointer;
     font-family: 'Century Gothic';
     font-size: calc(var(--projects-desktop-container) / var(--projects-selected-ratio) * var(--projects-desktop-size) / var(--projects-text-ratio));
+    width: calc(var(--projects-desktop-container) / var(--projects-selected-ratio) * var(--projects-desktop-size));
+    overflow: hidden;
 }
   
 .team-text-unselected {
     cursor: pointer;
     font-family: 'Century Gothic';
     font-size: calc(var(--projects-desktop-container) / var(--projects-unselected-ratio) * var(--projects-desktop-size) / var(--projects-text-ratio));
+    width: calc(var(--projects-desktop-container) / var(--projects-unselected-ratio) * var(--projects-desktop-size));
+    overflow: hidden;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -83,17 +89,23 @@
         cursor: pointer;
         font-family: 'Century Gothic';
         font-size: calc(var(--projects-mobile-container) / var(--projects-original-ratio) * var(--projects-mobile-size) / var(--projects-text-ratio));
+        width: calc(var(--projects-mobile-container) / var(--projects-original-ratio) * var(--projects-mobile-size));
+        overflow: hidden;
     }
     
     .team-text-selected {
         cursor: pointer;
         font-family: 'Century Gothic';
         font-size: calc(var(--projects-mobile-container) / var(--projects-selected-ratio) * var(--projects-mobile-size) / var(--projects-text-ratio));
+        width: calc(var(--projects-mobile-container) / var(--projects-selected-ratio) * var(--projects-mobile-size));
+        overflow: hidden;
     }
     
     .team-text-unselected {
         cursor: pointer;
         font-family: 'Century Gothic';
         font-size: calc(var(--projects-mobile-container) / var(--projects-unselected-ratio) * var(--projects-mobile-size) / var(--projects-text-ratio));
+        width: calc(var(--projects-mobile-container) / var(--projects-unselected-ratio) * var(--projects-mobile-size));
+        overflow: hidden;
     }
 }
