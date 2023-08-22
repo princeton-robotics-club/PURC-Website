@@ -212,17 +212,19 @@
 }
 
 .blurb-caption {
-  display: none;
   color: white;
   font-family: 'Century Gothic';
+  hyphens: auto;
   font-size: 20px;
-  position: relative;
+  line-height: 20px;
+  padding: 10px;
   background-color: rgba(0, 0, 0, 0.5);
-  bottom: calc((var(--projects-desktop-container) - 8px) / var(--projects-carousel-ratio) * 0.95);
+  position: relative;
+  transition: transform 0.6s ease;
 }
 
 .blurb-carousel:hover .blurb-caption{
-  display: block;
+  transform: translateY(-100%);
 }
   
 /* ------------------------------------------------------------------------- */
@@ -239,10 +241,6 @@
       height: calc((var(--projects-mobile-container) - 8px) / var(--projects-carousel-ratio) * 0.95);
       width: calc((var(--projects-mobile-container) - 8px) * 0.95);
       line-height: calc((var(--projects-mobile-container) - 8px) / var(--projects-carousel-ratio) * 0.95);
-    }
-
-    .blurb-caption {
-      bottom: calc((var(--projects-mobile-container) - 8px) / var(--projects-carousel-ratio) * 0.95);
     }
   
   }
