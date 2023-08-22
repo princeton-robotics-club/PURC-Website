@@ -14,7 +14,7 @@ function About(props) {
     <>
       <div className='body-bg'>
       <div className={'about-bg-img' + (darkMode ? ' about-bg-img-dark' : ' about-bg-img-light')}/>
-        <div className='article-centered'>
+        <section className='article-centered'>
           <div className={'title-blob' + (darkMode ? ' title-blob-dark' : ' title-blob-light')}> ABOUT US </div>
           <Card darkMode = {darkMode} pathString = '/about#leaders'
                 className={'text-box text-box-padded-not-below' + (darkMode ? ' text-box-dark' : ' text-box-light')}> 
@@ -105,7 +105,7 @@ function About(props) {
               />
             </div> 
           </Card>
-        </div>
+        </section>
       </div>
     </>
   );
