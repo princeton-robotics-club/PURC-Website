@@ -24,7 +24,7 @@ function TeamBlurb(props) {
         let content
         let url = slides[i][0]
         let orientation = slides[i][1]
-        let caption = React.createElement('div', {class: 'blurb-caption'}, slides[i][2])
+        let caption = slides[i][2]
 
         if (img_ext.includes(url.split('.').pop().toLowerCase())) {
           if (orientation === 'h') {
@@ -35,7 +35,12 @@ function TeamBlurb(props) {
             content = React.createElement('img', {src: url, alt: '', style: {height: 'auto', width: '100%'}})
           }
 
-          carousel.push(React.createElement('div', {className: teamName + '-carousel blurb-carousel'}, content, caption))
+          if (caption === ''){
+            carousel.push(React.createElement('div', {className: teamName + '-carousel blurb-carousel'}, content))
+          } else {
+            let text = React.createElement('div', {class: 'blurb-caption'}, caption)
+            carousel.push(React.createElement('div', {className: teamName + '-carousel blurb-carousel'}, content, text))
+          }
         }
         else if (video_ext.includes(url.split('.').pop().toLowerCase())) {
           if (orientation === 'h') {
@@ -50,7 +55,13 @@ function TeamBlurb(props) {
         }
         else {
           content = React.createElement('img', {src: url, alt: '', style: {height: 'auto', width: '100%'}})
-          carousel.push(React.createElement('div', {className: teamName + '-carousel blurb-carousel'}, content, caption))
+          
+          if (caption === ''){
+            carousel.push(React.createElement('div', {className: teamName + '-carousel blurb-carousel'}, content))
+          } else {
+            let text = React.createElement('div', {class: 'blurb-caption'}, caption)
+            carousel.push(React.createElement('div', {className: teamName + '-carousel blurb-carousel'}, content, text))
+          }
         }
     }
 

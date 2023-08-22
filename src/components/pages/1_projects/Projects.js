@@ -6,12 +6,16 @@ import TeamButton from '../../team/TeamButton';
 import TeamBlurb from '../../team/TeamBlurb';
 
 import droid1 from '../../../images/projects/droid/droid-1.jpg'
-import droid2 from '../../../images/projects/pacbot/pacbot-3.jpg'
+import droid2 from '../../../images/projects/droid/droid-2.jpg'
+import droid3 from '../../../images/projects/droid/droid-3.jpg'
+
+import pacbot1 from '../../../images/projects/pacbot/pacbot-1.jpg'
+import pacbot2 from '../../../images/projects/pacbot/pacbot-2.jpg'
+import pacbot3 from '../../../images/projects/pacbot/pacbot-3.jpg'
 
 import drone1 from '../../../images/projects/drone/drone-1.jpg'
 import drone2 from '../../../images/projects/drone/drone-2.jpg'
 import drone3 from '../../../images/projects/drone/drone-3.jpg'
-import drone4 from '../../../images/projects/drone/IMG_1900.mov'
 
 function Projects(props) {
 
@@ -102,8 +106,10 @@ function Projects(props) {
                 darkMode = {darkMode}
                 teamName = 'droid'
                 selectedTeam = {selectedTeam}
-                about = 'About Droid'
-                slides = {[]}
+                about = 'Text about Droid goes here.'
+                slides = {[[droid1, 'h', ''],
+                            [droid2, 'h', ''],
+                            [droid3, 'h', '']]}
                 showSlides = {showSlides}
                 milestones = {[]}
               />
@@ -126,8 +132,10 @@ function Projects(props) {
                 darkMode = {darkMode}
                 teamName = 'pacbot'
                 selectedTeam = {selectedTeam}
-                about = 'About PacBot'
-                slides = {[]}
+                about = 'Text about PacBot goes here.'
+                slides = {[[pacbot1, 'h', ''],
+                            [pacbot2, 'h', ''],
+                            [pacbot3, 'v', '']]}
                 showSlides = {showSlides}
                 milestones = {[]}
               />
@@ -153,7 +161,6 @@ function Projects(props) {
                 about = 'The Drone Team is focused on exploring and adapting drone technology to solve problems. Our main project involves developing a modular autonomous quadcopter platform that can be fitted with different hardware and software to be applied in different scenarios: our first application being computer vision-based gesture recognition and control. This entails having the drone ‘see’ hand gestures from a person through a camera, recognize what that gesture is, and executing a command accordingly. The team is less competitive in nature and is anchored more on research and exploration! In essence, we are motivated by our curiosities towards pushing the boundaries of what drone technology is capable of within the context of integrating robotics into our daily lives. As such, we are also open to explore different venues of autonomous drone systems - whether it be drone delivery systems, or autonomous racing drones. Please let us know if you have any crazy ideas!'
                 slides = {[[drone1, 'v', 'Drone Team Meeting'],
                             [drone2, 'v', 'Gesture Drone'],
-                            [drone4, 'v', 'Caption not allowed'],
                             [drone3, 'h', 'Gesture Drone Sensor Array']]}
                 showSlides = {showSlides}
                 milestones =  {[['2022-09-01', 'm', 'Built base drone hardware for manual flight, and adapted sensor array to establish position-hold through optical flow and lidar sensors instead of GPS (in order for the drone to have a position estimate indoors).'], 
