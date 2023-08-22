@@ -10,8 +10,7 @@ function TeamBlurb(props) {
     about,
     slides,
     showSlides,
-    milestones,
-    milestoneDisplay
+    milestones
   } = props;
 
   const img_ext = ['jpg', 'png', 'jpeg', 'svg']
@@ -25,6 +24,7 @@ function TeamBlurb(props) {
         let content
         let url = slides[i][0]
         let orientation = slides[i][1]
+        let caption = React.createElement('div', {class: 'blurb-caption'}, slides[i][2])
 
         if (img_ext.includes(url.split('.').pop().toLowerCase())) {
           if (orientation === 'h') {
@@ -33,8 +33,9 @@ function TeamBlurb(props) {
             content = React.createElement('img', {src: url, alt: '', style: {height: '100%', width: 'auto'}})
           } else {
             content = React.createElement('img', {src: url, alt: '', style: {height: 'auto', width: '100%'}})
-            //content = React.createElement('div', {style: {textAlign: 'center', height: '100%', width: '100%', color: 'red', backgroundColor: 'gray'}}, 'ERROR: Unspecified orientation')
           }
+
+          carousel.push(React.createElement('div', {className: teamName + '-carousel blurb-carousel'}, content, caption))
         }
         else if (video_ext.includes(url.split('.').pop().toLowerCase())) {
           if (orientation === 'h') {
@@ -43,15 +44,14 @@ function TeamBlurb(props) {
             content = React.createElement('video', {src: url, controls: true, style: {height: '100%', width: 'auto'}})
           } else {
             content = React.createElement('video', {src: url, controls: true, style: {height: 'auto', width: '100%'}})
-            //content = React.createElement('div', {style: {textAlign: 'center', height: '100%', width: '100%', color: 'red', backgroundColor: 'gray'}}, 'ERROR: Unspecified orientation')
           }
+          
+          carousel.push(React.createElement('div', {className: teamName + '-carousel blurb-carousel'}, content))
         }
         else {
           content = React.createElement('img', {src: url, alt: '', style: {height: 'auto', width: '100%'}})
-          //content = React.createElement('div', {style: {textAlign: 'center', height: '100%', width: '100%', color: 'red', backgroundColor: 'gray'}}, 'ERROR: Unrecognized file extension')
+          carousel.push(React.createElement('div', {className: teamName + '-carousel blurb-carousel'}, content, caption))
         }
-        
-        carousel.push(React.createElement('div', {className: teamName + '-carousel blurb-carousel'}, content))
     }
 
     return carousel
@@ -84,12 +84,12 @@ function TeamBlurb(props) {
     for (i = 0; i < sorted_milestones.length; i++) {
         let title
 
-        if (milestoneDisplay === 'd'){
+        if (sorted_milestones[i][1] === 'd'){
           let month = sorted_milestones[i][0].toLocaleString('default', {month: 'short'})
           let day = sorted_milestones[i][0].getDate()
           let year = sorted_milestones[i][0].getFullYear()
           title = React.createElement('h2', {}, month + ' ' + day + ', ' + year)
-        } else if (milestoneDisplay === 'm') {
+        } else if (sorted_milestones[i][1] === 'm') {
           let month = sorted_milestones[i][0].toLocaleString('default', {month: 'long'})
           let year = sorted_milestones[i][0].getFullYear()
           title = React.createElement('h2', {}, month + ' ' + year)
@@ -100,7 +100,7 @@ function TeamBlurb(props) {
           title = React.createElement('h2', {}, month + ' ' + day + ', ' + year)
         }
 
-        let text = React.createElement('p', {}, sorted_milestones[i][1])
+        let text = React.createElement('p', {}, sorted_milestones[i][2])
         let content = React.createElement('div', {class: 'timeline-content'}, title, text)
         let arrow
         let circle
