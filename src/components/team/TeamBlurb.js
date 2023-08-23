@@ -37,10 +37,10 @@ function TeamBlurb(props) {
           }
 
           if (caption === ''){
-            carousel.push(React.createElement('div', {key: `blurb-carousel-1-${i}`, className: teamName + '-carousel blurb-carousel'}, content))
+            carousel.push(React.createElement('div', {key: `blurb-carousel-${i}`, className: teamName + '-carousel blurb-carousel'}, content))
           } else {
             let text = React.createElement('div', {className: 'blurb-caption'}, caption)
-            carousel.push(React.createElement('div', {key: `blurb-carousel-2-${i}`, className: teamName + '-carousel blurb-carousel'}, content, text))
+            carousel.push(React.createElement('div', {key: `blurb-carousel-${i}`, className: teamName + '-carousel blurb-carousel'}, content, text))
           }
         }
         else if (video_ext.includes(url.split('.').pop().toLowerCase())) {
@@ -52,16 +52,16 @@ function TeamBlurb(props) {
             content = React.createElement('video', {src: url, controls: true, style: {height: 'auto', width: '100%'}})
           }
           
-          carousel.push(React.createElement('div', {key: `blurb-carousel-3-${i}`, className: teamName + '-carousel blurb-carousel'}, content))
+          carousel.push(React.createElement('div', {key: `blurb-carousel-${i}`, className: teamName + '-carousel blurb-carousel'}, content))
         }
         else {
           content = React.createElement('img', {src: url, alt: '', style: {height: 'auto', width: '100%'}})
           
           if (caption === ''){
-            carousel.push(React.createElement('div', {key: `blurb-carousel-4-${i}`, className: teamName + '-carousel blurb-carousel'}, content))
+            carousel.push(React.createElement('div', {key: `blurb-carousel-${i}`, className: teamName + '-carousel blurb-carousel'}, content))
           } else {
             let text = React.createElement('div', {className: 'blurb-caption'}, caption)
-            carousel.push(React.createElement('div', {key: `blurb-carousel-5-${i}`, className: teamName + '-carousel blurb-carousel'}, content, text))
+            carousel.push(React.createElement('div', {key: `blurb-carousel-${i}`, className: teamName + '-carousel blurb-carousel'}, content, text))
           }
         }
     }
@@ -75,7 +75,7 @@ function TeamBlurb(props) {
 
     for (i = 0; i < slides.length; i++) {
         let slide = i + 1
-        dots.push(React.createElement('span', {key: `dots-${i}`, className: teamName + '-dot blurb-dot', onClick: () => showSlides(teamName, slide)}))
+        dots.push(React.createElement('span', {key: `blurb-dot-${i}`, className: teamName + '-dot blurb-dot', onClick: () => showSlides(teamName, slide)}))
     }
 
     return dots
@@ -147,7 +147,7 @@ function TeamBlurb(props) {
           }
         }
 
-        timeline.push(React.createElement('div', {key: `timeline-${i}`, className: 'timeline-container'}, content, arrow, circle))
+        timeline.push(React.createElement('div', {key: `timeline-container-${i}`, className: 'timeline-container'}, content, arrow, circle))
     }
 
     return timeline
