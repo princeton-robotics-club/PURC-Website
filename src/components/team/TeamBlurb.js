@@ -15,6 +15,7 @@ function TeamBlurb(props) {
 
   const img_ext = ['jpg', 'png', 'jpeg', 'svg']
   const video_ext = ['mov', 'mp3', 'mp4']
+  const SEASONS = ['Winter', 'Spring', 'Summer', 'Fall']
 
   function generateCarousel() {
     let i
@@ -95,7 +96,19 @@ function TeamBlurb(props) {
     for (i = 0; i < sorted_milestones.length; i++) {
         let title
 
-        if (sorted_milestones[i][1] === 'd'){
+        if (sorted_milestones[i][1] === 's'){
+          let season
+          let month = (sorted_milestones[i][0].getMonth() + 1) % 12
+          let year = sorted_milestones[i][0].getFullYear()
+          let counter = 1
+
+          while (month >= 3 * counter) {
+            counter += 1
+          }
+
+          season = SEASONS[counter - 1]
+          title = React.createElement('h2', {}, season + ' ' + year)
+        } else if (sorted_milestones[i][1] === 'd'){
           let month = sorted_milestones[i][0].toLocaleString('default', {month: 'short'})
           let day = sorted_milestones[i][0].getDate()
           let year = sorted_milestones[i][0].getFullYear()
@@ -161,10 +174,8 @@ function TeamBlurb(props) {
         </div>
 
         <div className='divider' ></div>
-            
-        <div className='blurb-text' style={{color: darkMode ? 'white' : 'black'}}>
-            {about}
-        </div>
+
+        <div dangerouslySetInnerHTML={{__html: about}} className='blurb-text' style={{color: darkMode ? 'white' : 'black'}} />
 
         <div className='section' style={{display: milestones.length > 0 ? 'block' : 'none'}}></div>
 

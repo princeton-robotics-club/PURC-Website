@@ -8,6 +8,7 @@ import TeamBlurb from '../../team/TeamBlurb';
 import droid1 from '../../../images/projects/droid/droid-1.jpg'
 import droid2 from '../../../images/projects/droid/droid-2.jpg'
 import droid3 from '../../../images/projects/droid/droid-3.jpg'
+import droid4 from '../../../images/projects/droid/droid-4.jpg'
 
 import pacbot1 from '../../../images/projects/pacbot/pacbot-1.jpg'
 import pacbot2 from '../../../images/projects/pacbot/pacbot-2.jpg'
@@ -106,12 +107,15 @@ function Projects(props) {
                 darkMode = {darkMode}
                 teamName = 'droid'
                 selectedTeam = {selectedTeam}
-                about = 'Text about Droid goes here.'
-                slides = {[[droid1, 'h', ''],
-                            [droid2, 'h', ''],
-                            [droid3, 'h', '']]}
+                about = 'The BB-8 Droid Team is building a life-size, fully-functioning spherical BB-8 Droid based off the one in the <i>Star Wars</i> movies. The droid contains numerous complex mechanical systems, including an outer rolling spherical shell, a weighted flywheel mechanism, a drive wheel assembly, and various motors alongside a pulley system which allow the droid to tilt and roll. From motor servos to audio amplifiers to feather boards to so much more, the electrical components are hosted in three primary circuits, one in the body, the dome head, and the remote. We are creating the remote from scratch to send commands to both the dome and the body, with the dome circuit confirming receiving the signals using neopixels and the body circuit, which is integrated into our complex mechanical sub-assembly, causing the sub-assembly and– with it– the body to move.  Our project is using a framework established by the BB-8 Builders Club with our own authentic add-ons of using computer vision to allow the droid to avoid obstacles, as well as respond to various hand gestures and embody the character’s spirit of adventure and companionship. Our end goal is to create a finalized droid that we can use for community outreach, such as trips to children hospitals and <i>Star Wars</i> conventions.'
+                slides = {[[droid1, 'h', 'BB-8 Team Mechanical & Electrical Sub-Teams'],
+                            [droid2, 'h', 'In-Progress BB-8 Body Circuit'],
+                            [droid3, 'h', 'Electrical Team Researching Electrical Component Substitutions'],
+                            [droid4, 'h', '3D-Printing Rib for the BB-8 Outer Frame']]}
                 showSlides = {showSlides}
-                milestones = {[]}
+                milestones = {[['2022-09-01', 's', 'Mechanical Team completed the outer frame of the BB-8 Droid and began 3D-printing parts of the inner sub-assembly. Electrical Team completed the body circuit, which is run by an Arduino and hosts 27 electrical components, ranging from potentiometers to motor servos to motor drivers to feather boards.'], 
+                ['2023-03-01', 's', 'Mechanical Team assembled of critical mechanical components in near-complete stage. The main structure of the inner chassis was completed, and construction of several subsystems began Electrical Team tested the body circuit in parts, mapping and uploading code to different sections of the circuit to test the components for their domain of functionality. Assembled the dome circuit used for confirming the receiving of signals from the remote.'], 
+                ['2023-09-01', 's', 'Mechanical Team aims to complete the whole mechanical assembly, including installing tilting belts, integrating the various mechanical subassemblies, and incorporating the electrical circuits into the final mechanical product. Electrical Team aims to design a PCB for remote circuit and also for dome circuit. Explore integrating computer vision for hand gestures and obstacle avoidance.']]}
               />
             </div>
 
@@ -137,7 +141,7 @@ function Projects(props) {
                             [pacbot2, 'h', ''],
                             [pacbot3, 'v', '']]}
                 showSlides = {showSlides}
-                milestones = {[]}
+                milestones = {[['2023-04-29', 'd', 'Our team competed in the 2023 PacBot Competiton at Harvard University and obtained the highest score!']]}
               />
             </div>
 
@@ -163,9 +167,9 @@ function Projects(props) {
                             [drone2, 'v', 'Gesture Drone'],
                             [drone3, 'h', 'Gesture Drone Sensor Array']]}
                 showSlides = {showSlides}
-                milestones =  {[['2022-09-01', 'm', 'Built base drone hardware for manual flight, and adapted sensor array to establish position-hold through optical flow and lidar sensors instead of GPS (in order for the drone to have a position estimate indoors).'], 
-                                ['2023-02-01', 'm', 'Finished writing code for basic computer vision-based gesture control, and successfully conducted preliminary vision-based flight tests (takeoff and landing through gesture recognition).'], 
-                                ['2023-09-01', 'm', 'Explore more vision-based applications such as localization, path planning, obstacle / collision avoidance. Improve on safety guarantees for gesture control (make sure it’s safer to use).']]}
+                milestones =  {[['2022-09-01', 's', 'Built base drone hardware for manual flight, and adapted sensor array to establish position-hold through optical flow and lidar sensors instead of GPS (in order for the drone to have a position estimate indoors).'], 
+                                ['2023-03-01', 's', 'Finished writing code for basic computer vision-based gesture control, and successfully conducted preliminary vision-based flight tests (takeoff and landing through gesture recognition).'], 
+                                ['2023-09-01', 's', 'Explore more vision-based applications such as localization, path planning, obstacle / collision avoidance. Improve on safety guarantees for gesture control (make sure it’s safer to use).']]}
               />
             </div>
 
