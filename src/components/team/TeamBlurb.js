@@ -37,10 +37,10 @@ function TeamBlurb(props) {
           }
 
           if (caption === ''){
-            carousel.push(React.createElement('div', {className: teamName + '-carousel blurb-carousel'}, content))
+            carousel.push(React.createElement('div', {key: `blurb-carousel-1-${i}`, className: teamName + '-carousel blurb-carousel'}, content))
           } else {
-            let text = React.createElement('div', {class: 'blurb-caption'}, caption)
-            carousel.push(React.createElement('div', {className: teamName + '-carousel blurb-carousel'}, content, text))
+            let text = React.createElement('div', {className: 'blurb-caption'}, caption)
+            carousel.push(React.createElement('div', {key: `blurb-carousel-2-${i}`, className: teamName + '-carousel blurb-carousel'}, content, text))
           }
         }
         else if (video_ext.includes(url.split('.').pop().toLowerCase())) {
@@ -52,16 +52,16 @@ function TeamBlurb(props) {
             content = React.createElement('video', {src: url, controls: true, style: {height: 'auto', width: '100%'}})
           }
           
-          carousel.push(React.createElement('div', {className: teamName + '-carousel blurb-carousel'}, content))
+          carousel.push(React.createElement('div', {key: `blurb-carousel-3-${i}`, className: teamName + '-carousel blurb-carousel'}, content))
         }
         else {
           content = React.createElement('img', {src: url, alt: '', style: {height: 'auto', width: '100%'}})
           
           if (caption === ''){
-            carousel.push(React.createElement('div', {className: teamName + '-carousel blurb-carousel'}, content))
+            carousel.push(React.createElement('div', {key: `blurb-carousel-4-${i}`, className: teamName + '-carousel blurb-carousel'}, content))
           } else {
-            let text = React.createElement('div', {class: 'blurb-caption'}, caption)
-            carousel.push(React.createElement('div', {className: teamName + '-carousel blurb-carousel'}, content, text))
+            let text = React.createElement('div', {className: 'blurb-caption'}, caption)
+            carousel.push(React.createElement('div', {key: `blurb-carousel-5-${i}`, className: teamName + '-carousel blurb-carousel'}, content, text))
           }
         }
     }
@@ -75,7 +75,7 @@ function TeamBlurb(props) {
 
     for (i = 0; i < slides.length; i++) {
         let slide = i + 1
-        dots.push(React.createElement('span', {class: teamName + '-dot blurb-dot', onClick: () => showSlides(teamName, slide)}))
+        dots.push(React.createElement('span', {key: `dots-${i}`, className: teamName + '-dot blurb-dot', onClick: () => showSlides(teamName, slide)}))
     }
 
     return dots
@@ -125,29 +125,29 @@ function TeamBlurb(props) {
         }
 
         let text = React.createElement('p', {}, sorted_milestones[i][2])
-        let content = React.createElement('div', {class: 'timeline-content'}, title, text)
+        let content = React.createElement('div', {className: 'timeline-content'}, title, text)
         let arrow
         let circle
 
         if (i % 2 === 0){
-          arrow = React.createElement('div', {class: 'timeline-leftarrow'})
+          arrow = React.createElement('div', {className: 'timeline-leftarrow'})
 
           if (now > sorted_milestones[i][0]){
-            circle =  React.createElement('div', {class: teamName + '-timeline-circle timeline-leftcircle'})
+            circle =  React.createElement('div', {className: teamName + '-timeline-circle timeline-leftcircle'})
           } else {
-            circle =  React.createElement('div', {class: teamName + '-timeline-circle timeline-leftcircle', style: {backgroundColor: darkMode ? 'black' : 'white'}})
+            circle =  React.createElement('div', {className: teamName + '-timeline-circle timeline-leftcircle', style: {backgroundColor: darkMode ? 'black' : 'white'}})
           }
         } else {
-          arrow = React.createElement('div', {class: 'timeline-rightarrow'})
+          arrow = React.createElement('div', {className: 'timeline-rightarrow'})
 
           if (now > sorted_milestones[i][0]){
-            circle =  React.createElement('div', {class: teamName + '-timeline-circle timeline-rightcircle'})
+            circle =  React.createElement('div', {className: teamName + '-timeline-circle timeline-rightcircle'})
           } else {
-            circle =  React.createElement('div', {class: teamName + '-timeline-circle timeline-rightcircle', style: {backgroundColor: darkMode ? 'black' : 'white'}})
+            circle =  React.createElement('div', {className: teamName + '-timeline-circle timeline-rightcircle', style: {backgroundColor: darkMode ? 'black' : 'white'}})
           }
         }
 
-        timeline.push(React.createElement('div', {class: 'timeline-container'}, content, arrow, circle))
+        timeline.push(React.createElement('div', {key: `timeline-${i}`, className: 'timeline-container'}, content, arrow, circle))
     }
 
     return timeline
@@ -185,8 +185,8 @@ function TeamBlurb(props) {
 
         <div className='divider' style={{display: milestones.length > 0 ? 'block' : 'none'}}></div>
 
-          <div class='timeline' style={{display: milestones.length > 0 ? 'block' : 'none'}}>
-            <div class={teamName + '-timeline-ruler timeline-ruler'}></div>
+          <div className='timeline' style={{display: milestones.length > 0 ? 'block' : 'none'}}>
+            <div className={teamName + '-timeline-ruler timeline-ruler'}></div>
               {generateTimeline()}
           </div>
 
