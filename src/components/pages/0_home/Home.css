@@ -15,8 +15,7 @@
 .hero-img {
   height: 50vw;
   width: 100vw;
-  /* background-image: linear-gradient(rgba(0, 195, 255, 0.25), rgba(0, 195, 255, 0.25)), url(../../../images/home/droid-1.jpg); */
-  background-image: linear-gradient(rgba(231, 117, 0, 0.6), rgba(3, 162, 220, 0.6), rgba(3, 162, 220, 0.6)), url(../../../images/home/pacbot-2.jpg);
+  background-image: linear-gradient(rgba(231, 117, 0, 0.6),  rgba(3, 162, 220, 0.6), rgba(3, 162, 220, 0.6)), url(../../../images/home/pacbot-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -44,10 +43,11 @@
   background-color: white;
   text-transform: uppercase;
   z-index: 1;
+
+  /* font-weight: bold; */
 }
 
 .hero-word {
-   
   font-family: 'Courier New';
   text-transform: lowercase;
   font-size: 45px;
@@ -65,4 +65,16 @@
   text-transform: uppercase;
   z-index: 1;
   font-weight: bold;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
