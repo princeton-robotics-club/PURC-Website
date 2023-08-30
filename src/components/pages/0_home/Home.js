@@ -11,11 +11,14 @@ function Home(props) {
     darkMode
   } = props;
 
+  const HERO_WORDS = ['design', 'build', 'wire', 'code', 'test']
+
   return (
     <div className='body-bg'>
-      <section className='article-centered'>
-        <div className={'title-blob' + (darkMode ? ' title-blob-dark' : ' title-blob-light')}> HOME </div>
-      </section>
+     <div className='hero-img'>
+      <div className='hero-logo'></div>
+      <div className='hero-text'><b>{} the future </b></div>
+     </div>
     </div>
   );
 }
