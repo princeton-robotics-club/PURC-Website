@@ -12,17 +12,49 @@
   z-index: -1;
 }
 
-.hero-img {
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-no-img {
   height: 50vw;
   width: 100vw;
-  background-image: linear-gradient(rgba(231, 117, 0, 0.6),  rgba(3, 162, 220, 0.6), rgba(3, 162, 220, 0.6)), url(../../../images/home/pacbot-2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  /*transform: translateY(-100%); */
+}
+
+.hero-img {
+  height: 50vw;
+  width: 100vw;
+  background-image: linear-gradient(rgba(231, 117, 0, 0.6),  rgba(3, 162, 220, 0.6), rgba(3, 162, 220, 0.6));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#hero-img-1 {
+  background-image: linear-gradient(rgba(231, 117, 0, 0.6),  rgba(3, 162, 220, 0.6), rgba(3, 162, 220, 0.6)), url(../../../images/home/pacbot-2.jpg);
+}
+
+#hero-img-2 {
+  background-image: linear-gradient(rgba(231, 117, 0, 0.6),  rgba(3, 162, 220, 0.6), rgba(3, 162, 220, 0.6)), url(../../../images/home/droid-1.jpg);
+}
+#hero-img-3 {
+  background-image: linear-gradient(rgba(231, 117, 0, 0.6),  rgba(3, 162, 220, 0.6), rgba(3, 162, 220, 0.6)), url(../../../images/home/droid-3.jpg);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: 0} 
+  to {opacity: 1}
 }
 
 .hero-logo {
@@ -66,15 +98,4 @@
   z-index: 1;
   font-weight: bold;
   text-align: center;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
 }
