@@ -15,14 +15,15 @@
 .hero-img {
   height: 50vw;
   width: 100vw;
-  background-image: linear-gradient(rgba(0, 195, 255, 0.25), rgba(0, 195, 255, 0.25)), url(../../../images/home/droid-1.jpg);
-  /* background-image: linear-gradient(rgba(0, 195, 255, 0.5), rgba(255, 115, 0, 0)), url(../../../images/home/droid-1.jpg); */
+  /* background-image: linear-gradient(rgba(0, 195, 255, 0.25), rgba(0, 195, 255, 0.25)), url(../../../images/home/droid-1.jpg); */
+  background-image: linear-gradient(rgba(231, 117, 0, 0.6), rgba(3, 162, 220, 0.6), rgba(3, 162, 220, 0.6)), url(../../../images/home/pacbot-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .hero-logo {
@@ -33,12 +34,6 @@
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-
-  /*
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  */
 }
 
 .hero-text {
@@ -49,4 +44,25 @@
   background-color: white;
   text-transform: uppercase;
   z-index: 1;
+}
+
+.hero-word {
+   
+  font-family: 'Courier New';
+  text-transform: lowercase;
+  font-size: 45px;
+  color: rgb(231, 117, 0)
+}
+
+.hero-bar {
+  color: rgba(0, 0, 0, 0)
+}
+
+.hero-subtext {
+  font-family: 'Century Gothic';
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+  z-index: 1;
+  font-weight: bold;
 }
