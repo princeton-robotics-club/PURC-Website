@@ -17,7 +17,7 @@
   height: 2em;
   border-radius: 1em;
   border: 1px solid #888;
-  font-size: 120%;
+  font-size: 100%;
   padding-left: 2rem;
   padding-right: 2rem;
   font-family: 'Just Sans';
@@ -27,6 +27,10 @@
 
 .form-field {
   border: none;
+}
+
+.form-field-small {
+  max-width: calc(100% - 4rem);
 }
 
 .form-field-dark, .submit-button-dark {
@@ -69,12 +73,15 @@
   border: 1px solid #888;
   margin-top: 10px;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .radio-label span {
   text-align:center;
   font-size: 100%;
-  padding:13px 0px;
+  padding:0;
   display:block;
 }
 
@@ -87,7 +94,7 @@
 
 .label {
   padding-right: 1em;
-  font-size: 120%;
+  font-size: 100%;
 }
 
 input:-webkit-autofill,
@@ -119,12 +126,12 @@ input:-webkit-autofill:active {
 
 .first-name, .last-name {
   flex-grow: 1;
-  max-width: 600px;
+  max-width: calc(min(600px, 100%));
 }
 
 .org, .email-addr {
   flex-grow: 1;
-  max-width: 600px;
+  max-width: calc(min(600px, 100%));
 }
 
 .message {
@@ -134,3 +141,6 @@ input:-webkit-autofill:active {
   height: 8rem;
   resize: vertical;
 }
+
+/* ------------------------------------------------------------------------- */
+

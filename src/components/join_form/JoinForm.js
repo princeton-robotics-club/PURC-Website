@@ -81,26 +81,27 @@ function JoinForm(props) {
           <input type='radio' name='role' value='Member'/>
           <span>Member</span>
         </label>
-        <label className={roleFormat('Spectator')}>
+        {false &&
+          <label className={roleFormat('Spectator')}>
           <input type='radio' name='role' value='Spectator'/>
           <span>Spectator</span>
-        </label>
-        <label className={roleFormat('Robot')}>
+        </label>}
+        {false && <label className={roleFormat('Robot')}>
           <input type='radio' name='role' value='Robot'/>
           <span>Robot</span>
-        </label>
+        </label>}
       </div>
 
       <div className='form-row multi-column'>
         <div className='first-name'>
           <label className='label' htmlFor='fname'>First Name <span className='required'>*</span></label>
-          <input id='fname' className={formFormat} 
+          <input id='fname' className={formFormat + ' form-field-small'} 
                  type='text'
                  onChange={onChangeFirstName} required/>
         </div>
         <div className='last-name'>
           <label className='label' htmlFor='lname'>Last Name <span className='required'>*</span></label>
-          <input id='lname' name='lname' className={formFormat}
+          <input id='lname' name='lname' className={formFormat + ' form-field-small'}
                  type='text'
                  onChange={onChangeLastName} required/>
         </div>
@@ -109,13 +110,13 @@ function JoinForm(props) {
       <div className='form-row multi-column'>
         <div className='org'>
           <label className='label' htmlFor='org'>Organization <span className='required'>*</span></label>
-          <input name='org' className={formFormat}
+          <input name='org' className={formFormat + ' form-field-small'}
                 type='text' id='org'
                 onChange={onChangeOrg} required/>
         </div>
         <div className='email-addr'>
           <label className='label' htmlFor='email'>Email Address <span className='required'>*</span></label>
-          <input name='email' className={formFormat}
+          <input name='email' className={formFormat + ' form-field-small'}
                 type='email' id='email'
                 onChange={onChangeEmail} required/>
         </div>
