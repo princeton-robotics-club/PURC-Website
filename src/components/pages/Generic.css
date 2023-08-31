@@ -163,3 +163,49 @@
     width: calc(100vw - 50px);
   }
 }
+
+/* ------------------------------------------------------------------------- */
+
+@media screen and (max-width: 500px) {
+
+  .text-box {
+    text-align: left;
+    hyphens: none;
+  }
+}
+
+/* ------------------------------------------------------------------------- */
+
+@media screen and (max-width: 500px) {
+
+  .title-blob {
+    font-size: 2.8rem;
+  }
+}
+
+/* ------------------------------------------------------------------------- */
+
+@media screen and (max-width: 400px) {
+
+  .title-blob {
+    font-size: 2.4rem;
+  }
+}
+
+/* ------------------------------------------------------------------------- */
+
+@media screen and (max-width: 350px) {
+
+  .title-blob {
+    font-size: 2rem;
+  }
+}
+
+/* ------------------------------------------------------------------------- */
+
+@media screen and (max-width: 300px) {
+
+  .title-blob {
+    font-size: 1.8rem;
+  }
+}
