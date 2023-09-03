@@ -98,8 +98,8 @@ function TeamBlurb(props) {
 
         if (sorted_milestones[i][1] === 's'){
           let season
-          let month = (sorted_milestones[i][0].getMonth() + 1) % 12
-          let year = sorted_milestones[i][0].getFullYear()
+          let month = (sorted_milestones[i][0].getUTCMonth() + 1) % 12
+          let year = sorted_milestones[i][0].getUTCFullYear()
           let counter = 1
 
           while (month >= 3 * counter) {
@@ -109,18 +109,18 @@ function TeamBlurb(props) {
           season = SEASONS[counter - 1]
           title = React.createElement('h2', {}, season + ' ' + year)
         } else if (sorted_milestones[i][1] === 'd'){
-          let month = sorted_milestones[i][0].toLocaleString('default', {month: 'short'})
-          let day = sorted_milestones[i][0].getDate()
-          let year = sorted_milestones[i][0].getFullYear()
+          let month = sorted_milestones[i][0].toLocaleString('default', {month: 'short', timeZone: 'UTC'})
+          let day = sorted_milestones[i][0].getUTCDate()
+          let year = sorted_milestones[i][0].getUTCFullYear()
           title = React.createElement('h2', {}, month + ' ' + day + ', ' + year)
         } else if (sorted_milestones[i][1] === 'm') {
-          let month = sorted_milestones[i][0].toLocaleString('default', {month: 'long'})
-          let year = sorted_milestones[i][0].getFullYear()
+          let month = sorted_milestones[i][0].toLocaleString('default', {month: 'long', timeZone: 'UTC'})
+          let year = sorted_milestones[i][0].getUTCFullYear()
           title = React.createElement('h2', {}, month + ' ' + year)
         } else {
-          let month = sorted_milestones[i][0].toLocaleString('default', {month: 'short'})
-          let day = sorted_milestones[i][0].getDate()
-          let year = sorted_milestones[i][0].getFullYear()
+          let month = sorted_milestones[i][0].toLocaleString('default', {month: 'short', timeZone: 'UTC'})
+          let day = sorted_milestones[i][0].getUTCDate()
+          let year = sorted_milestones[i][0].getUTCFullYear()
           title = React.createElement('h2', {}, month + ' ' + day + ', ' + year)
         }
 
@@ -155,6 +155,18 @@ function TeamBlurb(props) {
 
   return (
     <div id={teamName + '-blurb'} className={teamName + '-blurb team-blurb'} style={{display: selectedTeam === teamName ? 'flex' : 'none', backgroundColor: darkMode ? 'black' : 'white'}}>
+        <div className='spacer' ></div>
+        
+        <div className='blurb-title' style={{color: darkMode ? 'white' : 'black'}}>
+            <h2>ABOUT</h2>
+        </div>
+
+        <div className='divider' ></div>
+
+        <div dangerouslySetInnerHTML={{__html: about}} className='blurb-text' style={{color: darkMode ? 'white' : 'black'}} />
+
+        <div className='section' style={{display: milestones.length > 0 ? 'block' : 'none'}}></div>
+        
         <div className='blurb-title' style={{color: darkMode ? 'white' : 'black', display: slides.length > 0 ? 'block' : 'none'}}>
             <h2>GALLERY</h2>
         </div>
@@ -168,16 +180,6 @@ function TeamBlurb(props) {
         {generateDots()}
 
         <div className='section' style={{display: slides.length > 0 ? 'block' : 'none'}}></div>
-
-        <div className='blurb-title' style={{color: darkMode ? 'white' : 'black'}}>
-            <h2>ABOUT</h2>
-        </div>
-
-        <div className='divider' ></div>
-
-        <div dangerouslySetInnerHTML={{__html: about}} className='blurb-text' style={{color: darkMode ? 'white' : 'black'}} />
-
-        <div className='section' style={{display: milestones.length > 0 ? 'block' : 'none'}}></div>
 
         <div className='blurb-title' style={{color: darkMode ? 'white' : 'black', display: milestones.length > 0 ? 'block' : 'none'}}>
             <h2>TIMELINE</h2>

@@ -115,7 +115,7 @@ function Projects(props) {
                 showSlides = {showSlides}
                 milestones = {[['2022-09-01', 's', 'Mechanical Team completed the outer frame of the BB-8 Droid and began 3D-printing parts of the inner sub-assembly. Electrical Team completed the body circuit, which is run by an Arduino and hosts 27 electrical components, ranging from potentiometers to motor servos to motor drivers to feather boards.'], 
                 ['2023-03-01', 's', 'Mechanical Team assembled of critical mechanical components in near-complete stage. The main structure of the inner chassis was completed, and construction of several subsystems began Electrical Team tested the body circuit in parts, mapping and uploading code to different sections of the circuit to test the components for their domain of functionality. Assembled the dome circuit used for confirming the receiving of signals from the remote.'], 
-                ['2023-09-01', 's', 'Mechanical Team aims to complete the whole mechanical assembly, including installing tilting belts, integrating the various mechanical subassemblies, and incorporating the electrical circuits into the final mechanical product. Electrical Team aims to design a PCB for remote circuit and also for dome circuit. Explore integrating computer vision for hand gestures and obstacle avoidance.']]}
+                ['2023-11-30', 's', 'Mechanical Team aims to complete the whole mechanical assembly, including installing tilting belts, integrating the various mechanical subassemblies, and incorporating the electrical circuits into the final mechanical product. Electrical Team aims to design a PCB for remote circuit and also for dome circuit. Explore integrating computer vision for hand gestures and obstacle avoidance.']]}
               />
             </div>
 
@@ -169,7 +169,7 @@ function Projects(props) {
                 showSlides = {showSlides}
                 milestones =  {[['2022-09-01', 's', 'Built base drone hardware for manual flight, and adapted sensor array to establish position-hold through optical flow and lidar sensors instead of GPS (in order for the drone to have a position estimate indoors).'], 
                                 ['2023-03-01', 's', 'Finished writing code for basic computer vision-based gesture control, and successfully conducted preliminary vision-based flight tests (takeoff and landing through gesture recognition).'], 
-                                ['2023-09-01', 's', 'Explore more vision-based applications such as localization, path planning, obstacle / collision avoidance. Improve on safety guarantees for gesture control (make sure it’s safer to use).']]}
+                                ['2023-11-30', 's', 'Explore more vision-based applications such as localization, path planning, obstacle / collision avoidance. Improve on safety guarantees for gesture control (make sure it’s safer to use).']]}
               />
             </div>
 
