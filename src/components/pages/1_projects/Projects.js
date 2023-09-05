@@ -107,7 +107,7 @@ function Projects(props) {
                 darkMode = {darkMode}
                 teamName = 'droid'
                 selectedTeam = {selectedTeam}
-                about = 'The BB-8 Droid Team is building a life-size, fully-functioning spherical BB-8 Droid based off the one in the <i>Star Wars</i> movies. The droid contains numerous complex mechanical systems, including an outer rolling spherical shell, a weighted flywheel mechanism, a drive wheel assembly, and various motors alongside a pulley system which allow the droid to tilt and roll. From motor servos to audio amplifiers to feather boards to so much more, the electrical components are hosted in three primary circuits, one in the body, the dome head, and the remote. We are creating the remote from scratch to send commands to both the dome and the body, with the dome circuit confirming receiving the signals using neopixels and the body circuit, which is integrated into our complex mechanical sub-assembly, causing the sub-assembly and– with it– the body to move.  Our project is using a framework established by the BB-8 Builders Club with our own authentic add-ons of using computer vision to allow the droid to avoid obstacles, as well as respond to various hand gestures and embody the character’s spirit of adventure and companionship. Our end goal is to create a finalized droid that we can use for community outreach, such as trips to children hospitals and <i>Star Wars</i> conventions.'
+                about = 'The BB-8 Droid Team is building a life-size, fully-functional spherical BB-8 Droid based on the <i>Star Wars</i> movies. The droid contains numerous complex mechanical systems, including an outer rolling spherical shell, a weighted flywheel mechanism, a drive wheel assembly, and various motors alongside a pulley system which allow the droid to tilt and roll. From motor servos to audio amplifiers to feather boards to much more, the electrical components are hosted in three primary circuits, one in the body, one in the dome head, and one in the remote. We are creating the remote from scratch to send commands to the dome circuit, which confirms receiving the signals using neopixels, and also to the body circuit, which is integrated into our complex mechanical sub-assembly and causes the body to move. Our project is using a framework established by the BB-8 Builders Club with our own authentic add-on of computer vision to allow the droid to avoid obstacles, as well as respond to various hand gestures and embody the character’s spirit of adventure and companionship. Our end goal is to create a finalized droid that we can use for community outreach, such as trips to children hospitals and <i>Star Wars</i> conventions.'
                 slides = {[[droid1, 'h', 'BB-8 Team Mechanical & Electrical Sub-Teams'],
                             [droid2, 'h', 'In-Progress BB-8 Body Circuit'],
                             [droid3, 'h', 'Electrical Team Researching Electrical Component Substitutions'],
@@ -136,12 +136,16 @@ function Projects(props) {
                 darkMode = {darkMode}
                 teamName = 'pacbot'
                 selectedTeam = {selectedTeam}
-                about = 'Text about PacBot goes here.'
-                slides = {[[pacbot1, 'h', ''],
-                            [pacbot2, 'h', ''],
-                            [pacbot3, 'v', '']]}
+                about = 'The Pacbot Competition is a fun, real-life robotics version of the popular Pacman arcade game. The robot, roughly the size of your palm, navigates through an intricate maze to collect as many pellets as it can for a high score, all the while escaping the clutches of four simulated, scary ghosts.'
+                slides = {[[pacbot1, 'h', 'Our Pacbot victory photo this past year, tying for first place with UIUC'],
+                            [pacbot2, 'h', 'Two identical Pacbots our team designed from scratch during the 2022-23 academic year'],
+                            [pacbot3, 'v', 'A cool photo of our team posing on a bridge overlooking Harvard University']]}
                 showSlides = {showSlides}
-                milestones = {[['2023-04-29', 'd', 'Our team competed in the 2023 PacBot Competiton at Harvard University and obtained the highest score!']]}
+                milestones = {[['2022-09-01', 's', 'Sensor selection and electrical design for our 2023 robot'],
+                            ['2023-04-01', 's', 'Firmware and software teams working in parallel to get the robot to make intelligent decisions (competition in April)'],
+                            ['2023-04-29', 'd', 'Our team competed in the 2023 PacBot Competiton at Harvard University and obtained the highest score!'],
+                            ['2023-08-01', 's', 'Re-designing the Pacbot game engine to address some shortcomings from last year'],
+                            ['2023-11-30', 's', ' Starting work on our 2024 Pacbot!']]}
               />
             </div>
 
