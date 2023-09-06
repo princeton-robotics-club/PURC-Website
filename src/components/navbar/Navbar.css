@@ -47,7 +47,7 @@
   color: black;
   padding: 10px;
   background-color: coral;
-  font-family: 'Just Sans';
+  font-family: 'Century Gothic';
   font-size: 1rem;
 }
 
@@ -64,7 +64,7 @@
 }
 
 .navbar-logo-text-top {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   margin: 0;
   padding-bottom: 10px;
   line-height: 100%;
@@ -114,7 +114,7 @@
 
 .nav-links, .nav-links-here {
   text-decoration: none;
-  font-family: 'Just Sans';
+  font-family: 'Century Gothic';
   letter-spacing: 1px;
   display: flex;
   padding: 0rem 1rem;
@@ -163,7 +163,7 @@
 .dropdown-link {
   color: black;
   text-decoration: none;
-  font-family: 'Just Sans';
+  font-family: 'Century Gothic';
   letter-spacing: 1px;
   font-size: 1.1rem;
   height: 100%;
@@ -258,7 +258,7 @@
     transform: translate(-100%, 60%);
     color: white;
     cursor: pointer;
-    font-family: 'Just Sans';
+    font-family: 'Century Gothic';
     letter-spacing: 1px;
   }
 
@@ -283,7 +283,7 @@
     background-color: transparent;
     color: #fff;
     border: 1px solid #fff;
-    font-family: 'Just Sans';
+    font-family: 'Century Gothic';
     transition: all 0.3s ease-out;
   }
 
@@ -313,7 +313,7 @@
 @media screen and (max-width: 360px) {
 
   .navbar-logo-text-top {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .navbar-logo-text-bottom {
@@ -330,6 +330,6 @@
   }
 
   .navbar-logo-text-bottom {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }

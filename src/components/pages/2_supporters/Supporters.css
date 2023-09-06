@@ -48,7 +48,7 @@
   background-position: center;
   background-image: url('../../../images/supporters/princeton_seas.png');
   background-repeat: no-repeat;
-  background-size: 280px;
+  background-size: min(280px, 75vw);
   float: left;
   clear: both;
   transition: all 0.1s ease;
@@ -79,7 +79,7 @@
   background-position: center;
   background-image: url('../../../images/supporters/keller_center.png');
   background-repeat: no-repeat;
-  background-size: 240px;
+  background-size: min(240px, 70vw);
   color: yellow;
   float: left;
   transition: all 0.1s ease;
@@ -110,7 +110,7 @@
   background-position: center;
   background-image: url('../../../images/supporters/cst.png');
   background-repeat: no-repeat;
-  background-size: 200px;
+  background-size: min(200px, 60vw);
   color: yellow;
   float: left;
   transition: all 0.1s ease;
