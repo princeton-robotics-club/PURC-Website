@@ -5,18 +5,18 @@ import './Projects.css';
 import TeamButton from '../../team/TeamButton';
 import TeamBlurb from '../../team/TeamBlurb';
 
-import droid1 from '../../../images/projects/droid/droid-1.jpg'
-import droid2 from '../../../images/projects/droid/droid-2.jpg'
-import droid3 from '../../../images/projects/droid/droid-3.jpg'
-import droid4 from '../../../images/projects/droid/droid-4.jpg'
+import droid1 from '../../../images/projects/droid/droid-1.jpg';
+import droid2 from '../../../images/projects/droid/droid-2.jpg';
+import droid3 from '../../../images/projects/droid/droid-3.jpg';
+import droid4 from '../../../images/projects/droid/droid-4.jpg';
 
-import pacbot1 from '../../../images/projects/pacbot/pacbot-1.jpg'
-import pacbot2 from '../../../images/projects/pacbot/pacbot-2.jpg'
-import pacbot3 from '../../../images/projects/pacbot/pacbot-3.jpg'
+import pacbot1 from '../../../images/projects/pacbot/pacbot-1.jpg';
+import pacbot2 from '../../../images/projects/pacbot/pacbot-2.jpg';
+import pacbot3 from '../../../images/projects/pacbot/pacbot-3.jpg';
 
-import drone1 from '../../../images/projects/drone/drone-1.jpg'
-import drone2 from '../../../images/projects/drone/drone-2.jpg'
-import drone3 from '../../../images/projects/drone/drone-3.jpg'
+import drone1 from '../../../images/projects/drone/drone-1.jpg';
+import drone2 from '../../../images/projects/drone/drone-2.jpg';
+import drone3 from '../../../images/projects/drone/drone-3.jpg';
 
 function Projects(props) {
 
@@ -107,15 +107,15 @@ function Projects(props) {
                 darkMode = {darkMode}
                 teamName = 'droid'
                 selectedTeam = {selectedTeam}
-                about = 'The BB-8 Droid Team is building a life-size, fully-functional spherical BB-8 Droid based on the <i>Star Wars</i> movies. The droid contains numerous complex mechanical systems, including an outer rolling spherical shell, a weighted flywheel mechanism, a drive wheel assembly, and various motors alongside a pulley system which allow the droid to tilt and roll. From motor servos to audio amplifiers to feather boards to much more, the electrical components are hosted in three primary circuits, one in the body, one in the dome head, and one in the remote. We are creating the remote from scratch to send commands to the dome circuit, which confirms receiving the signals using neopixels, and also to the body circuit, which is integrated into our complex mechanical sub-assembly and causes the body to move. Our project is using a framework established by the BB-8 Builders Club with our own authentic add-on of computer vision to allow the droid to avoid obstacles, as well as respond to various hand gestures and embody the character’s spirit of adventure and companionship. Our end goal is to create a finalized droid that we can use for community outreach, such as trips to children hospitals and <i>Star Wars</i> conventions.'
+                about = "The BB-8 Droid Team is building a life-size, fully-functional, spherical BB-8 Droid based on the <i>Star Wars</i> movies. Our project is using a framework established by the BB-8 Builders Club with our own authentic add-on of computer vision to allow the droid to avoid obstacles, as well as respond to various hand gestures and embody the character’s spirit of adventure and companionship! Our end goal is to create a finalized droid that we can use for community outreach, such as trips to children's hospitals and <i>Star Wars</i> conventions."
                 slides = {[[droid1, 'h', 'BB-8 Team Mechanical & Electrical Sub-Teams'],
                             [droid2, 'h', 'In-Progress BB-8 Body Circuit'],
                             [droid3, 'h', 'Electrical Team Researching Electrical Component Substitutions'],
                             [droid4, 'h', '3D-Printing Rib for the BB-8 Outer Frame']]}
                 showSlides = {showSlides}
-                milestones = {[['2022-09-01', 's', 'Mechanical Team completed the outer frame of the BB-8 Droid and began 3D-printing parts of the inner sub-assembly. Electrical Team completed the body circuit, which is run by an Arduino and hosts 27 electrical components, ranging from potentiometers to motor servos to motor drivers to feather boards.'], 
-                ['2023-03-01', 's', 'Mechanical Team assembled of critical mechanical components in near-complete stage. The main structure of the inner chassis was completed, and construction of several subsystems began Electrical Team tested the body circuit in parts, mapping and uploading code to different sections of the circuit to test the components for their domain of functionality. Assembled the dome circuit used for confirming the receiving of signals from the remote.'], 
-                ['2023-11-30', 's', 'Mechanical Team aims to complete the whole mechanical assembly, including installing tilting belts, integrating the various mechanical subassemblies, and incorporating the electrical circuits into the final mechanical product. Electrical Team aims to design a PCB for remote circuit and also for dome circuit. Explore integrating computer vision for hand gestures and obstacle avoidance.']]}
+                milestones = {[['2022-09-01', 's', 'Mechanical team completed the outer frame and began printing the inner sub-assembly, while our electrical team completed the body circuit.'], 
+                ['2023-03-01', 's', 'Mechanical team mostly completed the inner chassis structure. The electrical team programmed and tested various components within the body circuit.'], 
+                ['2023-11-30', 's', 'Mechanical team aims to complete the whole mechanical assembly, and our electrical team will design PCBs for more compact and reliable wiring.']]}
               />
             </div>
 
@@ -142,9 +142,9 @@ function Projects(props) {
                             [pacbot3, 'v', 'A cool photo of our team posing on a bridge overlooking Harvard University']]}
                 showSlides = {showSlides}
                 milestones = {[['2022-09-01', 's', 'Sensor selection and electrical design for our 2023 robot'],
-                            ['2023-04-01', 's', 'Firmware and software teams working in parallel to get the robot to make intelligent decisions (competition in April)'],
+                            ['2023-04-01', 's', 'Firmware and software teams worked in parallel to get the robot to make intelligent decisions (competition in April)'],
                             ['2023-04-29', 'd', 'Our team competed in the 2023 PacBot Competiton at Harvard University and obtained the highest score!'],
-                            ['2023-08-01', 's', 'Re-designing the Pacbot game engine to address some shortcomings from last year'],
+                            ['2023-08-01', 's', 'Re-designed the Pacbot game engine to address some shortcomings from last year'],
                             ['2023-11-30', 's', ' Starting work on our 2024 Pacbot!']]}
               />
             </div>
@@ -166,14 +166,14 @@ function Projects(props) {
                 darkMode = {darkMode}
                 teamName = 'drone'
                 selectedTeam = {selectedTeam}
-                about = 'The Drone Team is focused on exploring and adapting drone technology to solve problems. Our main project involves developing a modular autonomous quadcopter platform that can be fitted with different hardware and software to be applied in different scenarios: our first application being computer vision-based gesture recognition and control. This entails having the drone ‘see’ hand gestures from a person through a camera, recognize what that gesture is, and executing a command accordingly. The team is less competitive in nature and is anchored more on research and exploration! In essence, we are motivated by our curiosities towards pushing the boundaries of what drone technology is capable of within the context of integrating robotics into our daily lives. As such, we are also open to explore different venues of autonomous drone systems - whether it be drone delivery systems, or autonomous racing drones. Please let us know if you have any crazy ideas!'
+                about = 'Our Drone Team is focused on exploring and adapting drone technology to numerous applications. Our main project involves developing a modular autonomous quadcopter platform that can be fitted with different hardware and software in various scenarios. Currently, we are working on computer vision-based gesture recognition and control, which entails having the drone ‘see’ hand gestures from a person through a camera, recognize what that gesture is, and execute a command accordingly!'
                 slides = {[[drone1, 'v', 'Drone Team Meeting'],
                             [drone2, 'v', 'Gesture Drone'],
                             [drone3, 'h', 'Gesture Drone Sensor Array']]}
                 showSlides = {showSlides}
-                milestones =  {[['2022-09-01', 's', 'Built base drone hardware for manual flight, and adapted sensor array to establish position-hold through optical flow and lidar sensors instead of GPS (in order for the drone to have a position estimate indoors).'], 
-                                ['2023-03-01', 's', 'Finished writing code for basic computer vision-based gesture control, and successfully conducted preliminary vision-based flight tests (takeoff and landing through gesture recognition).'], 
-                                ['2023-11-30', 's', 'Explore more vision-based applications such as localization, path planning, obstacle / collision avoidance. Improve on safety guarantees for gesture control (make sure it’s safer to use).']]}
+                milestones =  {[['2022-09-01', 's', 'Built base drone hardware for manual flight, and adapted sensor array to establish position-hold through optical flow and LIDAR sensors.'], 
+                                ['2023-03-01', 's', 'Finished writing code for basic computer vision (CV)-based gesture control, and successfully completed preliminary vision-based flight tests.'], 
+                                ['2023-11-30', 's', 'Exploring more CV applications such as localization, path planning, and collision avoidance, while improving safety of gesture control.']]}
               />
             </div>
 
@@ -195,7 +195,7 @@ function Projects(props) {
                 darkMode = {darkMode}
                 teamName = 'robocup'
                 selectedTeam = {selectedTeam}
-                about = 'Text about RoboCup goes here.'
+                about = 'As a newly-formed team starting up in Fall 2023, our RoboCup Team will develop a robot for competition in the RoboCup Small Size League. We are eager to find passionate members to take the lead in helping this fledgling team grow and prosper!'
                 slides = {[]}
                 showSlides = {showSlides}
                 milestones = {[]}
@@ -219,7 +219,7 @@ function Projects(props) {
                 darkMode = {darkMode}
                 teamName = 'golf'
                 selectedTeam = {selectedTeam}
-                about = 'Text about Autonomous Golf Cart goes here.'
+                about = 'Our Autonomous Golf Cart Team aims to combine sustainability with automation by building a solar-powered self-driving golf cart. With support from the High Meadows Environmental Institute and NVIDIA, this newly-established team is a great opportunity for members to build unprecedented technology with cutting-edge components.'
                 slides = {[]}
                 showSlides = {showSlides}
                 milestones = {[]}
@@ -243,7 +243,7 @@ function Projects(props) {
                 darkMode = {darkMode}
                 teamName = 'exoskeleton'
                 selectedTeam = {selectedTeam}
-                about = 'Text about Exoskeleton goes here.'
+                about = 'Starting in Fall 2023, our Exoskeleton Team will build a wearable robotic exoskeleton that can adapt to the wearer’s movements and help with carrying tasks. We are looking for motivated members to help make this project a reality!'
                 slides = {[]}
                 showSlides = {showSlides}
                 milestones = {[]}
@@ -268,7 +268,7 @@ function Projects(props) {
                 darkMode = {darkMode}
                 teamName = 'rover'
                 selectedTeam = {selectedTeam}
-                about = 'Text about Rover goes here.'
+                about = 'As a new team for Fall 2023, our Rover Team is aiming to compete in the University Rover Challenge! For this competition, we will build a rover that performs various assistive tasks on Mars-like terrain.'
                 slides = {[]}
                 showSlides = {showSlides}
                 milestones = {[]}

@@ -88,8 +88,8 @@ function Navbar(props) {
               label = {'About Us'}
               link  = {'/about'}
               pathString = {'/about'}
-              dropdownOptions = {['Leaders', 'Members', 'Faculty']}
-              dropdownLinks = {['/about#leaders', '/about#members', '/about#faculty']}
+              dropdownOptions = {['Leaders', 'Faculty']}
+              dropdownLinks = {['/about#leaders', '/about#faculty']}
               closeMobile = {closeMobileMenu}
               darkMode = {darkMode}
             />
