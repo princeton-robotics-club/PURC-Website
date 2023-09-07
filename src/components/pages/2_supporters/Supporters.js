@@ -133,7 +133,7 @@ function Supporters(props) {
             NVIDIA pioneers accelerated computing in several areas of technology,
             from graphics and gaming to data centers and artificial intelligence.
             Their <Link className={'link'+(darkMode ? ' link-green' : ' link-green')} 
-                              to='https://kellercenter.princeton.edu/keller-center-makerspace'>
+                              to='https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/'>
                   NVIDIA Jetson Orin
                 </Link> series offers energy-efficient and powerful edge AI
             chips for developing next-generation robotic systems.

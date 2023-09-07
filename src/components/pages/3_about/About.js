@@ -9,23 +9,22 @@ import An4978 from '../../../images/about/an4978.jpg';
 import August from '../../../images/about/august.jpg';
 import Dc2326 from '../../../images/about/dc2326.jpg';
 import Dc4266 from '../../../images/about/dc4266.jpg';
-import Ernestm from '../../../images/about/ernestm.jpg';
 import Edchen from '../../../images/about/edchen.jpg';
+import Ernestm from '../../../images/about/ernestm.jpg';
 import Fh9696 from '../../../images/about/fh9696.jpg';
 import Ih2422 from '../../../images/about/ih2422.jpg';
 import Js4346 from '../../../images/about/js4346.jpg';
 import Jt1065 from '../../../images/about/jt1065.jpg';
 import Jt7347 from '../../../images/about/jt7347.jpg';
 import Kphan from '../../../images/about/kphan.jpg';
-import Sj9425 from '../../../images/about/sj9425.jpg';
 import Lglisic from '../../../images/about/lglisic.jpg';
 import Lyon from '../../../images/about/lyon.png';
 import Majumdar from '../../../images/about/majumdar.jpg';
 import Mh6419 from '../../../images/about/mh6419.jpg';
 import Ms8364 from '../../../images/about/ms8364.jpg';
+import Sj9425 from '../../../images/about/sj9425.jpg';
 import Wh9128 from '../../../images/about/wh9128.jpg';
 import Yijint from '../../../images/about/yijint.jpg';
-import Jb2056 from '../../../images/about/jb2056.jpg';
 
 function About(props) {
 
@@ -102,12 +101,6 @@ function About(props) {
               SUBTEAM LEADS
             </div>
             <div className='centered-container'>
-              <FaceCard
-                darkMode = {darkMode}
-                name = 'Jamie Barnett'
-                subtext = {['Droid EE Lead', 'Outreach Lead']}
-                image = {Jb2056}
-              />
               <FaceCard
                 darkMode = {darkMode}
                 name = 'David Chang'
