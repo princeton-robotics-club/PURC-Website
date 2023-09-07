@@ -6,6 +6,7 @@ function TeamBlurb(props) {
   const {
     darkMode,
     teamName,
+    teamTitle,
     selectedTeam,
     about,
     slides,
@@ -158,7 +159,7 @@ function TeamBlurb(props) {
         <div className='spacer' ></div>
         
         <div className='blurb-title' style={{color: darkMode ? 'white' : 'black'}}>
-            <h2>ABOUT</h2>
+            <h2>ABOUT THE {teamTitle} TEAM</h2>
         </div>
 
         <div className='divider' ></div>
