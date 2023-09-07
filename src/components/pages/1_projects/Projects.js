@@ -106,6 +106,7 @@ function Projects(props) {
               <TeamBlurb
                 darkMode = {darkMode}
                 teamName = 'droid'
+                teamTitle = 'DROID'
                 selectedTeam = {selectedTeam}
                 about = "The BB-8 Droid Team is building a life-size, fully-functional, spherical BB-8 Droid based on the <i>Star Wars</i> movies. Our project is using a framework established by the BB-8 Builders Club with our own authentic add-on of computer vision to allow the droid to avoid obstacles, as well as respond to various hand gestures and embody the character’s spirit of adventure and companionship! Our end goal is to create a finalized droid that we can use for community outreach, such as trips to children's hospitals and <i>Star Wars</i> conventions."
                 slides = {[[droid1, 'h', 'BB-8 Team Mechanical & Electrical Sub-Teams'],
@@ -135,6 +136,7 @@ function Projects(props) {
               <TeamBlurb
                 darkMode = {darkMode}
                 teamName = 'pacbot'
+                teamTitle = 'PACBOT'
                 selectedTeam = {selectedTeam}
                 about = 'The Pacbot Competition is a fun, real-life robotics version of the popular Pacman arcade game. The robot, roughly the size of your palm, navigates through an intricate maze to collect as many pellets as it can for a high score, all the while escaping the clutches of four simulated, scary ghosts.'
                 slides = {[[pacbot1, 'h', 'Our Pacbot victory photo this past year, tying for first place with UIUC'],
@@ -165,6 +167,7 @@ function Projects(props) {
               <TeamBlurb
                 darkMode = {darkMode}
                 teamName = 'drone'
+                teamTitle = 'DRONE'
                 selectedTeam = {selectedTeam}
                 about = 'Our Drone Team is focused on exploring and adapting drone technology to numerous applications. Our main project involves developing a modular autonomous quadcopter platform that can be fitted with different hardware and software in various scenarios. Currently, we are working on computer vision-based gesture recognition and control, which entails having the drone ‘see’ hand gestures from a person through a camera, recognize what that gesture is, and execute a command accordingly!'
                 slides = {[[drone1, 'v', 'Drone Team Meeting'],
@@ -194,6 +197,7 @@ function Projects(props) {
               <TeamBlurb
                 darkMode = {darkMode}
                 teamName = 'robocup'
+                teamTitle = 'ROBOCUP'
                 selectedTeam = {selectedTeam}
                 about = 'As a newly-formed team starting up in Fall 2023, our RoboCup Team will develop a robot for competition in the RoboCup Small Size League. We are eager to find passionate members to take the lead in helping this fledgling team grow and prosper!'
                 slides = {[]}
@@ -218,6 +222,7 @@ function Projects(props) {
               <TeamBlurb
                 darkMode = {darkMode}
                 teamName = 'golf'
+                teamTitle = 'GOLF CART'
                 selectedTeam = {selectedTeam}
                 about = 'Our Autonomous Golf Cart Team aims to combine sustainability with automation by building a solar-powered self-driving golf cart. With support from the High Meadows Environmental Institute and NVIDIA, this newly-established team is a great opportunity for members to build unprecedented technology with cutting-edge components.'
                 slides = {[]}
@@ -242,6 +247,7 @@ function Projects(props) {
               <TeamBlurb
                 darkMode = {darkMode}
                 teamName = 'exoskeleton'
+                teamTitle = 'EXOSKELETON'
                 selectedTeam = {selectedTeam}
                 about = 'Starting in Fall 2023, our Exoskeleton Team will build a wearable robotic exoskeleton that can adapt to the wearer’s movements and help with carrying tasks. We are looking for motivated members to help make this project a reality!'
                 slides = {[]}
@@ -267,6 +273,7 @@ function Projects(props) {
               <TeamBlurb
                 darkMode = {darkMode}
                 teamName = 'rover'
+                teamTitle = 'ROVER'
                 selectedTeam = {selectedTeam}
                 about = 'As a new team for Fall 2023, our Rover Team is aiming to compete in the University Rover Challenge! For this competition, we will build a rover that performs various assistive tasks on Mars-like terrain.'
                 slides = {[]}

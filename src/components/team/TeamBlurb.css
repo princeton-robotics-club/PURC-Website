@@ -242,6 +242,12 @@
       width: calc((var(--projects-mobile-container) - 8px) * 0.95);
       line-height: calc((var(--projects-mobile-container) - 8px) / var(--projects-carousel-ratio) * 0.95);
     }
+
+    .blurb-dot {
+      height: 40px;
+      width: 40px;
+      margin: 20px 10px 0px 10px;
+  }
   
   }
 
