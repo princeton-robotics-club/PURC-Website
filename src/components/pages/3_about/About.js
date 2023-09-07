@@ -10,12 +10,14 @@ import August from '../../../images/about/august.jpg';
 import Dc2326 from '../../../images/about/dc2326.jpg';
 import Dc4266 from '../../../images/about/dc4266.jpg';
 import Ernestm from '../../../images/about/ernestm.jpg';
+import Edchen from '../../../images/about/edchen.jpg';
 import Fh9696 from '../../../images/about/fh9696.jpg';
 import Ih2422 from '../../../images/about/ih2422.jpg';
 import Js4346 from '../../../images/about/js4346.jpg';
 import Jt1065 from '../../../images/about/jt1065.jpg';
 import Jt7347 from '../../../images/about/jt7347.jpg';
 import Kphan from '../../../images/about/kphan.jpg';
+import Sj9425 from '../../../images/about/sj9425.jpg';
 import Lglisic from '../../../images/about/lglisic.jpg';
 import Lyon from '../../../images/about/lyon.png';
 import Majumdar from '../../../images/about/majumdar.jpg';
@@ -23,6 +25,7 @@ import Mh6419 from '../../../images/about/mh6419.jpg';
 import Ms8364 from '../../../images/about/ms8364.jpg';
 import Wh9128 from '../../../images/about/wh9128.jpg';
 import Yijint from '../../../images/about/yijint.jpg';
+import Jb2056 from '../../../images/about/jb2056.jpg';
 
 function About(props) {
 
@@ -36,22 +39,22 @@ function About(props) {
       <div className={'about-bg-img' + (darkMode ? ' about-bg-img-dark' : ' about-bg-img-light')}/>
         <section className='article-centered'>
           <div className={'title-blob' + (darkMode ? ' title-blob-dark' : ' title-blob-light')}> ABOUT US </div>
-          <Card darkMode = {darkMode} pathString = '/about#leaders'
+          <Card darkMode = {darkMode} pathString = '/about#officers'
                 className={'text-box text-box-padded-not-below' + (darkMode ? ' text-box-dark' : ' text-box-light')}> 
             <div className='centered-heading'> 
-              CLUB LEADERS
+              CLUB OFFICERS
             </div>
             <div className='centered-container'>
               <FaceCard
                 darkMode = {darkMode}
                 name = 'Alecia Barbieri'
-                subtext = {['Co-President', 'Droid Team Lead']}
+                subtext = {['Co-President', 'Droid Team Lead', 'Media Lead']}
                 image = {Ab0824}
               />
               <FaceCard
                 darkMode = {darkMode}
                 name = 'Ian Henriques'
-                subtext = {['Co-President', 'Golf Cart SW Lead', 'Pacbot SW Lead']}
+                subtext = {['Co-President', 'Golf Cart SW Lead', 'Pacbot SW Lead', 'Media Lead']}
                 image = {Ih2422}
               />
               <FaceCard
@@ -68,8 +71,42 @@ function About(props) {
               />
               <FaceCard
                 darkMode = {darkMode}
+                name = 'Lana Glisic'
+                subtext = {['Officer', 'Training Lead', 'Pacbot SW Lead', 'Media Lead']}
+                image = {Lglisic}
+              />
+              <FaceCard
+                darkMode = {darkMode}
+                name = 'Kevin Phan'
+                subtext = {['Officer', 'Golf Cart SW Lead', 'Robocup Lead']}
+                image = {Kphan}
+              />
+              <FaceCard
+                darkMode = {darkMode}
+                name = 'Jack Toubes'
+                subtext = {['Officer', 'Pacbot HW Lead']}
+                image = {Jt1065}
+              />
+              <FaceCard
+                darkMode = {darkMode}
+                name = 'Jimmy Tran'
+                subtext = {['Officer', 'Drone Team Lead']}
+                image = {Jt7347}
+              />
+            </div> 
+          </Card>
+
+          <Card darkMode = {darkMode} pathString = '/about#leads'
+                className={'text-box text-box-padded-not-below' + (darkMode ? ' text-box-dark' : ' text-box-light')}> 
+            <div className='centered-heading'> 
+              SUBTEAM LEADS
+            </div>
+            <div className='centered-container'>
+              <FaceCard
+                darkMode = {darkMode}
                 name = 'Jamie Barnett'
                 subtext = {['Droid EE Lead', 'Outreach Lead']}
+                image = {Jb2056}
               />
               <FaceCard
                 darkMode = {darkMode}
@@ -81,18 +118,13 @@ function About(props) {
                 darkMode = {darkMode}
                 name = 'Eric Chen'
                 subtext = {['Drone HW Lead']}
+                image = {Edchen}
               />
               <FaceCard
                 darkMode = {darkMode}
                 name = 'Dak Cheng'
                 subtext = {['Golf Cart HW Lead', 'Robocup Lead']}
                 image = {Dc2326}
-              />
-              <FaceCard
-                darkMode = {darkMode}
-                name = 'Lana Glisic'
-                subtext = {['Training Lead', 'Pacbot SW Lead']}
-                image = {Lglisic}
               />
               <FaceCard
                 darkMode = {darkMode}
@@ -116,12 +148,7 @@ function About(props) {
                 darkMode = {darkMode}
                 name = 'Stephen Jiang'
                 subtext = {['Droid SW Lead', 'Drone SW Lead']}
-              />
-              <FaceCard
-                darkMode = {darkMode}
-                name = 'Kevin Phan'
-                subtext = {['Golf Cart SW Lead', 'Robocup Lead']}
-                image = {Kphan}
+                image = {Sj9425}
               />
               <FaceCard
                 darkMode = {darkMode}
@@ -140,18 +167,6 @@ function About(props) {
                 name = 'Yi Jin Toh'
                 subtext = {['Drone SW Lead']}
                 image = {Yijint}
-              />
-              <FaceCard
-                darkMode = {darkMode}
-                name = 'Jack Toubes'
-                subtext = {['Pacbot HW Lead']}
-                image = {Jt1065}
-              />
-              <FaceCard
-                darkMode = {darkMode}
-                name = 'Jimmy Tran'
-                subtext = {['Drone Team Lead']}
-                image = {Jt7347}
               />
             </div> 
           </Card>
