@@ -32,7 +32,6 @@
   background-image: url('../../../images/supporters/e_quad.jpg');
   background-repeat: no-repeat;
   background-size: fill;
-  color: yellow;
   float: right;
   transition: all 0.1s ease;
 }
@@ -55,7 +54,7 @@
 }
 
 .supp-logo-seas:hover {
-  background-size: 290px;
+  background-size: min(290px, 76vw);
   transition: all 0.1s ease;
 }
 
@@ -65,6 +64,67 @@
 
 .supp-logo-seas-light {
   background-color: rgba(0, 112, 255, 0.3);
+  filter: invert(1);
+}
+
+/* ------------------------------------------------------------------------- */
+
+.supp-logo-nvidia {
+  border-radius: 8px 8px 0px 0px;
+  height: 100px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-image: url('../../../images/supporters/nvidia.png');
+  background-repeat: no-repeat;
+  background-size: min(230px, 70vw);
+  float: left;
+  transition: all 0.1s ease;
+}
+
+.supp-logo-nvidia:hover {
+  background-size: min(240px, 70vw);
+  transition: all 0.1s ease;
+}
+
+.supp-logo-nvidia-dark {
+  background-color: rgba(137, 70, 255, 0.7);
+  filter: invert(1);
+}
+
+.supp-logo-nvidia-light {
+  background-color: rgba(118, 185, 0, 0.3);
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+.supp-logo-hmei {
+  border-radius: 8px 8px 0px 0px;
+  height: 100px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-image: url('../../../images/supporters/high_meadows.png');
+  background-repeat: no-repeat;
+  background-size: min(230px, 70vw);
+  float: left;
+  transition: all 0.1s ease;
+}
+
+.supp-logo-hmei:hover {
+  background-size: min(240px, 70vw);
+  transition: all 0.1s ease;
+}
+
+.supp-logo-hmei-dark {
+  background-color: rgba(71, 142, 118, 0.7);
+}
+
+.supp-logo-hmei-light {
+  background-color: rgba(184, 113, 137, 0.3);
   filter: invert(1);
 }
 
@@ -80,13 +140,12 @@
   background-image: url('../../../images/supporters/keller_center.png');
   background-repeat: no-repeat;
   background-size: min(240px, 70vw);
-  color: yellow;
   float: left;
   transition: all 0.1s ease;
 }
 
 .supp-logo-keller:hover {
-  background-size: 250px;
+  background-size: min(250px, 72vw);
   transition: all 0.1s ease;
 }
 
@@ -111,13 +170,12 @@
   background-image: url('../../../images/supporters/cst.png');
   background-repeat: no-repeat;
   background-size: min(200px, 60vw);
-  color: yellow;
   float: left;
   transition: all 0.1s ease;
 }
 
 .supp-logo-cst:hover {
-  background-size: 210px;
+  background-size: min(210px, 63vw);
   transition: all 0.1s ease;
 }
 

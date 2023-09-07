@@ -114,6 +114,33 @@ function Supporters(props) {
         </Card>
 
         <Card darkMode = {darkMode}
+              className={'text-box'+(darkMode?' text-box-dark':' text-box-light')}> 
+          <Link className={'supp-logo-hmei'+(darkMode?' supp-logo-hmei-dark':' supp-logo-hmei-light')}
+                to='https://environment.princeton.edu/'/>
+          <div className='supp-info-text'> 
+            The High Meadows Environmental Institute is dedicated to developing practical
+            solutions to global environmental challenges, through a combination of interdisciplinary
+            research, faculty collaborations, funding student proejcts, and hosting
+            events to share their mission and findings with the community.
+          </div>
+        </Card>
+
+        <Card darkMode = {darkMode}
+              className={'text-box'+(darkMode?' text-box-dark':' text-box-light')}> 
+          <Link className={'supp-logo-nvidia'+(darkMode?' supp-logo-nvidia-dark':' supp-logo-nvidia-light')}
+                to='https://nvidia.com/'/>
+          <div className='supp-info-text'> 
+            NVIDIA pioneers accelerated computing in several areas of technology,
+            from graphics and gaming to data centers and artificial intelligence.
+            Their <Link className={'link'+(darkMode ? ' link-green' : ' link-green')} 
+                              to='https://kellercenter.princeton.edu/keller-center-makerspace'>
+                  NVIDIA Jetson Orin
+                </Link> series offers energy-efficient and powerful edge AI
+            chips for developing next-generation robotic systems.
+          </div>
+        </Card>
+
+        <Card darkMode = {darkMode}
               className={'text-box text-box-keller'+(darkMode?' text-box-dark':' text-box-light')}> 
           <Link className={'supp-logo-keller'+(darkMode?' supp-logo-keller-dark':' supp-logo-keller-light')}
                 to='https://kellercenter.princeton.edu'/>
@@ -129,7 +156,7 @@ function Supporters(props) {
         </Card>
 
         <Card darkMode = {darkMode}
-              className={'text-box half text-box-cst'+(darkMode?' text-box-dark':' text-box-light')}> 
+              className={'text-box text-box-cst'+(darkMode?' text-box-dark':' text-box-light')}> 
           <Link className={'supp-logo-cst'+(darkMode?' supp-logo-cst-dark':' supp-logo-cst-light')} 
                 to='https://cst.princeton.edu'/>
           <div className='supp-info-text'> 
