@@ -1,6 +1,9 @@
 import React, {useEffect} from 'react';
 import '../Generic.css';
 import './Home.css';
+import { Link } from 'react-router-dom';
+import Card from '../../card/Card';
+
 
 // <div className='home-bg-img'/>
 
@@ -75,29 +78,56 @@ function Home(props) {
       <div className='home-container'>
         <div className='hero-container'>
           <div className='hero-img'>
-            <div id='hero-img-6' className='hero-img-content'></div>
-            <div id='hero-img-5' className='hero-img-content'></div>
-            <div id='hero-img-4' className='hero-img-content'></div>
-            <div id='hero-img-3' className='hero-img-content'></div>
-            <div id='hero-img-2' className='hero-img-content'></div>
-            <div id='hero-img-1' className='hero-img-content'></div>
+              <div id='hero-img-6' className='hero-img-content'></div>
+              <div id='hero-img-5' className='hero-img-content'></div>
+              <div id='hero-img-4' className='hero-img-content'></div>
+              <div id='hero-img-3' className='hero-img-content'></div>
+              <div id='hero-img-2' className='hero-img-content'></div>
+              <div id='hero-img-1' className='hero-img-content'></div>
           </div>
 
           <div className='hero-no-img'>
             <div className='hero-logo'></div>
-            <div className='hero-text'>
-              <span id='hero-word' className='hero-word'>{HERO_WORDS[0]}</span>
-              <span id='hero-bar' className='hero-bar'>|</span>
-              the&nbsp;&nbsp;future
-            </div>
+              <div className='hero-text'>
+                <span id='hero-word' className='hero-word'>{HERO_WORDS[0]}</span>
+                <span id='hero-bar' className='hero-bar'>|</span>
+                the&nbsp;&nbsp;future
+              </div>
             <div className='hero-subtext'>princeton university robotics club</div>
           </div>
         </div>
 
-        <span style={{color: darkMode ? 'white' : 'black'}}>(HOMEPAGE CONTENT PLACEHOLDER)</span>
+        <div className='post-hero-container'>
+          <section className='article-centered-home'>
+              <Card darkMode = {darkMode}
+                  className={'first-box-margin text-box text-box-padded' + (darkMode ? ' text-box-dark' : ' text-box-light')}>
+                  
+                  <div className='centered-heading'> 
+                  THE FUTURE...
+                  </div>
+                  
+                  ...Is a world where humans and fully autonomous,
+                  intelligent machines work together to solve problems
+                  and save lives. Our robots roll, ride, flex, and fly into
+                  that future.
 
-      </div>
+                  <br></br>
+                  <br></br>
+
+                  We accept members of all backgrounds and experience
+                  levels because we want to offer all Princeton students
+                  a fair opportunity to achieve Robotics mastery. <Link to='/join' className={'link'+(darkMode ? ' link-orange' : ' link-coral')}>Join</Link> us
+                  for invitations to weekly meetings, trainings, and events
+                  that let you put the <span className='link link-blue'>I</span> in ROBOT<span className='link link-blue'>I</span>CS and empower you to fill <span 
+                  className='link link-blue'>UR</span> place in P<span className='link link-blue'>UR</span>C.
+
+              </Card>
+
+          </section>
+        </div>
+
     </div>
+  </div>
   );
 }
 

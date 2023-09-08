@@ -76,8 +76,20 @@ function About(props) {
               />
               <FaceCard
                 darkMode = {darkMode}
+                name = 'Maria Heffernen'
+                subtext = {['Officer', 'Training Lead']}
+                image = {Mh6419}
+              />
+              <FaceCard
+                darkMode = {darkMode}
+                name = 'Freddy Hernandez'
+                subtext = {['Officer', 'Outreach Lead']}
+                image = {Fh9696}
+              />
+              <FaceCard
+                darkMode = {darkMode}
                 name = 'Kevin Phan'
-                subtext = {['Officer', 'Golf Cart SW Lead', 'Robocup Lead']}
+                subtext = {['Officer', 'Golf Cart SW Lead']}
                 image = {Kphan}
               />
               <FaceCard
@@ -92,7 +104,7 @@ function About(props) {
                 subtext = {['Officer', 'Drone Team Lead']}
                 image = {Jt7347}
               />
-            </div> 
+            </div>
           </Card>
 
           <Card darkMode = {darkMode} pathString = '/about#leads'
@@ -121,18 +133,6 @@ function About(props) {
               />
               <FaceCard
                 darkMode = {darkMode}
-                name = 'Maria Heffernen'
-                subtext = {['Training Lead']}
-                image = {Mh6419}
-              />
-              <FaceCard
-                darkMode = {darkMode}
-                name = 'Freddy Hernandez'
-                subtext = {['Outreach Lead']}
-                image = {Fh9696}
-              />
-              <FaceCard
-                darkMode = {darkMode}
                 name = 'William Huang'
                 subtext = {['Rover Team Lead']}
                 image = {Wh9128}
@@ -140,13 +140,13 @@ function About(props) {
               <FaceCard
                 darkMode = {darkMode}
                 name = 'Stephen Jiang'
-                subtext = {['Droid SW Lead', 'Drone SW Lead']}
+                subtext = {['Droid Mech Lead', 'Droid SW Lead', 'Drone SW Lead']}
                 image = {Sj9425}
               />
               <FaceCard
                 darkMode = {darkMode}
                 name = 'Joshua Soberano'
-                subtext = {['Exo Team Lead']}
+                subtext = {['Exoskeleton', 'Team Lead']}
                 image = {Js4346}
               />
               <FaceCard
