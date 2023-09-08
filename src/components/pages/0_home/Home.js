@@ -4,13 +4,9 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 import Card from '../../card/Card';
 
-
-// <div className='home-bg-img'/>
-
 function Home(props) {
 
   const {
-    // eslint-disable-next-line
     darkMode
   } = props;
 

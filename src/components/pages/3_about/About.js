@@ -6,9 +6,11 @@ import './About.css';
 
 import Ab0824 from '../../../images/about/ab0824.jpg';
 import An4978 from '../../../images/about/an4978.jpg';
+import Arthurts from '../../../images/about/arthurts.jpg';
 import August from '../../../images/about/august.jpg';
 import Dc2326 from '../../../images/about/dc2326.jpg';
 import Dc4266 from '../../../images/about/dc4266.jpg';
+import Df1314 from '../../../images/about/df1314.jpg';
 import Edchen from '../../../images/about/edchen.jpg';
 import Ernestm from '../../../images/about/ernestm.jpg';
 import Fh9696 from '../../../images/about/fh9696.jpg';
@@ -133,6 +135,12 @@ function About(props) {
               />
               <FaceCard
                 darkMode = {darkMode}
+                name = 'David Fu'
+                subtext = {['Rover Team Lead']}
+                image = {Df1314}
+              />
+              <FaceCard
+                darkMode = {darkMode}
                 name = 'William Huang'
                 subtext = {['Rover Team Lead']}
                 image = {Wh9128}
@@ -148,6 +156,12 @@ function About(props) {
                 name = 'Joshua Soberano'
                 subtext = {['Exoskeleton', 'Team Lead']}
                 image = {Js4346}
+              />
+              <FaceCard
+                darkMode = {darkMode}
+                name = 'Arti Schmidt'
+                subtext = {['Drone SW Lead']}
+                image = {Arthurts}
               />
               <FaceCard
                 darkMode = {darkMode}
