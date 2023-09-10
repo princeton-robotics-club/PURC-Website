@@ -24,8 +24,8 @@ function Projects(props) {
     darkMode
   } = props;
 
-  const [selectedTeam, setSelectedTeam] = useState('');
-  const HEADER_OFFSET = 200;
+  const [selectedTeam, setSelectedTeam] = useState('')
+  const HEADER_OFFSET = 200
 
   function toggleBlurb(teamName){
     let i
@@ -42,6 +42,7 @@ function Projects(props) {
       showSlides(teamName, 1)
 
       if (selectedTeam !== '' && document.getElementById(selectedTeam + '-text').getBoundingClientRect().top < document.getElementById(teamName + '-text').getBoundingClientRect().top){
+        window.scrollTo({top: 0})
         window.scrollTo({top: -document.getElementById(selectedTeam + '-blurb').getBoundingClientRect().height + document.getElementById(teamName + '-text').getBoundingClientRect().top + window.scrollY - HEADER_OFFSET, behavior: 'smooth'})
       } else {
         window.scrollTo({top: document.getElementById(teamName + '-text').getBoundingClientRect().top + window.scrollY - HEADER_OFFSET, behavior: 'smooth'})
