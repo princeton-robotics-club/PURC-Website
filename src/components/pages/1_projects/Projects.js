@@ -13,6 +13,7 @@ import droid4 from '../../../images/projects/droid/droid-4.jpg';
 import pacbot1 from '../../../images/projects/pacbot/pacbot-1.jpg';
 import pacbot2 from '../../../images/projects/pacbot/pacbot-2.jpg';
 import pacbot3 from '../../../images/projects/pacbot/pacbot-3.jpg';
+import pacbot4 from '../../../images/projects/pacbot/pacbot-4.mov';
 
 import drone1 from '../../../images/projects/drone/drone-1.jpg';
 import drone2 from '../../../images/projects/drone/drone-2.jpg';
@@ -142,7 +143,8 @@ function Projects(props) {
                 about = 'The Pacbot Competition is a fun, real-life robotics version of the popular Pacman arcade game. The robot, roughly the size of your palm, navigates through an intricate maze to collect as many pellets as it can for a high score, all the while escaping the clutches of four simulated, scary ghosts.'
                 slides = {[[pacbot1, 'h', 'Our Pacbot victory photo this past year, tying for first place with UIUC'],
                             [pacbot2, 'h', 'Two identical Pacbots our team designed from scratch during the 2022-23 academic year'],
-                            [pacbot3, 'v', 'A cool photo of our team posing on a bridge overlooking Harvard University']]}
+                            [pacbot3, 'v', 'A cool photo of our team posing on a bridge overlooking Harvard University'],
+                            [pacbot4, 'v', '']]}
                 showSlides = {showSlides}
                 milestones = {[['2022-09-01', 's', 'Sensor selection and electrical design for our 2023 robot'],
                             ['2023-04-01', 's', 'Firmware and software teams worked in parallel to get the robot to make intelligent decisions (competition in April)'],
