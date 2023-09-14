@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
 // External Components
 import Navbar from './components/navbar/Navbar';
@@ -40,6 +41,7 @@ function App() {
           <Route path='/supporters' exact element={<Supporters darkMode={darkMode}/>} />
           <Route path='/about'           exact element={<About darkMode={darkMode}/>} />
           <Route path='/join'             exact element={<Join darkMode={darkMode}/>} />
+          <Route path='*'                                element={<Navigate to='/' />}/>
         </Routes>
         <Footer
           darkMode={darkMode}
