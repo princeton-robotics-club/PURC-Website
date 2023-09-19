@@ -41,8 +41,8 @@ function About(props) {
         <section className='article-centered'>
           <div className={'title-blob' + (darkMode ? ' title-blob-dark' : ' title-blob-light')}> ABOUT US </div>
           <Card darkMode = {darkMode} pathString = '/about#officers'
-                className={'text-box text-box-padded-not-below' + (darkMode ? ' text-box-dark' : ' text-box-light')}> 
-            <div className='centered-heading'> 
+                className={'text-box text-box-padded-not-below' + (darkMode ? ' text-box-dark' : ' text-box-light')}>
+            <div className='centered-heading'>
               CLUB OFFICERS
             </div>
             <div className='centered-container'>
@@ -110,8 +110,8 @@ function About(props) {
           </Card>
 
           <Card darkMode = {darkMode} pathString = '/about#leads'
-                className={'text-box text-box-padded-not-below' + (darkMode ? ' text-box-dark' : ' text-box-light')}> 
-            <div className='centered-heading'> 
+                className={'text-box text-box-padded-not-below' + (darkMode ? ' text-box-dark' : ' text-box-light')}>
+            <div className='centered-heading'>
               SUBTEAM LEADS
             </div>
             <div className='centered-container'>
@@ -148,7 +148,7 @@ function About(props) {
               <FaceCard
                 darkMode = {darkMode}
                 name = 'Stephen Jiang'
-                subtext = {['Droid Mech Lead', 'Droid SW Lead', 'Drone SW Lead']}
+                subtext = {['Droid Mech Lead', 'Drone SW Lead']}
                 image = {Sj9425}
               />
               <FaceCard
@@ -175,19 +175,19 @@ function About(props) {
                 subtext = {['Drone SW Lead']}
                 image = {Yijint}
               />
-            </div> 
+            </div>
           </Card>
 
           {false && <Card darkMode = {darkMode} pathString = '/about#members'
-                className={'text-box text-box-padded' + (darkMode ? ' text-box-dark' : ' text-box-light')}> 
-            <div className='centered-heading'> 
+                className={'text-box text-box-padded' + (darkMode ? ' text-box-dark' : ' text-box-light')}>
+            <div className='centered-heading'>
               TEAM MEMBERS
             </div>
           </Card>}
 
           <Card darkMode = {darkMode} pathString = '/about#faculty'
-                className={'text-box text-box-padded-not-below' + (darkMode ? ' text-box-dark' : ' text-box-light')}> 
-            <div className='centered-heading'> 
+                className={'text-box text-box-padded-not-below' + (darkMode ? ' text-box-dark' : ' text-box-light')}>
+            <div className='centered-heading'>
               FACULTY ADVISERS
             </div>
             <div className='centered-container'>
@@ -209,7 +209,7 @@ function About(props) {
                 subtext = {['MAE']}
                 image = {Majumdar}
               />
-            </div> 
+            </div>
           </Card>
         </section>
       </div>

@@ -1,5 +1,5 @@
 .supp-bg-img {
-  background-image: url('../../../images/supporters/_bg_support.png');
+  background-image: url('../../../images/supporters/bg_support.png');
   background-size: 300px;
   position: fixed;
   left: 0;
@@ -241,11 +241,11 @@
   .supp-bg-img {
     max-height: calc(100vh - 200px);
   }
-  
+
   .text-box-keller {
     width: calc(100%);
   }
-  
+
   .text-box-cst {
     width: calc(100%);
   }
