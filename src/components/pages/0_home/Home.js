@@ -20,7 +20,7 @@ function Home(props) {
   useEffect(() => {
     const wordTimer = setInterval(() => {editWord()}, 75);
     const barTimer = setInterval(() => {editBar()}, 500);
-    
+
     return () => {
       clearInterval(wordTimer)
       clearInterval(barTimer)
@@ -97,12 +97,12 @@ function Home(props) {
           <section className='article-centered-home'>
               <Card darkMode = {darkMode}
                   className={'first-box-margin text-box text-box-padded' + (darkMode ? ' text-box-dark' : ' text-box-light')}>
-                  
-                  <div className='centered-heading'> 
-                  THE FUTURE...
+
+                  <div className='centered-heading'>
+                  THE FUTURE ...
                   </div>
-                  
-                  ...Is a world where humans and fully autonomous,
+
+                  ... is a world where humans and fully autonomous,
                   intelligent machines work together to solve problems
                   and save lives. Our robots roll, ride, flex, and fly into
                   that future.
@@ -114,8 +114,43 @@ function Home(props) {
                   levels because we want to offer all Princeton students
                   a fair opportunity to achieve Robotics mastery. <Link to='/join' className={'link'+(darkMode ? ' link-orange' : ' link-coral')}>Join</Link> us
                   for invitations to weekly meetings, trainings, and events
-                  that let you put the <span className='link link-blue'>I</span> in ROBOT<span className='link link-blue'>I</span>CS and empower you to fill <span 
+                  that let you put the <span className='link link-blue'>I</span> in ROBOT<span className='link link-blue'>I</span>CS and empower you to fill <span
                   className='link link-blue'>UR</span> place in P<span className='link link-blue'>UR</span>C.
+
+              </Card>
+
+              <Card darkMode = {darkMode}
+                  className={'text-box text-box-padded' + (darkMode ? ' text-box-dark' : ' text-box-light')}>
+
+                  <div className='centered-heading'>
+                  MEETINGS
+                  </div>
+
+                  Our meetings take place on weekends in StudioLab, a makerspace in the basement of Fine Hall.
+
+                  <br/>
+                  <br/>
+
+                  Below is a list of our meeting times for the rest of the semester:
+
+                  <br/>
+                  <br/>
+
+                  <b>Saturdays</b>
+                  <ul>
+                    <li>2:00 - 3:00 pm <b>:</b> Trainings</li>
+                    <li>3:00 - 4:30 pm <span className='text-droid'><b>:</b></span> BB-8 Droid</li>
+                    <li>4:30 - 6:00 pm <span className='text-pacbot'><b>:</b></span> Pacbot</li>
+                    <li>6:30 - 8:00 pm <span className='text-golf'><b>:</b></span> Golf Cart</li>
+                    <li>8:00 - 9:30 pm <span className='text-drone'><b>:</b></span> Drone</li>
+                  </ul>
+
+                  <b>Sundays</b>
+                  <ul>
+                    <li>3:00 - 4:30 pm <span className='text-exo'><b>:</b></span> Exoskeleton</li>
+                    <li>4:00 - 5:30 pm <span className='text-rover'><b>:</b></span> Rover</li>
+                    <li>6:30 - 8:00 pm <span className='text-robocup'><b>:</b></span> Robocup</li>
+                  </ul>
 
               </Card>
 
