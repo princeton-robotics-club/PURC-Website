@@ -19,6 +19,9 @@ import drone1 from '../../../images/projects/drone/drone-1.jpg';
 import drone2 from '../../../images/projects/drone/drone-2.jpg';
 import drone3 from '../../../images/projects/drone/drone-3.jpg';
 
+import rover1 from '../../../images/projects/rover/rover-1.jpg';
+import rover2 from '../../../images/projects/rover/rover-2.png';
+
 function Projects(props) {
 
   const {
@@ -119,6 +122,7 @@ function Projects(props) {
                 milestones = {[['2022-09-01', 's', 'Mechanical team completed the outer frame and began printing the inner sub-assembly, while our electrical team completed the body circuit.'], 
                 ['2023-03-01', 's', 'Mechanical team mostly completed the inner chassis structure. The electrical team programmed and tested various components within the body circuit.'], 
                 ['2023-11-30', 's', 'Mechanical team aims to complete the whole mechanical assembly, and our electrical team will design PCBs for more compact and reliable wiring.']]}
+                sponsors = {''}
               />
             </div>
 
@@ -151,6 +155,7 @@ function Projects(props) {
                             ['2023-04-29', 'd', 'Our team competed in the 2023 PacBot Competiton at Harvard University and obtained the highest score!'],
                             ['2023-08-01', 's', 'Re-designed the Pacbot game engine to address some shortcomings from last year'],
                             ['2023-11-30', 's', ' Starting work on our 2024 Pacbot!']]}
+                sponsors = {''}
               />
             </div>
 
@@ -180,6 +185,7 @@ function Projects(props) {
                 milestones =  {[['2022-09-01', 's', 'Built base drone hardware for manual flight, and adapted sensor array to establish position-hold through optical flow and LIDAR sensors.'], 
                                 ['2023-03-01', 's', 'Finished writing code for basic computer vision (CV)-based gesture control, and successfully completed preliminary vision-based flight tests.'], 
                                 ['2023-11-30', 's', 'Exploring more CV applications such as localization, path planning, and collision avoidance, while improving safety of gesture control.']]}
+                sponsors = {''}
               />
             </div>
 
@@ -189,8 +195,8 @@ function Projects(props) {
 
             <div className = 'second-row'>
               <TeamButton
-                  teamName = 'robocup'
-                  teamTitle = 'ROBOCUP'
+                  teamName = 'rover'
+                  teamTitle = 'ROVER'
                   selectedTeam = {selectedTeam}
                   toggleBlurb = {toggleBlurb}
               />
@@ -199,13 +205,18 @@ function Projects(props) {
             <div className = 'third-row'>
               <TeamBlurb
                 darkMode = {darkMode}
-                teamName = 'robocup'
-                teamTitle = 'ROBOCUP'
+                teamName = 'rover'
+                teamTitle = 'ROVER'
                 selectedTeam = {selectedTeam}
-                about = 'As a newly-formed team starting up in Fall 2023, our RoboCup Team will develop a robot for competition in the RoboCup Small Size League. We are eager to find passionate members to take the lead in helping this fledgling team grow and prosper!'
-                slides = {[]}
+                about = 'The Rover Team was founded in the Summer of 2023. Our mission is to design and build an autonomous rover capable of exploring a Mars-like environment. Our rover will exhibit four distinct competencies: (1) computer vision algorithms for object avoidance and extreme terrain navigation, (2) object retrieval and delivery mechanisms to support mission objectives, (3) remote-controlled robotic arm that can perform complex maintenance operations on an equipment system, and (4) science system to collect samples and detect signs of life. We intend to compete in the <a href="https://urc.marssociety.org/home">University Rover Challenge</a>, hosted annually in May in Utah.'
+                slides = {[[rover1, 'v', "Chassis team debating various design constraints"],
+                          [rover2, 'h', "Rover Team Officers and Sub-Team Leads"]]}
                 showSlides = {showSlides}
-                milestones = {[]}
+                milestones = {[['2023-09-01', 'm', 'First ever meeting! We recruited 61 new team members across five sub-teams.'],
+                  ['2023-12-01', 'm', 'We will submit the Preliminary Design Report with designs and project information to the Rover Challenge.'],
+                  ['2024-03-01', 'm', 'We will submit a System Acceptance Report with video demonstration of the constructed rover to the Rover Challenge.'],
+                  ['2024-05-01', 'm', 'Final Round Competition in Utah!']]}
+                sponsors = {'If you are interested in donating to and sponsoring the Princeton Rover Team, please contact treasurer Brandon Cheng, at <a href = "mailto: brandon.cheng@princeton.edu">brandon.cheng@princeton.edu</a>.'}
               />
             </div>
 
@@ -231,6 +242,7 @@ function Projects(props) {
                 slides = {[]}
                 showSlides = {showSlides}
                 milestones = {[]}
+                sponsors = {'High Meadows Institute; NVIDIA'}
               />
             </div>
 
@@ -256,36 +268,12 @@ function Projects(props) {
                 slides = {[]}
                 showSlides = {showSlides}
                 milestones = {[]}
+                sponsors = {''}
               />
             </div>
 
             <div className='second-row break'></div>
             <div className='third-row v-spacer'></div>
-            <div className='m-spacer'></div>
-
-            <div className = 'third-row'>
-              <TeamButton
-                  teamName = 'rover'
-                  teamTitle = 'ROVER'
-                  selectedTeam = {selectedTeam}
-                  toggleBlurb = {toggleBlurb}
-              />
-            </div>
-
-            <div className = 'fourth-row'>
-              <TeamBlurb
-                darkMode = {darkMode}
-                teamName = 'rover'
-                teamTitle = 'ROVER'
-                selectedTeam = {selectedTeam}
-                about = 'As a new team for Fall 2023, our Rover Team is aiming to compete in the University Rover Challenge! For this competition, we will build a rover that performs various assistive tasks on Mars-like terrain.'
-                slides = {[]}
-                showSlides = {showSlides}
-                milestones = {[]}
-              />
-            </div>
-
-            <div className='fourth-row v-spacer'></div>
             <div className='m-spacer'></div>
 
           </div>

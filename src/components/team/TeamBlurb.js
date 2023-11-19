@@ -11,7 +11,8 @@ function TeamBlurb(props) {
     about,
     slides,
     showSlides,
-    milestones
+    milestones,
+    sponsors
   } = props;
 
   const img_ext = ['jpg', 'png', 'jpeg', 'svg']
@@ -192,6 +193,16 @@ function TeamBlurb(props) {
             <div className={teamName + '-timeline-ruler timeline-ruler'}></div>
               {generateTimeline()}
           </div>
+
+        <div className='section' style={{display: sponsors.length > 0 ? 'block' : 'none'}}></div>
+
+        <div className='blurb-title' style={{color: darkMode ? 'white' : 'black', display: sponsors.length > 0 ? 'block' : 'none'}}>
+            <h2>SPONSORS</h2>
+        </div>
+
+        <div className='divider' style={{display: sponsors.length > 0 ? 'block' : 'none'}}></div>
+
+        <div dangerouslySetInnerHTML={{__html: sponsors}} className='blurb-text' style={{color: darkMode ? 'white' : 'black', display: sponsors.length > 0 ? 'block' : 'none'}} />
 
         <div className='spacer' ></div>
         <div className='spacer' ></div>
