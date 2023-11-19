@@ -355,6 +355,10 @@
   border-color: var(--projects-rover-rgb);
   background-color: var(--projects-rover-rgb);
 }
+
+.rover-blurb a {
+  color: var(--projects-rover-rgb);
+}
 /* ------------------------------------------------------------------------- */
 /*                                  MOBILE                                   */
 /* ------------------------------------------------------------------------- */
