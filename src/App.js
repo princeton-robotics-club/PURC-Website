@@ -1,12 +1,10 @@
 // React
-import React, { useEffect } from 'react';
-import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Navigate } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Navigate, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 // External Components
-import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
+import Navbar from './components/navbar/Navbar';
 
 // Styling
 import './App.css';
@@ -17,9 +15,9 @@ import Projects from './components/pages/1_projects/Projects';
 import Supporters from './components/pages/2_supporters/Supporters';
 import About from './components/pages/3_about/About';
 import Join from './components/pages/4_join/Join';
+import Gallery from './components/pages/5_gallery/Gallery';
 
 function App() {
-
   const [darkMode, setDarkMode] = useState(true);
   const toggleDarkMode = () => setDarkMode(!darkMode);
 
@@ -31,21 +29,17 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar
-          darkMode={darkMode}
-          toggleDarkMode={toggleDarkMode}
-        />
+        <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Routes className="content">
-          <Route path='/'                 exact element={<Home darkMode={darkMode}/>} />
-          <Route path='/projects'     exact element={<Projects darkMode={darkMode}/>} />
-          <Route path='/supporters' exact element={<Supporters darkMode={darkMode}/>} />
-          <Route path='/about'           exact element={<About darkMode={darkMode}/>} />
-          <Route path='/join'             exact element={<Join darkMode={darkMode}/>} />
-          <Route path='*'                                element={<Navigate to='/' />}/>
+          <Route path="/" exact element={<Home darkMode={darkMode} />} />
+          <Route path="/projects" exact element={<Projects darkMode={darkMode} />} />
+          <Route path="/supporters" exact element={<Supporters darkMode={darkMode} />} />
+          <Route path="/about" exact element={<About darkMode={darkMode} />} />
+          <Route path="/gallery" exact element={<Gallery darkMode={darkMode} />} />
+          <Route path="/join" exact element={<Join darkMode={darkMode} />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
-        <Footer
-          darkMode={darkMode}
-        />
+        <Footer darkMode={darkMode} />
       </Router>
     </>
   );

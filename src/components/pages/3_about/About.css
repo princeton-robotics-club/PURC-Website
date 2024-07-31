@@ -65,3 +65,28 @@
     padding-right: 20px;
   }
 }
+
+/* ------------------------------------------------------------------------- */
+.year-button {
+  border: none;
+  border: 1.5px solid;
+}
+.year-button:hover {
+  border-bottom-color: coral;
+  filter: opacity(1);
+  transition: 0.3s;
+}
+
+.year-button.active {
+  border-color: coral;
+}
+
+.year-button-dark:hover {
+  /* border-color: orange; */
+  transition: 0.4s;
+}
+
+.year-button-light:hover {
+  border-color: coral;
+  transition: 0.4s;
+}
