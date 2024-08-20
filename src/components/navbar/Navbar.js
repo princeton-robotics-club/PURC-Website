@@ -65,8 +65,30 @@ function Navbar(props) {
               label={'Projects'}
               link={'/projects'}
               pathString={'/projects'}
-              dropdownOptions={[]}
-              dropdownLinks={[]}
+              dropdownOptions={[
+                'Droid',
+                'Pacbot',
+                'Drone',
+                'Rover (archived)',
+                'Golf Cart',
+                'ExoSkeleton',
+                'Robocup',
+                'Bioics',
+                'Wall-E',
+                'Tinker',
+              ]}
+              dropdownLinks={[
+                '/projects#droid',
+                '/projects#pacbot',
+                '/projects#drone',
+                '/projects#rover',
+                '/projects#golf',
+                '/projects#exoskeleton',
+                '/projects#robocup',
+                '/projects#bioics',
+                '/projects#wall-e',
+                '/projects#tinker',
+              ]}
               closeMobile={closeMobileMenu}
               darkMode={darkMode}
             />

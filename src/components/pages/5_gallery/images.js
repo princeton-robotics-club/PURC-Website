@@ -16,7 +16,9 @@ const images = [
     // width: 'auto !important',
     // height: '400px !important',
     tags: [{ value: 'Droid Team' }],
-    caption: 'Work Session with the Droid Team ',
+    // caption: 'Work Session with the Droid Team ',
+    title: 'Slide title',
+    description: 'Slide description',
   },
   {
     src: Droid2,
