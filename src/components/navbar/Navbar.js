@@ -73,9 +73,9 @@ function Navbar(props) {
                 'Golf Cart',
                 'ExoSkeleton',
                 'Robocup',
-                'Bioics',
-                'Wall-E',
+                'Bionics',
                 'Tinker',
+                'Wall-E',
               ]}
               dropdownLinks={[
                 '/projects#droid',
@@ -85,9 +85,9 @@ function Navbar(props) {
                 '/projects#golf',
                 '/projects#exoskeleton',
                 '/projects#robocup',
-                '/projects#bioics',
-                '/projects#wall-e',
+                '/projects#bionics',
                 '/projects#tinker',
+                '/projects#wall-e',
               ]}
               closeMobile={closeMobileMenu}
               darkMode={darkMode}
@@ -107,8 +107,8 @@ function Navbar(props) {
               label={'About Us'}
               link={'/about'}
               pathString={'/about'}
-              dropdownOptions={['Officers', 'Leads', 'Faculty', 'Alumni']}
-              dropdownLinks={['/about#officers', '/about#leads', '/about#faculty', '/about#alumni']}
+              dropdownOptions={['Officers', 'Leads', 'Faculty', 'Members', 'Alumni']}
+              dropdownLinks={['/about#officers', '/about#leads', '/about#faculty', '/members', '/alumni']}
               closeMobile={closeMobileMenu}
               darkMode={darkMode}
             />

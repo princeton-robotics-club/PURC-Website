@@ -104,7 +104,12 @@ function Projects(props) {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.hash) document.querySelector(location.hash)?.scrollIntoView({ behavior: 'smooth' });
+    if (location.hash) {
+      let teamName = location.hash.substring(1);
+      console.log(teamName);
+      toggleBlurb(teamName);
+      document.querySelector(location.hash)?.scrollIntoView({ behavior: 'smooth' });
+    }
   }, [location.hash]);
 
   return (
@@ -417,16 +422,18 @@ function Projects(props) {
               />
             </div>
 
-            <div className="second-row break"></div>
-            <div className="third-row v-spacer"></div>
+            <div className="third-row break"></div>
+            <div className="fourth-row v-spacer"></div>
             <div className="m-spacer"></div>
+
+            {/* fourth starts here */}
             {/* wall-e */}
 
-            <div className="third-row">
+            <div className="fourth-row">
               <TeamButton teamName="wall-e" teamTitle="WALL-E" selectedTeam={selectedTeam} toggleBlurb={toggleBlurb} />
             </div>
 
-            <div className="fourth-row">
+            <div className="fifth-row">
               <TeamBlurb
                 darkMode={darkMode}
                 teamName="wall-e"
@@ -440,8 +447,8 @@ function Projects(props) {
               />
             </div>
 
-            <div className="second-row break"></div>
-            <div className="third-row v-spacer"></div>
+            <div className="fourth-row break"></div>
+            <div className="fifth-row v-spacer"></div>
             <div className="m-spacer"></div>
           </div>
         </section>

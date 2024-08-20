@@ -2,6 +2,10 @@ import Droid1 from '../../../images/projects/droid/droid-1.jpg';
 import Droid2 from '../../../images/projects/droid/droid-2.jpg';
 import Droid3 from '../../../images/projects/droid/droid-3.jpg';
 import Droid4 from '../../../images/projects/droid/droid-4.jpg';
+import Droid5 from '../../../images/projects/droid/droid-construction.png';
+import Droid6 from '../../../images/projects/droid/droid-robot-construction.jpg';
+import Droid8 from '../../../images/projects/droid/droid-robot-demo.mov';
+import Droid7 from '../../../images/projects/droid/droid-team.png';
 import Drone1 from '../../../images/projects/drone/drone-1.jpg';
 import Drone2 from '../../../images/projects/drone/drone-2.jpg';
 import Drone3 from '../../../images/projects/drone/drone-3.jpg';
@@ -11,6 +15,15 @@ import PacBot3 from '../../../images/projects/pacbot/pacbot-3.jpg';
 import Rover1 from '../../../images/projects/rover/rover-1.jpg';
 
 const images = [
+  /*****
+   * General Team Images
+   *
+   */
+
+  /*****
+   * Droid Team Images
+   *
+   */
   {
     src: Droid1,
     // width: 'auto !important',
@@ -46,6 +59,43 @@ const images = [
     // height: 212,
   },
   {
+    src: Droid5,
+    tags: [
+      // { value: '#Droid', title: 'Droid' },
+      // { value: '#', title: 'Boards' },
+    ],
+    alt: 'Droid robot',
+  },
+  {
+    src: Droid6,
+    tags: [
+      // { value: '#Droid', title: 'Droid' },
+      // { value: '#', title: 'Boards' },
+    ],
+    alt: 'Droid Robot under construction',
+  },
+  {
+    src: Droid7,
+    tags: [
+      // { value: '#Droid', title: 'Droid' },
+      // { value: '#', title: 'Boards' },
+    ],
+    alt: 'Droid Team working session',
+  },
+  {
+    src: Droid8,
+    tags: [
+      // { value: '#Droid', title: 'Droid' },
+      // { value: '#', title: 'Boards' },
+    ],
+    alt: 'Droid Robot Demo',
+  },
+
+  /*****
+   * Drone Team Images
+   *
+   */
+  {
     src: Drone1,
     // width: 320,
     // height: 174,
@@ -70,6 +120,11 @@ const images = [
     // width: 320,
     // height: 212,
   },
+
+  /*****
+   * PacBot Team Images
+   *
+   */
   {
     src: PacBot1,
     // width: 320,

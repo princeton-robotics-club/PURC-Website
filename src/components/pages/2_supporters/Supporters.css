@@ -97,7 +97,6 @@
   background-color: rgba(118, 185, 0, 0.3);
 }
 
-
 /* ------------------------------------------------------------------------- */
 
 .supp-logo-hmei {
@@ -158,6 +157,20 @@
   filter: invert(1);
 }
 
+/* ------------------------------------------------------------------------- */
+.supp-logo-mcmaster {
+  border-radius: 8px 8px 0px 0px;
+  height: 100px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-image: url('../../../images/supporters/McMaster-Carr_logo.svg.png');
+  background-repeat: no-repeat;
+  background-size: min(240px, 70vw);
+  float: left;
+  transition: all 0.1s ease;
+}
 /* ------------------------------------------------------------------------- */
 
 .supp-logo-cst {
@@ -223,7 +236,6 @@
 /* ------------------------------------------------------------------------- */
 
 @media screen and (max-width: 1250px) {
-
   .img-e-quad {
     height: auto;
   }
@@ -231,13 +243,11 @@
   .supp-info-text-e-quad {
     width: auto;
   }
-
 }
 
 /* ------------------------------------------------------------------------- */
 
 @media screen and (max-width: 960px) {
-
   .supp-bg-img {
     max-height: calc(100vh - 200px);
   }
@@ -258,7 +268,6 @@
 /* ------------------------------------------------------------------------- */
 
 @media screen and (max-width: 532px) {
-
   .mobile-break {
     display: inline-block;
   }
