@@ -53,6 +53,10 @@
   white-space: pre;
 }
 
+.caption > div {
+  text-align: center;
+}
+
 .title {
   font-size: 0.75rem;
   background-color: rgb(22, 21, 21);
@@ -60,6 +64,7 @@
   margin-block: 0.5px;
   border-radius: 10px;
   color: white;
+  text-align: center;
 }
 /* 
 .title-dark {
