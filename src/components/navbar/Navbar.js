@@ -69,7 +69,7 @@ function Navbar(props) {
                 'Droid',
                 'Pacbot',
                 'Drone',
-                'Rover (archived)',
+                'Rover',
                 'Golf Cart',
                 'ExoSkeleton',
                 'Robocup',
