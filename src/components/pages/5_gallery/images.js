@@ -4,8 +4,8 @@ import Droid3 from '../../../images/projects/droid/droid-3.jpg';
 import Droid4 from '../../../images/projects/droid/droid-4.jpg';
 import Droid5 from '../../../images/projects/droid/droid-construction.png';
 import Droid6 from '../../../images/projects/droid/droid-robot-construction.jpg';
-import Droid8 from '../../../images/projects/droid/droid-robot-demo.mov';
 import Droid7 from '../../../images/projects/droid/droid-team.png';
+// import Droid8 from '../../../images/projects/droid/droid-robot-demo.mov';
 import Drone1 from '../../../images/projects/drone/drone-1.jpg';
 import Drone2 from '../../../images/projects/drone/drone-2.jpg';
 import Drone3 from '../../../images/projects/drone/drone-3.jpg';
@@ -82,14 +82,14 @@ const images = [
     ],
     alt: 'Droid Team working session',
   },
-  {
-    src: Droid8,
-    tags: [
-      // { value: '#Droid', title: 'Droid' },
-      // { value: '#', title: 'Boards' },
-    ],
-    alt: 'Droid Robot Demo',
-  },
+  // {
+  //   src: Droid8,
+  //   tags: [
+  //     // { value: '#Droid', title: 'Droid' },
+  //     // { value: '#', title: 'Boards' },
+  //   ],
+  //   alt: 'Droid Robot Demo',
+  // },
 
   /*****
    * Drone Team Images

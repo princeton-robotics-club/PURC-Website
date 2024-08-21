@@ -23,7 +23,6 @@ import Fh9696 from '../../../images/about/fh9696.jpg';
 import Gn7269 from '../../../images/about/gn7269.jpg';
 import Ih2422 from '../../../images/about/ih2422.jpg';
 import Js4346 from '../../../images/about/js4346.jpg';
-import Jt1065 from '../../../images/about/jt1065.jpg';
 import Jt7347 from '../../../images/about/jt7347.jpg';
 import Kphan from '../../../images/about/kphan.jpg';
 import Lyon from '../../../images/about/lyon.png';
@@ -55,54 +54,26 @@ function About(props) {
             className={'text-box text-box-padded-not-below' + (darkMode ? ' text-box-dark' : ' text-box-light')}>
             <div className="centered-heading">CLUB OFFICERS</div>
             <div className="centered-container">
-              <FaceCard
-                darkMode={darkMode}
-                name="Alecia Barbieri"
-                subtext={['Co-President & Media Lead']}
-                image={Ab0824}
-              />
-              <FaceCard darkMode={darkMode} name="Ian Henriques" subtext={['Co-President']} image={Ih2422} />
-              <FaceCard darkMode={darkMode} name="Ernest McCarter" subtext={['Co-President']} image={Ernestm} />
+              <FaceCard darkMode={darkMode} name="Alecia Barbieri" subtext={['Co-President']} image={Ab0824} />
+              <FaceCard darkMode={darkMode} name="Sarah Rinzan" subtext={['Co-President']} image={Sr6770} />
+              <FaceCard darkMode={darkMode} name="Aidan Ward" subtext={['Co-President']} image={Aw3592} />
               <FaceCard darkMode={darkMode} name="Andy Nguyen" subtext={['Treasurer']} image={An4978} />
-              <FaceCard darkMode={darkMode} name="Stephen Gilton" subtext={['Treasurer-in-training']} image={Sg8409} />
+              <FaceCard darkMode={darkMode} name="Stephen Gilton" subtext={['Treasurer-in-Training']} image={Sg8409} />
 
-              <FaceCard darkMode={darkMode} name="Aidan Ward" subtext={['Officer & Training Lead']} image={Aw3592} />
-              <FaceCard darkMode={darkMode} name="Caden Kang" subtext={['Officer & Media Lead']} image={Ck4287} />
+              <FaceCard darkMode={darkMode} name="Caden Kang" subtext={['Media Lead']} image={Ck4287} />
               <FaceCard darkMode={darkMode} name="Chris Ganter" subtext={['Officer']} image={Cg6149} />
-              <FaceCard darkMode={darkMode} name="Divija Durga" subtext={['Officer & Outreach Lead']} image={Dd6849} />
+              <FaceCard darkMode={darkMode} name="Divija Durga" subtext={['School Outreach Lead']} image={Dd6849} />
               <FaceCard darkMode={darkMode} name="Emily Yang " subtext={['FIRST Outreach Lead']} image={ey3875} />
-              <FaceCard
-                darkMode={darkMode}
-                name="Freddy Hernandez"
-                subtext={['Outreach & Media Lead']}
-                image={Fh9696}
-              />
-              <FaceCard darkMode={darkMode} name="Glen Nfor" subtext={['Office & Web Dev Lead']} image={Gn7269} />
-              <FaceCard darkMode={darkMode} name="Jack Toubes" subtext={['Officer']} image={Jt1065} />
-              <FaceCard darkMode={darkMode} name="Jenna Mullins" subtext={['Officer & Design Lead']} image={''} />
+              <FaceCard darkMode={darkMode} name="Freddy Hernandez" subtext={['Media Lead']} image={Fh9696} />
+              <FaceCard darkMode={darkMode} name="Glen Nfor" subtext={['Web Dev Lead']} image={Gn7269} />
+              <FaceCard darkMode={darkMode} name="Jenna Mullins" subtext={['Design Lead']} image={''} />
 
-              <FaceCard darkMode={darkMode} name="Mahir Majid" subtext={['Officer & Web Dev Lead']} image={mm5764} />
-              <FaceCard
-                darkMode={darkMode}
-                name="Maria Heffernen"
-                subtext={['Officer & Training Lead']}
-                image={Mh6419}
-              />
-              <FaceCard darkMode={darkMode} name="Sarah R" subtext={['Officer']} image={Sr6770} />
+              <FaceCard darkMode={darkMode} name="Mahir Majid" subtext={['Web Dev Lead']} image={mm5764} />
+              <FaceCard darkMode={darkMode} name="Maria Heffernen" subtext={['Training Lead']} image={Mh6419} />
               <FaceCard darkMode={darkMode} name="Tate Hutchins" subtext={['Business Team Lead']} image={Th5879} />
-              <FaceCard
-                darkMode={darkMode}
-                name="Vasumathi Venkat"
-                subtext={['Officer & Social Chair']}
-                image={Vv5226}
-              />
-              <FaceCard
-                darkMode={darkMode}
-                name="Zachary Andrews"
-                subtext={['Officer & Outreach Lead']}
-                image={Za3545}
-              />
-              <FaceCard darkMode={darkMode} name="Zara Kamga" subtext={['DEI Officer ']} image={Zk9002} />
+              <FaceCard darkMode={darkMode} name="Vasumathi Venkat" subtext={['Social Chair']} image={Vv5226} />
+              <FaceCard darkMode={darkMode} name="Zachary Andrews" subtext={['School Outreach Lead']} image={Za3545} />
+              <FaceCard darkMode={darkMode} name="Zara Kamga" subtext={['DEI Lead ']} image={Zk9002} />
             </div>
           </Card>
 
@@ -138,18 +109,8 @@ function About(props) {
               <FaceCard darkMode={darkMode} name="Joshua Soberano" subtext={['Exo Team Lead']} image={Js4346} />
               <FaceCard darkMode={darkMode} name="Divija Durga" subtext={['Exo Team Lead']} image={Dd6849} />
 
-              <FaceCard
-                darkMode={darkMode}
-                name="Glen Nfor"
-                subtext={['Robocup Team Lead', 'Robocup SW Lead']}
-                image={Gn7269}
-              />
-              <FaceCard
-                darkMode={darkMode}
-                name="Mahir Majid"
-                subtext={['Robocup Team Lead', 'Robosquad HW Lead']}
-                image={mm5764}
-              />
+              <FaceCard darkMode={darkMode} name="Glen Nfor" subtext={['Robocup SW Lead']} image={Gn7269} />
+              <FaceCard darkMode={darkMode} name="Mahir Majid" subtext={['Robocup HW Lead']} image={mm5764} />
 
               {/* <hr className="divider" /> */}
             </div>

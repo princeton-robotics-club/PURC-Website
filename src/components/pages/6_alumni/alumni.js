@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
+import Ernestm from '../../../images/about/ernestm.jpg';
+import Ih2422 from '../../../images/about/ih2422.jpg';
+import Jt1065 from '../../../images/about/jt1065.jpg';
 import Card from '../../card/Card';
+import FaceCard from '../../face_card/FaceCard';
 import NameCard from '../../name-card/NameCard';
 import '../Generic.css';
 import './alumni.css';
-
-import Ab0824 from '../../../images/about/ab0824.jpg';
-import An4978 from '../../../images/about/an4978.jpg';
-import Ernestm from '../../../images/about/ernestm.jpg';
-import Ih2422 from '../../../images/about/ih2422.jpg';
-import FaceCard from '../../face_card/FaceCard';
 import { alumniData } from './data';
 function Alumni(props) {
   const {
@@ -49,15 +47,9 @@ function Alumni(props) {
               </div>
             </div>
             <div className="centered-container">
-              <FaceCard
-                darkMode={darkMode}
-                name="Alecia Barbieri"
-                subtext={['Co-President & Media Lead']}
-                image={Ab0824}
-              />
               <FaceCard darkMode={darkMode} name="Ian Henriques" subtext={['Co-President']} image={Ih2422} />
               <FaceCard darkMode={darkMode} name="Ernest McCarter" subtext={['Co-President']} image={Ernestm} />
-              <FaceCard darkMode={darkMode} name="Andy Nguyen" subtext={['Treasurer']} image={An4978} />
+              <FaceCard darkMode={darkMode} name="Jack Toubes" subtext={['Officer']} image={Jt1065} />
             </div>
           </Card>
           <Card
