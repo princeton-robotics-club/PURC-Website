@@ -47,9 +47,9 @@ function Alumni(props) {
               </div>
             </div>
             <div className="centered-container">
-              <FaceCard darkMode={darkMode} name="Ian Henriques" subtext={['Co-President']} image={Ih2422} />
-              <FaceCard darkMode={darkMode} name="Ernest McCarter" subtext={['Co-President']} image={Ernestm} />
-              <FaceCard darkMode={darkMode} name="Jack Toubes" subtext={['Officer']} image={Jt1065} />
+              <FaceCard darkMode={darkMode} name="Ian Henriques" subtext={["Co-President '24"]} image={Ih2422} />
+              <FaceCard darkMode={darkMode} name="Ernest McCarter" subtext={["Co-President '24"]} image={Ernestm} />
+              <FaceCard darkMode={darkMode} name="Jack Toubes" subtext={["Officer '24"]} image={Jt1065} />
             </div>
           </Card>
           <Card
