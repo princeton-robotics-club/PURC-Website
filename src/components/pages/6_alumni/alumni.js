@@ -66,6 +66,7 @@ function Alumni(props) {
               <div
                 style={{
                   display: 'flex',
+                  flexWrap: 'wrap',
                   width: '100%',
                   justifyContent: 'center',
                   alignItems: 'center',
