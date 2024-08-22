@@ -1,9 +1,6 @@
 .search {
   width: 80%;
-  border: 1px solid white;
   outline: none;
-  background: transparent;
-  color: white;
   transition: 300ms ease-in;
   height: 40px;
   font-size: 1.3rem;
@@ -11,6 +8,17 @@
   border-radius: 10px;
   font-family: 'Century Gothic';
   text-align: center;
+  background-color: transparent;
+}
+
+.search-light {
+  border: 1px solid black;
+  color: black;
+}
+
+.search-dark {
+  border: 1px solid white;
+  color: white;
 }
 
 .search:focus {

@@ -39,7 +39,7 @@ function Members(props) {
         <div className="join-bg-img" />
         <section className="article-centered">
           <div className={'title-blob' + (darkMode ? ' title-blob-dark' : ' title-blob-light')}>
-            Robotic Club Members of 23/24
+            Club Members of 23/24
           </div>
 
           <Card
@@ -47,10 +47,10 @@ function Members(props) {
             pathString="/about#alumni"
             className={'text-box text-box-padded-not-below' + (darkMode ? ' text-box-dark' : ' text-box-light')}>
             <div className="centered-heading">
-              ROBOTICS CLUB MEMBERS
+              {/* ROBOTICS CLUB MEMBERS */}
               <div className="input-container">
                 <input
-                  className="search"
+                  className={'search ' + (darkMode ? 'search-dark' : 'search-light')}
                   placeholder="Type a name to search ... "
                   onChange={(e) => setSearchQuery(e.target.value)}
                   onSubmit={(e) => e.preventDefault()}

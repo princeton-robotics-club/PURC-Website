@@ -40,7 +40,7 @@ function Alumni(props) {
               Former Club Admins
               <div className="input-container">
                 <input
-                  className="search"
+                  className={'search ' + (darkMode ? 'search-dark' : 'search-light')}
                   placeholder="Type a name to search ... "
                   onSubmit={(e) => e.preventDefault()}
                 />
@@ -59,7 +59,11 @@ function Alumni(props) {
             <div className="centered-heading">
               Former Club Members
               <div className="input-container">
-                <input className="search" placeholder="Type a name to search ... " onSubmit={handleSearch} />
+                <input
+                  className={'search ' + (darkMode ? 'search-dark' : 'search-light')}
+                  placeholder="Type a name to search ... "
+                  onSubmit={handleSearch}
+                />
               </div>
             </div>
             <div className="centered-container">
