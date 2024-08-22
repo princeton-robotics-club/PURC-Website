@@ -55,6 +55,8 @@
 
 .caption > div {
   text-align: center;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
 }
 
 .title {

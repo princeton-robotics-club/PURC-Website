@@ -20,9 +20,6 @@ import drone1 from '../../../images/projects/drone/drone-1.jpg';
 import drone2 from '../../../images/projects/drone/drone-2.jpg';
 import drone3 from '../../../images/projects/drone/drone-3.jpg';
 
-import rover1 from '../../../images/projects/rover/rover-1.jpg';
-import rover2 from '../../../images/projects/rover/rover-2.png';
-
 function Projects(props) {
   const { darkMode } = props;
 
@@ -257,11 +254,27 @@ function Projects(props) {
             <div className="second-row v-spacer"></div>
             <div className="m-spacer"></div>
 
+            {/* <div className="second-row">
+              <TeamButton teamName="wall-e" teamTitle="WALL-E" selectedTeam={selectedTeam} toggleBlurb={toggleBlurb} />
+            </div>
+
+            <div className="third-row">
+              <TeamBlurb
+                darkMode={darkMode}
+                teamName="wall-e"
+                teamTitle="WALL-E"
+                selectedTeam={selectedTeam}
+                about="Starting in Fall 2024, our Wall-e Team will focus on creating a lovable, waste-collecting roverbot capable of retracting into a box, autonomously picking up trash, avoiding obstacles, and more. We are looking for motivated members to help make this project a reality!"
+                slides={[]}
+                showSlides={showSlides}
+                milestones={[]}
+                sponsors={''}
+              />
+            </div> */}
             <div className="second-row">
               <TeamButton
-                teamName="rover"
-                teamTitle="ROVER*"
-                archived
+                teamName="robocup"
+                teamTitle="ROBOCUP"
                 selectedTeam={selectedTeam}
                 toggleBlurb={toggleBlurb}
               />
@@ -270,32 +283,14 @@ function Projects(props) {
             <div className="third-row">
               <TeamBlurb
                 darkMode={darkMode}
-                teamName="rover"
-                teamTitle="ROVER (Archived)"
+                teamName="robocup"
+                teamTitle="ROBOCUP"
                 selectedTeam={selectedTeam}
-                about='The Rover Team was founded in the Summer of 2023. Our mission is to design and build an autonomous rover capable of exploring a Mars-like environment. Our rover will exhibit four distinct competencies: (1) computer vision algorithms for object avoidance and extreme terrain navigation, (2) object retrieval and delivery mechanisms to support mission objectives, (3) remote-controlled robotic arm that can perform complex maintenance operations on an equipment system, and (4) science system to collect samples and detect signs of life. We intend to compete in the <a href="https://urc.marssociety.org/home">University Rover Challenge</a>, hosted annually in May in Utah. <p>* Rover is becoming its own club starting Fall 2024. </p>'
-                slides={[
-                  [rover1, 'v', 'Chassis team debating various design constraints'],
-                  [rover2, 'h', 'Rover Team Officers and Sub-Team Leads'],
-                ]}
+                about="Starting in Fall 2024, our Robocup Team will build a complete set of robots to take part in the Robocup SSL Challenge. We are looking for motivated members to help make this project a reality!"
+                slides={[]}
                 showSlides={showSlides}
-                milestones={[
-                  ['2023-09-01', 'm', 'First ever meeting! We recruited 61 new team members across five sub-teams.'],
-                  [
-                    '2023-12-01',
-                    'm',
-                    'We will submit the Preliminary Design Report with designs and project information to the Rover Challenge.',
-                  ],
-                  [
-                    '2024-03-01',
-                    'm',
-                    'We will submit a System Acceptance Report with video demonstration of the constructed rover to the Rover Challenge.',
-                  ],
-                  ['2024-05-01', 'm', 'Final Round Competition in Utah!'],
-                ]}
-                sponsors={
-                  'If you are interested in donating to and sponsoring the Princeton Rover Team, please contact treasurer Brandon Cheng, at <a href = "mailto: brandon.cheng@princeton.edu">brandon.cheng@princeton.edu</a>.'
-                }
+                milestones={[]}
+                sponsors={''}
               />
             </div>
 
@@ -337,10 +332,27 @@ function Projects(props) {
                 teamName="exoskeleton"
                 teamTitle="EXOSKELETON"
                 selectedTeam={selectedTeam}
-                about="Starting in Fall 2023, our Exoskeleton Team will build a wearable robotic exoskeleton that can adapt to the wearer’s movements and help with carrying tasks. We are looking for motivated members to help make this project a reality!"
+                about="Moving onto our second year of the Exoskeleton Team, we are continuing on our progress from last year. We are in the process of building an Iron-Man esque full-body robotic exoskeleton with an EEG brain interface movement system, to help with adapting to user movements and non-touch control systems. We are looking for motivated members to help make this project a reality!"
                 slides={[]}
                 showSlides={showSlides}
-                milestones={[]}
+                milestones={[
+                  ['2023-09-01', 'm', 'Fall 2023 — Exoskeleton team begins.'],
+                  [
+                    '2024-01-01',
+                    'm',
+                    'Spring 2024 — Proof of Concept EEG single-node interface succeeds. Design of Upper Body Frame is Completed. ',
+                  ],
+                  [
+                    '2024-05-01',
+                    'm',
+                    'Summer 2024 — Arm is Constructed and Wired to be connected with proof of concept brain interface.',
+                  ],
+                  [
+                    '2024-09-01',
+                    'm',
+                    'Fall 2024 — Expected to continue upper body construction, move on to developing multi-node brain interface for more motor movement.',
+                  ],
+                ]}
                 sponsors={''}
               />
             </div>
@@ -351,7 +363,7 @@ function Projects(props) {
 
             {/* third starts here */}
             {/* robocup */}
-            <div className="third-row">
+            {/* <div className="third-row">
               <TeamButton
                 teamName="robocup"
                 teamTitle="ROBOCUP"
@@ -372,7 +384,7 @@ function Projects(props) {
                 milestones={[]}
                 sponsors={''}
               />
-            </div>
+            </div> */}
             <div className="third-row h-spacer"></div>
             <div className="m-spacer"></div>
             {/* tinker */}
@@ -387,7 +399,7 @@ function Projects(props) {
                 teamName="tinker"
                 teamTitle="TINKER"
                 selectedTeam={selectedTeam}
-                about="Starting in Fall 2024, our Robocup Team will build a complete set of robots to take part in the Robocup SSL Challenge. We are looking for motivated members to help make this project a reality!"
+                about="The Tinker team will be working on fixing different types of devices that are broken! Think iPods, Laptops, Wii consoles!! Members can feel free to bring in old devices that don't work anymore and put themselves up for the task of trying to fix them!"
                 slides={[]}
                 showSlides={showSlides}
                 milestones={[]}
@@ -399,7 +411,7 @@ function Projects(props) {
             <div className="m-spacer"></div>
             {/* bionics */}
 
-            <div className="third-row">
+            {/* <div className="third-row">
               <TeamButton
                 teamName="bionics"
                 teamTitle="BIONICS"
@@ -414,13 +426,13 @@ function Projects(props) {
                 teamName="bionics"
                 teamTitle="BIONICS"
                 selectedTeam={selectedTeam}
-                about="Starting in Fall 2024, our Bionics Team will focus on developing robots to assist and enhance the lives of those with disabilities. We are looking for motivated members to help make this project a reality!"
+                about="Starting in Fall 2024, our Bionics Team will focus on creating a myoelectric prosthetic arm (and potentially other prosthetics in the future!), to assist and enhance the lives of those with disabilities. We are looking for motivated members to help make this project a reality!"
                 slides={[]}
                 showSlides={showSlides}
                 milestones={[]}
                 sponsors={''}
               />
-            </div>
+            </div> */}
 
             <div className="third-row break"></div>
             <div className="fourth-row v-spacer"></div>
@@ -429,24 +441,50 @@ function Projects(props) {
             {/* fourth starts here */}
             {/* wall-e */}
 
+            <div className="fourth-row h-spacer"></div>
+            <div className="m-spacer"></div>
+            {/* 
             <div className="fourth-row">
-              <TeamButton teamName="wall-e" teamTitle="WALL-E" selectedTeam={selectedTeam} toggleBlurb={toggleBlurb} />
+              <TeamButton
+                teamName="rover"
+                teamTitle="ROVER*"
+                archived
+                selectedTeam={selectedTeam}
+                toggleBlurb={toggleBlurb}
+              />
             </div>
 
             <div className="fifth-row">
               <TeamBlurb
                 darkMode={darkMode}
-                teamName="wall-e"
-                teamTitle="WALL-E"
+                teamName="rover"
+                teamTitle="ROVER (Archived)"
                 selectedTeam={selectedTeam}
-                about="Starting in Fall 2024, our Wall-e Team will focus on recreating the robot WALL-E from the 2008-Pixar animated movie, Wall-E. We are looking for motivated members to help make this project a reality!"
-                slides={[]}
+                about='The Rover Team was founded in the Summer of 2023. Our mission is to design and build an autonomous rover capable of exploring a Mars-like environment. Our rover will exhibit four distinct competencies: (1) computer vision algorithms for object avoidance and extreme terrain navigation, (2) object retrieval and delivery mechanisms to support mission objectives, (3) remote-controlled robotic arm that can perform complex maintenance operations on an equipment system, and (4) science system to collect samples and detect signs of life. We intend to compete in the <a href="https://urc.marssociety.org/home">University Rover Challenge</a>, hosted annually in May in Utah. <p>* Rover is becoming its own club starting Fall 2024. </p>'
+                slides={[
+                  [rover1, 'v', 'Chassis team debating various design constraints'],
+                  [rover2, 'h', 'Rover Team Officers and Sub-Team Leads'],
+                ]}
                 showSlides={showSlides}
-                milestones={[]}
-                sponsors={''}
+                milestones={[
+                  ['2023-09-01', 'm', 'First ever meeting! We recruited 61 new team members across five sub-teams.'],
+                  [
+                    '2023-12-01',
+                    'm',
+                    'We will submit the Preliminary Design Report with designs and project information to the Rover Challenge.',
+                  ],
+                  [
+                    '2024-03-01',
+                    'm',
+                    'We will submit a System Acceptance Report with video demonstration of the constructed rover to the Rover Challenge.',
+                  ],
+                  ['2024-05-01', 'm', 'Final Round Competition in Utah!'],
+                ]}
+                sponsors={
+                  'If you are interested in donating to and sponsoring the Princeton Rover Team, please contact treasurer Brandon Cheng, at <a href = "mailto: brandon.cheng@princeton.edu">brandon.cheng@princeton.edu</a>.'
+                }
               />
-            </div>
-
+            </div> */}
             <div className="fourth-row break"></div>
             <div className="fifth-row v-spacer"></div>
             <div className="m-spacer"></div>

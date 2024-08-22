@@ -69,25 +69,25 @@ function Navbar(props) {
                 'Droid',
                 'Pacbot',
                 'Drone',
-                'Rover',
                 'Golf Cart',
                 'ExoSkeleton',
                 'Robocup',
-                'Bionics',
+                // 'Bionics',
                 'Tinker',
-                'Wall-E',
+                // 'Wall-E',
+                // 'Rover',
               ]}
               dropdownLinks={[
                 '/projects#droid',
                 '/projects#pacbot',
                 '/projects#drone',
-                '/projects#rover',
                 '/projects#golf',
                 '/projects#exoskeleton',
                 '/projects#robocup',
-                '/projects#bionics',
+                // '/projects#bionics',
                 '/projects#tinker',
-                '/projects#wall-e',
+                // '/projects#wall-e',
+                // '/projects#rover',
               ]}
               closeMobile={closeMobileMenu}
               darkMode={darkMode}
