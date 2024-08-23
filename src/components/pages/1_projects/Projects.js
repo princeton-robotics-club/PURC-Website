@@ -254,23 +254,6 @@ function Projects(props) {
             <div className="second-row v-spacer"></div>
             <div className="m-spacer"></div>
 
-            {/* <div className="second-row">
-              <TeamButton teamName="wall-e" teamTitle="WALL-E" selectedTeam={selectedTeam} toggleBlurb={toggleBlurb} />
-            </div>
-
-            <div className="third-row">
-              <TeamBlurb
-                darkMode={darkMode}
-                teamName="wall-e"
-                teamTitle="WALL-E"
-                selectedTeam={selectedTeam}
-                about="Starting in Fall 2024, our Wall-e Team will focus on creating a lovable, waste-collecting roverbot capable of retracting into a box, autonomously picking up trash, avoiding obstacles, and more. We are looking for motivated members to help make this project a reality!"
-                slides={[]}
-                showSlides={showSlides}
-                milestones={[]}
-                sponsors={''}
-              />
-            </div> */}
             <div className="second-row">
               <TeamButton
                 teamName="robocup"
@@ -362,11 +345,33 @@ function Projects(props) {
             <div className="m-spacer"></div>
 
             {/* third starts here */}
-            {/* robocup */}
-            {/* <div className="third-row">
+            {/* wall-e */}
+            <div className="third-row">
+              <TeamButton teamName="wall-e" teamTitle="WALL-E" selectedTeam={selectedTeam} toggleBlurb={toggleBlurb} />
+            </div>
+
+            <div className="fourth-row">
+              <TeamBlurb
+                darkMode={darkMode}
+                teamName="wall-e"
+                teamTitle="WALL-E"
+                selectedTeam={selectedTeam}
+                about="Starting in Fall 2024, our Wall-e Team will focus on creating a lovable, waste-collecting roverbot capable of retracting into a box, autonomously picking up trash, avoiding obstacles, and more. We are looking for motivated members to help make this project a reality!"
+                slides={[]}
+                showSlides={showSlides}
+                milestones={[]}
+                sponsors={''}
+              />
+            </div>
+
+            <div className="third-row h-spacer"></div>
+            <div className="m-spacer"></div>
+            {/* bionics */}
+
+            <div className="third-row">
               <TeamButton
-                teamName="robocup"
-                teamTitle="ROBOCUP"
+                teamName="bionics"
+                teamTitle="BIONICS"
                 selectedTeam={selectedTeam}
                 toggleBlurb={toggleBlurb}
               />
@@ -375,16 +380,47 @@ function Projects(props) {
             <div className="fourth-row">
               <TeamBlurb
                 darkMode={darkMode}
-                teamName="robocup"
-                teamTitle="ROBOCUP"
+                teamName="bionics"
+                teamTitle="BIONICS"
                 selectedTeam={selectedTeam}
-                about="Starting in Fall 2024, our Robocup Team will build a complete set of robots to take part in the Robocup SSL Challenge. We are looking for motivated members to help make this project a reality!"
+                about={`<p>The Princeton Bionics Team is developing a state-of-the-art myoelectric
+                  prosthetic hand designed to restore natural movement and functionality for users. 
+                  Our project builds upon established myoelectric technology, with our unique enhancement
+                   of machine learning integration to allow the prosthetic to adapt to the user’s muscle signals 
+                   more accurately over time, providing a highly personalized and intuitive experience.<p>
+                  <p>
+                  Our goal is to create biomedical devices that improve lives and serve as a tool for community
+                   outreach, demonstrating the potential of bionics at rehabilitation centers, children's hospitals, 
+                   and educational events.</p>`}
+                // about="Starting in Fall 2024, our Bionics Team will focus on creating a myoelectric prosthetic arm (and potentially other prosthetics in the future!), to assist and enhance the lives of those with disabilities. We are looking for motivated members to help make this project a reality!"
                 slides={[]}
                 showSlides={showSlides}
-                milestones={[]}
+                milestones={[
+                  [
+                    '2024-09-01',
+                    'm',
+                    'Fall 2024 — Begin designing and prototyping the myoelectric prosthetic hand, focusing on EMG signal acquisition, sensor placement, and basic motor control.',
+                  ],
+                  [
+                    '2025-01-01',
+                    'm',
+                    'Spring 2025 — Complete integration of machine learning algorithms for adaptive muscle signal processing, finalize the prosthetic hand design, and prepare for functional testing and community outreach events. ',
+                  ],
+                  [
+                    '2025-05-01',
+                    'm',
+                    'Summer 2025 — Start drafting plans for the next project—a prosthetic heart—by researching cardiac biomechanics, exploring potential materials, and developing preliminary design concepts.',
+                  ],
+                  [
+                    '2025-09-01',
+                    'm',
+                    'Fall 2025 — Initiate the development of the prosthetic heart, building on the knowledge and experience gained from the prosthetic hand project, with a focus on initial prototyping and feasibility studies.',
+                  ],
+                ]}
                 sponsors={''}
               />
-            </div> */}
+            </div>
+
             <div className="third-row h-spacer"></div>
             <div className="m-spacer"></div>
             {/* tinker */}
@@ -407,42 +443,16 @@ function Projects(props) {
               />
             </div>
 
-            <div className="third-row h-spacer"></div>
-            <div className="m-spacer"></div>
-            {/* bionics */}
-
-            {/* <div className="third-row">
-              <TeamButton
-                teamName="bionics"
-                teamTitle="BIONICS"
-                selectedTeam={selectedTeam}
-                toggleBlurb={toggleBlurb}
-              />
-            </div>
-
-            <div className="fourth-row">
-              <TeamBlurb
-                darkMode={darkMode}
-                teamName="bionics"
-                teamTitle="BIONICS"
-                selectedTeam={selectedTeam}
-                about="Starting in Fall 2024, our Bionics Team will focus on creating a myoelectric prosthetic arm (and potentially other prosthetics in the future!), to assist and enhance the lives of those with disabilities. We are looking for motivated members to help make this project a reality!"
-                slides={[]}
-                showSlides={showSlides}
-                milestones={[]}
-                sponsors={''}
-              />
-            </div> */}
-
-            <div className="third-row break"></div>
+            {/* <div className="third-row break"></div>
             <div className="fourth-row v-spacer"></div>
-            <div className="m-spacer"></div>
+            <div className="m-spacer"></div> */}
 
             {/* fourth starts here */}
             {/* wall-e */}
 
-            <div className="fourth-row h-spacer"></div>
-            <div className="m-spacer"></div>
+            {/* <div className="fourth-row h-spacer"></div>
+            <div className="m-spacer"></div> */}
+            {/* Rover */}
             {/* 
             <div className="fourth-row">
               <TeamButton

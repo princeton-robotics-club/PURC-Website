@@ -72,9 +72,9 @@ function Navbar(props) {
                 'Golf Cart',
                 'ExoSkeleton',
                 'Robocup',
-                // 'Bionics',
+                'Bionics',
                 'Tinker',
-                // 'Wall-E',
+                'Wall-E',
                 // 'Rover',
               ]}
               dropdownLinks={[
@@ -84,9 +84,9 @@ function Navbar(props) {
                 '/projects#golf',
                 '/projects#exoskeleton',
                 '/projects#robocup',
-                // '/projects#bionics',
+                '/projects#bionics',
                 '/projects#tinker',
-                // '/projects#wall-e',
+                '/projects#wall-e',
                 // '/projects#rover',
               ]}
               closeMobile={closeMobileMenu}

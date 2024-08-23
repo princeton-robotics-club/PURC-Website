@@ -16,15 +16,16 @@
   --projects-droid-rgb: rgb(227, 77, 0);
   --projects-pacbot-rgb: rgb(255, 183, 0);
   --projects-drone-rgb: rgb(0, 126, 255);
-  --projects-robocup-rgb: rgb(48, 184, 191);
+  --projects-robocup-rgb: rgb(58, 185, 169); /*rgb(48, 184, 191);*/
   --projects-golf-rgb: rgb(48, 191, 134);
   --projects-exoskeleton-rgb: rgb(170, 48, 191);
   --projects-rover-rgb: rgb(191, 48, 103);
 
   /* --*/
   --projects-tinker-rgb: rgb(181, 27, 20);
-  --projects-wall-e-rgb: rgb(255, 215, 0);
-  --projects-bionics-rgb: rgb(220, 20, 60);
+  --projects-wall-e-rgb: rgb(244, 183, 0);
+  --projects-bionics-rgb: rgb(222, 64, 199);
+  /* --projects-bionics-rgb: rgb(0, 126, 254); */
 }
 
 /* ------------------------------------------------------------------------- */
