@@ -158,7 +158,17 @@ function Projects(props) {
                   [
                     '2023-11-30',
                     's',
-                    'Mechanical team aims to complete the whole mechanical assembly, and our electrical team will design PCBs for more compact and reliable wiring.',
+                    "Mechanical Team finished assembling the base of the drive system within the droid, including the flywheel system for rotational movement, center-axis system for linear movement, and mounts for all of the various electrical components. Electrical Team created custom PCBs for the remote control and for the circuit within the droid's body that receives and processes all of the commands from the remote control. Electrical Team also began wiring up the electrical components on the droid.",
+                  ],
+                  [
+                    '2024-4-01',
+                    's',
+                    'We fully assembled the BB-8 body and connected it to the dome with a magnetic locking system that makes the dome appear as if it is floating! By the end of the semester, we got the BB-8 to the point where it is fully operational and can roll around in accordance with commands sent from a remote control. In the future, we are looking into implementing distance sensors and CV for autonomous functioning. ',
+                  ],
+                  [
+                    '2024-9-01',
+                    's',
+                    'The BB-8 Droid team will be spending this year with a particular focus on making our BB-8 autonomous. This includes CV for image recognition and distance sensors for obstacle avoidance. Electrical Team will be scoping out new sensors to achieve these tasks while software will develop the main infrastructure for BB-8s ability to roll around a space without colliding with obstacles and being able to recognize objects!',
                   ],
                 ]}
                 sponsors={''}
@@ -319,21 +329,21 @@ function Projects(props) {
                 slides={[]}
                 showSlides={showSlides}
                 milestones={[
-                  ['2023-09-01', 'm', 'Fall 2023 — Exoskeleton team begins.'],
+                  ['2023-09-01', 's', 'Exoskeleton team begins.'],
                   [
-                    '2024-01-01',
-                    'm',
-                    'Spring 2024 — Proof of Concept EEG single-node interface succeeds. Design of Upper Body Frame is Completed. ',
+                    '2024-04-01',
+                    's',
+                    'Proof of Concept EEG single-node interface succeeds. Design of Upper Body Frame is Completed. ',
                   ],
                   [
-                    '2024-05-01',
-                    'm',
-                    'Summer 2024 — Arm is Constructed and Wired to be connected with proof of concept brain interface.',
+                    '2024-07-01',
+                    's',
+                    'Arm is Constructed and Wired to be connected with proof of concept brain interface.',
                   ],
                   [
                     '2024-09-01',
-                    'm',
-                    'Fall 2024 — Expected to continue upper body construction, move on to developing multi-node brain interface for more motor movement.',
+                    's',
+                    'Expected to continue upper body construction, move on to developing multi-node brain interface for more motor movement.',
                   ],
                 ]}
                 sponsors={''}
@@ -398,23 +408,23 @@ function Projects(props) {
                 milestones={[
                   [
                     '2024-09-01',
-                    'm',
-                    'Fall 2024 — Begin designing and prototyping the myoelectric prosthetic hand, focusing on EMG signal acquisition, sensor placement, and basic motor control.',
+                    's',
+                    'Begin designing and prototyping the myoelectric prosthetic hand, focusing on EMG signal acquisition, sensor placement, and basic motor control.',
                   ],
                   [
-                    '2025-01-01',
-                    'm',
-                    'Spring 2025 — Complete integration of machine learning algorithms for adaptive muscle signal processing, finalize the prosthetic hand design, and prepare for functional testing and community outreach events. ',
+                    '2025-04-01',
+                    's',
+                    'Complete integration of machine learning algorithms for adaptive muscle signal processing, finalize the prosthetic hand design, and prepare for functional testing and community outreach events. ',
                   ],
                   [
-                    '2025-05-01',
-                    'm',
-                    'Summer 2025 — Start drafting plans for the next project—a prosthetic heart—by researching cardiac biomechanics, exploring potential materials, and developing preliminary design concepts.',
+                    '2025-07-01',
+                    's',
+                    'Start drafting plans for the next project—a prosthetic heart—by researching cardiac biomechanics, exploring potential materials, and developing preliminary design concepts.',
                   ],
                   [
                     '2025-09-01',
-                    'm',
-                    'Fall 2025 — Initiate the development of the prosthetic heart, building on the knowledge and experience gained from the prosthetic hand project, with a focus on initial prototyping and feasibility studies.',
+                    's',
+                    'Initiate the development of the prosthetic heart, building on the knowledge and experience gained from the prosthetic hand project, with a focus on initial prototyping and feasibility studies.',
                   ],
                 ]}
                 sponsors={''}
