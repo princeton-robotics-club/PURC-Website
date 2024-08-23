@@ -5,9 +5,11 @@ import '../Generic.css';
 import './About.css';
 
 import Ab0824 from '../../../images/about/ab0824.jpg';
+import ac1180 from '../../../images/about/ac1180.jpg';
 import Glaser from '../../../images/about/alex-glaser.jpg';
 import An4978 from '../../../images/about/an4978.jpg';
 import Arthurts from '../../../images/about/arthurts.jpg';
+import as3115 from '../../../images/about/as3115.jpg';
 import August from '../../../images/about/august.jpg';
 import Aw3592 from '../../../images/about/aw3592.jpeg';
 import Cg6149 from '../../../images/about/cg6149.png';
@@ -32,6 +34,7 @@ import Majumdar from '../../../images/about/majumdar.jpg';
 import Mh6419 from '../../../images/about/mh6419.jpg';
 import mm5764 from '../../../images/about/mm5764.jpg';
 import Ms8364 from '../../../images/about/ms8364.jpg';
+import my9689 from '../../../images/about/my9689.jpg';
 import Sg8409 from '../../../images/about/sg8409.jpg';
 import Sr6770 from '../../../images/about/sr6770.jpg';
 import Th5879 from '../../../images/about/th5879.jpg';
@@ -149,9 +152,14 @@ function About(props) {
                 image={Fh9696}
               />
 
-              <FaceCard darkMode={darkMode} name="Anherutowa Calvo" subtext={['Bionics Biomedical Lead']} image={''} />
-              <FaceCard darkMode={darkMode} name="Miyu Yamane" subtext={['Bionics Software Lead']} image={''} />
-              <FaceCard darkMode={darkMode} name="Arjun Shetty" subtext={['Bionics Mech Lead']} image={''} />
+              <FaceCard
+                darkMode={darkMode}
+                name="Anherutowa Calvo"
+                subtext={['Bionics Biomedical Lead']}
+                image={ac1180}
+              />
+              <FaceCard darkMode={darkMode} name="Miyu Yamane" subtext={['Bionics Software Lead']} image={my9689} />
+              <FaceCard darkMode={darkMode} name="Arjun Shetty" subtext={['Bionics Mech Lead']} image={as3115} />
 
               <FaceCard darkMode={darkMode} name="Samuel Gerhard" subtext={['Tinker Lead']} image={''} />
               <FaceCard darkMode={darkMode} name="Alexei Korolev" subtext={['Tinker Lead']} image={''} />
