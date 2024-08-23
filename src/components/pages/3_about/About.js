@@ -20,7 +20,7 @@ import Dd6849 from '../../../images/about/dd6849.jpg';
 import Df1314 from '../../../images/about/df1314.jpg';
 import Edchen from '../../../images/about/edchen.jpg';
 import Ernestm from '../../../images/about/ernestm.jpg';
-import ey3875 from '../../../images/about/ey3875.jpeg';
+import ey3875 from '../../../images/about/ey3875.jpg';
 import Fh9696 from '../../../images/about/fh9696.jpg';
 import Gn7269 from '../../../images/about/gn7269.jpg';
 import Ih2422 from '../../../images/about/ih2422.jpg';
