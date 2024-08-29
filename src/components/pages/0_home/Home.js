@@ -124,7 +124,7 @@ function Home(props) {
               <div className="centered-heading">MEETING SCHEDULE FOR 23/24</div>
               <p>
                 Our meeting schedule for the 2023/2024 academic year will be available soon. Prospective and current
-                members should stay tuned for details on the upcoming weekly schedule for our varuous teams starting
+                members should stay tuned for details on the upcoming weekly schedule for our various teams starting
                 this fall.
               </p>
               {/* Our meetings take place on weekends in StudioLab, a makerspace in the basement of Fine Hall.
