@@ -55,3 +55,18 @@ const GoogleDriveGallery = () => {
 };
 
 export default GoogleDriveGallery;
+
+// 1. Set Up Google Drive API
+// Create a Project in Google Cloud Console:
+
+// Go to the Google Cloud Console.
+// Create a new project or select an existing one.
+// Enable Google Drive API:
+
+// Go to the API Library in the Cloud Console.
+// Search for "Google Drive API" and enable it.
+// Create Credentials:
+
+// Go to the "Credentials" section in the Cloud Console.
+// Click on "Create Credentials" and select "OAuth 2.0 Client ID" or "API Key" depending on your needs.
+// If using OAuth 2.0, configure the OAuth consent screen and set up the OAuth client ID. You'll get a Client ID and Client Secret.
