@@ -176,6 +176,15 @@
   background-size: min(250px, 72vw);
   transition: all 0.1s ease;
 }
+
+/* .supp-logo-mcmaster-dark {
+  background-color: rgba(70, 71, 71, 0.7);
+}
+
+.supp-logo-mcmaster-light {
+  background-color: rgba(65, 76, 72, 0.3);
+  filter: invert(1);
+} */
 /* ------------------------------------------------------------------------- */
 
 .supp-logo-cst {

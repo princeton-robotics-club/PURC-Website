@@ -56,6 +56,10 @@ const GoogleDriveGallery = () => {
 
 export default GoogleDriveGallery;
 
+// The two google drive folders w/pictures that I used for the Open House slides:
+// https://drive.google.com/drive/folders/1Ki8IECHKGzRreEZ4NgP1rzOcTcUGNKBU?usp=drive_link
+// https://drive.google.com/drive/folders/1e6KUhVUtf8F92qPp1o8MQb5AxbZQctwG?usp=drive_link
+
 // 1. Set Up Google Drive API
 // Create a Project in Google Cloud Console:
 
