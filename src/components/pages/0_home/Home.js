@@ -122,7 +122,11 @@ function Home(props) {
               darkMode={darkMode}
               className={'text-box text-box-padded' + (darkMode ? ' text-box-dark' : ' text-box-light')}>
               <div className="centered-heading">MEETING SCHEDULE FOR 23/24</div>
-              Be on the lookout for our schedule this academic year.
+              <p>
+                Our meeting schedule for the 2023/2024 academic year will be available soon. Prospective and current
+                members should stay tuned for details on the upcoming weekly schedule for our varuous teams starting
+                this fall.
+              </p>
               {/* Our meetings take place on weekends in StudioLab, a makerspace in the basement of Fine Hall.
               <br />
               <br />

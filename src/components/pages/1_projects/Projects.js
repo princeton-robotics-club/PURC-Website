@@ -20,6 +20,10 @@ import drone1 from '../../../images/projects/drone/drone-1.jpg';
 import drone2 from '../../../images/projects/drone/drone-2.jpg';
 import drone3 from '../../../images/projects/drone/drone-3.jpg';
 
+import tinker1 from '../../../images/projects/tinker/CD_Player_Teardown.jpg';
+import tinker2 from '../../../images/projects/tinker/Macintosh_Floppy_Drive.jpg';
+import tinker3 from '../../../images/projects/tinker/Macintosh_and_boombox.jpg';
+
 function Projects(props) {
   const { darkMode } = props;
 
@@ -179,7 +183,7 @@ function Projects(props) {
             <div className="m-spacer"></div>
 
             <div className="first-row">
-              <TeamButton teamName="pacbot" teamTitle="PACBOT" selectedTeam={selectedTeam} toggleBlurb={toggleBlurb} />
+              <TeamButton teamName="pacbot" teamTitle="PAC-BOT" selectedTeam={selectedTeam} toggleBlurb={toggleBlurb} />
             </div>
 
             <div className="second-row">
@@ -232,7 +236,14 @@ function Projects(props) {
                 teamName="drone"
                 teamTitle="DRONE"
                 selectedTeam={selectedTeam}
-                about="Our Drone Team is focused on exploring and adapting drone technology to numerous applications. Our main project involves developing a modular autonomous quadcopter platform that can be fitted with different hardware and software in various scenarios. Currently, we are working on computer vision-based gesture recognition and control, which entails having the drone ‘see’ hand gestures from a person through a camera, recognize what that gesture is, and execute a command accordingly!"
+                about={`Our Drone Team is focused on exploring and adapting drone technology 
+                  to numerous applications. We have two main projects this year. 
+                  Our first involves developing a tail-sitter drone that takes off
+                   vertically and flips over in-flight to transform into a flying wing.
+                    Our second project builds an autonomous drone charging station. 
+                    Both projects involve experimental development of autonomy, computer vision, 
+                    controls, and electrical/mechanical systems design.`}
+                // "Our Drone Team is focused on exploring and adapting drone technology to numerous applications. Our main project involves developing a modular autonomous quadcopter platform that can be fitted with different hardware and software in various scenarios. Currently, we are working on computer vision-based gesture recognition and control, which entails having the drone ‘see’ hand gestures from a person through a camera, recognize what that gesture is, and execute a command accordingly!"
                 slides={[
                   [drone1, 'v', 'Drone Team Meeting'],
                   [drone2, 'v', 'Gesture Drone'],
@@ -254,6 +265,16 @@ function Projects(props) {
                     '2023-11-30',
                     's',
                     'Exploring more CV applications such as localization, path planning, and collision avoidance, while improving safety of gesture control.',
+                  ],
+                  [
+                    '2024-09-01',
+                    's',
+                    'Develop electrical and mechanical systems for tail-sitter and drone charging station. Begin work on flight controls and autonomy, and complete first flight demos. ',
+                  ],
+                  [
+                    '2025-04-01',
+                    's',
+                    'Tune flight controls and iterate improvements upon rounds of autonomous flight. Create intuitive user interface for controls.',
                   ],
                 ]}
                 sponsors={''}
@@ -366,7 +387,7 @@ function Projects(props) {
                 teamName="wall-e"
                 teamTitle="WALL-E"
                 selectedTeam={selectedTeam}
-                about="Starting in Fall 2024, our Wall-e Team will focus on creating a lovable, waste-collecting roverbot capable of retracting into a box, autonomously picking up trash, avoiding obstacles, and more. We are looking for motivated members to help make this project a reality!"
+                about="Starting in Fall 2024, our WALL-E Team will focus on creating a lovable, waste-collecting roverbot capable of retracting into a box, autonomously picking up trash, avoiding obstacles, and more. We are looking for motivated members to help make this project a reality!"
                 slides={[]}
                 showSlides={showSlides}
                 milestones={[]}
@@ -445,8 +466,21 @@ function Projects(props) {
                 teamName="tinker"
                 teamTitle="TINKER"
                 selectedTeam={selectedTeam}
-                about="The Tinker team will be working on fixing different types of devices that are broken! Think iPods, Laptops, Wii consoles!! Members can feel free to bring in old devices that don't work anymore and put themselves up for the task of trying to fix them!"
-                slides={[]}
+                about={`<p>The Tinker team will be working on fixing different types of devices that 
+                  are broken! Think iPods, Laptops, Wii consoles!! Members can feel free to 
+                  bring in old devices that don't work anymore and put themselves up for 
+                  the task of trying to fix them!</p>
+                  
+                  <p>Our primary goal is to teach students the basics of electrical and mechanical systems.
+                  Through a series of hands-on projects, students will cultivate their troubleshooting 
+                  and problem-solving practical skills that can be applied to fix virtually anything 
+                  in their daily lives. </p>
+                  `}
+                slides={[
+                  [tinker1, 'h', 'DC Player Repair/Teardown'],
+                  [tinker2, 'v', 'Macintosh Floppy Drive'],
+                  [tinker3, 'h', 'Macintosh and Boombox'],
+                ]}
                 showSlides={showSlides}
                 milestones={[]}
                 sponsors={''}

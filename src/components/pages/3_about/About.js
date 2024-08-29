@@ -20,9 +20,11 @@ import Dd6849 from '../../../images/about/dd6849.jpg';
 import Df1314 from '../../../images/about/df1314.jpg';
 import Edchen from '../../../images/about/edchen.jpg';
 import Ernestm from '../../../images/about/ernestm.jpg';
+import es5889 from '../../../images/about/es5889.jpg';
 import ey3875 from '../../../images/about/ey3875.jpg';
 import Fh9696 from '../../../images/about/fh9696.jpg';
 import Gn7269 from '../../../images/about/gn7269.jpg';
+import hb7778 from '../../../images/about/hb7778.jpg';
 import Ih2422 from '../../../images/about/ih2422.jpg';
 import jm7828 from '../../../images/about/jm7828.jpg';
 import Js4346 from '../../../images/about/js4346.jpg';
@@ -35,6 +37,9 @@ import Mh6419 from '../../../images/about/mh6419.jpg';
 import mm5764 from '../../../images/about/mm5764.jpg';
 import Ms8364 from '../../../images/about/ms8364.jpg';
 import my9689 from '../../../images/about/my9689.jpg';
+import ns4593 from '../../../images/about/ns4593.jpg';
+import rk3979 from '../../../images/about/rk3979.jpg';
+import sg6836 from '../../../images/about/sg6836.jpg';
 import Sg8409 from '../../../images/about/sg8409.jpg';
 import Sr6770 from '../../../images/about/sr6770.jpg';
 import Th5879 from '../../../images/about/th5879.jpg';
@@ -144,7 +149,7 @@ function About(props) {
               <FaceCard darkMode={darkMode} name="Glen Nfor" subtext={['Robocup SW Lead']} image={Gn7269} />
               <FaceCard darkMode={darkMode} name="Mahir Majid" subtext={['Robocup HW Lead']} image={mm5764} />
 
-              <FaceCard darkMode={darkMode} name="Ella Simons" subtext={['WALL-E Integration Lead']} image={''} />
+              <FaceCard darkMode={darkMode} name="Ella Simons" subtext={['WALL-E Integration Lead']} image={es5889} />
               <FaceCard
                 darkMode={darkMode}
                 name="Freddy Hernandez"
@@ -159,12 +164,28 @@ function About(props) {
                 image={ac1180}
               />
               <FaceCard darkMode={darkMode} name="Miyu Yamane" subtext={['Bionics Software Lead']} image={my9689} />
+              <FaceCard
+                darkMode={darkMode}
+                name="Nathaniel Scott"
+                subtext={['Bionics Electrical Lead']}
+                image={ns4593}
+              />
               <FaceCard darkMode={darkMode} name="Arjun Shetty" subtext={['Bionics Mech Lead']} image={as3115} />
 
-              <FaceCard darkMode={darkMode} name="Samuel Gerhard" subtext={['Tinker Lead']} image={''} />
-              <FaceCard darkMode={darkMode} name="Alexei Korolev" subtext={['Tinker Lead']} image={''} />
-              <FaceCard darkMode={darkMode} name="Henry Baquerizo" subtext={['Tinker  Lead']} image={''} />
-              <FaceCard darkMode={darkMode} name="Rafael Knispelheyworth" subtext={['Tinker Lead']} image={''} />
+              <FaceCard darkMode={darkMode} name="Samuel Gerhard" subtext={['Tinker Electrical Lead']} image={sg6836} />
+              {/* <FaceCard darkMode={darkMode} name="Alexei Korolev" subtext={['Tinker Lead']} image={''} /> */}
+              <FaceCard
+                darkMode={darkMode}
+                name="Henry Baquerizo"
+                subtext={['Tinker Electronics Lead']}
+                image={hb7778}
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Rafael Knispel-Heyworth"
+                subtext={['Tinker Manufacturing Lead']}
+                image={rk3979}
+              />
 
               {/* <hr className="divider" /> */}
             </div>

@@ -67,14 +67,14 @@ function Navbar(props) {
               pathString={'/projects'}
               dropdownOptions={[
                 'Droid',
-                'Pacbot',
+                'Pac-Bot',
                 'Drone',
                 'Golf Cart',
-                'ExoSkeleton',
-                'Robocup',
+                'Exoskeleton',
+                'RoboCup',
                 'Bionics',
                 'Tinker',
-                'Wall-E',
+                'WALL-E',
                 // 'Rover',
               ]}
               dropdownLinks={[
