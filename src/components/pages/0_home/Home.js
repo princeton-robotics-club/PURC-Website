@@ -122,12 +122,12 @@ function Home(props) {
               darkMode={darkMode}
               className={'text-box text-box-padded' + (darkMode ? ' text-box-dark' : ' text-box-light')}>
               <div className="centered-heading">MEETING SCHEDULE FOR 23/24</div>
-              <p>
+              {/* <p>
                 Our meeting schedule for the 2023/2024 academic year will be available soon. Prospective and current
                 members should stay tuned for details on the upcoming weekly schedule for our various teams starting
                 this fall.
-              </p>
-              {/* Our meetings take place on weekends in StudioLab, a makerspace in the basement of Fine Hall.
+              </p> */}
+              Our meetings take place on weekends in StudioLab, a makerspace in the basement of Fine Hall.
               <br />
               <br />
               Below is a list of our meeting times for the rest of the semester:
@@ -136,61 +136,85 @@ function Home(props) {
               <b>Saturdays</b>
               <ul>
                 <li>
-                  2:00 - 3:00 pm <b>:</b> Trainings
-                </li>
-                <li>
-                  3:00 - 4:30 pm{' '}
-                  <span className="text-droid">
-                    <b>:</b>
-                  </span>{' '}
-                  BB-8 Droid
-                </li>
-                <li>
-                  4:30 - 6:00 pm{' '}
+                  1:00 - 3:00 pm{' '}
                   <span className="text-pacbot">
                     <b>:</b>
                   </span>{' '}
                   Pacbot
                 </li>
                 <li>
-                  6:30 - 8:00 pm{' '}
+                  3:00 - 4:00 pm <b>:</b> Trainings
+                </li>
+                <li>
+                  4:00 - 5:30 pm{' '}
+                  <span className="text-wall-e">
+                    <b>:</b>
+                  </span>{' '}
+                  WALL-E
+                </li>
+                <li>
+                  5:30 - 7:00 pm{' '}
+                  <span className="text-droid">
+                    <b>:</b>
+                  </span>{' '}
+                  BB-8 Droid
+                </li>
+                <li>
+                  7:00 - 8:00 pm <b>:</b> Dinner @ NCW PDR
+                </li>
+                <li>
+                  8:00 - 9:30 pm{' '}
                   <span className="text-golf">
                     <b>:</b>
                   </span>{' '}
                   Golf Cart
                 </li>
-                <li>
-                  8:00 - 9:30 pm{' '}
-                  <span className="text-drone">
-                    <b>:</b>
-                  </span>{' '}
-                  Drone
-                </li>
               </ul>
               <b>Sundays</b>
               <ul>
                 <li>
-                  3:00 - 4:30 pm{' '}
+                  11:30 - 1:00 pm{' '}
+                  <span className="text-tinker">
+                    <b>:</b>
+                  </span>{' '}
+                  Tinker
+                </li>
+                <li>
+                  1:00 - 2:30 pm{' '}
                   <span className="text-exo">
                     <b>:</b>
                   </span>{' '}
                   Exoskeleton
                 </li>
                 <li>
+                  2:30 - 4:00 pm{' '}
+                  <span className="text-drone">
+                    <b>:</b>
+                  </span>{' '}
+                  Drone
+                </li>
+                {/* <li>
                   4:00 - 5:30 pm{' '}
                   <span className="text-rover">
                     <b>:</b>
                   </span>{' '}
                   Rover
-                </li>
+                </li> */}
                 <li>
-                  6:30 - 8:00 pm{' '}
+                  4:00 - 5:30 pm{' '}
                   <span className="text-robocup">
                     <b>:</b>
                   </span>{' '}
-                  Robocup
+                  RoboCup
                 </li>
-              </ul> */}
+                <li>
+                  5:30 - 7:00 pm{' '}
+                  <span className="text-bionics">
+                    <b>:</b>
+                  </span>{' '}
+                  Bionics
+                </li>
+              </ul>
             </Card>
           </section>
         </div>
