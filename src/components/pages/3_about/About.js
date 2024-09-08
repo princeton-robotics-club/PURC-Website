@@ -42,6 +42,7 @@ import Sg8409 from '../../../images/about/sg8409.jpg';
 import Sr6770 from '../../../images/about/sr6770.jpg';
 import Th5879 from '../../../images/about/th5879.jpg';
 import Vv5226 from '../../../images/about/vv5226.jpg';
+import wm2964 from '../../../images/about/wm2964.jpg';
 import Za3545 from '../../../images/about/za3545.jpg';
 import Zk9002 from '../../../images/about/zk9002.jpg';
 
@@ -125,7 +126,7 @@ function About(props) {
                 subtext={['Droid Mech Lead', 'WALL-E Mech Lead']}
                 image={Za3545}
               />
-              <FaceCard darkMode={darkMode} name="Willson Moyer" subtext={['Droid Mech Lead']} image={''} />
+              <FaceCard darkMode={darkMode} name="Willson Moyer" subtext={['Droid Mech Lead']} image={wm2964} />
 
               <FaceCard darkMode={darkMode} name="Jack Toubes" subtext={['Pacbot HW Lead']} image={Jt1065} />
               <FaceCard darkMode={darkMode} name="Ian Henriques" subtext={['Pacbot SW Lead']} image={Ih2422} />
