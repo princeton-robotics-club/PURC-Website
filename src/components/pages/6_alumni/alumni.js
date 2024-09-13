@@ -1,7 +1,15 @@
 import React, { useState } from 'react';
+import Arthurts from '../../../images/about/arthurts.jpg';
+import Cg6149 from '../../../images/about/cg6149.png';
+import Df1314 from '../../../images/about/df1314.jpg';
 import Ernestm from '../../../images/about/ernestm.jpg';
 import Ih2422 from '../../../images/about/ih2422.jpg';
 import Jt1065 from '../../../images/about/jt1065.jpg';
+import Jt7347 from '../../../images/about/jt7347.jpg';
+import Kphan from '../../../images/about/kphan.jpg';
+import Ms8364 from '../../../images/about/ms8364.jpg';
+import Wh9128 from '../../../images/about/wh9128.jpg';
+
 import Card from '../../card/Card';
 import FaceCard from '../../face_card/FaceCard';
 import NameCard from '../../name-card/NameCard';
@@ -50,6 +58,13 @@ function Alumni(props) {
               <FaceCard darkMode={darkMode} name="Ian Henriques" subtext={["Co-President '24"]} image={Ih2422} />
               <FaceCard darkMode={darkMode} name="Ernest McCarter" subtext={["Co-President '24"]} image={Ernestm} />
               <FaceCard darkMode={darkMode} name="Jack Toubes" subtext={["Officer '24"]} image={Jt1065} />
+              <FaceCard darkMode={darkMode} name="Kevin Phan" subtext={['Golf Cart SW Lead']} image={Kphan} />
+              <FaceCard darkMode={darkMode} name="David Fu" subtext={['Rover Team Lead']} image={Df1314} />
+              <FaceCard darkMode={darkMode} name="Mariko Storey" subtext={['Rover Team Lead']} image={Ms8364} />
+              <FaceCard darkMode={darkMode} name="William Huang" subtext={['Rover Team Lead']} image={Wh9128} />
+              <FaceCard darkMode={darkMode} name="Jimmy Tran" subtext={['Drone Team Lead']} image={Jt7347} />
+              <FaceCard darkMode={darkMode} name="Arti Schmidt" subtext={['Drone SW Lead']} image={Arthurts} />
+              <FaceCard darkMode={darkMode} name="Chris Ganter" subtext={['Officer']} image={Cg6149} />
             </div>
           </Card>
           <Card

@@ -107,20 +107,8 @@ function Navbar(props) {
               label={'About Us'}
               link={'/about'}
               pathString={'/about'}
-              dropdownOptions={[
-                'Officers',
-                'Leads',
-                'Faculty',
-                // 'Members',
-                // 'Alumni'
-              ]}
-              dropdownLinks={[
-                '/about#officers',
-                '/about#leads',
-                '/about#faculty',
-                // '/members',
-                // '/alumni'
-              ]}
+              dropdownOptions={['Officers', 'Leads', 'Faculty', 'Members', 'Alumni']}
+              dropdownLinks={['/about#officers', '/about#leads', '/about#faculty', '/members', '/alumni']}
               closeMobile={closeMobileMenu}
               darkMode={darkMode}
             />
