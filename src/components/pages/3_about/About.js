@@ -12,7 +12,6 @@ import Arthurts from '../../../images/about/arthurts.jpg';
 import as3115 from '../../../images/about/as3115.jpg';
 import August from '../../../images/about/august.jpg';
 import Aw3592 from '../../../images/about/aw3592.jpeg';
-import Cg6149 from '../../../images/about/cg6149.png';
 import Ck4287 from '../../../images/about/ck4287.jpg';
 import Dc2326 from '../../../images/about/dc2326.jpg';
 import Dc4266 from '../../../images/about/dc4266.jpg';
@@ -69,7 +68,7 @@ function About(props) {
               <FaceCard darkMode={darkMode} name="Stephen Gilton" subtext={['Treasurer-in-Training']} image={Sg8409} />
 
               <FaceCard darkMode={darkMode} name="Caden Kang" subtext={['Media Lead']} image={Ck4287} />
-              <FaceCard darkMode={darkMode} name="Chris Ganter" subtext={['Officer']} image={Cg6149} />
+              {/* <FaceCard darkMode={darkMode} name="Chris Ganter" subtext={['Officer']} image={Cg6149} /> */}
               <FaceCard darkMode={darkMode} name="Divija Durga" subtext={['School Outreach Lead']} image={Dd6849} />
               <FaceCard darkMode={darkMode} name="Emily Yang " subtext={['FIRST Outreach Lead']} image={ey3875} />
               <FaceCard darkMode={darkMode} name="Freddy Hernandez" subtext={['Media Lead']} image={Fh9696} />
