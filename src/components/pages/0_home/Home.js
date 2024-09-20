@@ -153,6 +153,13 @@ function Home(props) {
                   WALL-E
                 </li>
                 <li>
+                  4:00 - 5:30 pm{' '}
+                  <span className="text-golf">
+                    <b>:</b>
+                  </span>{' '}
+                  Golf Cart (Meeting @ Alleyway between Andlinger Center and the part of E-Quad farthest from Nassau)
+                </li>
+                <li>
                   5:30 - 7:00 pm{' '}
                   <span className="text-droid">
                     <b>:</b>
@@ -161,13 +168,6 @@ function Home(props) {
                 </li>
                 <li>
                   7:00 - 8:00 pm <b>:</b> Dinner @ NCW PDR
-                </li>
-                <li>
-                  8:00 - 9:30 pm{' '}
-                  <span className="text-golf">
-                    <b>:</b>
-                  </span>{' '}
-                  Golf Cart
                 </li>
               </ul>
               <b>Sundays</b>
