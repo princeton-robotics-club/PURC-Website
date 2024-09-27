@@ -166,12 +166,17 @@ function Supporters(props) {
             to="https://www.mcmaster.com/"></Link>
 
           <div className="supp-info-text">
-            McMaster-Carr is a leading supplier of industrial products and equipment, providing a vast range of items
+            At McMaster-Carr, we help customers build anything because we offer everything. The world of industrial
+            supplies is a messy one. We navigate it so our customers don’t have to. Each of our 700,000 products is
+            thoughtfully selected, merchandised, and published. We do everything in-house, giving us the flexibility and
+            control to evolve with our customers. Our obsession with the customer experience is pervasive. We ensure
+            they are not just supported, but delighted, every step of the way.
+            {/* McMaster-Carr is a leading supplier of industrial products and equipment, providing a vast range of items
             from fasteners and tools to safety gear and maintenance supplies. Their extensive{' '}
             <Link className={'link' + (darkMode ? ' link-blue' : ' link-blue')} to="https://www.mcmaster.com/">
               online catalog
             </Link>{' '}
-            offers convenience and efficiency for sourcing high-quality materials and components.
+            offers convenience and efficiency for sourcing high-quality materials and components. */}
           </div>
         </Card>
 
