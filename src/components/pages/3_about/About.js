@@ -71,7 +71,7 @@ function About(props) {
 
               <FaceCard darkMode={darkMode} name="Caden Kang" subtext={['Media Lead']} image={Ck4287} />
               <FaceCard darkMode={darkMode} name="Freddy Hernandez" subtext={['Media Lead']} image={Fh9696} />
-              <FaceCard darkMode={darkMode} name="Zara Kamga" subtext={['DEI Lead ']} image={Zk9002} />
+              <FaceCard darkMode={darkMode} name="Zara Kamga" subtext={['Public Engagement Lead ']} image={Zk9002} />
               <FaceCard darkMode={darkMode} name="Jenna Mullin" subtext={['Design Lead']} image={jm7828} />
               <FaceCard darkMode={darkMode} name="Glen Nfor" subtext={['Web Dev Lead']} image={Gn7269} />
               <FaceCard darkMode={darkMode} name="Mahir Majid" subtext={['Web Dev Lead']} image={mm5764} />
