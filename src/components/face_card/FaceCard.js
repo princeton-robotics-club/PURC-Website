@@ -9,6 +9,7 @@ function FaceCard(props) {
         className="face"
         style={{
           backgroundImage: 'url(' + image + ')',
+          backgroundSize: 'cover',
           backgroundColor: image ? null : '#888',
         }}
       />

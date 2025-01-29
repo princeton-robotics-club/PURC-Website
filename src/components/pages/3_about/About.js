@@ -41,6 +41,10 @@ import wm2964 from '../../../images/about/wm2964.jpg';
 import Za3545 from '../../../images/about/za3545.jpg';
 import Zk9002 from '../../../images/about/zk9002.jpg';
 import Ng3922 from '../../../images/about/ng3922.png';
+import Cg6972 from '../../../images/about/cg6972.jpg';
+import Cy4383 from '../../../images/about/cy4383.jpg';
+import Jh5647 from '../../../images/about/jh5647.jpg';
+
 
 
 function About(props) {
@@ -77,13 +81,13 @@ function About(props) {
 
               <FaceCard darkMode={darkMode} name="Zara Kamga" subtext={['Administrative Officer ']} image={Zk9002} />
               <FaceCard darkMode={darkMode} name="Nadula Gardiyehewa" subtext={['Administrative Officer ']} image={Ng3922} />
-             {/* // <FaceCard darkMode={darkMode} name="Quentin Hicks" subtext={['Administrative Officer ']} image={Ng3922} />   */}
+              <FaceCard darkMode={darkMode} name="Chae Rin Yang" subtext={['Administrative Officer ']} image={Cy4383} />  
+            <FaceCard darkMode={darkMode} name="Charles Gersh" subtext={['Administrative Officer ']} image={Cg6972} />  
+            <FaceCard darkMode={darkMode} name="Jessica Hou" subtext={['Administrative Officer ']} image={Jh5647} /> 
+              {/* <FaceCard darkMode={darkMode} name="Quentin Hicks" subtext={['Administrative Officer ']} image={Ng3922} /> */}
             {/* // <FaceCard darkMode={darkMode} name="Ethan Haque" subtext={['Administrative Officer ']} image={Ng3922} />   */}
             {/* // <FaceCard darkMode={darkMode} name="Dini Kathriarachchi" subtext={['Administrative Officer ']} image={Ng3922} />   */}
-            {/* // <FaceCard darkMode={darkMode} name="Chae Rin Yang" subtext={['Administrative Officer ']} image={Ng3922} />   */}
-            {/* // <FaceCard darkMode={darkMode} name="Ella Simmons" subtext={['Administrative Officer ']} image={Ng3922} />   */}
-            {/* // <FaceCard darkMode={darkMode} name="Charles Gersh" subtext={['Administrative Officer ']} image={Ng3922} />   */}
-            {/* // <FaceCard darkMode={darkMode} name="Jessica Hou" subtext={['Administrative Officer ']} image={Ng3922} />   */}
+            {/* // <FaceCard darkMode={darkMode} name="Ella Simmons" subtext={['Administrative Officer ']} image={Ng3922} />   */} 
 
 
 
