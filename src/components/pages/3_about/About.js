@@ -27,9 +27,10 @@ import Js4346 from '../../../images/about/js4346.jpg';
 import Jt1065 from '../../../images/about/jt1065.jpg';
 import Lyon from '../../../images/about/lyon.png';
 import Majumdar from '../../../images/about/majumdar.jpg';
-import Mh6419 from '../../../images/about/mh6419.jpg';
+// import Mh6419 from '../../../images/about/mh6419.jpg';
 import mm5764 from '../../../images/about/mm5764.jpg';
 import my9689 from '../../../images/about/my9689.jpg';
+import Ng3922 from '../../../images/about/ng3922.png';
 import ns4593 from '../../../images/about/ns4593.jpg';
 import rk3979 from '../../../images/about/rk3979.jpg';
 import sg6836 from '../../../images/about/sg6836.jpg';
@@ -40,8 +41,6 @@ import Vv5226 from '../../../images/about/vv5226.jpg';
 import wm2964 from '../../../images/about/wm2964.jpg';
 import Za3545 from '../../../images/about/za3545.jpg';
 import Zk9002 from '../../../images/about/zk9002.jpg';
-import Ng3922 from '../../../images/about/ng3922.png';
-
 
 function About(props) {
   const { darkMode } = props;
@@ -68,7 +67,6 @@ function About(props) {
               <FaceCard darkMode={darkMode} name="Zachary Andrews" subtext={['School Outreach Lead']} image={Za3545} />
               <FaceCard darkMode={darkMode} name="Emily Yang " subtext={['FIRST Outreach Lead']} image={ey3875} />
 
-
               <FaceCard darkMode={darkMode} name="Caden Kang" subtext={['Media Lead']} image={Ck4287} />
               <FaceCard darkMode={darkMode} name="Jenna Mullin" subtext={['Design Lead']} image={jm7828} />
               <FaceCard darkMode={darkMode} name="Glen Nfor" subtext={['Web Dev Lead']} image={Gn7269} />
@@ -76,18 +74,19 @@ function About(props) {
               <FaceCard darkMode={darkMode} name="Vasumathi Venkat" subtext={['Social Chair']} image={Vv5226} />
 
               <FaceCard darkMode={darkMode} name="Zara Kamga" subtext={['Administrative Officer ']} image={Zk9002} />
-              <FaceCard darkMode={darkMode} name="Nadula Gardiyehewa" subtext={['Administrative Officer ']} image={Ng3922} />
-             {/* // <FaceCard darkMode={darkMode} name="Quentin Hicks" subtext={['Administrative Officer ']} image={Ng3922} />   */}
-            {/* // <FaceCard darkMode={darkMode} name="Ethan Haque" subtext={['Administrative Officer ']} image={Ng3922} />   */}
-            {/* // <FaceCard darkMode={darkMode} name="Dini Kathriarachchi" subtext={['Administrative Officer ']} image={Ng3922} />   */}
-            {/* // <FaceCard darkMode={darkMode} name="Chae Rin Yang" subtext={['Administrative Officer ']} image={Ng3922} />   */}
-            {/* // <FaceCard darkMode={darkMode} name="Ella Simmons" subtext={['Administrative Officer ']} image={Ng3922} />   */}
-            {/* // <FaceCard darkMode={darkMode} name="Charles Gersh" subtext={['Administrative Officer ']} image={Ng3922} />   */}
-            {/* // <FaceCard darkMode={darkMode} name="Jessica Hou" subtext={['Administrative Officer ']} image={Ng3922} />   */}
-
-
-
-
+              <FaceCard
+                darkMode={darkMode}
+                name="Nadula Gardiyehewa"
+                subtext={['Administrative Officer ']}
+                image={Ng3922}
+              />
+              {/* // <FaceCard darkMode={darkMode} name="Quentin Hicks" subtext={['Administrative Officer ']} image={Ng3922} />   */}
+              {/* // <FaceCard darkMode={darkMode} name="Ethan Haque" subtext={['Administrative Officer ']} image={Ng3922} />   */}
+              {/* // <FaceCard darkMode={darkMode} name="Dini Kathriarachchi" subtext={['Administrative Officer ']} image={Ng3922} />   */}
+              {/* // <FaceCard darkMode={darkMode} name="Chae Rin Yang" subtext={['Administrative Officer ']} image={Ng3922} />   */}
+              {/* // <FaceCard darkMode={darkMode} name="Ella Simmons" subtext={['Administrative Officer ']} image={Ng3922} />   */}
+              {/* // <FaceCard darkMode={darkMode} name="Charles Gersh" subtext={['Administrative Officer ']} image={Ng3922} />   */}
+              {/* // <FaceCard darkMode={darkMode} name="Jessica Hou" subtext={['Administrative Officer ']} image={Ng3922} />   */}
 
               {/* <FaceCard darkMode={darkMode} name="Chris Ganter" subtext={['Officer']} image={Cg6149} /> */}
             </div>
@@ -220,9 +219,9 @@ function About(props) {
   );
 }
 
-const Divider = () => {
-  return <div className="divider"></div>;
-};
+// const Divider = () => {
+//   return <div className="divider"></div>;
+// };
 export default About;
 
 /*

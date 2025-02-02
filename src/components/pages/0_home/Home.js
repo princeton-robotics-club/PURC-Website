@@ -7,7 +7,8 @@ import './Home.css';
 function Home(props) {
   const { darkMode } = props;
 
-  const HERO_WORDS = ['design', 'build', 'wire', 'code', 'test'];
+  // const HERO_WORDS = ['design', 'build', 'wire', 'code', 'test'];
+  const HERO_WORDS = ['Design', 'Build', 'Wire', 'Code', 'Test'];
   let wordIndex = 0;
   let letterIndex = HERO_WORDS[0].length - 1;
   let textTimer = 0;
@@ -89,7 +90,8 @@ function Home(props) {
               <span id="hero-bar" className="hero-bar">
                 |
               </span>
-              the&nbsp;&nbsp;future
+              {/* the&nbsp;&nbsp;future */}
+              THE&nbsp;&nbsp;FUTURE
             </div>
             <div className="hero-subtext">princeton university robotics club</div>
           </div>
