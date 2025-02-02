@@ -16,6 +16,7 @@ import Supporters from './components/pages/2_supporters/Supporters';
 import About from './components/pages/3_about/About';
 import Join from './components/pages/4_join/Join';
 import Gallery from './components/pages/5_gallery/Gallery';
+import GalleryUpload from './components/pages/5_gallery/service';
 import Alumni from './components/pages/6_alumni/alumni';
 import Members from './components/pages/7_members/Members';
 
@@ -38,6 +39,7 @@ function App() {
           <Route path="/supporters" exact element={<Supporters darkMode={darkMode} />} />
           <Route path="/about" exact element={<About darkMode={darkMode} />} />
           <Route path="/gallery" exact element={<Gallery darkMode={darkMode} />} />
+          <Route path="/gallery/upload" element={<GalleryUpload darkMode={darkMode} />} />
           <Route path="/alumni" exact element={<Alumni darkMode={darkMode} />} />
           <Route path="/members" exact element={<Members darkMode={darkMode} />} />
           <Route path="/join" exact element={<Join darkMode={darkMode} />} />
