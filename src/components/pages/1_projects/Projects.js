@@ -172,7 +172,7 @@ function Projects(props) {
                   [
                     '2024-9-01',
                     's',
-                    'The BB-8 Droid team will be spending this year with a particular focus on making our BB-8 autonomous. This includes CV for image recognition and distance sensors for obstacle avoidance. Electrical Team will be scoping out new sensors to achieve these tasks while software will develop the main infrastructure for BB-8s ability to roll around a space without colliding with obstacles and being able to recognize objects!',
+                    'This past semester, our Droid Team saw the BB-8 fully assembled for the first time! We started off the year spray painting the panels for the droid’s exterior, and now are working on perfecting its motion while testing it in action at demonstrations from the activities fair to partnering with Princeton’s STEM to Stern program. The software team explored computer vision and voice recognition software tools for potential implementation in an effort to automate some of the droid’s functionality, as well as tested different forms of communication with the droid to enable the implementation of these tools.',
                   ],
                 ]}
                 sponsors={''}
@@ -218,6 +218,7 @@ function Projects(props) {
                   ],
                   ['2023-08-01', 's', 'Re-designed the Pacbot game engine to address some shortcomings from last year'],
                   ['2023-11-30', 's', ' Starting work on our 2024 Pacbot!'],
+                  ['2024-9-03', 's', 'Finished constructing a Pacbot for this year\'s competition, based on last year\'s bot, and started planning a brand new bot for next year\'s competition. The software team has been porting communication and planning algorithms to the robot, allowing it to fully function and navigate without external commands.'],
                 ]}
                 sponsors={''}
               />
@@ -303,7 +304,11 @@ function Projects(props) {
                 about="Starting in Fall 2024, our Robocup Team will build a complete set of robots to take part in the Robocup SSL Challenge. We are looking for motivated members to help make this project a reality!"
                 slides={[]}
                 showSlides={showSlides}
-                milestones={[]}
+                milestones={[[
+                  '2024-09-06',
+                  's',
+                  'This past semester, our RoboCup team has worked diligently researching different designs for our team of 6 competition robots. Our software team has made significant strides in understanding the competition\'s shared-vision software and devising strategic gameplay tactics. Additionally, our hardware team has explored several physical implementations of the team\'s robots and is eager to continue prototyping different designs in the upcoming semester.',
+                ],]}
                 sponsors={''}
               />
             </div>
@@ -323,7 +328,11 @@ function Projects(props) {
                 about="Our Autonomous Golf Cart Team aims to combine sustainability with automation by building a solar-powered self-driving golf cart. With support from the High Meadows Environmental Institute and NVIDIA, this newly-established team is a great opportunity for members to build unprecedented technology with cutting-edge components."
                 slides={[]}
                 showSlides={showSlides}
-                milestones={[]}
+                milestones={[[
+                  '2024-09-06',
+                  's',
+                  'Our Golf Cart team is focusing our effort on two main objectives. From hardware, we want to support self-driving abilities by connecting all sensors and actuators to a CAN bus, with Arduinos and the Orin on the other end. Our software team is working to improve simulation of the golf cart and control through I/O communication with the bus.',
+                ],]}
                 sponsors={'High Meadows Institute; NVIDIA'}
               />
             </div>
@@ -364,7 +373,7 @@ function Projects(props) {
                   [
                     '2024-09-01',
                     's',
-                    'Expected to continue upper body construction, move on to developing multi-node brain interface for more motor movement.',
+                    'Our Exoskeleton team made significant progress towards the completion of our project! We have completed the safety implemented design of the upper body, fitted with motors. We have also worked on our new algorithm for the EEG headset interface to run the exoskeleton and are looking forward to the upcoming semester.',
                   ],
                 ]}
                 sponsors={''}
@@ -390,7 +399,11 @@ function Projects(props) {
                 about="Starting in Fall 2024, our WALL-E Team will focus on creating a lovable, waste-collecting roverbot capable of retracting into a box, autonomously picking up trash, avoiding obstacles, and more. We are looking for motivated members to help make this project a reality!"
                 slides={[]}
                 showSlides={showSlides}
-                milestones={[]}
+                milestones={[[
+                  '2024-09-06',
+                  's',
+                  'The mechanical team focused on the treads, arms, and head/eyes, designing solutions tailored to each component\'s needs. The electrical team is programming an OLED screen with SmartMatrix libraries for Wall-E\’s battery display and researching piston systems for efficient actuation. Additionally, we\’re developing audio schematics with a soundboard and enhancing circuit debugging capabilities. Servo motor research is underway to support the head/eye mechanisms in collaboration with the mechanical team.',
+                ],]}
                 sponsors={''}
               />
             </div>
@@ -482,7 +495,11 @@ function Projects(props) {
                   [tinker3, 'h', 'Macintosh and Boombox'],
                 ]}
                 showSlides={showSlides}
-                milestones={[]}
+                milestones={[ [
+                  '2024-09-01',
+                  's',
+                  'During the semester, the Tinker Team hosted hands-on repair and building activities that encouraged creativity and problem-solving. Members successfully disassembled and micro-soldered a new battery into an iPod Nano 4th generation, repaired a laptop hinge, fixed two Wii consoles and their disc drives, and restored a pair of wired headphones. Additionally, the team explored construction by building a birdhouse and delved into retro tech by taking apart an 8-track tape to examine its components, successfully diagnosing an issue with the tape player.',
+                ],]}
                 sponsors={''}
               />
             </div>

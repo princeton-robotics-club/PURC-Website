@@ -41,6 +41,10 @@ import wm2964 from '../../../images/about/wm2964.jpg';
 import Za3545 from '../../../images/about/za3545.jpg';
 import Zk9002 from '../../../images/about/zk9002.jpg';
 import Ng3922 from '../../../images/about/ng3922.png';
+import Cy4383 from '../../../images/about/cy4383.jpg';
+import Qh9879 from '../../../images/about/qh9879.jpg';
+import Jh5647 from '../../../images/about/Jh5647.png';
+import Cg6972 from '../../../images/about/cg6972.jpg';
 
 
 function About(props) {
@@ -63,33 +67,30 @@ function About(props) {
               <FaceCard darkMode={darkMode} name="Sarah Rinzan" subtext={['Co-President']} image={Sr6770} />
               <FaceCard darkMode={darkMode} name="Tate Hutchins" subtext={['Co-President']} image={Th5879} />
               <FaceCard darkMode={darkMode} name="Stephen Gilton" subtext={['Treasurer']} image={Sg8409} />
-
-              <FaceCard darkMode={darkMode} name="Divija Durga" subtext={['School Outreach Lead']} image={Dd6849} />
-              <FaceCard darkMode={darkMode} name="Zachary Andrews" subtext={['School Outreach Lead']} image={Za3545} />
-              <FaceCard darkMode={darkMode} name="Emily Yang " subtext={['FIRST Outreach Lead']} image={ey3875} />
-
-
-              <FaceCard darkMode={darkMode} name="Caden Kang" subtext={['Media Lead']} image={Ck4287} />
+            {/* Oren (Business Lead) */}
+              <FaceCard darkMode={darkMode} name="Zara Kamga" subtext={['DEI Lead']} image={Zk9002} />
               <FaceCard darkMode={darkMode} name="Jenna Mullin" subtext={['Design Lead']} image={jm7828} />
-              <FaceCard darkMode={darkMode} name="Glen Nfor" subtext={['Web Dev Lead']} image={Gn7269} />
-              <FaceCard darkMode={darkMode} name="Mahir Majid" subtext={['Web Dev Lead']} image={mm5764} />
+              <FaceCard darkMode={darkMode} name="Caden Kang" subtext={['Media Lead']} image={Ck4287} />
+              <FaceCard darkMode={darkMode} name="Glen Nfor" subtext={['Web Dev Co-Lead']} image={Gn7269} />
+              <FaceCard darkMode={darkMode} name="Mahir Majid" subtext={['Web Dev Co-Lead']} image={mm5764} />
               <FaceCard darkMode={darkMode} name="Vasumathi Venkat" subtext={['Social Chair']} image={Vv5226} />
+              <FaceCard darkMode={darkMode} name="Zachary Andrews" subtext={['School Outreach Co-Lead']} image={Za3545} />
+              <FaceCard darkMode={darkMode} name="Divija Durga" subtext={['School Outreach Co-Lead']} image={Dd6849} />
+              <FaceCard darkMode={darkMode} name="Emily Yang " subtext={['FIRST School Outreach Lead']} image={ey3875} />
 
-              <FaceCard darkMode={darkMode} name="Zara Kamga" subtext={['Administrative Officer ']} image={Zk9002} />
-              <FaceCard darkMode={darkMode} name="Nadula Gardiyehewa" subtext={['Administrative Officer ']} image={Ng3922} />
-             {/* // <FaceCard darkMode={darkMode} name="Quentin Hicks" subtext={['Administrative Officer ']} image={Ng3922} />   */}
-            {/* // <FaceCard darkMode={darkMode} name="Ethan Haque" subtext={['Administrative Officer ']} image={Ng3922} />   */}
-            {/* // <FaceCard darkMode={darkMode} name="Dini Kathriarachchi" subtext={['Administrative Officer ']} image={Ng3922} />   */}
-            {/* // <FaceCard darkMode={darkMode} name="Chae Rin Yang" subtext={['Administrative Officer ']} image={Ng3922} />   */}
-            {/* // <FaceCard darkMode={darkMode} name="Ella Simmons" subtext={['Administrative Officer ']} image={Ng3922} />   */}
-            {/* // <FaceCard darkMode={darkMode} name="Charles Gersh" subtext={['Administrative Officer ']} image={Ng3922} />   */}
-            {/* // <FaceCard darkMode={darkMode} name="Jessica Hou" subtext={['Administrative Officer ']} image={Ng3922} />   */}
+              <FaceCard darkMode={darkMode} name="Ella Simmons" subtext={['Administrative Officer']} image={es5889} />
+              <FaceCard darkMode={darkMode} name="Chae Rin Yang" subtext={['Administrative Officer']} image={Cy4383} />
+              <FaceCard darkMode={darkMode} name="Quentin Hicks" subtext={['Administrative Officer']} image={Qh9879} />
+              <FaceCard darkMode={darkMode} name="Jessica Hou" subtext={['Administrative Officer']} image={Jh5647} />
+              <FaceCard darkMode={darkMode} name="Nadula Gardiyehewa" subtext={['Administrative Officer']} image={Ng3922} />
+              <FaceCard darkMode={darkMode} name="Charles Gersh" subtext={['Administrative Officer']} image={Cg6972} />
+
+              <FaceCard darkMode={darkMode} name="Ian Henriques" subtext={['Administrative Officer']} image={Ih2422} />
+              <FaceCard darkMode={darkMode} name="Jack Toubes" subtext={['Administrative Officer']} image={Jt1065} />
+              <FaceCard darkMode={darkMode} name="Freddy Hernandez" subtext={['Administrative Officer']} image={Fh9696}/>
+              <FaceCard darkMode={darkMode} name="Maria Heffernen" subtext={['Administrative Officer']} image={Mh6419}/>
 
 
-
-
-
-              {/* <FaceCard darkMode={darkMode} name="Chris Ganter" subtext={['Officer']} image={Cg6149} /> */}
             </div>
           </Card>
 
@@ -149,9 +150,9 @@ function About(props) {
                 image={Fh9696}
               />
               <FaceCard darkMode={darkMode} name="Jack Toubes" subtext={['Pacbot HW Lead']} image={Jt1065} />
-              <FaceCard darkMode={darkMode} name="Ian Henriques" subtext={['Pacbot SW Lead']} image={Ih2422} />
               {/* <FaceCard darkMode={darkMode} name="Ernest McCarter" subtext={['Pacbot SW Lead']} image={Ernestm} /> */}
               <FaceCard darkMode={darkMode} name="Andy Nguyen" subtext={['Pacbot SW Lead']} image={An4978} />
+              <FaceCard darkMode={darkMode} name="Ian Henriques" subtext={['Pacbot SW Lead', 'Golf Cart SW Lead']} image={Ih2422} />
 
               <FaceCard darkMode={darkMode} name="Dak Cheng" subtext={['Golf Cart HW Lead']} image={Dc2326} />
               {/* <FaceCard darkMode={darkMode} name="Kevin Phan" subtext={['Golf Cart SW Lead']} image={Kphan} /> */}
@@ -161,7 +162,7 @@ function About(props) {
               <FaceCard darkMode={darkMode} name="William Huang" subtext={['Rover Team Lead']} image={Wh9128} /> */}
 
               <FaceCard darkMode={darkMode} name="Joshua Soberano" subtext={['Exo Mechatronics Lead']} image={Js4346} />
-              <FaceCard darkMode={darkMode} name="Divija Durga" subtext={['Exo Team Lead']} image={Dd6849} />
+              {/* <FaceCard darkMode={darkMode} name="Divija Durga" subtext={['Exo Team Lead']} image={Dd6849} /> */}
               <FaceCard darkMode={darkMode} name="Zara Kamga" subtext={['Exo Interface Lead']} image={Zk9002} />
 
               <FaceCard darkMode={darkMode} name="Glen Nfor" subtext={['Robocup SW Lead']} image={Gn7269} />
@@ -174,12 +175,14 @@ function About(props) {
                 image={ac1180}
               />
               <FaceCard darkMode={darkMode} name="Miyu Yamane" subtext={['Bionics Software Lead']} image={my9689} />
-              <FaceCard
+              
+              {/* <FaceCard
                 darkMode={darkMode}
                 name="Nathaniel Scott"
                 subtext={['Bionics Electrical Lead']}
                 image={ns4593}
-              />
+              /> */}
+
               <FaceCard darkMode={darkMode} name="Arjun Shetty" subtext={['Bionics Mech Lead']} image={as3115} />
 
               <FaceCard darkMode={darkMode} name="Samuel Gerhard" subtext={['Tinker Electrical Lead']} image={sg6836} />
