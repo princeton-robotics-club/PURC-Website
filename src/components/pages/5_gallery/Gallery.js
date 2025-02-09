@@ -51,8 +51,9 @@ function GalleryPage(props) {
                 (captionsRef.current?.visible ? captionsRef.current?.hide : captionsRef.current?.show)?.();
               },
             }}
-            captions={{ showToggle: true, enable: true, position: 'bottom', hidden: false }}
+            // captions={{ showToggle: true, enable: true, position: 'bottom', hidden: false }}
           />
+          <div ref={captionsRef} />
         </section>
       </div>
     </>
