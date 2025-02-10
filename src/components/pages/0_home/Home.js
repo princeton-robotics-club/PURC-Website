@@ -169,7 +169,7 @@ function Home(props) {
                   BB-8 Droid
                 </li>
                 <li>
-                  7:00 - 8:00 pm <b>:</b> Dinner @ NCW PDR
+                  7:15 pm <b>:</b> Dinner @ NCW/YEH PDR (Check Discord)
                 </li>
               </ul>
               <b>Sundays</b>
