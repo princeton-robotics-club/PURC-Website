@@ -29,7 +29,7 @@ function Supporters(props) {
           <Link to="/join" className={'link' + (darkMode ? ' link-orange' : ' link-coral')}>
             joining
           </Link>{' '}
-          our team as a donor or advisor. We appreciate your help!
+          our team as a contributor or advisor. We appreciate your help!
         </Card>
 
         <Card darkMode={darkMode} className={'text-box full-width' + (darkMode ? ' text-box-dark' : ' text-box-light')}>

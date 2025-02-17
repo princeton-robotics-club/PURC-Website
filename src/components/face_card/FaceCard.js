@@ -11,6 +11,7 @@ function FaceCard(props) {
           backgroundImage: 'url(' + image + ')',
           backgroundSize: 'cover',
           backgroundColor: image ? null : '#888',
+          backgroundRepeat: 'no-repeat',
         }}
       />
       <div className="caption">

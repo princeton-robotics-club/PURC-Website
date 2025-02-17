@@ -165,12 +165,12 @@ function Projects(props) {
                     "Mechanical Team finished assembling the base of the drive system within the droid, including the flywheel system for rotational movement, center-axis system for linear movement, and mounts for all of the various electrical components. Electrical Team created custom PCBs for the remote control and for the circuit within the droid's body that receives and processes all of the commands from the remote control. Electrical Team also began wiring up the electrical components on the droid.",
                   ],
                   [
-                    '2024-4-01',
+                    '2024-04-01',
                     's',
                     'We fully assembled the BB-8 body and connected it to the dome with a magnetic locking system that makes the dome appear as if it is floating! By the end of the semester, we got the BB-8 to the point where it is fully operational and can roll around in accordance with commands sent from a remote control. In the future, we are looking into implementing distance sensors and CV for autonomous functioning. ',
                   ],
                   [
-                    '2024-9-01',
+                    '2024-09-01',
                     's',
                     'This past semester, our Droid Team saw the BB-8 fully assembled for the first time! We started off the year spray painting the panels for the droid’s exterior, and now are working on perfecting its motion while testing it in action at demonstrations from the activities fair to partnering with Princeton’s STEM to Stern program. The software team explored computer vision and voice recognition software tools for potential implementation in an effort to automate some of the droid’s functionality, as well as tested different forms of communication with the droid to enable the implementation of these tools.',
                   ],

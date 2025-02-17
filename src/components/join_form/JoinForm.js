@@ -69,9 +69,9 @@ function JoinForm(props) {
       <div className='form-row multi-column' id='role'
            onInput={onChangeRole}>
         <label className='label'>Choose your role:</label>
-        <label className={roleFormat('Donor')}>
-          <input type='radio' name='role' value='Donor'/>
-          <span>Donor</span>
+        <label className={roleFormat('Contributor')}>
+          <input type='radio' name='role' value='Contributor'/>
+          <span>Contributor</span>
         </label>
         <label className={roleFormat('Advisor')}>
           <input type='radio' name='role' value='Advisor'/>
