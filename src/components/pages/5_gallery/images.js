@@ -28,6 +28,10 @@ import Rover1 from '../../../images/projects/rover/rover-1.jpg';
 
 import Exoskeleton1 from '../../../images/projects/exoskeleton/exoskeleton-1.jpeg';
 
+import Golf1 from '../../../images/projects/golf/golf-1.jpeg';
+import Golf2 from '../../../images/projects/golf/golf-2.jpeg';
+import Golf3 from '../../../images/projects/golf/golf-3.jpeg';
+
 const images = [
   /*****
    * General Team Images
@@ -261,7 +265,28 @@ const images = [
       { value: 'Exoskeleton', title: 'Exoskeleton' },
       { value: '#Design', title: 'Design' },
     ],
-  }
+  },
+  {
+    src: Golf1,
+    tags: [
+      { value: 'Golf Cart', title: 'Golf Cart' },
+      { value: '#Design', title: 'Design' },
+    ],
+  },
+  {
+    src: Golf2,
+    tags: [
+      { value: 'Golf Cart', title: 'Golf Cart' },
+      { value: '#Design', title: 'Design' },
+    ],
+  },
+  {
+    src: Golf3, 
+    tags: [
+      { value: 'Golf Cart', title: 'Golf Cart' },
+      { value: '#Design', title: 'Design' },
+    ],
+  },
 ];
 
 export { images };
