@@ -97,9 +97,6 @@ function About(props) {
               <FaceCard darkMode={darkMode} name="Glen Nfor" subtext={['Web Dev Co-Lead']} image={Gn7269} />
               <FaceCard darkMode={darkMode} name="Mahir Majid" subtext={['Web Dev Co-Lead']} image={mm5764} />
               <FaceCard darkMode={darkMode} name="Vasumathi Venkat" subtext={['Social Chair']} image={Vv5226} />
-              <FaceCard darkMode={darkMode} name="Zachary Andrews" subtext={['School Outreach Co-Lead']} image={Za3545} />
-              <FaceCard darkMode={darkMode} name="Divija Durga" subtext={['School Outreach Co-Lead']} image={Dd6849} />
-              <FaceCard darkMode={darkMode} name="Emily Yang " subtext={['FIRST School Outreach Lead']} image={ey3875} />
 
               <FaceCard darkMode={darkMode} name="Ella Simmons" subtext={['Administrative Officer']} image={es5889} />
               <FaceCard darkMode={darkMode} name="Chae Rin Yang" subtext={['Administrative Officer']} image={Cy4383} />
