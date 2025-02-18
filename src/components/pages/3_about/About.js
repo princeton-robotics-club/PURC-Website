@@ -46,6 +46,7 @@ import Cy4383 from "../../../images/about/cy4383.jpg";
 import Qh9879 from "../../../images/about/qh9879.jpg";
 import Jh5647 from "../../../images/about/Jh5647.png";
 import Cg6972 from "../../../images/about/cg6972.jpg";
+import Dk6149 from "../../../images/about/dk6149.jpeg";
 
 function About(props) {
   const { darkMode } = props;
@@ -197,6 +198,12 @@ function About(props) {
                 name="Charles Gersh"
                 subtext={["Administrative Officer"]}
                 image={Cg6972}
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Dini Kathriarachchi"
+                subtext={["Administrative Officer"]}
+                image={Dk6149}
               />
 
               <FaceCard
