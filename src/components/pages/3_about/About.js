@@ -306,6 +306,13 @@ function About(props) {
 
               <FaceCard
                 darkMode={darkMode}
+                name="Wilson Moyer"
+                subtext={["Wall-E Mech Lead"]}
+                image={wm2964}
+              />
+
+              <FaceCard
+                darkMode={darkMode}
                 name="Alecia Barbieri"
                 subtext={["WALL-E Electrical Lead"]}
                 image={Ab0824}
