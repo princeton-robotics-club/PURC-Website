@@ -19,6 +19,7 @@ import Gallery from './components/pages/5_gallery/Gallery';
 import GalleryUpload from './components/pages/5_gallery/service';
 import Alumni from './components/pages/6_alumni/alumni';
 import Members from './components/pages/7_members/Members';
+import Outreach from './components/pages/8_outreach/outreach';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -43,6 +44,7 @@ function App() {
           <Route path="/alumni" exact element={<Alumni darkMode={darkMode} />} />
           <Route path="/members" exact element={<Members darkMode={darkMode} />} />
           <Route path="/join" exact element={<Join darkMode={darkMode} />} />
+          <Route path="/outreach" exact element={<Outreach darkMode={darkMode} />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer darkMode={darkMode} />
