@@ -47,6 +47,7 @@ import Qh9879 from "../../../images/about/qh9879.jpg";
 import Jh5647 from "../../../images/about/Jh5647.png";
 import Cg6972 from "../../../images/about/cg6972.jpg";
 import Dk6149 from "../../../images/about/dk6149.jpeg";
+import Ot8429 from "../../../images/about/ot8429.jpg";
 
 function About(props) {
   const { darkMode } = props;
@@ -204,6 +205,12 @@ function About(props) {
                 name="Dini Kathriarachchi"
                 subtext={["Administrative Officer"]}
                 image={Dk6149}
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Oren Tieyah"
+                subtext={["Administrative Officer"]}
+                image={Ot8429}
               />
 
               <FaceCard

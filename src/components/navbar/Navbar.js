@@ -111,7 +111,7 @@ function Navbar(props) {
               darkMode={darkMode}
             />
 
-            <NavbarItem
+            {/* <NavbarItem
               label={"Outreach"}
               link={"/outreach"}
               pathString={"/outreach"}
@@ -119,7 +119,7 @@ function Navbar(props) {
               dropdownLinks={[]}
               closeMobile={closeMobileMenu}
               darkMode={darkMode}
-            />
+            /> */}
 
             <NavbarItem
               label={"About Us"}
