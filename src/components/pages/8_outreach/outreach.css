@@ -1,4 +1,4 @@
-.img-bgc-speaker-event {
+.img-outreach-event {
     border-radius: 0px 0px 10px 0px;
     height: 490px;
     width: 45%;
@@ -9,6 +9,22 @@
     background-size: cover;
     float: right;
     transition: all 0.1s ease;
+}
+
+  .img-bgc-event {
+    background-image: url('../../../images/outreach/bgc_speaker_event.jpg');
+  }
+
+  .img-first-robotics-event {
+    background-image: url('../../../images/outreach/bgc_speaker_event.jpg');
+  }
+
+  .img-princeton-library-event {
+    background-image: url('../../../images/outreach/bgc_speaker_event.jpg');
+  }
+
+  .img-camden-library-event {
+    background-image: url('../../../images/outreach/bgc_speaker_event.jpg');
   }
 
   .outreach-logo-bgc {
