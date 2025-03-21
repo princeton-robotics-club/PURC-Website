@@ -179,6 +179,15 @@ function Supporters(props) {
             offers convenience and efficiency for sourcing high-quality materials and components. */}
           </div>
         </Card>
+        <Card darkMode={darkMode} className={'text-box' + (darkMode ? ' text-box-dark' : ' text-box-light')}>
+          <Link
+            className={'supp-logo-mouser' + (darkMode ? ' supp-logo-mouser-dark' : ' supp-logo-mouser-light')}
+            to="http://www.mouser.com"></Link>
+
+          <div className="supp-info-text">
+          Mouser Electronics is a global factory authorized distributor of semiconductors and electronic components. We specialize in the rapid introduction of the newest products and technologies from our authorized manufacturers, supporting the newest designs as-well-as the manufacturing supply chain.
+          </div>
+        </Card>
 
         <Card
           darkMode={darkMode}

@@ -187,6 +187,27 @@
 } */
 /* ------------------------------------------------------------------------- */
 
+.supp-logo-mouser {
+  border-radius: 8px 8px 0px 0px;
+  height: 100px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-image: url('../../../images/supporters/MouserLogo.png');
+  background-repeat: no-repeat;
+  background-size: min(240px, 70vw);
+  float: left;
+  transition: all 0.1s ease;
+}
+
+.supp-logo-mouser:hover {
+  background-size: min(250px, 72vw);
+  transition: all 0.1s ease;
+} */
+
+/* ------------------------------------------------------------------------- */
+
 .supp-logo-cst {
   border-radius: 8px 8px 0px 0px;
   height: 100px;
