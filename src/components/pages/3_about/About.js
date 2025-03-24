@@ -31,6 +31,7 @@ import Mh6419 from '../../../images/about/mh6419.jpg';
 import mm5764 from '../../../images/about/mm5764.jpg';
 import my9689 from '../../../images/about/my9689.jpg';
 import Ng3922 from '../../../images/about/ng3922.png';
+import ns4593 from '../../../images/about/ns4593.jpg';
 import rk3979 from '../../../images/about/rk3979.jpg';
 import sg6836 from '../../../images/about/sg6836.jpg';
 import Sg8409 from '../../../images/about/sg8409.jpg';
@@ -68,7 +69,7 @@ function About(props) {
               <FaceCard darkMode={darkMode} name="Sarah Rinzan" subtext={['Co-President']} image={Sr6770} />
               <FaceCard darkMode={darkMode} name="Tate Hutchins" subtext={['Co-President']} image={Th5879} />
               <FaceCard darkMode={darkMode} name="Stephen Gilton" subtext={['Treasurer']} image={Sg8409} />
-              {/* Oren (Business Lead) */}
+              <FaceCard darkMode={darkMode} name="Oren Tieyah" subtext={['Business Team Lead']} image={Ot8429} />
               <FaceCard darkMode={darkMode} name="Zara Kamga" subtext={['Public Engagement Lead']} image={Zk9002} />
 
               <FaceCard darkMode={darkMode} name="Divija Durga" subtext={['School Outreach Lead']} image={Dd6849} />
@@ -98,7 +99,6 @@ function About(props) {
                 subtext={['Administrative Officer']}
                 image={Dk6149}
               />
-              <FaceCard darkMode={darkMode} name="Oren Tieyah" subtext={['Administrative Officer']} image={Ot8429} />
 
               <FaceCard darkMode={darkMode} name="Ian Henriques" subtext={['Administrative Officer']} image={Ih2422} />
               <FaceCard darkMode={darkMode} name="Jack Toubes" subtext={['Administrative Officer']} image={Jt1065} />
@@ -212,12 +212,12 @@ function About(props) {
               />
               <FaceCard darkMode={darkMode} name="Miyu Yamane" subtext={['Bionics Software Lead']} image={my9689} />
 
-              {/* <FaceCard
+              <FaceCard
                 darkMode={darkMode}
                 name="Nathaniel Scott"
                 subtext={["Bionics Electrical Lead"]}
                 image={ns4593}
-              /> */}
+              />
 
               <FaceCard darkMode={darkMode} name="Arjun Shetty" subtext={['Bionics Mech Lead']} image={as3115} />
 
