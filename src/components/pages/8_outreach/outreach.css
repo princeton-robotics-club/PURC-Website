@@ -15,6 +15,10 @@
     background-image: url('../../../images/outreach/bgc_speaker_event.jpg');
   }
 
+  .img-sts-event {
+    background-image: url('../../../images/outreach/stem-to-stern-event.jpg');
+  }
+
   .img-first-robotics-event {
     background-image: url('../../../images/outreach/bgc_speaker_event.jpg');
   }
@@ -27,31 +31,52 @@
     background-image: url('../../../images/outreach/bgc_speaker_event.jpg');
   }
 
-  .outreach-logo-bgc {
+  .outreach-logo {
     border-radius: 8px 8px 0px 0px;
     height: 100px;
     width: 100%;
     padding: 0;
     margin: 0;
     background-position: center;
-    background-image: url('../../../images/outreach/black-girls-code.avif');
     background-repeat: no-repeat;
-    background-size: min(280px, 7vw);
+    background-size: 15%;
     float: left;
     clear: both;
     transition: all 0.1s ease;
   }
-  
-  .outreach-logo-bgc:hover {
-    background-size: min(290px, 8vw);
+
+  .outreach-logo:hover {
+    transform: scale(1.05);
     transition: all 0.1s ease;
   }
-  
-  .outreach-logo-bgc-dark {
+
+  .outreach-logo-dark {
     background-color: rgba(255, 143, 0, 0.7);
   }
-  
-  .outreach-logo-bgc-light {
+
+  .outreach-logo-light {
     background-color: rgba(0, 112, 255, 0.3);
     filter: invert(1);
+  }
+
+  .outreach-logo-bgc {
+    background-image: url('../../../images/outreach/black-girls-code.avif');
+    background-size: contain;
+  }
+
+  .outreach-logo-sts {
+    background-image: url('../../../images/outreach/stem-to-stern-logo.png');
+  }
+
+  .outreach-logo-first {
+    background-image: url('../../../images/outreach/first-robotics-logo.png');
+    background-size: 10%;
+  }
+
+  .outreach-logo-ppl {
+    background-image: url('../../../images/outreach/princeton-public-library-logo.png');
+  }
+
+  .outreach-logo-camden {
+    background-image: url('../../../images/outreach/camden-ferry-library-logo.png');
   }
