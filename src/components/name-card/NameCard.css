@@ -1,59 +1,65 @@
 .name-card {
-  height: -moz-max-content;
   height: fit-content;
-  margin-left: 20px;
-  margin-right: 20px;
-  /* padding-bottom: 10px; */
-  width: 200px;
-  /* min-height: 250px; */
-  margin-top: 0px;
-  border: 2px solid;
-  border-radius: 10px;
-  /* line-height: 25px; */
-  display: block;
-  /* float: left; */
-  margin-bottom: 30px;
-  overflow: auto;
-  filter: opacity(0.8);
-  transition: 0.4s;
+  width: 220px;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .name-card:hover {
-  filter: opacity(1);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.name-card-dark {
+  border-color: #444;
+  background-color: rgba(40, 40, 40, 0.8);
+  color: #f0f0f0;
+}
+
+.name-card-light {
+  border-color: #ddd;
+  background-color: rgba(250, 250, 250, 0.8);
+  color: #333;
 }
 
 .name-card-dark:hover {
   border-color: orange;
-  transition: 0.4s;
+  background-color: rgba(50, 50, 50, 0.9);
 }
 
 .name-card-light:hover {
   border-color: coral;
-  transition: 0.4s;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .caption {
-  width: calc(100% - 20px) !important;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 5px;
-  line-height: 150%;
+  width: 100%;
+  padding: 5px 0;
+  line-height: 1.5;
   text-align: left;
-  white-space: pre;
-  display: block;
-  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .name {
-  /* text-overflow: ellipsis; */
-  overflow-x: hidden;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
-  overflow-wrap: break-word;
-  /* word-break: break-all; */
 }
+
 .caption > .roles {
   width: 100%;
-  display: inline-block;
-  font-size: 12px;
+  display: block;
+  font-size: 13px;
+  line-height: 1.4;
+  opacity: 0.85;
 }

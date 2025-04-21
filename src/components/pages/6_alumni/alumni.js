@@ -85,42 +85,67 @@ function Alumni(props) {
               <div
                 style={{
                   display: 'flex',
-                  flexWrap: 'wrap',
+                  flexDirection: 'column',
                   width: '100%',
-                  justifyContent: 'center',
                   alignItems: 'center',
-                  gap: 8,
-                  paddingBottom: 40,
+                  paddingBottom: 30,
                 }}>
-                {years.map((year) => {
-                  return (
-                    <button
-                      style={{
-                        paddingBlock: 8,
-                        paddingInline: 30,
-                        borderRadius: 5,
-                        outline: 'none',
-                        backgroundColor: 'transparent',
-                        color: darkMode ? '#bbb' : '#222',
-                        cursor: 'pointer',
-                        fontSize: 18,
-                        fontFamily: 'Poppins',
-                      }}
-                      onClick={() => setSelectYear(year)}
-                      key={year}
-                      className={`year-button ${selectYear === year ? 'active' : ''} ${
-                        darkMode ? 'year-button-dark' : 'year-button-light'
-                      }`}>
+                <label
+                  htmlFor="year-select"
+                  style={{
+                    marginBottom: '10px',
+                    fontSize: '16px',
+                    fontWeight: 'bold',
+                    color: darkMode ? '#f0f0f0' : '#333',
+                  }}>
+                  Select Year:
+                </label>
+                <select
+                  id="year-select"
+                  value={selectYear}
+                  onChange={(e) => setSelectYear(Number(e.target.value))}
+                  className={`year-select ${darkMode ? 'year-select-dark' : 'year-select-light'}`}
+                  style={{
+                    padding: '10px 15px',
+                    borderRadius: '8px',
+                    fontSize: '16px',
+                    width: '200px',
+                    cursor: 'pointer',
+                    outline: 'none',
+                    border: darkMode ? '1px solid #555' : '1px solid #ddd',
+                    backgroundColor: darkMode ? 'rgba(40, 40, 40, 0.8)' : 'rgba(250, 250, 250, 0.8)',
+                    color: darkMode ? '#f0f0f0' : '#333',
+                    fontFamily: 'Poppins',
+                  }}>
+                  {years.map((year) => (
+                    <option key={year} value={year}>
                       {year}
-                    </button>
-                  );
-                })}
+                    </option>
+                  ))}
+                </select>
               </div>
-              {alumni
-                .filter((alumunus) => alumunus.years.includes(selectYear))
-                .map((alumnus, index) => {
-                  return <NameCard name={alumnus.name} subtext={alumnus.roles} key={`alumus-${index}`} />;
-                })}
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
+                  gap: '20px',
+                  justifyContent: 'center',
+                  width: '100%',
+                  padding: '0 10px',
+                }}>
+                {alumni
+                  .filter((alumunus) => alumunus.years.includes(selectYear))
+                  .map((alumnus, index) => {
+                    return (
+                      <NameCard
+                        name={alumnus.name}
+                        subtext={alumnus.roles}
+                        darkMode={darkMode}
+                        key={`alumus-${index}`}
+                      />
+                    );
+                  })}
+              </div>
             </div>
           </Card>
         </section>

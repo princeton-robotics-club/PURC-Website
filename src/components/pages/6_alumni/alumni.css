@@ -24,7 +24,75 @@
 
 .search:focus {
   border-color: coral;
+  box-shadow: 0 0 5px rgba(255, 127, 80, 0.5);
 }
+
 .search::placeholder {
   color: gray;
+}
+
+.year-select {
+  transition: all 0.3s ease;
+  appearance: none;
+  /* background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e"); */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 15px;
+  padding-right: 30px !important;
+  text-align: center;
+}
+
+.year-select:hover {
+  border-color: coral;
+}
+
+.year-select:focus {
+  border-color: coral;
+  box-shadow: 0 0 5px rgba(255, 127, 80, 0.5);
+}
+
+.year-select-dark {
+  border-color: #555;
+  background-color: rgba(40, 40, 40, 0.8);
+  color: #f0f0f0;
+}
+
+.year-select-light {
+  border-color: #ddd;
+  background-color: rgba(250, 250, 250, 0.8);
+  color: #333;
+}
+
+.year-select-dark:focus {
+  border-color: orange;
+  box-shadow: 0 0 5px rgba(255, 165, 0, 0.5);
+}
+
+.year-select-light:focus {
+  border-color: coral;
+  box-shadow: 0 0 5px rgba(255, 127, 80, 0.5);
+}
+
+.year-button {
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.year-button:hover {
+  transform: translateY(-2px);
+}
+
+.year-button.active {
+  border-color: coral;
+  font-weight: bold;
+}
+
+.year-button-dark.active {
+  border-color: orange;
+  color: white;
+}
+
+.year-button-light.active {
+  border-color: coral;
+  color: black;
 }

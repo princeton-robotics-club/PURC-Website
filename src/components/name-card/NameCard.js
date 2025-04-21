@@ -1,13 +1,11 @@
 import './NameCard.css';
 
-export default function NameCard({ name = '', subtext, darkMode }) {
+export default function NameCard({ name = '', subtext = [], darkMode = false }) {
   return (
-    <div className={'name-card' + (darkMode ? ' name-card-dark' : ' name-card-light')}>
+    <div className={`name-card ${darkMode ? 'name-card-dark' : 'name-card-light'}`}>
       <div className="caption">
-        <div className="name" style={{ fontWeight: 'bold' }}>
-          {name}
-        </div>
-        <p className="roles">{subtext.join(' • ')}</p>
+        <div className="name">{name}</div>
+        <div className="roles">{Array.isArray(subtext) ? subtext.join(' • ') : subtext}</div>
       </div>
     </div>
   );
