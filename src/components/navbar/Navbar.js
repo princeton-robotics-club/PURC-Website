@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { Tooltip } from "react-tooltip";
-import { Button } from "../button/Button";
-import "./Navbar.css";
-import NavbarItem from "./NavbarItem";
+import React, { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { Tooltip } from 'react-tooltip';
+import { Button } from '../button/Button';
+import './Navbar.css';
+import NavbarItem from './NavbarItem';
 
 function Navbar(props) {
   const { darkMode, toggleDarkMode } = props;
@@ -25,27 +25,23 @@ function Navbar(props) {
   const location = useLocation();
 
   useEffect(() => {
-    setJoinPath(location.pathname.indexOf("/join") === 0);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    setJoinPath(location.pathname.indexOf('/join') === 0);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [location.pathname]);
 
-  window.addEventListener("resize", showButton);
+  window.addEventListener('resize', showButton);
 
   return (
     <>
-      <nav className={"navbar " + (darkMode ? "navbar-dark" : "navbar-light")}>
+      <nav className={'navbar ' + (darkMode ? 'navbar-dark' : 'navbar-light')}>
         <div className="navbar-container">
           <Link
             onClick={() => {
               closeMobileMenu();
               toggleDarkMode();
-            }}
-          >
+            }}>
             <div
-              className={
-                "navbar-logo" +
-                (darkMode ? " navbar-logo-dark" : " navbar-logo-light")
-              }
+              className={'navbar-logo' + (darkMode ? ' navbar-logo-dark' : ' navbar-logo-light')}
               data-tooltip-id="logo-tooltip"
               data-tooltip-content="Click me to toggle dark mode!"
             />
@@ -55,46 +51,42 @@ function Navbar(props) {
           <Link
             to="/"
             onClick={closeMobileMenu}
-            className={
-              "navbar-logo-text" +
-              (darkMode ? " navbar-logo-text-dark" : " navbar-logo-text-light")
-            }
-          >
-            <div className={"navbar-logo-text-top"}>PRINCETON UNIVERSITY</div>
-            <div className={"navbar-logo-text-bottom"}>ROBOTICS CLUB</div>
+            className={'navbar-logo-text' + (darkMode ? ' navbar-logo-text-dark' : ' navbar-logo-text-light')}>
+            <div className={'navbar-logo-text-top'}>PRINCETON UNIVERSITY</div>
+            <div className={'navbar-logo-text-bottom'}>ROBOTICS CLUB</div>
           </Link>
 
           <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
+            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
 
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <NavbarItem
-              label={"Projects"}
-              link={"/projects"}
-              pathString={"/projects"}
+              label={'Projects'}
+              link={'/projects'}
+              pathString={'/projects'}
               dropdownOptions={[
-                "Droid",
-                "Pac-Bot",
-                "Drone",
-                "Golf Cart",
-                "Exoskeleton",
-                "RoboCup",
-                "Bionics",
-                "Tinker",
-                "WALL-E",
+                'Droid',
+                'Pac-Bot',
+                'Drone',
+                'Golf Cart',
+                'Exoskeleton',
+                'RoboCup',
+                'Bionics',
+                'Tinker',
+                'WALL-E',
                 // 'Rover',
               ]}
               dropdownLinks={[
-                "/projects#droid",
-                "/projects#pacbot",
-                "/projects#drone",
-                "/projects#golf",
-                "/projects#exoskeleton",
-                "/projects#robocup",
-                "/projects#bionics",
-                "/projects#tinker",
-                "/projects#wall-e",
+                '/projects#droid',
+                '/projects#pacbot',
+                '/projects#drone',
+                '/projects#golf',
+                '/projects#exoskeleton',
+                '/projects#robocup',
+                '/projects#bionics',
+                '/projects#tinker',
+                '/projects#wall-e',
                 // '/projects#rover',
               ]}
               closeMobile={closeMobileMenu}
@@ -102,9 +94,9 @@ function Navbar(props) {
             />
 
             <NavbarItem
-              label={"Supporters"}
-              link={"/supporters"}
-              pathString={"/supporters"}
+              label={'Supporters'}
+              link={'/supporters'}
+              pathString={'/supporters'}
               dropdownOptions={[]}
               dropdownLinks={[]}
               closeMobile={closeMobileMenu}
@@ -112,9 +104,9 @@ function Navbar(props) {
             />
 
             <NavbarItem
-              label={"Outreach"}
-              link={"/outreach"}
-              pathString={"/outreach"}
+              label={'Outreach'}
+              link={'/outreach'}
+              pathString={'/outreach'}
               dropdownOptions={[]}
               dropdownLinks={[]}
               closeMobile={closeMobileMenu}
@@ -122,31 +114,31 @@ function Navbar(props) {
             />
 
             <NavbarItem
-              label={"About Us"}
-              link={"/about"}
-              pathString={"/about"}
+              label={'About Us'}
+              link={'/about'}
+              pathString={'/about'}
               dropdownOptions={[
-                "Officers",
-                "Leads",
-                "Faculty",
+                'Officers',
+                'Leads',
+                'Faculty',
                 // 'Members',
-                // 'Alumni'
+                'Alumni',
               ]}
               dropdownLinks={[
-                "/about#officers",
-                "/about#leads",
-                "/about#faculty",
+                '/about#officers',
+                '/about#leads',
+                '/about#faculty',
                 // '/members',
-                // '/alumni'
+                '/alumni',
               ]}
               closeMobile={closeMobileMenu}
               darkMode={darkMode}
             />
 
             <NavbarItem
-              label={"Gallery"}
-              link={"/gallery"}
-              pathString={"/gallery"}
+              label={'Gallery'}
+              link={'/gallery'}
+              pathString={'/gallery'}
               dropdownOptions={[]}
               dropdownLinks={[]}
               closeMobile={closeMobileMenu}
@@ -156,13 +148,10 @@ function Navbar(props) {
             <li>
               <Link
                 to="/join"
-                className={
-                  joinPath ? "nav-links-mobile-red" : "nav-links-mobile"
-                }
+                className={joinPath ? 'nav-links-mobile-red' : 'nav-links-mobile'}
                 onClick={() => {
                   closeMobileMenu();
-                }}
-              >
+                }}>
                 JOIN
               </Link>
             </li>
@@ -170,9 +159,8 @@ function Navbar(props) {
           {button && (
             <Button
               buttonStyle="btn--outline"
-              buttonSize={joinPath ? "btn--medium--colored" : "btn--medium"}
-              darkMode={darkMode}
-            >
+              buttonSize={joinPath ? 'btn--medium--colored' : 'btn--medium'}
+              darkMode={darkMode}>
               JOIN
             </Button>
           )}

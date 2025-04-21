@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import Arthurts from '../../../images/about/arthurts.jpg';
 import Cg6149 from '../../../images/about/cg6149.png';
 import Df1314 from '../../../images/about/df1314.jpg';
@@ -28,10 +28,33 @@ function Alumni(props) {
 
   const [alumni, setAlumni] = useState(alumniData);
 
+  const [searchQuery, setSearchQuery] = useState('');
+  const searchInputRef = useRef(null);
+
   const handleSearch = (e) => {
-    const query = e.target.value;
-    const filtered = alumniData.filter((alumnus) => alumnus.name.toLowerCase().includes(query.toLowerCase()));
+    const query = e.target.value.toLowerCase().trim();
+    setSearchQuery(query);
+
+    if (query === '') {
+      setAlumni(alumniData);
+      return;
+    }
+
+    const filtered = alumniData.filter(
+      (alumnus) =>
+        alumnus.name.toLowerCase().includes(query) ||
+        (alumnus.roles && alumnus.roles.some((role) => role.toLowerCase().includes(query)))
+    );
     setAlumni(filtered);
+  };
+
+  const clearSearch = () => {
+    setSearchQuery('');
+    setAlumni(alumniData);
+    if (searchInputRef.current) {
+      searchInputRef.current.value = '';
+      searchInputRef.current.focus();
+    }
   };
 
   return (
@@ -77,7 +100,8 @@ function Alumni(props) {
                 <input
                   className={'search ' + (darkMode ? 'search-dark' : 'search-light')}
                   placeholder="Type a name to search ... "
-                  onSubmit={handleSearch}
+                  onChange={handleSearch}
+                  value={searchQuery}
                 />
               </div>
             </div>
