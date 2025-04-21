@@ -58,11 +58,18 @@ function Outreach(props) {
           />
           <div>
             <div className="supp-info-text supp-info-text-e-quad">
-              Black Girls Code is a non-profit organization that aims to
-              increase interest and participation in computer science among
-              young women and girls of color. They provide workshops,
-              hackathons, and other events to teach coding and technology
-              skills.
+              In October 2024, we (alongside Princeton’s National Society of
+              Black Engineers and Princeton’s Society of Women Engineers) had
+              the honor of welcoming the CEO of Black Girls Code, Cristina
+              Mancini, to Richardson Auditorium for a speaker event. This
+              speaker event was the inaugural event of PURC's DEI Initiative,
+              our latest contribution to our mission of making the world of STEM
+              and robotics accessible and welcome to members of every community.
+              Afterwards, we hosted a reception where attendees (including some
+              nearby high school students!) were able to speak with Mancini
+              one-on-one. We are grateful to Mancini and her team at BGC, as
+              well as SWE, NSBE, and the many Princeton
+              organizations/departments who made this event possible!!
             </div>
           </div>
           <div className="img-outreach-event" id="img-bgc-event" />
@@ -85,14 +92,18 @@ function Outreach(props) {
           />
           <div>
             <div className="supp-info-text supp-info-text-e-quad">
-              The STEM to Stern program uses rowing to bring people together
-              across racial and socioeconomic boundaries. By creating diverse
-              rowing teams, we foster relationships that change lives and
-              improve society. In a country as divided as it is, STEM to Stern
-              is a program that shows what is possible when we come together.
+              Throughout 2024–2025, we collaborated with STEM to Stern to host
+              robotics workshops for kids! Our PacBot, Tinker, and Droid teams
+              walked through a variety of activities, from learning about
+              obstacle avoidance to building working lightsabers. We had a lot
+              of fun at these sessions and are looking forward to more in the
+              coming years!
             </div>
           </div>
-          <div className="img-outreach-event img-sts-event" id="img-sts-event" />
+          <div
+            className="img-outreach-event img-sts-event"
+            id="img-sts-event"
+          />
         </Card>
 
         {/* <Card
