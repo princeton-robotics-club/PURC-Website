@@ -1,82 +1,117 @@
 .img-outreach-event {
-    border-radius: 0px 0px 10px 0px;
-    height: 490px;
-    width: 45%;
-    padding: 0;
-    background-position: center;
-    background-image: url('../../../images/outreach/bgc_speaker_event.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    float: right;
-    transition: all 0.1s ease;
+  border-radius: 0px 0px 10px 0px;
+  height: 490px;
+  width: 45%;
+  padding: 0;
+  background-position: center;
+  background-image: url("../../../images/outreach/bgc_speaker_event.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: right;
+  transition: all 0.1s ease;
 }
 
-  .img-bgc-event {
-    background-image: url('../../../images/outreach/bgc_speaker_event.jpg');
-  }
+.img-bgc-event {
+  background-image: url("../../../images/outreach/bgc_speaker_event.jpg");
+}
 
-  .img-sts-event {
-    background-image: url('../../../images/outreach/stem-to-stern-event.jpg');
-  }
+.img-sts-event {
+  background-image: url("../../../images/outreach/stem-to-stern-event.jpg");
+}
 
-  .img-first-robotics-event {
-    background-image: url('../../../images/outreach/bgc_speaker_event.jpg');
-  }
+.img-first-robotics-event {
+  background-image: url("../../../images/outreach/bgc_speaker_event.jpg");
+}
 
-  .img-princeton-library-event {
-    background-image: url('../../../images/outreach/bgc_speaker_event.jpg');
-  }
+.img-princeton-library-event {
+  background-image: url("../../../images/outreach/bgc_speaker_event.jpg");
+}
 
-  .img-camden-library-event {
-    background-image: url('../../../images/outreach/bgc_speaker_event.jpg');
-  }
+.img-camden-library-event {
+  background-image: url("../../../images/outreach/bgc_speaker_event.jpg");
+}
 
-  .outreach-logo {
-    border-radius: 8px 8px 0px 0px;
-    height: 100px;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 15%;
-    float: left;
-    clear: both;
-    transition: all 0.1s ease;
-  }
+.outreach-logo {
+  border-radius: 8px 8px 0px 0px;
+  height: 100px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 15%;
+  float: left;
+  clear: both;
+  transition: all 0.1s ease;
+}
 
-  .outreach-logo:hover {
-    transform: scale(1.05);
-    transition: all 0.1s ease;
-  }
+.outreach-logo:hover {
+  transform: scale(1.05);
+  transition: all 0.1s ease;
+}
 
-  .outreach-logo-dark {
-    background-color: rgba(255, 143, 0, 0.7);
-  }
+.outreach-logo-dark {
+  background-color: rgba(255, 143, 0, 0.7);
+}
 
-  .outreach-logo-light {
-    background-color: rgba(0, 112, 255, 0.3);
-    filter: invert(1);
-  }
+.outreach-logo-light {
+  background-color: rgba(0, 112, 255, 0.3);
+  filter: invert(1);
+}
 
-  .outreach-logo-bgc {
-    background-image: url('../../../images/outreach/black-girls-code.avif');
-    background-size: contain;
-  }
+.outreach-logo-bgc {
+  background-image: url("../../../images/outreach/black-girls-code.avif");
+  background-size: contain;
+}
 
-  .outreach-logo-sts {
-    background-image: url('../../../images/outreach/stem-to-stern-logo.png');
-  }
+.outreach-logo-sts {
+  background-image: url("../../../images/outreach/stem-to-stern-logo.png");
+}
 
-  .outreach-logo-first {
-    background-image: url('../../../images/outreach/first-robotics-logo.png');
-    background-size: 10%;
-  }
+.outreach-logo-first {
+  background-image: url("../../../images/outreach/first-robotics-logo.png");
+  background-size: 10%;
+}
 
-  .outreach-logo-ppl {
-    background-image: url('../../../images/outreach/princeton-public-library-logo.png');
-  }
+.outreach-logo-ppl {
+  background-image: url("../../../images/outreach/princeton-public-library-logo.png");
+}
 
-  .outreach-logo-camden {
-    background-image: url('../../../images/outreach/camden-ferry-library-logo.png');
-  }
+.outreach-logo-camden {
+  background-image: url("../../../images/outreach/camden-ferry-library-logo.png");
+}
+
+.princeton-splash-event {
+  background-image: url("../../../images/outreach/princeton-splash-event.jpg");
+}
+
+.princeton-splash-logo {
+  border-radius: 8px 8px 0px 0px;
+  height: 100px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 10%;
+  float: left;
+  clear: both;
+  transition: all 0.1s ease;
+}
+
+.outreach-logo-princeton-splash {
+  background-image: url("../../../images/outreach/princeton-splash.png");
+}
+
+#img-princeton-splash-event {
+  border-radius: 0px 0px 10px 0px;
+  height: 490px;
+  width: 45%;
+  padding: 0;
+  background-position: center;
+  background-image: url("../../../images/outreach/princeton-splash-event.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: right;
+  transition: all 0.1s ease;
+}

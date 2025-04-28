@@ -106,7 +106,7 @@ function Outreach(props) {
           />
         </Card>
 
-        {/* <Card
+        <Card
           darkMode={darkMode}
           className={
             "text-box full-width" +
@@ -115,31 +115,34 @@ function Outreach(props) {
         >
           <Link
             className={
-              "outreach-logo outreach-logo-ppl" +
-              (darkMode ? " outreach-logo-dark" : " outreach-logo-light")
+              "outreach-logo-princeton-splash outreach-logo-princeton-splash-ppl princeton-splash-logo" +
+              (darkMode
+                ? " outreach-logo-dark"
+                : " outreach-logo-light")
             }
-            to="https://princetonlibrary.org/"
-            title="Princeton Public Library"
+            to="https://princeton.learningu.org/aboutus.html"
+            title="Princeton Splash"
           />
           <div>
             <div className="supp-info-text supp-info-text-e-quad">
-              Princeton Public Library is a vibrant community resource dedicated
-              to fostering a love of learning and reading. With an extensive
-              collection of books, digital media, and educational programs, the
-              library offers a space for individuals of all ages to explore new
-              ideas and expand their knowledge. As a non-profit institution,
-              Princeton Public Library also hosts cultural events, workshops,
-              and activities, making it a hub for creativity, connection, and
-              lifelong learning in the Princeton area.
+              “Splash is a one-day event where local high school students join
+              us on Princeton’s campus to take classes taught by Princeton
+              students, on anything and everything (think Intro to Beatboxing or
+              Chemistry of Chocolate). In past years, [they have] welcomed more
+              than 250 students and 50 teachers to our annual learning
+              extravaganza.” In both 2024 and 2025, we had the privilege of
+              hosting sessions on various themes, including building a laser
+              trip wire with Raspberry Pi (led by School Outreach Co-Leads
+              Divija and Zach), and “Robotics & You” (taught by Bionics
+              Electrical Lead Nate) a fundamentals class on the
+              engineering/design process that goes into making a robot from
+              scratch!
             </div>
           </div>
-          <div
-            className="img-outreach-event"
-            id="img-princeton-library-event"
-          />
+          <div className="img-outreach-event" id="img-princeton-splash-event" />
         </Card>
 
-        <Card
+        {/* <Card
           darkMode={darkMode}
           className={
             "text-box full-width" +
