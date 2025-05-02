@@ -122,14 +122,14 @@ function Navbar(props) {
                 'Leads',
                 'Faculty',
                 // 'Members',
-                'Alumni',
+                // 'Alumni',
               ]}
               dropdownLinks={[
                 '/about#officers',
                 '/about#leads',
                 '/about#faculty',
                 // '/members',
-                '/alumni',
+                // '/alumni',
               ]}
               closeMobile={closeMobileMenu}
               darkMode={darkMode}

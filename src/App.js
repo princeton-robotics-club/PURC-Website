@@ -41,7 +41,7 @@ function App() {
           <Route path="/about" exact element={<About darkMode={darkMode} />} />
           <Route path="/gallery" exact element={<Gallery darkMode={darkMode} />} />
           <Route path="/gallery/upload" element={<GalleryUpload darkMode={darkMode} />} />
-          {/* <Route path="/alumni" exact element={<Alumni darkMode={darkMode} />} /> */}
+          <Route path="/alumni" exact element={<Alumni darkMode={darkMode} />} />
           <Route path="/members" exact element={<Members darkMode={darkMode} />} />
           <Route path="/join" exact element={<Join darkMode={darkMode} />} />
           <Route path="/outreach" exact element={<Outreach darkMode={darkMode} />} />
