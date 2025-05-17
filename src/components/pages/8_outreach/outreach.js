@@ -115,10 +115,37 @@ function Outreach(props) {
         >
           <Link
             className={
-              "outreach-logo-princeton-splash outreach-logo-princeton-splash-ppl princeton-splash-logo" +
-              (darkMode
-                ? " outreach-logo-dark"
-                : " outreach-logo-light")
+              "outreach-logo outreach-logo-camden" +
+              (darkMode ? " outreach-logo-dark" : " outreach-logo-light")
+            }
+            to="https://www.camdencountylibrary.org/riletta-l-cream-ferry-avenue-branch"
+            title="Ferry Ave Library"
+          />
+          <div>
+            <div className="supp-info-text supp-info-text-e-quad">
+              Throughout 2024–2025, we hosted sessions at Ferry Ave Library in
+              Camden, NJ, where we went over topics like building circuits and
+              writing code, as well as led kids through designing their own Lego
+              minifigures that they could take home!
+            </div>
+          </div>
+          <div
+            className="img-outreach-event img-camden-event"
+            id="img-camden-event"
+          />
+        </Card>
+
+        <Card
+          darkMode={darkMode}
+          className={
+            "text-box full-width" +
+            (darkMode ? " text-box-dark" : " text-box-light")
+          }
+        >
+          <Link
+            className={
+              "outreach-logo outreach-logo-princeton-splash outreach-logo-princeton-splash-ppl princeton-splash-logo" +
+              (darkMode ? " outreach-logo-dark" : " outreach-logo-light")
             }
             to="https://princeton.learningu.org/aboutus.html"
             title="Princeton Splash"
@@ -140,6 +167,44 @@ function Outreach(props) {
             </div>
           </div>
           <div className="img-outreach-event" id="img-princeton-splash-event" />
+        </Card>
+
+        <Card
+          darkMode={darkMode}
+          className={
+            "text-box full-width" +
+            (darkMode ? " text-box-dark" : " text-box-light")
+          }
+        >
+          <Link
+            className={
+              "outreach-logo outreach-logo-winter" +
+              (darkMode ? " outreach-logo-dark" : " outreach-logo-light")
+            }
+            to="https://winter.princeton.edu"
+            title="Princeton Wintersession"
+          />
+          <div>
+            <div className="supp-info-text supp-info-text-e-quad">
+              “
+              <a href="https://winter.princeton.edu/whatiswintersession">
+                Wintersession
+              </a>{" "}
+              is a free, two-week conference/festival that allows Princeton
+              University undergraduate students, graduate students, postdocs,
+              faculty, and staff to experiment and explore through unexpected,
+              active and intriguing non-graded learning and growth
+              opportunities.”
+            </div>
+            <div className="supp-info-text supp-info-text-e-quad">
+              During Wintersession 2024, we taught a course (led by Co-President
+              Aidan) on creating your own video game using the Python game
+              development module Pygame. In two sessions, attendees learned
+              Pygame, and had a week to work on their very own game before
+              having the chance to showcase it in an expo and also play games
+              made by their peers!
+            </div>
+          </div>
         </Card>
 
         {/* <Card

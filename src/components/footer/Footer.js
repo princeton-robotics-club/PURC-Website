@@ -32,7 +32,7 @@ function Footer(props) {
                    className='footer-tooltip' />
 
           <div className={'footer-text' + (darkMode ? ' footer-text-dark' : ' footer-text-light')}>
-            © 2023 The Trustees of Princeton University
+            © {new Date().getFullYear()} The Trustees of Princeton University
           </div>
 
           <div className='social-icons'>

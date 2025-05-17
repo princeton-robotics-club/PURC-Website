@@ -19,6 +19,10 @@
   background-image: url("../../../images/outreach/stem-to-stern-event.jpg");
 }
 
+.img-camden-event {
+  background-image: url("../../../images/outreach/camden-ferry-library-event.png");
+}
+
 .img-first-robotics-event {
   background-image: url("../../../images/outreach/bgc_speaker_event.jpg");
 }
@@ -79,6 +83,10 @@
 
 .outreach-logo-camden {
   background-image: url("../../../images/outreach/camden-ferry-library-logo.png");
+}
+
+.outreach-logo-winter {
+  background-image: url("../../../images/outreach/winter-session-logo.png");
 }
 
 .princeton-splash-event {
