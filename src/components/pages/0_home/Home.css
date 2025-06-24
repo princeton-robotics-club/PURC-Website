@@ -77,42 +77,37 @@
 
 #hero-img-1 {
   background-image: linear-gradient(rgba(231, 117, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(3, 162, 220, 0.6)),
-    url(../../../images/home/team25-1.jpg);
-  /* url(../../../images/home/droid-2.jpg); */
+    url(../../../images/home/droid-2.jpg);
   animation-delay: 0s, -2s;
 }
 
 #hero-img-2 {
   background-image: linear-gradient(rgba(231, 117, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(3, 162, 220, 0.6)),
-    url(../../../images/home/team25-2.jpg);
-  /* url(../../../images/home/droid-1.jpg); */
+    url(../../../images/home/droid-1.jpg);
   animation-delay: 8s, 6s;
 }
 
 #hero-img-3 {
   background-image: linear-gradient(rgba(231, 117, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(3, 162, 220, 0.6)),
-    url(../../../images/home/team25-3.jpg);
-  /* url(../../../images/home/pacbot-2.jpg); */
+    url(../../../images/home/pacbot-2.jpg);
   animation-delay: 16s, 14s;
 }
 
 #hero-img-4 {
   background-image: linear-gradient(rgba(231, 117, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(3, 162, 220, 0.6)),
-    url(../../../images/home/team25-4.jpg);
-  /* url(../../../images/home/pacbot-4.jpg); */
+    url(../../../images/home/pacbot-4.jpg);
   animation-delay: 24s, 22s;
 }
 
 #hero-img-5 {
   background-image: linear-gradient(rgba(231, 117, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(3, 162, 220, 0.6)),
-    url(../../../images/home/team25-5.jpg);
-  /* url(../../../images/home/drone-2.jpg); */
+    url(../../../images/home/drone-2.jpg);
   animation-delay: 32s, 30s;
 }
 
 #hero-img-6 {
   background-image: linear-gradient(rgba(231, 117, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(3, 162, 220, 0.6)),
-    url(../../../images/home/droid-2.jpg);
+    url(../../../images/home/drone-1.jpg);
   animation-delay: 40s, 38s;
 }
 
