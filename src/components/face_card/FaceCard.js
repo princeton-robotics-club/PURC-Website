@@ -1,7 +1,15 @@
 import "./FaceCard.css";
 
 function FaceCard(props) {
-  const { darkMode, name = "", subtext = [], image = null } = props;
+  const {
+    darkMode,
+    name = "",
+    subtext = [],
+    image = null,
+    gradYear = "",
+    major = "",
+    disableOverlay = false, //disabling the popup for the faculty advisors
+  } = props;
 
   return (
     <div
@@ -19,6 +27,14 @@ function FaceCard(props) {
             backgroundRepeat: "no-repeat",
           }}
         />
+
+        {/*popup feature only renders only if disableOverlay is off*/}
+        {!disableOverlay && (
+          <div className="face-overlay">
+            {gradYear && <div>{gradYear}</div>}
+            {major && <div>{major}</div>}
+          </div>
+        )}
 
         <div className="caption">
           <div style={{ fontWeight: "bold" }}>{name}</div>

@@ -1,5 +1,5 @@
 .about-bg-img {
-  background-image: url('../../../images/about/bg_about.png');
+  background-image: url("../../../images/about/bg_about.png");
   background-size: 400px;
   position: fixed;
   left: 0;
@@ -42,12 +42,12 @@
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
+  word-break: keep-all;
 }
 
 /* ------------------------------------------------------------------------- */
 
 @media screen and (max-width: 400px) {
-
   .centered-heading {
     font-size: 2rem;
     padding-left: 30px;
@@ -58,7 +58,6 @@
 /* ------------------------------------------------------------------------- */
 
 @media screen and (max-width: 350px) {
-
   .centered-heading {
     font-size: 1.7rem;
     padding-left: 20px;
