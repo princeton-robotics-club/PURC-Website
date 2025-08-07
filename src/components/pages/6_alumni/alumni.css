@@ -6,7 +6,7 @@
   font-size: 1.3rem;
   padding: 5px 22px;
   border-radius: 10px;
-  font-family: 'Century Gothic';
+  font-family: "Century Gothic";
   text-align: center;
 }
 
@@ -95,4 +95,14 @@
 .year-button-light.active {
   border-color: coral;
   color: black;
+}
+
+.adminFaceCards,
+.memberFaceCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  padding: 0 100px;
 }

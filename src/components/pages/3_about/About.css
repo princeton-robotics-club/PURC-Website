@@ -42,7 +42,6 @@
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  word-break: keep-all;
 }
 
 /* ------------------------------------------------------------------------- */
