@@ -10,6 +10,7 @@ import Ab0824 from "../../../images/about/ab0824.jpg";
 import Ih2422 from "../../../images/about/ih2422.jpg";
 import Jt1065 from "../../../images/about/jt1065.jpg";
 import Dc4266 from "../../../images/about/dc4266.jpg";
+import dsingh from "../../../images/about/dsingh.png";
 
 export const memberData = [
   {
@@ -30,11 +31,19 @@ export const memberData = [
   },
   {
     name: "Jack Toubes",
-    roles: ["Pacbot\nLow-Level Lead 2022-24\nHardware Lead 2024-25"],
+    roles: ["Pacbot\nLow-Level Lead 2021-24\nHardware Lead 2024-25"],
     gradYear: "Class of 2025",
-    years: ["2022 - 2023", "2023 - 2024", "2024 - 2025"],
+    years: ["2021 - 2022", "2022 - 2023", "2023 - 2024", "2024 - 2025"],
     major: "Electrical & Computer Engineering",
     image: Jt1065,
+  },
+  {
+    name: "Dave Singh",
+    roles: ["Pacbot\nMechanical Lead 2021-22"],
+    gradYear: "Class of 2024",
+    years: ["2021 - 2022"],
+    major: "Mechanical & Aerospace Engineering",
+    image: dsingh,
   },
   {
     name: "Kevin Phan",

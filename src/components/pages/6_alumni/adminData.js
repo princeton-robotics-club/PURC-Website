@@ -6,6 +6,7 @@ import Ab0824 from "../../../images/about/ab0824.jpg";
 import Jt7347 from "../../../images/about/jt7347.jpg";
 import An4978 from "../../../images/about/an4978.jpg";
 import Mh6419 from "../../../images/about/mh6419.jpg";
+import lglisic from "../../../images/about/lglisic.jpg";
 
 export const adminData = [
   {
@@ -15,14 +16,6 @@ export const adminData = [
     years: ["2023 - 2024", "2022 - 2023"],
     major: "Electrical & Computer Engineering",
     image: Ab0824,
-  },
-  {
-    name: "Ian Henriques",
-    roles: ["Co-President 2023-24", "Admin Member 2022-23"],
-    years: ["2022 - 2023", "2023 - 2024"],
-    gradYear: "Class of 2025",
-    major: "Electrical & Computer Engineering",
-    image: Ih2422,
   },
   {
     name: "Ernest McCarter",
@@ -42,12 +35,29 @@ export const adminData = [
     image: Jt7347,
   },
   {
+    name: "Ian Henriques",
+    roles: ["Co-President 2023-24", "Admin Member 2022-23"],
+    years: ["2022 - 2023", "2023 - 2024"],
+    gradYear: "Class of 2025",
+    major: "Electrical & Computer Engineering",
+    image: Ih2422,
+  },
+
+  {
     name: "Andy Nguyen",
     roles: ["Treasurer 2023-24"],
     gradYear: "Class of 2025",
     years: ["2023 - 2024"],
     major: "Electrical & Computer Engineering",
     image: An4978,
+  },
+  {
+    name: "Lana Glisic",
+    roles: ["Training Lead 2022-23"],
+    gradYear: "Class of 2026",
+    years: ["2022 - 2023"],
+    major: "Computer Science",
+    image: lglisic,
   },
   {
     name: "Maria Hefferman",
@@ -61,7 +71,7 @@ export const adminData = [
     name: "Jack Toubes",
     roles: ["Admin Member 2022-24"],
     gradYear: "Class of 2025",
-    years: ["2022 - 2023", "2023 - 2024"],
+    years: ["2022 - 2023", "2023 - 2024", "2024 - 2025"],
     major: "Electrical & Computer Engineering",
     image: Jt1065,
   },
