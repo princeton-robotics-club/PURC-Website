@@ -168,14 +168,14 @@ function About(props) {
                 major="Computer Science"
                 image={jm7828}
               />
-              <FaceCard
+              {/* <FaceCard
                 darkMode={darkMode}
                 name="Glen Nfor"
                 subtext={["Web Development Co-Lead"]}
                 gradYear="Class of 2027"
                 major="Electrical & Computer Engineering"
                 image={Gn7269}
-              />
+              /> */}
               <FaceCard
                 darkMode={darkMode}
                 name="Mahir Majid"
