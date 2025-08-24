@@ -8,6 +8,7 @@ import An4978 from "../../../images/about/an4978.jpg";
 import Mh6419 from "../../../images/about/mh6419.jpg";
 import lglisic from "../../../images/about/lglisic.jpg";
 import Fh9696 from "../../../images/about/fh9696.jpg";
+import Gn7269 from "../../../images/about/gn7269.jpg";
 
 export const adminData = [
   {
@@ -90,5 +91,13 @@ export const adminData = [
     years: ["2023 - 2024"],
     major: "Electrical & Computer Engineering",
     image: Cg6149,
+  },
+  {
+    name: "Glen Nfor",
+    roles: ["Web Development\nCo-Lead 2023-24"],
+    gradYear: "Class of 2027",
+    years: ["2023 - 2024"],
+    major: "Electrical & Computer Engineering",
+    image: Gn7269,
   },
 ];

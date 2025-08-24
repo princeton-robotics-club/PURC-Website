@@ -38,6 +38,12 @@ import Cy4383 from "../../../images/about/cy4383.jpg";
 import Dk6149 from "../../../images/about/dk6149.jpeg";
 import Ot8429 from "../../../images/about/ot8429.jpg";
 import Qh9879 from "../../../images/about/qh9879.jpg";
+import schan from "../../../images/about/schan.jpeg";
+import mthanh from "../../../images/about/mthanh.jpeg";
+import gkopf from "../../../images/about/gkopf.png";
+import rgupta from "../../../images/about/rgupta.jpeg";
+import kharting from "../../../images/about/kharting.jpeg";
+import mlloyd from "../../../images/about/mlloyd.jpeg";
 
 function About(props) {
   const { darkMode } = props;
@@ -243,14 +249,54 @@ function About(props) {
                 major="Mechanical & Aerospace Engineering"
                 image={Dk6149}
               />
-              {/* <FaceCard
+              <FaceCard
                 darkMode={darkMode}
-                name="Maria Heffernen"
+                name="Skyler Chan"
                 subtext={["Administrative Officer"]}
-                gradYear="Class of 2025"
+                gradYear="Class of 2028"
+                major="Operations Research & Financial Engineering"
+                image={schan}
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="George Kopf"
+                subtext={["Administrative Officer"]}
+                gradYear="Class of 2027"
                 major="Electrical & Computer Engineering"
-                image={Mh6419}
-              /> */}
+                image={gkopf}
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Minh Thanh Nguyen"
+                subtext={["Administrative Officer"]}
+                gradYear="Class of 2027"
+                major="Mechanical & Aerospace Engineering"
+                image={mthanh}
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Ranajoy Gupta"
+                subtext={["Administrative Officer"]}
+                gradYear="Class of 2028"
+                major="Electrical & Computer Engineering"
+                image={rgupta}
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Kai Harting"
+                subtext={["Administrative Officer"]}
+                gradYear="Class of 2028"
+                major="Chemical and Biological Engineering"
+                image={kharting}
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Maxwell Lloyd"
+                subtext={["Administrative Officer"]}
+                gradYear="Class of 2027"
+                major="Computer Science"
+                image={mlloyd}
+              />
             </div>
           </Card>
 
