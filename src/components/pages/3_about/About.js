@@ -52,6 +52,7 @@ import csaran from "../../../images/about/csaran.jpg";
 import cli from "../../../images/about/cli.png";
 import tsadowy from "../../../images/about/tsadowy.png";
 import jmendes from "../../../images/about/jmendes.jpeg";
+import hsoto from "../../../images/about/hsoto.jpg";
 
 function About(props) {
   const { darkMode } = props;
@@ -362,6 +363,14 @@ function About(props) {
                 gradYear="Class of 2026"
                 major="Electrical & Computer Engineering"
                 image={Vv5226}
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Hennessy Soto"
+                subtext={["Drone VTOL HW Lead"]}
+                gradYear="Class of 2027"
+                major="Mechanical & Aerospace Engineering"
+                image={hsoto}
               />
               <FaceCard
                 darkMode={darkMode}
