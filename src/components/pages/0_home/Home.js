@@ -123,7 +123,7 @@ function Home(props) {
             <Card
               darkMode={darkMode}
               className={'text-box text-box-padded' + (darkMode ? ' text-box-dark' : ' text-box-light')}>
-              <div className="centered-heading">MEETING SCHEDULE FOR 25/26</div>
+              <div className="centered-heading">MEETING SCHEDULE FOR 24/25</div>
               {/* <p>
                 Our meeting schedule for the 2023/2024 academic year will be available soon. Prospective and current
                 members should stay tuned for details on the upcoming weekly schedule for our various teams starting
@@ -138,79 +138,83 @@ function Home(props) {
               <b>Saturdays</b>
               <ul>
                 <li>
-                  12:00 - 1:30 pm{' '}
+                  1:00 - 3:00 pm{' '}
                   <span className="text-pacbot">
                     <b>:</b>
                   </span>{' '}
-                  Drone (VTOL)
+                  Pacbot
                 </li>
                 <li>
-                  1:30 - 3:00 pm{' '}
-                  <span className="text-pacbot">
-                    <b>:</b>
-                  </span>{' '}
-                  Drone (Hoverloon)
+                  3:00 - 4:00 pm <b>:</b> Trainings
                 </li>
                 <li>
-                  3:00 - 5:00 pm{' '}
-                  <span className="text-pacbot">
-                    <b>:</b>
-                  </span>{' '}
-                  PacBot
-                </li>
-                <li>
-                  5:00 - 6:00 pm <b>:</b> Training
-                </li>
-                <li>
-                  6:00 - 7:00 pm <b>:</b> PURDinner @ NCW/YEH PDR (Check Discord)
-                </li>
-                <li>
-                  7:00 - 8:30 pm{' '}
-                  <span className="text-tinker">
-                    <b>:</b>
-                  </span>{' '}
-                  Tinker
-                </li>
-              </ul>
-              <b>Sundays</b>
-              <ul>
-                <li>
-                  12:00 - 1:30 pm{' '}
-                  <span className="text-exo">
-                    <b>:</b>
-                  </span>{' '}
-                  Droid
-                </li>
-                <li>
-                  1:30 - 3:00 pm{' '}
-                  <span className="text-exo">
+                  4:00 - 5:30 pm{' '}
+                  <span className="text-wall-e">
                     <b>:</b>
                   </span>{' '}
                   WALL-E
                 </li>
                 <li>
-                  3:00 - 4:30 pm{' '}
+                  4:00 - 5:30 pm{' '}
+                  <span className="text-golf">
+                    <b>:</b>
+                  </span>{' '}
+                  Golf Cart (Meeting @ Alleyway between Andlinger Center and the part of E-Quad farthest from Nassau)
+                </li>
+                <li>
+                  5:30 - 7:00 pm{' '}
+                  <span className="text-droid">
+                    <b>:</b>
+                  </span>{' '}
+                  BB-8 Droid
+                </li>
+                <li>
+                  7:15 pm <b>:</b> Dinner @ NCW/YEH PDR (Check Discord)
+                </li>
+              </ul>
+              <b>Sundays</b>
+              <ul>
+                <li>
+                  11:30 - 1:00 pm{' '}
+                  <span className="text-tinker">
+                    <b>:</b>
+                  </span>{' '}
+                  Tinker
+                </li>
+                <li>
+                  1:00 - 2:30 pm{' '}
+                  <span className="text-exo">
+                    <b>:</b>
+                  </span>{' '}
+                  Exoskeleton
+                </li>
+                <li>
+                  2:30 - 4:00 pm{' '}
                   <span className="text-drone">
                     <b>:</b>
                   </span>{' '}
-                  Hexapod
+                  Drone
                 </li>
-                <li>
-                  3:00 - 4:30 pm{' '}
-                  <span className="text-drone">
+                {/* <li>
+                  4:00 - 5:30 pm{' '}
+                  <span className="text-rover">
                     <b>:</b>
                   </span>{' '}
-                  Golf Cart (in Andlinger Center)
-                </li>
+                  Rover
+                </li> */}
                 <li>
-                  4:30 - 6:00 pm{' '}
+                  4:00 - 5:30 pm{' '}
                   <span className="text-robocup">
                     <b>:</b>
                   </span>{' '}
-                  Bionics
+                  RoboCup
                 </li>
                 <li>
-                  6:00 - 7:00 pm <b>:</b> PURDinner @ NCW/YEH PDR (Check Discord)
+                  5:30 - 7:00 pm{' '}
+                  <span className="text-bionics">
+                    <b>:</b>
+                  </span>{' '}
+                  Bionics
                 </li>
               </ul>
             </Card>
