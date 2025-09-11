@@ -53,6 +53,8 @@ import cli from "../../../images/about/cli.png";
 import tsadowy from "../../../images/about/tsadowy.png";
 import jmendes from "../../../images/about/jmendes.jpeg";
 import hsoto from "../../../images/about/hsoto.jpg";
+import ereinfurt from "../../../images/about/ereinfurt.JPG";
+import gmyslo from "../../../images/about/gmyslo.png";
 
 function About(props) {
   const { darkMode } = props;
@@ -338,6 +340,14 @@ function About(props) {
                 major="Mechanical & Aerospace Engineering"
                 image={jmendes}
               />
+              <FaceCard
+                darkMode={darkMode}
+                name="Eden Reinfurt"
+                subtext={["Administrative Officer"]}
+                gradYear="Class of 2028"
+                major="Physics"
+                image={ereinfurt}
+              />
             </div>
           </Card>
 
@@ -482,10 +492,18 @@ function About(props) {
               <FaceCard
                 darkMode={darkMode}
                 name="Nadula Gardiyehewa"
-                subtext={["Golf Cart Hardware Co-Lead"]}
+                subtext={["Golf Cart Electrical Lead"]}
                 gradYear="Class of 2028"
                 major="Computer Science"
                 image={ngardiyehewa}
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Gabriella Myslo"
+                subtext={["Golf Cart Hardware Lead"]}
+                gradYear="Class of 2028"
+                major="Electrical & Computer Engineering"
+                image={gmyslo}
               />
               {/* <FaceCard
                 darkMode={darkMode}
