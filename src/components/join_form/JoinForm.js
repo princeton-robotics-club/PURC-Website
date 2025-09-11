@@ -77,6 +77,10 @@ function JoinForm(props) {
           <input type='radio' name='role' value='Advisor'/>
           <span>Advisor</span>
         </label>
+        <label className={roleFormat('High School Group')}>
+          <input type='radio' name='role' value='High School Group'/>
+          <span>High School Group</span>
+        </label>
         <label className={roleFormat('Member')}>
           <input type='radio' name='role' value='Member'/>
           <span>Member</span>

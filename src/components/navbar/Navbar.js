@@ -163,7 +163,7 @@ function Navbar(props) {
                   closeMobileMenu();
                 }}
               >
-                JOIN
+                CONTACT
               </Link>
             </li>
           </ul>
@@ -173,7 +173,7 @@ function Navbar(props) {
               buttonSize={joinPath ? "btn--medium--colored" : "btn--medium"}
               darkMode={darkMode}
             >
-              JOIN
+              CONTACT
             </Button>
           )}
         </div>
