@@ -77,13 +77,13 @@
 
 #hero-img-1 {
   background-image: linear-gradient(rgba(231, 117, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(3, 162, 220, 0.6)),
-    url(../../../images/home/droid-2.jpg);
+    url(../../../images/home/droid-1.jpg);
   animation-delay: 0s, -2s;
 }
 
 #hero-img-2 {
   background-image: linear-gradient(rgba(231, 117, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(3, 162, 220, 0.6)),
-    url(../../../images/home/droid-1.jpg);
+    url(../../../images/home/droid-2.jpg);
   animation-delay: 8s, 6s;
 }
 
@@ -109,6 +109,66 @@
   background-image: linear-gradient(rgba(231, 117, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(3, 162, 220, 0.6)),
     url(../../../images/home/drone-1.jpg);
   animation-delay: 40s, 38s;
+}
+
+#hero-img-7 {
+  background-image: linear-gradient(rgba(231, 117, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(3, 162, 220, 0.6)),
+    url(../../../images/home/droid-3.png);
+  animation-delay: 48s, 46s;
+}
+
+#hero-img-8 {
+  background-image: linear-gradient(rgba(231, 117, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(3, 162, 220, 0.6)),
+    url(../../../images/home/droid-4.png);
+  animation-delay: 56s, 54s;
+}
+
+#hero-img-9 {
+  background-image: linear-gradient(rgba(231, 117, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(3, 162, 220, 0.6)),
+    url(../../../images/home/drone-3.jpg);
+  animation-delay: 64s, 62s;
+}
+
+#hero-img-10 {
+  background-image: linear-gradient(rgba(231, 117, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(3, 162, 220, 0.6)),
+    url(../../../images/home/CD_Player_Teardown.jpg);
+  animation-delay: 72s, 70s;
+}
+
+#hero-img-11 {
+  background-image: linear-gradient(rgba(231, 117, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(3, 162, 220, 0.6)),
+    url(../../../images/home/bionics.jpg);
+  animation-delay: 80s, 78s;
+}
+
+#hero-img-12 {
+  background-image: linear-gradient(rgba(231, 117, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(3, 162, 220, 0.6)),
+    url(../../../images/home/drone-4.jpg);
+  animation-delay: 88s, 86s;
+}
+
+#hero-img-13 {
+  background-image: linear-gradient(rgba(231, 117, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(3, 162, 220, 0.6)),
+    url(../../../images/home/pacBot_Maze-2.jpg);
+  animation-delay: 96s, 94s;
+}
+
+#hero-img-14 {
+  background-image: linear-gradient(rgba(231, 117, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(3, 162, 220, 0.6)),
+    url(../../../images/home/pacBot_Maze.jpg);
+  animation-delay: 104s, 102s;
+}
+
+#hero-img-15 {
+  background-image: linear-gradient(rgba(231, 117, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(3, 162, 220, 0.6)),
+    url(../../../images/home/tinker-2.jpg);
+  animation-delay: 112s, 110s;
+}
+
+#hero-img-16 {
+  background-image: linear-gradient(rgba(231, 117, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(3, 162, 220, 0.6)),
+    url(../../../images/home/tinker.jpg);
+  animation-delay: 120s, 108s;
 }
 
 @-webkit-keyframes fade {
