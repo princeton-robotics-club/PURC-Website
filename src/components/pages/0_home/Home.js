@@ -73,6 +73,16 @@ function Home(props) {
       <div className="home-container">
         <div className="hero-container">
           <div className="hero-img">
+            <div id="hero-img-16" className="hero-img-content"></div>
+            <div id="hero-img-15" className="hero-img-content"></div>
+            <div id="hero-img-14" className="hero-img-content"></div>
+            <div id="hero-img-13" className="hero-img-content"></div>
+            <div id="hero-img-12" className="hero-img-content"></div>
+            <div id="hero-img-11" className="hero-img-content"></div>
+            <div id="hero-img-10" className="hero-img-content"></div>
+            <div id="hero-img-9" className="hero-img-content"></div>
+            <div id="hero-img-8" className="hero-img-content"></div>
+            <div id="hero-img-7" className="hero-img-content"></div>
             <div id="hero-img-6" className="hero-img-content"></div>
             <div id="hero-img-5" className="hero-img-content"></div>
             <div id="hero-img-4" className="hero-img-content"></div>
