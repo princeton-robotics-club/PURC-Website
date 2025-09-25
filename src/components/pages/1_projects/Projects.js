@@ -357,7 +357,7 @@ function Projects(props) {
             <div className="second-row v-spacer"></div>
             <div className="m-spacer"></div>
 
-            <div className="second-row">
+            {/* <div className="second-row">
               <TeamButton
                 teamName="robocup"
                 teamTitle="ROBOCUP"
@@ -380,6 +380,35 @@ function Projects(props) {
                     "2024-09-06",
                     "s",
                     "This past semester, our RoboCup team has worked diligently researching different designs for our team of 6 competition robots. Our software team has made significant strides in understanding the competition's shared-vision software and devising strategic gameplay tactics. Additionally, our hardware team has explored several physical implementations of the team's robots and is eager to continue prototyping different designs in the upcoming semester.",
+                  ],
+                ]}
+                sponsors={""}
+              />
+            </div> */}
+
+            <div className="second-row">
+              <TeamButton
+                teamName="hexapod"
+                teamTitle="HEXAPOD"
+                selectedTeam={selectedTeam}
+                toggleBlurb={toggleBlurb}
+              />
+            </div>
+
+            <div className="third-row">
+              <TeamBlurb
+                darkMode={darkMode}
+                teamName="hexapod"
+                teamTitle="HEXAPOD"
+                selectedTeam={selectedTeam}
+                about="uh spider legs"
+                slides={[]}
+                showSlides={showSlides}
+                milestones={[
+                  [
+                    "2024-09-06", // date
+                    "s", //spring or fall f or s
+                    "This past semester, our RoboCup team has worked diligently researching different designs for our team of 6 competition robots. Our software team has made significant strides in understanding the competition's shared-vision software and devising strategic gameplay tactics. Additionally, our hardware team has explored several physical implementations of the team's robots and is eager to continue prototyping different designs in the upcoming semester.", // description
                   ],
                 ]}
                 sponsors={""}
@@ -425,7 +454,7 @@ function Projects(props) {
             <div className="second-row h-spacer"></div>
             <div className="m-spacer"></div>
 
-            <div className="second-row">
+            {/* <div className="second-row">
               <TeamButton
                 teamName="exoskeleton"
                 teamTitle="EXOSKELETON"
@@ -463,15 +492,11 @@ function Projects(props) {
                 ]}
                 sponsors={""}
               />
-            </div>
+            </div> */}
 
-            <div className="second-row break"></div>
-            <div className="third-row v-spacer"></div>
-            <div className="m-spacer"></div>
 
-            {/* third starts here */}
             {/* wall-e */}
-            <div className="third-row">
+            <div className="second-row">
               <TeamButton
                 teamName="wall-e"
                 teamTitle="WALL-E"
@@ -480,7 +505,7 @@ function Projects(props) {
               />
             </div>
 
-            <div className="fourth-row">
+            <div className="third-row">
               <TeamBlurb
                 darkMode={darkMode}
                 teamName="wall-e"
@@ -504,6 +529,13 @@ function Projects(props) {
                 sponsors={""}
               />
             </div>
+
+            <div className="second-row break"></div>
+            <div className="third-row v-spacer"></div>
+            <div className="m-spacer"></div>
+
+            {/* third starts here */}
+            
 
             <div className="third-row h-spacer"></div>
             <div className="m-spacer"></div>
