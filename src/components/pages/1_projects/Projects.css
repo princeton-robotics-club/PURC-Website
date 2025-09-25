@@ -17,6 +17,7 @@
   --projects-pacbot-rgb: rgb(255, 183, 0);
   --projects-drone-rgb: rgb(0, 126, 255);
   --projects-robocup-rgb: rgb(58, 185, 169); /*rgb(48, 184, 191);*/
+  --projects-hexapod-rgb: rgb(255, 94, 91);
   --projects-golf-rgb: rgb(48, 191, 134);
   --projects-exoskeleton-rgb: rgb(170, 48, 191);
   --projects-rover-rgb: rgb(191, 48, 103);
@@ -266,6 +267,49 @@
 }
 
 /* ------------------------------------------------------------------------- */
+
+.hexapod-logo {
+  background-image: url(../../../images/projects/hexapod/hexapod.svg);
+  filter: drop-shadow(5px 5px 5px var(--projects-shadow-rgb));
+}
+
+.hexapod-text {
+  color: var(--projects-hexapod-rgb);
+  filter: drop-shadow(5px 5px 5px var(--projects-shadow-rgb));
+}
+
+.hexapod-glow {
+  filter: none;
+  transition: filter 0.5s;
+}
+
+.hexapod-glow:hover {
+  filter: drop-shadow(0px 0px 5px var(--projects-hexapod-rgb));
+}
+
+.hexapod-blurb {
+  border-color: var(--projects-hexapod-rgb);
+  box-shadow: 0px 0px 8px var(--projects-hexapod-rgb);
+}
+
+.hexapod-dot,
+.hexapod-carousel {
+  border-color: var(--projects-hexapod-rgb);
+}
+
+.hexapod-dot-active,
+.hexapod-dot:hover,
+.hexapod-timeline-ruler {
+  background-color: var(--projects-hexapod-rgb);
+}
+
+.hexapod-timeline-circle {
+  border-color: var(--projects-hexapod-rgb);
+  background-color: var(--projects-hexapod-rgb);
+}
+
+/* ------------------------------------------------------------------------- */
+
 
 .golf-logo {
   background-image: url(../../../images/projects/golf/golf-logo.svg);
