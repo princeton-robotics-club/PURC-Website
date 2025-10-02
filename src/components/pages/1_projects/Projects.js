@@ -401,14 +401,14 @@ function Projects(props) {
                 teamName="hexapod"
                 teamTitle="HEXAPOD"
                 selectedTeam={selectedTeam}
-                about="uh spider legs"
+                about="The Hexapod team is building a six-legged crawler robot equipped with various sensors, including LIDAR, with the goal of implementing autonomous navigation and complex kinematics for all-terrain environment traversal. We are looking for motivated members who want to help implement the coolest systems we can think of into this project. "
                 slides={[]}
                 showSlides={showSlides}
                 milestones={[
                   [
-                    "2024-09-06", // date
+                    "2025-09-06", // date
                     "s", //spring or fall f or s
-                    "This past semester, our RoboCup team has worked diligently researching different designs for our team of 6 competition robots. Our software team has made significant strides in understanding the competition's shared-vision software and devising strategic gameplay tactics. Additionally, our hardware team has explored several physical implementations of the team's robots and is eager to continue prototyping different designs in the upcoming semester.", // description
+                    "There are lots of tasks to do for this new project, and the team is very flexible depending on what people want to tackle first. Early goals we’re looking to complete this semester include completing the CAD design of most of the chassis, designing our electrical topology, simulating the robot fully in ROS, setting up the Raspberry Pi operating system, and starting to get hardware components working. Hardware we’re looking to finish first includes the servo array and a variety of sensors (LIDAR, IMU, etc.).", // description
                   ],
                 ]}
                 sponsors={""}
