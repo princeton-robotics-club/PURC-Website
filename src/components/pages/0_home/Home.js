@@ -219,9 +219,6 @@ function Home(props) {
                   </span>{' '}
                   Bionics
                 </li>
-                <li>
-                  6:00 - 7:00 pm <b>:</b> PURDinner @ NCW/YEH PDR (Check Discord)
-                </li>
               </ul>
             </Card>
           </section>
