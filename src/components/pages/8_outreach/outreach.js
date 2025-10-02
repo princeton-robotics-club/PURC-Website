@@ -35,10 +35,29 @@ function Outreach(props) {
           Through the years, the club has been involved in various outreach
           efforts. We have hosted workshops for local students, participated in
           community events, and collaborated with other organizations to promote
-          STEM education. We are always looking for new opportunities to engage
-          with the community and share our passion for robotics and technology.
-          If you are interested in partnering with us or have an idea for an
-          outreach event, please contact us.
+          STEM education. We love working with students and groups interested in
+          STEM and Robotics! Feel free to reach out to us on our <Link to="/contact">contact page</Link>.
+          Our team regularly advises middle and high school teams and groups—if you
+          are interested in mentorship, please fill out the form on the contact
+          page and let us know what sort of mentorship you are interested in.
+
+          <p>
+            <strong>Mentorship Resources</strong>
+          </p>
+          <ul>
+            <li>
+              Q&A Sessions
+            </li>
+            <li>
+              Technical Reviews
+            </li>
+            <li>
+              Volunteering at Robotics Competitions
+            </li>
+            <li>
+              Workshops
+            </li>
+          </ul>
         </Card>
 
         <Card
@@ -140,6 +159,16 @@ function Outreach(props) {
             </div>
           </div>
           <div className="img-outreach-event" id="img-princeton-splash-event" />
+        </Card>
+
+        <Card darkMode={darkMode} className={"text-box text-box-padded" + (darkMode ? " text-box-dark" : " text-box-light")}>
+          <div className="centered-heading">Other Outreach Events</div>
+          Here are some photos from previous outreach events not listed above. We're always excited to share our passion for STEM and robotics with the community!
+          
+          <div className="outreach-collage">
+            <div className="outreach-collage-item outreach-collage-large img-first-princeton" />
+            <div className="outreach-collage-item outreach-collage-small img-more-outreach" />
+          </div>
         </Card>
 
         {/* <Card

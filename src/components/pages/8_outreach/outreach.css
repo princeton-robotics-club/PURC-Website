@@ -115,3 +115,57 @@
   float: right;
   transition: all 0.1s ease;
 }
+
+/* Other Outreach Events Collage */
+.outreach-collage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.outreach-collage-item {
+  border-radius: 10px;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.outreach-collage-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.outreach-collage-large {
+  width: 60%;
+  min-width: 350px;
+}
+
+.outreach-collage-small {
+  width: 35%;
+  min-width: 250px;
+}
+
+.img-first-princeton {
+  background-image: url("../../../images/outreach/first-princeton.jpg");
+}
+
+.img-more-outreach {
+  background-image: url("../../../images/outreach/more-outreach-yay.jpeg");
+}
+
+@media (max-width: 768px) {
+  .outreach-collage-large,
+  .outreach-collage-small {
+    width: 100%;
+    min-width: unset;
+  }
+  
+  .outreach-collage-item {
+    height: 250px;
+  }
+}
