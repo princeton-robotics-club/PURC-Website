@@ -12,7 +12,8 @@ function TeamBlurb(props) {
     slides,
     showSlides,
     milestones,
-    sponsors
+    sponsors,
+    toggleable = false
   } = props;
 
   const img_ext = ['jpg', 'png', 'jpeg', 'svg']
@@ -155,6 +156,14 @@ function TeamBlurb(props) {
     return timeline
   }
 
+  function generateToggleButton () {
+    let button = []
+    if(toggleable === true){
+        button.push(React.createElement('div', {className: 'toggleButton'}, "men"))
+    }
+    return button
+  }
+
   return (
     <div id={teamName + '-blurb'} className={teamName + '-blurb team-blurb'} style={{display: selectedTeam === teamName ? 'flex' : 'none', backgroundColor: darkMode ? 'black' : 'white'}}>
         <div className='spacer' ></div>
@@ -162,6 +171,8 @@ function TeamBlurb(props) {
         <div className='blurb-title' style={{color: darkMode ? 'white' : 'black'}}>
             <h2>ABOUT THE {teamTitle} TEAM</h2>
         </div>
+        
+        {generateToggleButton()}
 
         <div className='divider' ></div>
 

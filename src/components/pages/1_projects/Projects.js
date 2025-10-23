@@ -305,6 +305,7 @@ function Projects(props) {
             <div className="second-row">
               <TeamBlurb
                 darkMode={darkMode}
+                toggleable={true}
                 teamName="drone"
                 teamTitle="DRONE"
                 selectedTeam={selectedTeam}
@@ -350,7 +351,9 @@ function Projects(props) {
                   ],
                 ]}
                 sponsors={""}
+                
               />
+              
             </div>
 
             <div className="first-row break"></div>
