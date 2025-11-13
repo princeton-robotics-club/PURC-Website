@@ -36,7 +36,7 @@ function Outreach(props) {
           efforts. We have hosted workshops for local students, participated in
           community events, and collaborated with other organizations to promote
           STEM education. We love working with students and groups interested in
-          STEM and Robotics! Feel free to reach out to us on our <Link to="/contact">contact page</Link>.
+          STEM and Robotics! Feel free to reach out to us on our <Link to="/join">contact page</Link>.
           Our team regularly advises middle and high school teams and groups—if you
           are interested in mentorship, please fill out the form on the contact
           page and let us know what sort of mentorship you are interested in.
