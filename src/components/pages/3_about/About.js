@@ -129,14 +129,14 @@ function About(props) {
                 major="Operations Research & Financial Engineering"
                 image={Ot8429}
               />
-              <FaceCard
+              {/* {<FaceCard
                 darkMode={darkMode}
                 name="Zara Kamga"
                 subtext={["Public Engagement Lead"]}
                 gradYear="Class of 2027"
                 major="Electrical & Computer Engineering"
                 image={Zk9002}
-              />
+              />} */}
 
               <FaceCard
                 darkMode={darkMode}
@@ -162,14 +162,14 @@ function About(props) {
                 major="Mechanical & Aerospace Engineering"
                 image={es5889}
               />
-              <FaceCard
+              {/* {<FaceCard
                 darkMode={darkMode}
                 name="Emily Yang"
                 subtext={["FIRST Outreach Lead"]}
                 gradYear="Class of 2026"
                 major="Electrical & Computer Engineering"
                 image={ey3875}
-              />
+              />} */}
 
               <FaceCard
                 darkMode={darkMode}
@@ -220,14 +220,15 @@ function About(props) {
                 image={Vv5226}
               />
 
-              <FaceCard
+              {/* {<FaceCard
                 darkMode={darkMode}
                 name="Chae Rin Yang"
                 subtext={["Administrative Officer"]}
                 gradYear="Class of 2027"
                 major="Computer Science"
                 image={Cy4383}
-              />
+              />} */}
+              
               <FaceCard
                 darkMode={darkMode}
                 name="Quentin Hicks"
