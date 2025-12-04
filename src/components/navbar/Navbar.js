@@ -64,9 +64,12 @@ function Navbar(props) {
             <div className={"navbar-logo-text-bottom"}>ROBOTICS CLUB</div>
           </Link>
 
-          <div className="menu-icon" onClick={handleClick}>
+          {/* <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
-          </div>
+          </div> */}
+          <button className="menu-icon" onClick={handleClick}>
+            <i className={click ? "fas fa-times" : "fas fa-bars"} />
+          </button>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <NavbarItem
