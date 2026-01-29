@@ -46,6 +46,9 @@ import jmendes from "../../../images/about/jmendes.jpeg";
 import hsoto from "../../../images/about/hsoto.jpg";
 import ereinfurt from "../../../images/about/ereinfurt.JPG";
 import gmyslo from "../../../images/about/gmyslo.png";
+import TommyPhan from "../../../images/about/tommyphan.jpg";
+import SarahHu from "../../../images/about/sarahhu.png";
+import AllysonWalsh from "../../../images/about/allysonwalsh.jpg";
 
 function About(props) {
   const { darkMode } = props;
@@ -257,6 +260,7 @@ function About(props) {
                 subtext={["Administrative Officer"]}
                 gradYear="Class of 2029"
                 major="AB Undeclared"
+                image={TommyPhan}
               />
               <FaceCard
                 darkMode={darkMode}
@@ -264,6 +268,7 @@ function About(props) {
                 subtext={["Administrative Officer"]}
                 gradYear="Class of 2029"
                 major="Mechanical & Aerospace Engineering"
+                image={SarahHu}
               />
               <FaceCard
                 darkMode={darkMode}
@@ -290,6 +295,7 @@ function About(props) {
           >
             <div className="centered-heading">SUBTEAM LEADS</div>
             <div className="centered-container">
+              {/* DRONE (VTOL) */}
               <FaceCard
                 darkMode={darkMode}
                 name="Vasumathi Venkat"
@@ -306,6 +312,8 @@ function About(props) {
                 major="Mechanical & Aerospace Engineering"
                 image={hsoto}
               />
+
+              {/* DRONE (Hoverloon) */}
               <FaceCard
                 darkMode={darkMode}
                 name="Skyler Chan"
@@ -316,25 +324,63 @@ function About(props) {
               />
               <FaceCard
                 darkMode={darkMode}
-                name="Dini Kathriarachchi"
+                name="Chinmayi Ramasubramanian"
+                subtext={["Drone Hoverloon Software Lead"]}
+                gradYear="Class of 2028"
+                major="Computer Science"
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Luke Ting"
+                subtext={["Drone Hoverloon Autonomy Lead"]}
+                gradYear="Class of 2028"
+                major="Electrical & Computer Engineering"
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Anthony Shen"
+                subtext={["Drone Hoverloon Propulsion Lead"]}
+                gradYear="Class of 2028"
+                major="Chemical & Biological Engineering"
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Allyson Walsh"
+                subtext={["Drone Hoverloon Materials Lead"]}
+                gradYear="Class of 2027"
+                major="Mechanical & Aerospace Engineering"
+                image={AllysonWalsh}
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Dini Nathyaa Kathriarachchi"
                 subtext={["Drone Hoverloon Power Systems Lead"]}
                 gradYear="Class of 2027"
                 major="Mechanical & Aerospace Engineering"
                 image={Dk6149}
               />
 
+              {/* DROID */}
               <FaceCard
                 darkMode={darkMode}
                 name="Sarah Rinzan"
-                subtext={["Droid Hardware Lead"]}
+                subtext={["Droid Electrical Lead"]}
                 gradYear="Class of 2027"
                 major="Electrical & Computer Engineering"
                 image={Sr6770}
               />
               <FaceCard
                 darkMode={darkMode}
+                name="Zachary Andrews"
+                subtext={["Droid Mechanical Lead"]}
+                gradYear="Class of 2027"
+                major="Mechanical & Aerospace Engineering"
+                image={Za3545}
+              />
+              <FaceCard
+                darkMode={darkMode}
                 name="Aidan Ward"
-                subtext={["Droid Software Lead", "WALL-E Software Lead"]}
+                subtext={["Droid Software Co-Lead"]}
                 gradYear="Class of 2026"
                 major="Computer Science"
                 image={Aw3592}
@@ -342,37 +388,13 @@ function About(props) {
               <FaceCard
                 darkMode={darkMode}
                 name="Jenna Mullin"
-                subtext={["Droid Software Lead", "WALL-E Software Lead"]}
+                subtext={["Droid Software Co-Lead"]}
                 gradYear="Class of 2027"
                 major="Computer Science"
                 image={jm7828}
               />
-              <FaceCard
-                darkMode={darkMode}
-                name="Zachary Andrews"
-                subtext={["Droid Hardware Lead", "WALL-E Mech Lead"]}
-                gradYear="Class of 2027"
-                major="Mechanical & Aerospace Engineering"
-                image={Za3545}
-              />
 
-              <FaceCard
-                darkMode={darkMode}
-                name="Wilson Moyer"
-                subtext={["WALL-E Mech Lead"]}
-                gradYear="Class of 2027"
-                major="Mechanical & Aerospace Engineering"
-                image={wm2964}
-              />
-
-              <FaceCard
-                darkMode={darkMode}
-                name="Ella Simmons"
-                subtext={["WALL-E Integration Lead"]}
-                gradYear="Class of 2027"
-                major="Mechanical & Aerospace Engineering"
-                image={es5889}
-              />
+              {/* WALL-E */}
               <FaceCard
                 darkMode={darkMode}
                 name="Maxwell Lloyd"
@@ -391,11 +413,44 @@ function About(props) {
               />
               <FaceCard
                 darkMode={darkMode}
+                name="Ella Simmons"
+                subtext={["WALL-E Integration Lead"]}
+                gradYear="Class of 2027"
+                major="Mechanical & Aerospace Engineering"
+                image={es5889}
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Zachary Andrews"
+                subtext={["WALL-E Mechanical Co-Lead"]}
+                gradYear="Class of 2027"
+                major="Mechanical & Aerospace Engineering"
+                image={Za3545}
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Wilson Moyer"
+                subtext={["WALL-E Mechanical Co-Lead"]}
+                gradYear="Class of 2027"
+                major="Mechanical & Aerospace Engineering"
+                image={wm2964}
+              />
+
+              {/* PACBOT */}
+              <FaceCard
+                darkMode={darkMode}
                 name="Divija Durga"
                 subtext={["Pacbot Hardware Co-Lead"]}
                 gradYear="Class of 2027"
                 major="Electrical & Computer Engineering"
                 image={Dd6849}
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Rayyan Nasser"
+                subtext={["Pacbot Hardware Co-Lead"]}
+                gradYear="Class of 2026"
+                major="Mechanical & Aerospace Engineering"
               />
               <FaceCard
                 darkMode={darkMode}
@@ -405,6 +460,24 @@ function About(props) {
                 major="Computer Science"
                 image={tsadowy}
               />
+
+              {/* GOLF CART */}
+              <FaceCard
+                darkMode={darkMode}
+                name="Nadula Gardiyehewa"
+                subtext={["Golf Cart Hardware Co-Lead"]}
+                gradYear="Class of 2028"
+                major="Computer Science"
+                image={ngardiyehewa}
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Gabriella Myslo"
+                subtext={["Golf Cart Hardware Co-Lead"]}
+                gradYear="Class of 2026"
+                major="Electrical & Computer Engineering"
+                image={gmyslo}
+              />
               <FaceCard
                 darkMode={darkMode}
                 name="Chinmaya Saran"
@@ -413,65 +486,8 @@ function About(props) {
                 major="Computer Science"
                 image={csaran}
               />
-              <FaceCard
-                darkMode={darkMode}
-                name="Nadula Gardiyehewa"
-                subtext={["Golf Cart Electrical Lead"]}
-                gradYear="Class of 2028"
-                major="Computer Science"
-                image={ngardiyehewa}
-              />
-              <FaceCard
-                darkMode={darkMode}
-                name="Gabriella Myslo"
-                subtext={["Golf Cart Hardware Lead"]}
-                gradYear="Class of 2028"
-                major="Electrical & Computer Engineering"
-                image={gmyslo}
-              />
-              {/* <FaceCard
-                darkMode={darkMode}
-                name="Gabriella Myslo"
-                subtext={["Golf Cart Hardware Co-Lead"]}
-                gradYear="Class of 2026"
-                major="Electrical & Computer Engineering"
-                image={}
-              /> */}
 
-              <FaceCard
-                darkMode={darkMode}
-                name="Joshua Soberano"
-                subtext={["Exo Mechatronics Lead"]}
-                gradYear="Class of 2026"
-                major="Electrical & Computer Engineering"
-                image={Js4346}
-              />
-              <FaceCard
-                darkMode={darkMode}
-                name="Zara Kamga"
-                subtext={["Exo Interface Lead"]}
-                gradYear="Class of 2027"
-                major="Electrical & Computer Engineering"
-                image={Zk9002}
-              />
-
-              <FaceCard
-                darkMode={darkMode}
-                name="Glen Nfor"
-                subtext={["Robocup SW Lead"]}
-                gradYear="Class of 2027"
-                major="Electrical & Computer Engineering"
-                image={Gn7269}
-              />
-              <FaceCard
-                darkMode={darkMode}
-                name="Mahir Majid"
-                subtext={["Robocup HW Lead"]}
-                gradYear="Class of 2027"
-                major="Electrical & Computer Engineering"
-                image={mm5764}
-              />
-
+              {/* BIONICS */}
               <FaceCard
                 darkMode={darkMode}
                 name="Anherutowa Calvo"
@@ -482,29 +498,27 @@ function About(props) {
               />
               <FaceCard
                 darkMode={darkMode}
-                name="Miyu Yamane"
-                subtext={["Bionics Software Lead"]}
-                gradYear="Class of 2027"
-                major="Computer Science"
-                image={my9689}
-              />
-
-              <FaceCard
-                darkMode={darkMode}
                 name="Nathaniel Scott"
                 subtext={["Bionics Electrical Lead"]}
                 gradYear="Class of 2027"
                 major="Electrical & Computer Engineering"
                 image={ns4593}
               />
-
               <FaceCard
                 darkMode={darkMode}
                 name="Arjun Shetty"
-                subtext={["Bionics Mech Lead"]}
+                subtext={["Bionics Mechanical Lead"]}
                 gradYear="Class of 2027"
                 major="Mechanical & Aerospace Engineering"
                 image={as3115}
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Miyu Yamane"
+                subtext={["Bionics Software Lead"]}
+                gradYear="Class of 2027"
+                major="Computer Science"
+                image={my9689}
               />
               <FaceCard
                 darkMode={darkMode}
@@ -514,7 +528,8 @@ function About(props) {
                 major="Chemical & Biological Engineering"
                 image={kharting}
               />
-              {/* <FaceCard darkMode={darkMode} name="Alexei Korolev" subtext={['Tinker Lead']} image={''} /> */}
+
+              {/* TINKER */}
               <FaceCard
                 darkMode={darkMode}
                 name="Henry Baquerizo"
@@ -531,14 +546,13 @@ function About(props) {
                 major="Mechanical & Aerospace Engineering"
                 image={rk3979}
               />
-              <FaceCard
+
+              {/* HEXAPOD */}
+              {/* <FaceCard
                 darkMode={darkMode}
-                name="George Kopf"
+                name="Vacant"
                 subtext={["Hexapod Electrical Lead"]}
-                gradYear="Class of 2027"
-                major="Electrical & Computer Engineering"
-                image={gkopf}
-              />
+              /> */}
               <FaceCard
                 darkMode={darkMode}
                 name="Minh Thanh Nguyen"
