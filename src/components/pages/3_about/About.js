@@ -49,6 +49,8 @@ import gmyslo from "../../../images/about/gmyslo.png";
 import TommyPhan from "../../../images/about/tommyphan.jpg";
 import SarahHu from "../../../images/about/sarahhu.png";
 import AllysonWalsh from "../../../images/about/allysonwalsh.jpg";
+import AnnaXie from "../../../images/about/annaxie.jpg";
+import ChinmayiRamasubramanian from "../../../images/about/chinmayiramasubramanian.jpg";
 
 function About(props) {
   const { darkMode } = props;
@@ -129,6 +131,7 @@ function About(props) {
                 subtext={["Business Team Lead"]}
                 gradYear="Class of 2029"
                 major="BSE Undeclared"
+                image={AnnaXie}
               />
               <FaceCard
                 darkMode={darkMode}
@@ -276,6 +279,7 @@ function About(props) {
                 subtext={["Administrative Officer"]}
                 gradYear="Class of 2028"
                 major="Computer Science"
+                image={ChinmayiRamasubramanian}
               />
             </div>
           </Card>
@@ -328,6 +332,7 @@ function About(props) {
                 subtext={["Drone Hoverloon Software Lead"]}
                 gradYear="Class of 2028"
                 major="Computer Science"
+                image={ChinmayiRamasubramanian}
               />
               <FaceCard
                 darkMode={darkMode}
