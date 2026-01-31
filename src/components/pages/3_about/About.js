@@ -51,6 +51,7 @@ import SarahHu from "../../../images/about/sarahhu.png";
 import AllysonWalsh from "../../../images/about/allysonwalsh.jpg";
 import AnnaXie from "../../../images/about/annaxie.jpg";
 import ChinmayiRamasubramanian from "../../../images/about/chinmayiramasubramanian.jpg";
+import RayyanNasser from "../../../images/about/rayyannasser.jpg";
 
 function About(props) {
   const { darkMode } = props;
@@ -456,6 +457,7 @@ function About(props) {
                 subtext={["Pacbot Hardware Co-Lead"]}
                 gradYear="Class of 2026"
                 major="Mechanical & Aerospace Engineering"
+                image={RayyanNasser}
               />
               <FaceCard
                 darkMode={darkMode}
