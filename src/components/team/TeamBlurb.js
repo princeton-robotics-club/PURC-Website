@@ -93,7 +93,7 @@ function TeamBlurb(props) {
         sorted_milestones[i][0] = new Date(sorted_milestones[i][0])
     }
 
-    sorted_milestones = sorted_milestones.sort(function(a, b){return a[0] - b[0]})
+    sorted_milestones = sorted_milestones.sort(function(a, b){return b[0] - a[0]})
 
     for (i = 0; i < sorted_milestones.length; i++) {
         let title
