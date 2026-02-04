@@ -24,6 +24,7 @@ function Footer(props) {
             to="https://princeton.edu"
             data-tooltip-id="princeton-tooltip"
             data-tooltip-content="Princeton University&#39;s website"
+            aria-label="Princeton University's website"
           >
             <div
               className={
@@ -32,6 +33,8 @@ function Footer(props) {
                   ? " footer-logo-princeton-dark"
                   : " footer-logo-princeton-light")
               }
+              role="img"
+              aria-label="Princeton University Logo"
             />
           </Link>
           <Tooltip
@@ -44,6 +47,7 @@ function Footer(props) {
             to="https://odus.princeton.edu"
             data-tooltip-id="odus-tooltip"
             data-tooltip-content="Office of the Dean of Undergraduate Students"
+            aria-label="Office of the Dean of Undergraduate Students"
           >
             <div
               className={
@@ -52,6 +56,8 @@ function Footer(props) {
                   ? " footer-logo-odus-dark"
                   : " footer-logo-odus-light")
               }
+              role="img"
+              aria-label="Office of the Dean of Undergraduate Students Logo"
             />
           </Link>
           <Tooltip id="odus-tooltip" className="footer-tooltip" />
