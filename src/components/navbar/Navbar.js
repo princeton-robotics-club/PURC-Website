@@ -67,8 +67,16 @@ function Navbar(props) {
           {/* <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div> */}
-          <button className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
+          <button
+            className="menu-icon"
+            onClick={handleClick}
+            aria-expanded={click}
+            aria-label="Toggle navigation"
+          >
+            <i
+              className={click ? "fas fa-times" : "fas fa-bars"}
+              aria-hidden="true"
+            />
           </button>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
