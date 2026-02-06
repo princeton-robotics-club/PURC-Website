@@ -52,6 +52,7 @@ import AllysonWalsh from "../../../images/about/allysonwalsh.jpg";
 import AnnaXie from "../../../images/about/annaxie.jpg";
 import ChinmayiRamasubramanian from "../../../images/about/chinmayiramasubramanian.jpg";
 import RayyanNasser from "../../../images/about/rayyannasser.jpg";
+import EricZhang from "../../../images/about/ericzhang.JPG";
 
 function About(props) {
   const { darkMode } = props;
@@ -122,9 +123,10 @@ function About(props) {
               <FaceCard
                 darkMode={darkMode}
                 name="Eric Zhang"
-                subtext={["Treasurer in training"]}
+                subtext={["Treasurer in Training"]}
                 gradYear="Class of 2029"
                 major="BSE Undeclared"
+                image={EricZhang}
               />
               <FaceCard
                 darkMode={darkMode}
