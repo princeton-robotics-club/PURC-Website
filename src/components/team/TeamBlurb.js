@@ -77,7 +77,7 @@ function TeamBlurb(props) {
 
     for (i = 0; i < slides.length; i++) {
         let slide = i + 1
-        dots.push(React.createElement('span', {key: `blurb-dot-${i}`, className: teamName + '-dot blurb-dot', onClick: () => showSlides(teamName, slide)}))
+        dots.push(React.createElement('button', {key: `blurb-dot-${i}`, type: 'button', 'aria-label': `Slide ${slide}`, className: teamName + '-dot blurb-dot', onClick: () => showSlides(teamName, slide)}))
     }
 
     return dots

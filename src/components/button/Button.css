@@ -5,6 +5,8 @@
   border: none;
   cursor: pointer;
   font-family: 'Century Gothic';
+  text-decoration: none;
+  display: inline-block;
 }
 
 .btn--dark {

@@ -8,7 +8,12 @@ function TeamButton(props) {
   const TEXT_CLASSES = ['team-text-original', 'team-text-selected', 'team-text-unselected'];
 
   return (
-    <div className={teamName + '-glow'} onClick={() => toggleBlurb(teamName)} id={teamName}>
+    <button
+      className={teamName + '-glow team-button-reset'}
+      onClick={() => toggleBlurb(teamName)}
+      id={teamName}
+      type="button"
+    >
       <div
         className={
           selectedTeam === teamName
@@ -31,7 +36,7 @@ function TeamButton(props) {
         {teamTitle}
         {archived && <i style={{ marginLeft: '20px', color: 'gray' }} className="fas fa-archive" />}
       </div>
-    </div>
+    </button>
   );
 }
 

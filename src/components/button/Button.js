@@ -28,14 +28,12 @@ export const Button = ({
   return (
     <div className='gap-right'>
       <Ripples>
-        <Link to='/join' className='btn-mobile'>
-          <button
-            className={`btn ${colorStyle} ${checkButtonStyle} ${checkButtonSize}`}
-            onClick={onClick}
-            type={type}
-          >
-            {children}
-          </button>
+        <Link 
+          to='/join' 
+          className={`btn-mobile btn ${colorStyle} ${checkButtonStyle} ${checkButtonSize}`}
+          onClick={onClick}
+        >
+          {children}
         </Link>
       </Ripples> 
     </div>

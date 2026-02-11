@@ -2,6 +2,18 @@
 /*                                  DESKTOP                                  */
 /* ------------------------------------------------------------------------- */
 
+.team-button-reset {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  display: block;
+  width: 100%;
+}
+
 /* Assumes article-centered wrapping */
 .team-logo-original {
     cursor: pointer;

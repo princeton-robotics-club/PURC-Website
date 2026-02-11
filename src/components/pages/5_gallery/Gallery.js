@@ -61,9 +61,29 @@ function GalleryPage(props) {
 }
 
 const ImageComponent = (props) => {
-  // const [show, setShow] = useState(false);
+  const { style, onClick, ...restImageProps } = props.imageProps;
 
-  return <img className="gallery-image" {...props.imageProps} height={400} />;
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      style={{
+        ...style,
+        padding: 0,
+        border: "none",
+        background: "none",
+        cursor: "pointer",
+        overflow: "hidden",
+      }}
+      aria-label={props.item.caption || "View gallery image"}
+    >
+      <img
+        className="gallery-image"
+        {...restImageProps}
+        style={{ width: "100%", height: "100%", display: "block" }}
+      />
+    </button>
+  );
 };
 
 export default GalleryPage;

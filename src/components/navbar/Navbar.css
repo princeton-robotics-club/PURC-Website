@@ -24,6 +24,14 @@
 
 /* ------------------------------------------------------------------------- */
 
+.navbar-logo-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
 .navbar-logo {
   background-repeat: no-repeat;
   background-size: contain;

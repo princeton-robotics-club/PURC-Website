@@ -35,11 +35,14 @@ function Navbar(props) {
     <>
       <nav className={"navbar " + (darkMode ? "navbar-dark" : "navbar-light")}>
         <div className="navbar-container">
-          <Link
+          <button
+            type="button"
+            className="navbar-logo-button"
             onClick={() => {
               closeMobileMenu();
               toggleDarkMode();
             }}
+            aria-label="Toggle dark mode"
           >
             <div
               className={
@@ -49,7 +52,7 @@ function Navbar(props) {
               data-tooltip-id="logo-tooltip"
               data-tooltip-content="Click me to toggle dark mode!"
             />
-          </Link>
+          </button>
           <Tooltip id="logo-tooltip" className="navbar-tooltip" />
 
           <Link
