@@ -19,34 +19,64 @@ function NavbarItem(props) {
   const showDrop = () => setDrop(window.innerWidth > 960);
   const hideDrop = () => setDrop(false);
 
-  const [underline, setUnderline]  = useState(false);
+  const handleBlur = (e) => {
+    if (!e.currentTarget.contains(e.relatedTarget)) {
+      setDrop(false);
+    }
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Escape") {
+      setDrop(false);
+    }
+  };
+
+  const [underline, setUnderline] = useState(false);
   const location = useLocation();
 
-  useEffect (() => {
+  useEffect(() => {
     setUnderline(location.pathname.indexOf(pathString) === 0);
   }, [location.pathname, pathString, underline]);
 
-  window.addEventListener('resize', hideDrop);
-  
+  window.addEventListener("resize", hideDrop);
+
   return (
-    <li className='nav-item' key={label} onMouseLeave={hideDrop}>
-      <Link to={link}
-          onMouseEnter={showDrop}  
-          className={(forceStyle ? forceStyle : (underline ? 'nav-links-here' : 'nav-links') 
-                      + (darkMode ? ' nav-links-dark' : ' nav-links-light'))} 
-          onClick={closeMobile}
-      > {label} </Link>
-      {drop && 
+    <li
+      className="nav-item"
+      key={label}
+      onMouseLeave={hideDrop}
+      onFocus={showDrop}
+      onBlur={handleBlur}
+      onKeyDown={handleKeyDown}
+    >
+      <Link
+        to={link}
+        onMouseEnter={showDrop}
+        className={
+          (forceStyle
+            ? forceStyle
+            : underline
+            ? "nav-links-here"
+            : "nav-links") +
+          (darkMode ? " nav-links-dark" : " nav-links-light")
+        }
+        onClick={closeMobile}
+        aria-haspopup={dropdownOptions.length > 0 ? "true" : undefined}
+        aria-expanded={dropdownOptions.length > 0 ? drop : undefined}
+      >
+        {" "}
+        {label}{" "}
+      </Link>
+      {drop &&
         dropdownOptions.map((option, idx) => {
           return (
-            <div className='dropdown-rectangle' key={option}> 
-              <Link to={dropdownLinks[idx]} className='dropdown-link'>
+            <div className="dropdown-rectangle" key={option}>
+              <Link to={dropdownLinks[idx]} className="dropdown-link">
                 <div> {option} </div>
               </Link>
             </div>
           );
-        })
-      }
+        })}
     </li>
   );
 }
