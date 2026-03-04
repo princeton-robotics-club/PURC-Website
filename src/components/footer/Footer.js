@@ -79,7 +79,7 @@ function Footer(props) {
                   ? " social-icon-link-dark"
                   : " social-icon-link-light")
               }
-              to="https://robotics.princeton.edu/join"
+              to="/join"
               target="_blank"
               aria-label="Email"
               data-tooltip-id="email-tooltip"
