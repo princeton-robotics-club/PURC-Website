@@ -80,7 +80,6 @@ function Footer(props) {
                   : " social-icon-link-light")
               }
               to="/join"
-              target="_blank"
               aria-label="Email"
               data-tooltip-id="email-tooltip"
               data-tooltip-content="Email us!"
