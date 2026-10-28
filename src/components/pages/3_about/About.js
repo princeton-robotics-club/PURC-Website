@@ -49,6 +49,7 @@ import AnnaXie from "../../../images/about/annaxie.jpg";
 import ChinmayiRamasubramanian from "../../../images/about/chinmayiramasubramanian.jpg";
 import RayyanNasser from "../../../images/about/rayyannasser.jpg";
 import EricZhang from "../../../images/about/ericzhang.JPG";
+import nassauPlaceholder from "../../../images/about/nassauPlaceholder.jpg"
 
 function About(props) {
   const { darkMode } = props;
@@ -110,16 +111,8 @@ function About(props) {
               />
               <FaceCard
                 darkMode={darkMode}
-                name="Stephen Gilton"
-                subtext={["Treasurer"]}
-                gradYear="Class of 2027"
-                major="Computer Science"
-                image={Sg8409}
-              />
-              <FaceCard
-                darkMode={darkMode}
                 name="Eric Zhang"
-                subtext={["Treasurer in Training"]}
+                subtext={["Treasurer"]}
                 gradYear="Class of 2029"
                 major="BSE Undeclared"
                 image={EricZhang}
@@ -147,11 +140,19 @@ function About(props) {
               /> */}
               <FaceCard
                 darkMode={darkMode}
-                name="Aidan Ward"
+                name="Kaydence Chandler"
+                subtext={["Design Lead"]}
+                gradYear="Class of 2029"
+                major="BSE Undeclared"
+                image={nassauPlaceholder}
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Damian De La Vega"
                 subtext={["Training Lead"]}
-                gradYear="Class of 2026"
-                major="Computer Science"
-                image={Aw3592}
+                gradYear="Class of 2029"
+                major="BSE Undeclared"
+                image={nassauPlaceholder}
               />
               <FaceCard
                 darkMode={darkMode}
@@ -163,11 +164,19 @@ function About(props) {
               />
               <FaceCard
                 darkMode={darkMode}
-                name="Jessica Hou"
-                subtext={["Web Development Lead"]}
-                gradYear="Class of 2028"
-                major="Electrical & Computer Engineering"
-                image={Jh5647}
+                name="Katie Shin"
+                subtext={["Media Lead"]}
+                gradYear="Class of 2029"
+                major="Mechanical & Aerospace Engineering"
+                image={Ck4287}
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Jannath Jamal"
+                subtext={["Media Lead"]}
+                gradYear="Class of 2029"
+                major="BSE Undeclared"
+                image={nassauPlaceholder}
               />
               <FaceCard
                 darkMode={darkMode}
@@ -176,6 +185,14 @@ function About(props) {
                 gradYear="Class of 2027"
                 major="Mechanical & Aerospace Engineering"
                 image={Dk6149}
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Grace Kasendi Kyalo"
+                subtext={["Alumni Outreach Lead"]}
+                gradYear="Class of 2029"
+                major="Electrical & Computer Engineering"
+                image={nassauPlaceholder}
               />
               <FaceCard
                 darkMode={darkMode}
@@ -204,7 +221,7 @@ function About(props) {
               <FaceCard
                 darkMode={darkMode}
                 name="Nadula Gardiyehewa"
-                subtext={["Administrative Officer"]}
+                subtext={["Web Development Lead"]}
                 gradYear="Class of 2028"
                 major="Computer Science"
                 image={ngardiyehewa}
@@ -225,37 +242,6 @@ function About(props) {
                 major="Electrical & Computer Engineering"
                 image={jrivera}
               />
-              <FaceCard
-                darkMode={darkMode}
-                name="George Kopf"
-                subtext={["Administrative Officer"]}
-                gradYear="Class of 2027"
-                major="Electrical & Computer Engineering"
-                image={gkopf}
-              />
-              <FaceCard
-                darkMode={darkMode}
-                name="Minh Thanh Nguyen"
-                subtext={["Administrative Officer"]}
-                gradYear="Class of 2027"
-                major="Mechanical & Aerospace Engineering"
-                image={mthanh}
-              />
-              <FaceCard
-                darkMode={darkMode}
-                name="Skyler Chan"
-                subtext={["Administrative Officer"]}
-                gradYear="Class of 2028"
-                major="Electrical & Computer Engineering"
-                image={schan}
-              />
-              {/* <FaceCard
-                darkMode={darkMode}
-                name="Youssef Ali"
-                subtext={["Administrative Officer"]}
-                gradYear="Class of 2027"
-                major="Electrical & Computer Engineering"
-              /> */}
               <FaceCard
                 darkMode={darkMode}
                 name="Tommy Phan"
@@ -280,6 +266,85 @@ function About(props) {
                 major="Computer Science"
                 image={ChinmayiRamasubramanian}
               />
+              <FaceCard
+                darkMode={darkMode}
+                name="Akshita Khanna"
+                subtext={["Administrative Officer"]}
+                gradYear="Class of 2029"
+                major="BSE Undeclared"
+                image={nassauPlaceholder}
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Zashaan Shaik"
+                subtext={["Administrative Officer"]}
+                gradYear="Class of 2029"
+                major="Operations Research & Financial Engineering"
+                image={nassauPlaceholder}
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Samantha Morin-Penaran"
+                subtext={["Administrative Officer"]}
+                gradYear="Class of 2029"
+                major="BSE Undeclared"
+                image={nassauPlaceholder}
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Louis Barbosa"
+                subtext={["Administrative Officer"]}
+                gradYear="Class of 2029"
+                major="BSE Undeclared"
+                image={nassauPlaceholder}
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Gael Valverde Taipe"
+                subtext={["Administrative Officer"]}
+                gradYear="Class of 2029"
+                major="BSE Undeclared"
+                image={nassauPlaceholder}
+              />
+              <FaceCard
+                darkMode={darkMode}
+                name="Yinle Chen"
+                subtext={["Administrative Officer"]}
+                gradYear="Class of 2029"
+                major="BSE Undeclared"
+                image={nassauPlaceholder}
+              />
+              { /* <FaceCard
+                darkMode={darkMode}
+                name="George Kopf"
+                subtext={["Administrative Officer"]}
+                gradYear="Class of 2027"
+                major="Electrical & Computer Engineering"
+                image={gkopf} 
+              /> */}
+              {/* <FaceCard
+                darkMode={darkMode}
+                name="Minh Thanh Nguyen"
+                subtext={["Administrative Officer"]}
+                gradYear="Class of 2027"
+                major="Mechanical & Aerospace Engineering"
+                image={mthanh}
+              /> */}
+              {/* <FaceCard
+                darkMode={darkMode}
+                name="Skyler Chan"
+                subtext={["Administrative Officer"]}
+                gradYear="Class of 2028"
+                major="Electrical & Computer Engineering"
+                image={schan}
+              /> */}
+              {/* <FaceCard
+                darkMode={darkMode}
+                name="Youssef Ali"
+                subtext={["Administrative Officer"]}
+                gradYear="Class of 2027"
+                major="Electrical & Computer Engineering"
+              /> */}
             </div>
           </Card>
 
