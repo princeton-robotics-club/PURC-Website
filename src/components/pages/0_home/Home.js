@@ -133,7 +133,7 @@ function Home(props) {
             <Card
               darkMode={darkMode}
               className={'text-box text-box-padded' + (darkMode ? ' text-box-dark' : ' text-box-light')}>
-              <div className="centered-heading">MEETING SCHEDULE FOR 25/26</div>
+              <div className="centered-heading">MEETING SCHEDULE FOR 26/27</div>
               {/* <p>
                 Our meeting schedule for the 2023/2024 academic year will be available soon. Prospective and current
                 members should stay tuned for details on the upcoming weekly schedule for our various teams starting
