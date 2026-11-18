@@ -148,76 +148,77 @@ function Home(props) {
               <b>Saturdays</b>
               <ul>
                 <li>
-                  12:00 - 1:30 pm{' '}
-                  <span className="text-pacbot">
+                  11:00-12:00 pm{' '}
+                  <span className="text-brunch">
                     <b>:</b>
                   </span>{' '}
-                  Drone (VTOL)
+                  PURC Brunch at Choi Dining Hall
                 </li>
                 <li>
-                  1:30 - 3:00 pm{' '}
-                  <span className="text-pacbot">
+                  1:30-3:00 pm{' '}
+                  <span className="text-exahuman">
                     <b>:</b>
                   </span>{' '}
-                  Drone (Hoverloon)
+                  Exahuman
                 </li>
                 <li>
-                  3:00 - 5:00 pm{' '}
-                  <span className="text-pacbot">
-                    <b>:</b>
-                  </span>{' '}
-                  PacBot
-                </li>
-                <li>
-                  5:00 - 6:00 pm <b>:</b> Training
-                </li>
-                <li>
-                  6:00 - 7:00 pm <b>:</b> PURDinner @ NCW/YEH PDR (Check Discord)
-                </li>
-                <li>
-                  7:00 - 8:30 pm{' '}
-                  <span className="text-tinker">
-                    <b>:</b>
-                  </span>{' '}
-                  Tinker
-                </li>
-              </ul>
-              <b>Sundays</b>
-              <ul>
-                <li>
-                  12:00 - 1:30 pm{' '}
-                  <span className="text-exo">
+                  3:00-4:30 pm{' '}
+                  <span className="text-droid">
                     <b>:</b>
                   </span>{' '}
                   Droid
                 </li>
                 <li>
-                  1:30 - 3:00 pm{' '}
-                  <span className="text-exo">
+                  4:30-5:30 pm{' '}
+                  <span className="text-trainings">
+                    <b>:</b>
+                  </span>{' '}
+                  Training
+                </li>
+                <li>
+                  5:30-7:00 pm{' '}
+                  <span className="text-tinker">
+                    <b>:</b>
+                  </span>{' '}
+                  Tinker
+                </li>
+                <li>
+                  7:00-8:30 pm{' '}
+                  <span className="text-drone">
+                    <b>:</b>
+                  </span>{' '}
+                  Drone
+                </li>
+              </ul>
+              <b>Sundays</b>
+              <ul>
+                <li>
+                  1:30-3:00 pm{' '}
+                  <span className="text-walle">
                     <b>:</b>
                   </span>{' '}
                   WALL-E
                 </li>
                 <li>
-                  3:00 - 4:30 pm{' '}
-                  <span className="text-drone">
+                  3:00-4:30 pm{' '}
+                  <span className="text-golfcartpacbot">
                     <b>:</b>
                   </span>{' '}
-                  Hexapod
+                  Golf Cart and PacBot
                 </li>
                 <li>
-                  3:00 - 4:30 pm{' '}
-                  <span className="text-drone">
-                    <b>:</b>
-                  </span>{' '}
-                  Golf Cart (in Andlinger Center)
-                </li>
-                <li>
-                  4:30 - 6:00 pm{' '}
-                  <span className="text-robocup">
+                  4:30-6:00 pm{' '}
+                  <span className="text-bionics">
                     <b>:</b>
                   </span>{' '}
                   Bionics
+                </li>
+                <li>
+                  6:00-7:30 pm{' '}
+                  <span className="text-fieldbot">
+                    <b>:</b>
+                  </span>{' '}
+                  Fieldbot
                 </li>
               </ul>
             </Card>
